@@ -7,7 +7,7 @@
       "meta": "Steinreinigung im Havelland: Pflaster, Terrasse und Wege porentief sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
       "eyebrow": "Steinreinigung im Havelland",
       "hero_img": "hub-steinreinigung-vn",
-      "hero_alt": "Pflasterweg im Havelland — links vor, rechts nach der Reinigung durch Blankstein",
+      "hero_alt": "Hoffläche während der Reinigung — links noch vermoost, rechts schon sauber",
       "h1": "Steinreinigung im Havelland —",
       "h1_em": "wieder wie neu",
       "intro": "Pflaster, Terrassen, Einfahrten und Wege im Havelland — porentief gereinigt, materialschonend und mit frischer Neuverfugung.",
@@ -37,13 +37,13 @@
           "h": "Einfahrten",
           "t": "Stark befahrene Flächen mit Reifen- und Schmutzspuren — porentief gereinigt und auf Wunsch gegen erneute Verschmutzung versiegelt.",
           "img": "hub-steinreinigung-einfahrt",
-          "alt": "Gereinigte Klinker-Einfahrt mit Zufahrt zur Garage im Havelland"
+          "alt": "Frisch gereinigte Pflaster-Einfahrt mit Zufahrt zum Haus im Havelland"
         },
         {
           "h": "Wege & Treppen",
           "t": "Gehwege, Stufen und Eingangsbereiche — auch verwinkelte Flächen, die mit der Hand-Lanze nur schwer gleichmäßig sauber werden.",
           "img": "hub-steinreinigung-wegetreppen",
-          "alt": "Gereinigte Eingangstreppe und Plattenweg am Hauseingang"
+          "alt": "Frisch gereinigter geschwungener Plattenweg am Haus"
         }
       ],
       "gal_title": "So sehen unsere Steinflächen danach aus",
@@ -92,6 +92,7 @@
       "h1_em": "wieder wie neu",
       "intro": "Terrassen aus Naturstein, Betonplatten, Keramik und Feinsteinzeug — streifenfrei gereinigt, materialschonend und neu verfugt.",
       "hero_caption": "Terrassenfläche im Havelland — Reinigung, Neuverfugung & Imprägnierung.",
+      "proof_video": { "file": "terrasse-arbeit", "poster": "terrasse-arbeit-poster", "label": "Echte Arbeit", "title": "So reinigen wir eine Terrasse — in echt.", "sub": "Kurzer Clip von einem echten Auftrag: der rotierende Flächenreiniger zieht eine saubere Bahn über die graue Terrasse.", "caption": "Terrassenreinigung mit dem Flächenreiniger — echtes Video von uns." },
       "schaden_title": "Nicht der Hochdruck schadet der Terrasse — die falsche Anwendung.",
       "schaden_body": [
         "Auf Terrassenplatten richtet eine Punkt-Lanze schnell Schaden an: Sie wäscht die Fugen aus, raut die Oberfläche auf und sprengt bei Naturstein die Kanten ab. Bei Keramik und Feinsteinzeug entscheidet der richtige Druck und das passende Reinigungsmittel über das Ergebnis.",
@@ -164,7 +165,7 @@
       "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Gehwege porentief sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
       "eyebrow": "Pflasterreinigung im Havelland",
       "hero_img": "hub-pflaster-vn",
-      "hero_alt": "Pflasterfläche im Havelland — links vor, rechts nach der Reinigung durch Blankstein",
+      "hero_alt": "Bogenpflaster während der Reinigung — eine Seite gereinigt, die andere noch vermoost",
       "h1": "Pflasterreinigung im Havelland —",
       "h1_em": "wieder wie neu",
       "intro": "Einfahrten, Hofflächen und Gehwege aus Pflaster — porentief gereinigt, materialschonend und mit frischer Neuverfugung.",
@@ -195,7 +196,7 @@
           "h": "Gehwege",
           "t": "Wege und Zugänge reinigen wir gleichmäßig — auch verwinkelte Flächen, die mit der Hand-Lanze nur schwer sauber werden.",
           "img": "hub-pflaster-gal3",
-          "alt": "Gereinigter Gehweg aus großen Steinplatten zum Hauseingang"
+          "alt": "Frisch gereinigter Gehweg aus Betonpflaster entlang der Hauswand"
         },
         {
           "h": "Pflasterfugen",

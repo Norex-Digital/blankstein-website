@@ -247,6 +247,50 @@ function gallerySection({ id = '', label = 'Ergebnisse', title, sub, items }) {
 </div></section>`;
 }
 
+// ---------- Echte-Beleg-Bausteine (Fotos/Videos aus echten Auftraegen) ----------
+function videoBlock(file, poster, label, cls = '') {
+  return `<figure class="${cls}"><video class="proof-video-el" preload="none" muted loop playsinline controls poster="/assets/img/${poster}.jpg" aria-label="Video: ${esc(label)}"><source src="/assets/video/${file}.mp4" type="video/mp4">Ihr Browser kann dieses Video nicht abspielen.</video><figcaption>${esc(label)}</figcaption></figure>`;
+}
+function proofVideoBlock(v) { // optionaler Video-Beleg auf Hubs (data/copy/hubs.json -> proof_video)
+  if (!v || !v.file) return '';
+  return `<section class="proofvid-section"><div class="container"><div class="proofvid-inner reveal">
+<div class="proofvid-text"><div class="section-label"><span class="spark"></span>${esc(v.label || 'Echte Arbeit')}</div>
+<h2 class="section-title">${esc(v.title || 'So sieht das in echt aus.')}</h2>
+<p class="section-sub">${esc(v.sub || '')}</p></div>
+${videoBlock(v.file, v.poster, v.caption || '', 'proofvid-media')}
+</div></div></section>`;
+}
+function proofSection() {
+  return `<section class="proof-section" id="ergebnisse"><div class="container">
+<div class="section-head center"><div class="section-label reveal"><span class="spark"></span>Echte Aufträge</div>
+<h2 class="section-title reveal" style="transition-delay:.08s">Unsere Arbeit im Havelland — echt, nicht gestellt.</h2>
+<p class="section-sub reveal" style="transition-delay:.16s">Reinigung mit dem Flächenreiniger, ein echtes Vorher-Nachher und fertige Flächen — alles aus echten Aufträgen. Es kommt laufend mehr dazu.</p></div>
+<div class="proof-grid reveal">
+${videoBlock('reel-einfahrt-vn', 'reel-einfahrt-vn-poster', 'Einfahrt im Zeitraffer — vorne noch vermoost, hinten porentief gereinigt.', 'proof-item proof-feature')}
+<figure class="proof-item proof-vn"><div class="proof-vn-pair">${pic('proof-vn-vorher', { alt: 'Eingangstreppe vor der Reinigung — vermoost und verschmutzt', sizes: '(max-width:560px) 46vw, 240px' })}${pic('proof-vn-nachher', { alt: 'Dieselbe Eingangstreppe nach der Reinigung — sauber', sizes: '(max-width:560px) 46vw, 240px' })}<span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span></div><figcaption>Eingangstreppe — dieselbe Treppe vorher und nachher.</figcaption></figure>
+<figure class="proof-item"><div class="proof-img">${pic('proof-arbeit-1', { alt: 'Mitarbeiter reinigt eine Hoffläche mit dem rotierenden Flächenreiniger', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Mitten in der Arbeit</span>Hof-Reinigung mit dem Flächenreiniger.</figcaption></figure>
+<figure class="proof-item"><div class="proof-img">${pic('proof-ergebnis-1', { alt: 'Frisch gereinigte anthrazitfarbene Pflasterfläche', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Ergebnis</span>Frisch gereinigte Pflasterfläche.</figcaption></figure>
+<figure class="proof-item"><div class="proof-img">${pic('proof-arbeit-2', { alt: 'Reinigung einer Terrasse mit dem Flächenreiniger', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Mitten in der Arbeit</span>Reinigung einer Terrasse.</figcaption></figure>
+<figure class="proof-item"><div class="proof-img">${pic('proof-ergebnis-2', { alt: 'Saubere, neu verfugte Hoffläche aus Betonpflaster', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Ergebnis</span>Saubere Hoffläche, neu verfugt.</figcaption></figure>
+</div>
+<p class="proof-note reveal">Echte Fotos und Videos von unseren Flächen. Vorher-Nachher zeigen wir nur, wo es dieselbe Fläche ist.</p>
+</div></section>`;
+}
+function trustStrip() {
+  return `<section class="trust-strip"><div class="container"><div class="trust-inner reveal">
+<figure class="trust-photo">${pic('trust-team', { alt: 'Blankstein bei der Steinreinigung mit dem Flächenreiniger vor Ort', sizes: '(max-width:760px) 92vw, 320px' })}<figcaption class="trust-photo-cap">Echtes Foto der Inhaber folgt in Kürze</figcaption></figure>
+<div class="trust-body">
+<div class="section-label"><span class="spark"></span>Wer bei Ihnen reinigt</div>
+<h2 class="trust-h">Noah &amp; Maurice aus Falkensee.</h2>
+<p>Hinter Blankstein stehen zwei Leute aus dem Havelland — kein anonymer Vermittler. Wir reinigen selbst, mit eigenem Flächenreiniger, vor Ort in Ihrer Nachbarschaft.</p>
+<ul class="trust-facts">
+<li>${ICON.shield} Gewerbe angemeldet, Sitz in Falkensee</li>
+<li>${ICON.pin} Kurze Wege im Havelland &amp; am westlichen Berliner Rand</li>
+<li>${ICON.camera} Echtes Equipment, echte Arbeit — keine Vermittlung</li>
+</ul>
+</div></div></div></section>`;
+}
+
 // ====================================================================
 // HOME
 // ====================================================================
@@ -283,10 +327,10 @@ function reviewsBlock() { // sichtbare Review-Cards (Empty-State bei 0)
 }
 function home() {
   const SVC_ALT = {
-    steinreinigung: 'Frisch gereinigte anthrazitfarbene Pflasterfläche vor einem Einfamilienhaus im Havelland',
-    terrassenreinigung: 'Gereinigte Naturstein-Terrasse unter einer Holzpergola im Havelland',
-    pflasterreinigung: 'Gereinigte rote Klinker-Einfahrt vor einem Wohnhaus im Havelland',
-    steinversiegelung: 'Versiegelte helle Steinfläche mit Schutz vor erneuter Verschmutzung'
+    steinreinigung: 'Frisch gereinigte Pflaster-Einfahrt vor einem Wohnhaus im Havelland',
+    terrassenreinigung: 'Gereinigte Terrasse, beispielhafte Darstellung',
+    pflasterreinigung: 'Frisch gereinigte helle Pflaster-Hoffläche im Havelland',
+    steinversiegelung: 'Versiegelte Steinfläche mit Abperleffekt, beispielhafte Darstellung'
   };
   const GAL = [
     ['gal-weg', 'Frisch gereinigter Plattenweg entlang einer Gartenhecke im Havelland'],
@@ -324,10 +368,10 @@ ${reviewStars()}<div class="hero-anchor reveal" style="transition-delay:.32s">
 </div>
 <div class="hero-visual reveal" style="transition-delay:.2s">
 <div class="hero-slider">
-<span class="hero-chip"><span class="spark"></span>Ergebnis — Regler ziehen</span>
+<span class="hero-chip"><span class="spark"></span>Beispiel — Regler ziehen</span>
 <div class="comparison" id="comparison" role="slider" tabindex="0" aria-label="Vorher-Nachher-Vergleich — mit den Pfeiltasten verschieben" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-${pic('demo-vorher', { cls: 'comparison-before', alt: 'Pflasterfläche vor der Reinigung — mit Moos und Verschmutzung', sizes: '(max-width:980px) 92vw, 480px', lcp: true })}
-${pic('demo-nachher', { cls: 'comparison-after', alt: 'Dieselbe Pflasterfläche nach der Reinigung durch Blankstein', sizes: '(max-width:980px) 92vw, 480px' })}
+${pic('demo-vorher', { cls: 'comparison-before', alt: 'Pflasterfläche vor der Reinigung, beispielhafte Darstellung', sizes: '(max-width:980px) 92vw, 480px', lcp: true })}
+${pic('demo-nachher', { cls: 'comparison-after', alt: 'Pflasterfläche nach der Reinigung, beispielhafte Darstellung', sizes: '(max-width:980px) 92vw, 480px' })}
 <span class="comparison-label label-before">Vorher</span>
 <span class="comparison-label label-after">Nachher</span>
 <div class="comparison-handle" id="comparison-handle"></div>
@@ -348,7 +392,9 @@ ${uspSection({ title: 'Materialschonend — weil die Methode stimmt.', sub: 'Nic
 <div class="svc-grid">${services.map((s, i) => { const hubUrl = hubCopy[s.slug] ? `/${s.slug}/` : '/#preise'; return `<a class="svc-card reveal" href="${hubUrl}" style="transition-delay:${(i % 2) * .08}s"><div class="svc-img">${pic('svc-' + s.slug, { alt: SVC_ALT[s.slug] || (s.name + ' im Havelland'), sizes: '(max-width:980px) 92vw, 560px' })}</div><div class="svc-body"><span class="no">0${i + 1}</span><h3>${esc(s.name)}</h3><p>${esc((s.sektionen || []).slice(0, 4).join(' · '))}</p><span class="go">${hubCopy[s.slug] ? 'Mehr erfahren' : 'Richtpreis berechnen'} →</span></div></a>`; }).join('')}</div>
 </div></section>
 
-${gallerySection({ id: 'ergebnisse', title: 'So sehen unsere Flächen danach aus', sub: 'Pflaster, Terrasse, Einfahrt — porentief gereinigt, neu verfugt und auf Wunsch versiegelt.', items: GAL })}
+${proofSection()}
+
+${trustStrip()}
 
 <div class="container guarantee"><div class="guarantee-card reveal"><span class="guarantee-icon">${ICON.shield}</span><span class="guarantee-text"><strong>Bleibt Moos oder Algen zurück, kommen wir kostenlos nach.</strong><span>Der Preis aus dem Angebot ist der Endpreis — kein Aufpreis, keine Nachkalkulation.</span></span></div></div>
 
@@ -419,6 +465,8 @@ ${(c.schaden_body || []).map((p, i) => `<p class="edu-p reveal" style="transitio
 </div>
 <figure class="edu-visual reveal">${pic(eduImg, { alt: eduAlt, sizes: '(max-width:900px) 92vw, 420px' })}<figcaption>${esc(eduCaption)} <span class="tag">${esc(proof.vorher_nachher.platzhalter_label)}</span></figcaption></figure>
 </div></div></section>
+
+${proofVideoBlock(c.proof_video)}
 
 ${uspSection({ title: c.usp_title, sub: c.usp_sub, items: c.usp_items })}
 
@@ -897,7 +945,7 @@ function start(c) {
   const url = '/start/';
   const wa = c.wa_text || WA_DEFAULT;
   const W3F = isReal(config.web3forms_key);
-  const heroImg = (c.hero_img && IMG[c.hero_img]) ? `<div class="start-hero-media reveal" style="transition-delay:.16s">${pic(c.hero_img, { alt: c.hero_alt || 'Ergebnis von Blankstein', sizes: '(max-width:760px) 92vw, 520px', lcp: true })}</div>` : '';
+  const heroImg = (c.hero_img && IMG[c.hero_img]) ? `<div class="start-hero-media reveal" style="transition-delay:.16s">${pic(c.hero_img, { alt: c.hero_alt || 'Steinreinigung im Havelland durch Blankstein', sizes: '(max-width:760px) 92vw, 520px', lcp: true })}</div>` : '';
   const steps = (c.steps || []).map((s, i) => `<div class="start-step reveal" style="transition-delay:${i * .08}s"><div class="start-step-n">${esc(s.n)}</div><div class="start-step-b"><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p></div></div>`).join('');
   const trust = (c.trust || []).map((t, i) => `<div class="start-trust-card reveal" style="transition-delay:${(i % 2) * .08}s"><h3>${esc(t.t)}</h3><p>${esc(t.d)}</p></div>`).join('');
   // Friktion senken: Flaechentyp-Chips -> WhatsApp mit spezifischem Text (1 Tap = qualifizierter Lead)

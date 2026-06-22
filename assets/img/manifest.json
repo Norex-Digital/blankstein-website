@@ -54,8 +54,8 @@
   "fb_w": 1200
  },
  "svc-steinreinigung": {
-  "w": 864,
-  "h": 1184,
+  "w": 946,
+  "h": 2048,
   "widths": [
    480,
    768,
@@ -78,8 +78,8 @@
   "fb_w": 768
  },
  "svc-pflasterreinigung": {
-  "w": 864,
-  "h": 1184,
+  "w": 946,
+  "h": 2048,
   "widths": [
    480,
    768,
@@ -186,8 +186,8 @@
   "fb_w": 768
  },
  "hub-steinreinigung-vn": {
-  "w": 1024,
-  "h": 1024,
+  "w": 1536,
+  "h": 2048,
   "widths": [
    512,
    768,
@@ -246,8 +246,8 @@
   "fb_w": 600
  },
  "hub-steinreinigung-gal5": {
-  "w": 864,
-  "h": 1184,
+  "w": 1536,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -330,8 +330,8 @@
   "fb_w": 600
  },
  "hub-pflaster-gal2": {
-  "w": 864,
-  "h": 1184,
+  "w": 946,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -342,8 +342,8 @@
   "fb_w": 600
  },
  "hub-pflaster-gal3": {
-  "w": 864,
-  "h": 1184,
+  "w": 946,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -354,8 +354,8 @@
   "fb_w": 600
  },
  "hub-pflaster-gal5": {
-  "w": 864,
-  "h": 1184,
+  "w": 1536,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -414,8 +414,8 @@
   "fb_w": 600
  },
  "hub-steinreinigung-einfahrt": {
-  "w": 864,
-  "h": 1184,
+  "w": 946,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -426,8 +426,8 @@
   "fb_w": 600
  },
  "hub-steinreinigung-wegetreppen": {
-  "w": 864,
-  "h": 1184,
+  "w": 1536,
+  "h": 2048,
   "widths": [
    400,
    600,
@@ -450,8 +450,8 @@
   "fb_w": 600
  },
  "hub-pflaster-vn": {
-  "w": 1024,
-  "h": 1024,
+  "w": 946,
+  "h": 2048,
   "widths": [
    512,
    768,
@@ -748,5 +748,89 @@
   "avif": true,
   "fb_ext": "jpg",
   "fb_w": 960
+ },
+ "proof-ergebnis-1": {
+  "w": 1536,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "proof-arbeit-1": {
+  "w": 1536,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "proof-vn-vorher": {
+  "w": 946,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "proof-vn-nachher": {
+  "w": 946,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "proof-ergebnis-2": {
+  "w": 1536,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "proof-arbeit-2": {
+  "w": 1536,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "trust-team": {
+  "w": 1152,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
  }
 }
