@@ -643,3 +643,9 @@ html.has-tilt .svc-card.is-tilting .svc-img img{transform:scale(1.04) translateZ
 @media(max-width:900px){.proof-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.trust-inner,.proofvid-inner{grid-template-columns:1fr}.trust-photo{max-width:420px}.proofvid-media{order:-1}}
 @media(max-width:560px){.proof-grid{grid-template-columns:1fr}}
+
+/* Proof-V/N: interaktiver Vergleichs-Slider in der Beleg-Kachel (statt buggy Side-by-Side) */
+.proof-vn .comparison{aspect-ratio:3/4;border-radius:0;background:var(--navy)}
+.proof-vn .comparison-label{bottom:12px;font-size:.625rem;padding:4px 10px}
+.proof-vn .comparison-handle::before{width:36px;height:36px}
+.proof-vn .comparison-handle::after{width:15px;height:15px}
