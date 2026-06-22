@@ -45,10 +45,31 @@
       "Neuverfugung: Der GaLaBau-Fugensand zum Auffüllen der Fugen ist im Richtpreis bereits enthalten, nicht extra."
     ]
   },
+  "vergleich": {
+    "title": "Selbst machen — oder machen lassen?",
+    "intro": "Ein Baumarkt-Hochdruckreiniger kostet weniger als unsere Reinigung. Was dabei oft untergeht: die Zeit, das Material und das Risiko für Ihren Stein. Ehrlich gegenübergestellt.",
+    "diy_title": "Mit dem Baumarkt-Gerät selbst",
+    "diy": [
+      "Gerät leihen oder kaufen, dazu Fugensand und Reinigungsmittel besorgen",
+      "Ein halber bis ganzer Tag Arbeit — bücken, schleppen, Bahn für Bahn",
+      "Punktstrahl statt Flächenreiniger: schnell ausgewaschene Fugen, Streifen und aufgerauter Stein",
+      "Die Fugen müssen Sie anschließend selbst neu verfüllen, sonst sackt das Pflaster nach",
+      "Kein Schutz davor, dass Moos und Grünbelag schnell wiederkommen"
+    ],
+    "pro_title": "Mit Blankstein",
+    "pro": [
+      "Fester Termin — wir bringen Gerät, Wasser und Material mit",
+      "Rotierender Flächenreiniger: gleichmäßig sauber, ohne Streifen und ohne ausgewaschene Fugen",
+      "Neuverfugung mit GaLaBau-Fugensand ist im Richtpreis schon enthalten",
+      "Auf Wunsch Nano-Imprägnierung, damit die Fläche länger sauber bleibt",
+      "Endpreis-Zusage und kostenlose Nacharbeit, falls irgendwo Belag zurückbleibt"
+    ],
+    "footer": "Eine 40-m²-Fläche liegt bei rund 280 € — fertig gereinigt, neu verfugt und ohne Risiko für den Stein. Ohne Ihren Wochenend-Tag, ohne Gerätemiete, ohne Nacharbeit auf eigene Faust."
+  },
   "richtpreis_erklaerung": {
-    "title": "Warum wir online einen Richtpreis statt eines fest zugesagten Betrags nennen",
+    "title": "Sie zahlen nie mehr als angesagt.",
     "body": [
-      "Online bekommen Sie von uns einen ehrlichen Richtpreis, keinen vorab fest zugesagten Betrag — und das hat einen einfachen Grund. Was eine Fläche wirklich kostet, hängt von ihrem Zustand ab: zwei gleich große Terrassen können sich um das Doppelte an Aufwand unterscheiden, wenn die eine nur leichten Grünbelag hat und die andere seit Jahren nicht gereinigt wurde. Größe, Verschmutzungsgrad, Zugänglichkeit und Belagart bestimmen, wie viele Durchgänge wir mit dem rotierenden Flächenreiniger fahren und wie viel Fugensand am Ende hineingeht. Einen verbindlichen Preis allein aus der Ferne zu nennen, ohne die Fläche gesehen zu haben, wäre nicht seriös — entweder wir würden zu hoch ansetzen, oder Sie müssten am Ende nachzahlen.",
+      "Fair heißt für uns: Der Preis, den wir Ihnen nach Foto oder Besichtigung nennen, ist der Endpreis — kein Aufschlag hinterher, keine Nachkalkulation. Online bekommen Sie deshalb einen ehrlichen Richtpreis, keinen aus der Ferne fest zugesagten Betrag — und das hat einen einfachen Grund. Was eine Fläche wirklich kostet, hängt von ihrem Zustand ab: zwei gleich große Terrassen können sich um das Doppelte an Aufwand unterscheiden, wenn die eine nur leichten Grünbelag hat und die andere seit Jahren nicht gereinigt wurde. Größe, Verschmutzungsgrad, Zugänglichkeit und Belagart bestimmen, wie viele Durchgänge wir mit dem rotierenden Flächenreiniger fahren und wie viel Fugensand am Ende hineingeht. Einen verbindlichen Preis allein aus der Ferne zu nennen, ohne die Fläche gesehen zu haben, wäre nicht seriös — entweder wir würden zu hoch ansetzen, oder Sie müssten am Ende nachzahlen.",
       "Deshalb läuft es bei uns anders herum: Sie schicken uns ein Foto und die ungefähren Maße per WhatsApp, und wir rechnen Ihnen den Preis aus. Dieser gilt für die angegebenen Maße und den auf dem Foto erkennbaren Zustand. Sind die Maße unklar oder die Fläche schwer einzuschätzen, kommen wir kostenlos vorbei und messen vor Ort — dann ist der bei der Besichtigung genannte Preis der verbindliche."
     ]
   },
@@ -70,16 +91,8 @@
       "a": "Nein. Es gibt keinen Mindestauftragswert, und innerhalb unseres Servicegebiets fallen keine Fahrtkosten an. Sie zahlen den Richtpreis pro m² für die gereinigte Fläche, sonst nichts. Unser Gebiet umfasst das Havelland und den westlichen Berliner Rand, unter anderem Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow."
     },
     {
-      "q": "Warum bekomme ich online einen Richtpreis statt eines festen Betrags?",
-      "a": "Weil der Aufwand vom Zustand der Fläche abhängt, nicht nur von der Größe. Eine stark vermooste Terrasse braucht mehr Durchgänge als eine leicht verschmutzte gleicher Größe. Einen verbindlichen Betrag allein aus der Ferne zu nennen wäre nicht seriös. Deshalb rechnen wir Ihren Preis nach einem WhatsApp-Foto mit Maßen aus — er gilt für die angegebenen Maße und den erkennbaren Zustand. Bei abweichenden Maßen messen wir kostenlos vor Ort."
-    },
-    {
       "q": "Ist die Neuverfugung im Preis enthalten?",
       "a": "Ja. Der Richtpreis von 7 €/m² enthält das Auffüllen der Fugen mit GaLaBau-Fugensand bereits — das ist kein Extra, das später dazukommt. Nach dem Reinigen und Trocknen verfugen wir die Fläche neu und blasen den überschüssigen Sand ab. Nur die Nano-Imprägnierung ist optional und macht aus 7 €/m² den Satz von 8 €/m²."
-    },
-    {
-      "q": "Was bringt die Nano-Imprägnierung für 1 € mehr pro m²?",
-      "a": "Die Nano-Imprägnierung ist der letzte Arbeitsschritt und versiegelt die gereinigte Fläche. Sie verzögert, dass sich Schmutz, Wasser und Grünbelag wieder festsetzen, sodass die Fläche länger sauber bleibt und die nächste Reinigung leichter fällt. Für diesen Schutz steigt der Richtpreis von 7 €/m² auf 8 €/m². Ob sie sich für Ihre Fläche lohnt, besprechen wir beim Angebot."
     },
     {
       "q": "Bleibt es bei dem genannten Preis?",

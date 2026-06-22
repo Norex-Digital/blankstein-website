@@ -221,21 +221,22 @@ function processSection({ id = 'ablauf', title, sub }) {
 <div class="process-steps">${PROZ.map(([n, t, d, hl]) => `<div class="process-step reveal"><div class="step-number">${n}</div><div class="step-title">${t}</div><p class="step-text">${d}</p><span class="step-highlight">${hl}</span></div>`).join('')}</div>
 </div></section>`;
 }
-function calcSection({ title = 'Was kostet Ihre Fläche?', sub = 'Fläche schätzen, Imprägnierung wählen — Sie sehen sofort den Rahmen. Ohne Kontaktdaten, ohne Verpflichtung.' } = {}) {
+function calcSection({ title = 'Was kostet Ihre Fläche?', sub = 'Fläche schätzen, Imprägnierung wählen — Sie sehen sofort den Rahmen. Ohne Kontaktdaten, ohne Verpflichtung.', range = false } = {}) {
   const exQm = 30, exBasis = exQm * P.satz_basis, exImpr = exQm * P.satz_impraegnierung;
+  const exLo = Math.round(exBasis * 0.88), exHi = Math.round(exBasis * 1.12);
   return `<section class="calc-section" id="preise"><div class="container">
 <div class="section-head center"><div class="section-label"><span class="spark"></span>Richtpreis-Rechner</div>
 <h2 class="section-title">${esc(title)}</h2>
 <p class="section-sub">${esc(sub)}</p></div>
-<div class="calc-card reveal" id="calc" data-base="${P.satz_basis}" data-impr="${P.satz_impraegnierung}">
+<div class="calc-card reveal" id="calc" data-base="${P.satz_basis}" data-impr="${P.satz_impraegnierung}"${range ? ' data-range="1"' : ''}>
 <div class="calc-row"><label for="calc-qm">Fläche</label><span class="calc-qm"><span id="calc-qm-val">${exQm}</span> m²</span></div>
 <input type="range" min="10" max="200" step="5" value="${exQm}" class="calc-slider" id="calc-slider" aria-label="Fläche in Quadratmetern">
 <div class="calc-scale"><span>10 m²</span><span>200 m²</span></div>
 <div class="calc-toggle"><div><span class="lbl">Mit Nano-Imprägnierung</span><div class="sub">Langzeit-Schutz, +${P.satz_impraegnierung - P.satz_basis} €/m²</div></div>
 <label class="switch"><input type="checkbox" id="calc-impr" aria-label="Mit Nano-Imprägnierung"><span class="track"></span></label></div>
-<div class="calc-result"><div class="price"><span id="calc-price">${exBasis}</span> €<small id="calc-detail">${exQm} m² × ${P.satz_basis} €/m² · inkl. Reinigung &amp; Neuverfugung</small></div>
-<a href="${waHref(WA_DEFAULT)}" class="btn btn-primary" target="_blank" rel="noopener">${ICON.mail} Angebot per Foto</a></div>
-<p class="calc-note"><strong>Unverbindlicher Richtpreis.</strong> Das verbindliche Angebot erstellen wir nach Fotos und Maßen per WhatsApp oder bei einer kostenlosen Besichtigung. Beispiel: ${exQm} m² ≈ ${exBasis} € (Basis) bzw. ${exImpr} € (mit Imprägnierung). Alle Preise sind Endpreise.</p>
+<div class="calc-result"><div class="price"><span id="calc-price">${range ? `ca. ${exLo}–${exHi}` : exBasis}</span> €<small id="calc-detail">${range ? 'Spanne je nach Zustand · genauer Preis nach 2 Fotos' : `${exQm} m² × ${P.satz_basis} €/m² · inkl. Reinigung &amp; Neuverfugung`}</small></div>
+<a href="${waHref(WA_DEFAULT)}" class="btn btn-primary" target="_blank" rel="noopener">${ICON.mail} ${range ? 'Genauen Preis per Foto' : 'Angebot per Foto'}</a></div>
+<p class="calc-note">${range ? '<strong>Unverbindliche Spanne.</strong> Der genaue Endpreis hängt vom Zustand der Fläche ab — schicken Sie ein, zwei Fotos und die Maße, dann rechnen wir ihn exakt aus, meist in rund 30 Minuten. Alle Preise sind Endpreise.' : `<strong>Unverbindlicher Richtpreis.</strong> Das verbindliche Angebot erstellen wir nach Fotos und Maßen per WhatsApp oder bei einer kostenlosen Besichtigung. Beispiel: ${exQm} m² ≈ ${exBasis} € (Basis) bzw. ${exImpr} € (mit Imprägnierung). Alle Preise sind Endpreise.`}</p>
 </div></div></section>`;
 }
 function gallerySection({ id = '', label = 'Ergebnisse', title, sub, items }) {
@@ -432,7 +433,7 @@ ${faqBlock(faqs)}`;
 // Vorher/Nachher-Slider-JS
 const sliderJS = `<script>(function(){document.querySelectorAll('.comparison').forEach(function(c){var a=c.querySelector('.comparison-after'),h=c.querySelector('.comparison-handle');if(!a||!h)return;var d=false,cur=50;function set(p){p=Math.min(Math.max(p,2),98);cur=p;a.style.clipPath='inset(0 '+(100-p)+'% 0 0)';h.style.left=p+'%';c.setAttribute('aria-valuenow',Math.round(p))}function px(x){var r=c.getBoundingClientRect();return((x-r.left)/r.width)*100}c.addEventListener('mousedown',function(e){d=true;set(px(e.clientX));e.preventDefault()});addEventListener('mousemove',function(e){if(d)set(px(e.clientX))});addEventListener('mouseup',function(){d=false});c.addEventListener('touchstart',function(e){d=true;set(px(e.touches[0].clientX))},{passive:true});c.addEventListener('touchmove',function(e){if(d){set(px(e.touches[0].clientX));e.preventDefault()}},{passive:false});c.addEventListener('touchend',function(){d=false});c.addEventListener('keydown',function(e){var k=e.key;if(k==='ArrowLeft'||k==='ArrowDown'){set(cur-4);e.preventDefault()}else if(k==='ArrowRight'||k==='ArrowUp'){set(cur+4);e.preventDefault()}else if(k==='Home'){set(0);e.preventDefault()}else if(k==='End'){set(100);e.preventDefault()}});set(50)})})();</script>`;
 // m²-Rechner-JS
-const calcJS = `<script>(function(){var box=document.getElementById('calc');if(!box)return;var b=+box.dataset.base,im=+box.dataset.impr,sl=document.getElementById('calc-slider'),qv=document.getElementById('calc-qm-val'),pr=document.getElementById('calc-price'),dt=document.getElementById('calc-detail'),cb=document.getElementById('calc-impr');function upd(){var q=+sl.value,rate=cb.checked?im:b;qv.textContent=q;pr.textContent=q*rate;dt.innerHTML=q+' m² × '+rate+' €/m² · '+(cb.checked?'inkl. Reinigung, Neuverfugung & Imprägnierung':'inkl. Reinigung & Neuverfugung');var pct=(q-10)/(200-10)*100;sl.style.background='linear-gradient(to right,var(--blue) 0%,var(--blue) '+pct+'%,var(--stone) '+pct+'%,var(--stone) 100%)'}sl.addEventListener('input',upd);cb.addEventListener('change',upd);upd()})();</script>`;
+const calcJS = `<script>(function(){var box=document.getElementById('calc');if(!box)return;var b=+box.dataset.base,im=+box.dataset.impr,sl=document.getElementById('calc-slider'),qv=document.getElementById('calc-qm-val'),pr=document.getElementById('calc-price'),dt=document.getElementById('calc-detail'),cb=document.getElementById('calc-impr');function upd(){var q=+sl.value,rate=cb.checked?im:b;qv.textContent=q;if(box.dataset.range){pr.textContent='ca. '+Math.round(q*rate*0.88)+'–'+Math.round(q*rate*1.12);dt.textContent='Spanne je nach Zustand · genauer Preis nach 2 Fotos';}else{pr.textContent=q*rate;dt.innerHTML=q+' m² × '+rate+' €/m² · '+(cb.checked?'inkl. Reinigung, Neuverfugung & Imprägnierung':'inkl. Reinigung & Neuverfugung');}var pct=(q-10)/(200-10)*100;sl.style.background='linear-gradient(to right,var(--blue) 0%,var(--blue) '+pct+'%,var(--stone) '+pct+'%,var(--stone) 100%)'}sl.addEventListener('input',upd);cb.addEventListener('change',upd);upd()})();</script>`;
 
 // ====================================================================
 // MONEY-HUB (Service-Pillar — Template Architektur §2; Copy aus data/copy/hubs.json)
@@ -757,16 +758,39 @@ function preise(p) {
   const kfHtml = (kf.items && kf.items.length) ? `<div class="rg-list"><p class="rg-list-title">${esc(kf.title || 'Was den Preis beeinflusst')}</p><ul>${kf.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>` : '';
   const re = p.richtpreis_erklaerung || {};
   const cv = p.conversion || {};
+  const v = p.vergleich || {};
+  const vnHtml = `<section class="preise-proof"><div class="container"><div class="preise-proof-inner reveal">
+<figure class="proof-vn"><div class="comparison" role="slider" tabindex="0" aria-label="Vorher-Nachher Eingangstreppe — mit den Pfeiltasten oder dem Regler verschieben" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">${pic('proof-vn-vorher', { cls: 'comparison-before', alt: 'Eingangstreppe vor der Reinigung — vermoost und verschmutzt', sizes: '(max-width:860px) 92vw, 460px' })}${pic('proof-vn-nachher', { cls: 'comparison-after', alt: 'Dieselbe Eingangstreppe nach der Reinigung — sauber', sizes: '(max-width:860px) 92vw, 460px' })}<span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span><div class="comparison-handle"></div></div><figcaption>Echte Eingangstreppe aus dem Havelland — Regler ziehen.</figcaption></figure>
+<div class="preise-proof-text"><div class="section-label"><span class="spark"></span>Echtes Ergebnis</div>
+<h2 class="section-title">Das bekommen Sie für Ihren Richtpreis.</h2>
+<p class="section-sub">Kein Stock-Foto, kein gestelltes Vorher-Nachher — eine echte Fläche aus unserem Havelland-Alltag.</p>
+<ul class="trust-facts"><li>${ICON.grid} Reinigung und Neuverfugung im Richtpreis</li><li>${ICON.shield} Endpreis-Zusage, Nacharbeit kostenlos</li><li>${ICON.pin} Havelland und westlicher Berliner Rand</li></ul></div>
+</div></div></section>`;
+  const vergleichHtml = (v.diy && v.pro) ? `<section class="vergleich-section"><div class="container">
+<div class="section-head center"><div class="section-label reveal"><span class="spark"></span>Selbst oder Profi</div>
+<h2 class="section-title reveal" style="transition-delay:.08s">${esc(v.title)}</h2>
+<p class="section-sub reveal" style="transition-delay:.16s">${esc(v.intro)}</p></div>
+<div class="vergleich-grid reveal">
+<div class="vergleich-col vergleich-diy"><h3>${esc(v.diy_title)}</h3><ul>${v.diy.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>
+<div class="vergleich-col vergleich-pro"><h3><span class="vergleich-ic">${ICON.shield}</span>${esc(v.pro_title)}</h3><ul>${v.pro.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>
+</div>
+${v.footer ? `<p class="vergleich-footer reveal">${esc(v.footer)}</p>` : ''}
+</div></section>` : '';
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Preise</div>
 <section class="page-hero"><div class="container"><div class="eyebrow">Preise</div>
 <h1>${esc(p.h1)}</h1>
 <p class="lead">${esc(p.lead)}</p>
-<div class="hero-actions" style="margin-top:24px"><a href="${waHref(waMsg)}" class="btn btn-primary" target="_blank" rel="noopener">${ICON.camera} Angebot per Foto</a><a href="/kontakt/#anfrage" class="btn btn-outline">${ICON.calendar} Kostenlose Besichtigung</a></div>
+<div class="hero-actions" style="margin-top:24px"><a href="${waHref(waMsg)}" class="btn btn-primary" target="_blank" rel="noopener">${ICON.camera} Angebot per Foto</a></div>
+<p class="hero-alt-link"><a href="/kontakt/#anfrage">oder kostenlose Vor-Ort-Besichtigung →</a></p>
 </div></section>
-${calcSection({ title: 'Rechnen Sie Ihren Richtpreis aus', sub: 'Fläche schätzen, Imprägnierung wählen — Sie sehen sofort den Rahmen. Ohne Kontaktdaten, ohne Verpflichtung.' })}
+${vnHtml}
+${vergleichHtml}
 <section class="rg-body"><div class="container"><div class="rg-col">
 <section class="rg-section"><h2>Preise im Überblick</h2>${tableHtml}${kfHtml}</section>
 <section class="rg-section"><h2>${esc(re.title || 'Warum Richtpreis statt fester Preis')}</h2>${(re.body || []).map(x => `<p>${esc(x)}</p>`).join('')}</section>
+</div></div></section>
+${calcSection({ title: 'Rechnen Sie Ihren Richtpreis aus', sub: 'Fläche schätzen, Imprägnierung wählen — Sie sehen sofort die Spanne. Den exakten Endpreis nennen wir nach zwei Fotos.', range: true })}
+<section class="rg-body"><div class="container"><div class="rg-col">
 <section class="rg-section"><h2>${esc(cv.title || 'So bekommen Sie Ihren Preis')}</h2>${(cv.body || []).map(x => `<p>${esc(x)}</p>`).join('')}</section>
 <aside class="rg-protip"><div class="rg-protip-icon">${ICON.shield}</div><div class="rg-protip-body"><span class="rg-protip-label">Endpreis-Zusage</span><h2>${esc(p.cta_title || 'Foto schicken, Preis erhalten')}</h2><p>${esc(p.garantie_text || '')}</p><div class="rg-protip-actions"><a href="${waHref(waMsg)}" class="btn btn-primary" target="_blank" rel="noopener">${ICON.camera} Angebot per Foto</a><a href="/pflasterreinigung/" class="rg-protip-link">Pflasterreinigung ansehen →</a></div></div></aside>
 <aside class="rg-related"><h2>Weiterlesen</h2><ul><li><a href="/ratgeber/was-kostet-steinreinigung/">Was kostet Steinreinigung? Ratgeber →</a></li><li><a href="/steinreinigung/">Steinreinigung — alle Flächen →</a></li><li><a href="/servicegebiet/">Unser Servicegebiet →</a></li></ul></aside>
