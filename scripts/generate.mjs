@@ -248,30 +248,39 @@ function gallerySection({ id = '', label = 'Ergebnisse', title, sub, items }) {
 }
 
 // ---------- Echte-Beleg-Bausteine (Fotos/Videos aus echten Auftraegen) ----------
-function videoBlock(file, poster, label, cls = '') {
-  return `<figure class="${cls}"><video class="proof-video-el" preload="none" muted loop playsinline controls poster="/assets/img/${poster}.jpg" aria-label="Video: ${esc(label)}"><source src="/assets/video/${file}.mp4" type="video/mp4">Ihr Browser kann dieses Video nicht abspielen.</video><figcaption>${esc(label)}</figcaption></figure>`;
+function videoEl(file, poster, label) {
+  return `<video class="proof-video-el" preload="none" muted loop playsinline controls poster="/assets/img/${poster}.jpg" aria-label="Video: ${esc(label)}"><source src="/assets/video/${file}.mp4" type="video/mp4">Ihr Browser kann dieses Video nicht abspielen.</video>`;
 }
 function proofVideoBlock(v) { // optionaler Video-Beleg auf Hubs (data/copy/hubs.json -> proof_video)
   if (!v || !v.file) return '';
-  return `<section class="proofvid-section"><div class="container"><div class="proofvid-inner reveal">
-<div class="proofvid-text"><div class="section-label"><span class="spark"></span>${esc(v.label || 'Echte Arbeit')}</div>
+  return `<section class="proofvid-section"><div class="container"><div class="proofvid-card reveal">
+<div class="proofvid-text">
+<div class="section-label"><span class="spark"></span>${esc(v.label || 'Echte Arbeit')}</div>
 <h2 class="section-title">${esc(v.title || 'So sieht das in echt aus.')}</h2>
-<p class="section-sub">${esc(v.sub || '')}</p></div>
-${videoBlock(v.file, v.poster, v.caption || '', 'proofvid-media')}
+<p class="section-sub">${esc(v.sub || '')}</p>
+<ul class="proofvid-points">
+<li>${ICON.spray} Rotierender Flächenreiniger statt Punktstrahl</li>
+<li>${ICON.grid} Gleichmäßig sauber, ohne ausgewaschene Fugen</li>
+<li>${ICON.shield} Echtes Equipment, echtes Ergebnis — kein Stock-Material</li>
+</ul>
+</div>
+<figure class="proofvid-phone"><div class="proofvid-frame">${videoEl(v.file, v.poster, v.caption || v.title || '')}</div>${v.caption ? `<figcaption>${esc(v.caption)}</figcaption>` : ''}</figure>
 </div></div></section>`;
 }
 function proofSection() {
   return `<section class="proof-section" id="ergebnisse"><div class="container">
-<div class="section-head center"><div class="section-label reveal"><span class="spark"></span>Echte Aufträge</div>
-<h2 class="section-title reveal" style="transition-delay:.08s">Unsere Arbeit im Havelland — echt, nicht gestellt.</h2>
-<p class="section-sub reveal" style="transition-delay:.16s">Reinigung mit dem Flächenreiniger, ein echtes Vorher-Nachher und fertige Flächen — alles aus echten Aufträgen. Es kommt laufend mehr dazu.</p></div>
-<div class="proof-grid reveal">
-${videoBlock('reel-einfahrt-vn', 'reel-einfahrt-vn-poster', 'Einfahrt im Zeitraffer — vorne noch vermoost, hinten porentief gereinigt.', 'proof-item proof-feature')}
-<figure class="proof-item proof-vn"><div class="comparison" role="slider" tabindex="0" aria-label="Vorher-Nachher Eingangstreppe — mit den Pfeiltasten oder dem Regler verschieben" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">${pic('proof-vn-vorher', { cls: 'comparison-before', alt: 'Eingangstreppe vor der Reinigung — vermoost und verschmutzt', sizes: '(max-width:560px) 92vw, 300px' })}${pic('proof-vn-nachher', { cls: 'comparison-after', alt: 'Dieselbe Eingangstreppe nach der Reinigung — sauber', sizes: '(max-width:560px) 92vw, 300px' })}<span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span><div class="comparison-handle"></div></div><figcaption>Eingangstreppe — Regler ziehen: dieselbe Treppe vorher und nachher.</figcaption></figure>
-<figure class="proof-item"><div class="proof-img">${pic('proof-arbeit-1', { alt: 'Mitarbeiter reinigt eine Hoffläche mit dem rotierenden Flächenreiniger', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Mitten in der Arbeit</span>Hof-Reinigung mit dem Flächenreiniger.</figcaption></figure>
-<figure class="proof-item"><div class="proof-img">${pic('proof-ergebnis-1', { alt: 'Frisch gereinigte anthrazitfarbene Pflasterfläche', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Ergebnis</span>Frisch gereinigte Pflasterfläche.</figcaption></figure>
-<figure class="proof-item"><div class="proof-img">${pic('proof-arbeit-2', { alt: 'Reinigung einer Terrasse mit dem Flächenreiniger', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Mitten in der Arbeit</span>Reinigung einer Terrasse.</figcaption></figure>
-<figure class="proof-item"><div class="proof-img">${pic('proof-ergebnis-2', { alt: 'Saubere, neu verfugte Hoffläche aus Betonpflaster', sizes: '(max-width:560px) 92vw, 300px' })}</div><figcaption><span class="proof-tag">Ergebnis</span>Saubere Hoffläche, neu verfugt.</figcaption></figure>
+<div class="proof-head reveal"><div class="section-label"><span class="spark"></span>Echte Aufträge</div>
+<h2 class="section-title">Unsere Arbeit im Havelland.</h2>
+<p class="section-sub">Echte Flächen, echtes Equipment, echtes Vorher-Nachher — nichts gestellt, nichts geliehen. Ziehen Sie am Regler. Es kommt laufend mehr dazu.</p></div>
+<div class="proof-feature reveal">
+<figure class="proof-vn"><div class="comparison" role="slider" tabindex="0" aria-label="Vorher-Nachher Eingangstreppe — mit den Pfeiltasten oder dem Regler verschieben" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">${pic('proof-vn-vorher', { cls: 'comparison-before', alt: 'Eingangstreppe vor der Reinigung — vermoost und verschmutzt', sizes: '(max-width:860px) 92vw, 540px' })}${pic('proof-vn-nachher', { cls: 'comparison-after', alt: 'Dieselbe Eingangstreppe nach der Reinigung — sauber', sizes: '(max-width:860px) 92vw, 540px' })}<span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span><div class="comparison-handle"></div></div><figcaption>Eingangstreppe — dieselbe Treppe vorher und nachher. Regler ziehen.</figcaption></figure>
+<figure class="proof-vid">${videoEl('reel-einfahrt-vn', 'reel-einfahrt-vn-poster', 'Einfahrt im Zeitraffer — vorne vermoost, hinten gereinigt')}<span class="proof-vid-badge">${ICON.camera} Echtes Video</span><figcaption><span class="proof-tag proof-tag-cyan">Vorher / Nachher</span>Wabenpflaster-Einfahrt im Zeitraffer — vorne noch vermoost, hinten porentief gereinigt.</figcaption></figure>
+</div>
+<div class="proof-strip reveal">
+<figure class="proof-cell">${pic('proof-arbeit-1', { alt: 'Mitarbeiter reinigt eine Hoffläche mit dem rotierenden Flächenreiniger', sizes: '(max-width:480px) 92vw, (max-width:860px) 46vw, 280px' })}<figcaption><span class="proof-tag">Mitten in der Arbeit</span>Hof-Reinigung mit dem Flächenreiniger.</figcaption></figure>
+<figure class="proof-cell">${pic('proof-ergebnis-1', { alt: 'Frisch gereinigte anthrazitfarbene Pflasterfläche', sizes: '(max-width:480px) 92vw, (max-width:860px) 46vw, 280px' })}<figcaption><span class="proof-tag">Ergebnis</span>Frisch gereinigte Pflasterfläche.</figcaption></figure>
+<figure class="proof-cell">${pic('proof-arbeit-2', { alt: 'Reinigung einer Terrasse mit dem Flächenreiniger', sizes: '(max-width:480px) 92vw, (max-width:860px) 46vw, 280px' })}<figcaption><span class="proof-tag">Mitten in der Arbeit</span>Reinigung einer Terrasse.</figcaption></figure>
+<figure class="proof-cell">${pic('proof-ergebnis-2', { alt: 'Saubere, neu verfugte Hoffläche aus Betonpflaster', sizes: '(max-width:480px) 92vw, (max-width:860px) 46vw, 280px' })}<figcaption><span class="proof-tag">Ergebnis</span>Saubere Hoffläche, neu verfugt.</figcaption></figure>
 </div>
 <p class="proof-note reveal">Echte Fotos und Videos von unseren Flächen. Vorher-Nachher zeigen wir nur, wo es dieselbe Fläche ist.</p>
 </div></section>`;
