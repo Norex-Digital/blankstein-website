@@ -1,0 +1,33 @@
+{
+  "intro_lead": "Wir reinigen und verfugen Pflaster, Einfahrten und Terrassen im gesamten Havelland und am westlichen Berliner Rand — kostenlose Besichtigung, keine Fahrtkosten.",
+  "orte": [
+    {
+      "slug": "falkensee",
+      "charakter": "Unser Heimatort und Mittelpunkt des Servicegebiets, mit dichter Einfamilienhaus-Bebauung und vielen gepflasterten Einfahrten und Terrassen."
+    },
+    {
+      "slug": "dallgow-doeberitz",
+      "charakter": "Jüngere Wohngebiete mit Neubauten, wo Hofeinfahrten und Wege oft erst wenige Jahre alt sind und der erste Grünbelag erscheint."
+    },
+    {
+      "slug": "brieselang",
+      "charakter": "Liegt am Bredower Forst, viele Grundstücke grenzen an Wald, dadurch setzen sich auf den Flächen schneller Moos und Laub ab."
+    },
+    {
+      "slug": "schoenwalde-glien",
+      "charakter": "Mehrere Ortsteile mit großen Höfen und weitläufigen Pflasterflächen, von der Hofeinfahrt bis zum Stellplatz."
+    },
+    {
+      "slug": "wustermark",
+      "charakter": "Mit dem Neubaugebiet Elstal, viele neue Häuser und frisch verlegte Wege rund um die Wohnsiedlungen."
+    },
+    {
+      "slug": "gross-glienicke",
+      "charakter": "Ortslage am Groß Glienicker See, Grundstücke mit Terrassen und Gartenwegen in Wassernähe."
+    },
+    {
+      "slug": "kladow",
+      "charakter": "Berliner Ortsteil im Bezirk Spandau nahe der Havel, am östlichen Rand unseres Gebiets mit gut erreichbaren Wohnstraßen."
+    }
+  ]
+}

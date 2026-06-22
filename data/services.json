@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "zweck": "Die 4 Money-Hubs fuer den Generator (Architektur §1, CEO-Review 5->4). Fangen den nationalen Kauf-Intent. Reihenfolge = Anzeige-Reihenfolge (steinreinigung = Haupt-Hub).",
+    "preis_hinweis": "Alle Hubs nutzen denselben Rechner (config.preise: 7/8 €/m²). Online IMMER Richtpreis, NIE 'Festpreis' (verbindliches Angebot per Foto+Maße oder Besichtigung).",
+    "usp_global": "Verbindliche USP-Kacheln (bau-fakten, gelten fuer alle Hubs): Flaechenreiniger · Neuverfugung mit Sand · Nano-Impraegnierung · saubere Absaugung. KEIN Heisswasser/0ppm (war JR, erst Skalierung). KEIN 'kein Hochdruck' (wir nutzen Hochdruck korrekt mit Flaechenreiniger).",
+    "matching_regel": "segment ∩ ort.typ. Blankstein: nur B2C. Ortsseiten sind lokale Hubs /{ort}/ (Stein+Terrasse als Sektionen), KEINE Service×Ort-Seiten."
+  },
+  "services": [
+    {
+      "slug": "steinreinigung",
+      "name": "Steinreinigung",
+      "segment": ["B2C"],
+      "leit_kw": "steinreinigung",
+      "vol": 2400,
+      "cpc": 2.98,
+      "tier_global": 1,
+      "rolle": "Haupt-Hub, breitestes Cluster",
+      "sektionen": ["Pflaster", "Terrasse", "Einfahrt", "Wege & Treppen"],
+      "garantie": "Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag — wir kommen kostenlos nach.",
+      "faq": null
+    },
+    {
+      "slug": "terrassenreinigung",
+      "name": "Terrassenreinigung",
+      "segment": ["B2C"],
+      "leit_kw": "terrassenreinigung",
+      "vol": 1300,
+      "cpc": 3.18,
+      "tier_global": 1,
+      "rolle": "Saisonal staerkster Moment, leichtester SERP-Einstieg",
+      "sektionen": ["Naturstein-Terrasse", "Betonplatten", "Keramik & Feinsteinzeug", "Terrassenfugen"],
+      "garantie": "Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag — wir kommen kostenlos nach.",
+      "faq": null
+    },
+    {
+      "slug": "pflasterreinigung",
+      "name": "Pflasterreinigung",
+      "segment": ["B2C"],
+      "leit_kw": "pflasterreinigung",
+      "vol": 880,
+      "cpc": 2.67,
+      "tier_global": 1,
+      "rolle": "Einfahrt/Pflaster, Kauf-Intent",
+      "sektionen": ["Einfahrt", "Hofeinfahrt", "Gehwege", "Pflasterfugen"],
+      "garantie": "Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag — wir kommen kostenlos nach.",
+      "faq": null
+    },
+    {
+      "slug": "steinversiegelung",
+      "name": "Steinversiegelung",
+      "segment": ["B2C"],
+      "leit_kw": "steinversiegelung",
+      "vol": 1000,
+      "cpc": 1.10,
+      "tier_global": 1,
+      "rolle": "Upsell, wenig Wettbewerb",
+      "sektionen": ["Nano-Imprägnierung", "Fugenschutz", "Wiederverschmutzungs-Schutz", "Auffrischung"],
+      "garantie": "Perlt das Wasser nach der Imprägnierung nicht ab — wir bessern kostenlos nach.",
+      "faq": null
+    }
+  ]
+}

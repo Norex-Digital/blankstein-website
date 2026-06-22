@@ -1,0 +1,32 @@
+{
+  "_meta": "Single Source fuer NAP. Schema + Footer + Impressum ziehen NUR hieraus. NAP 1:1 konsistent mit dem bestehenden GBP 'Blankstein Steinreinigung & Terrassenpflege' (Kategorie Hochdruck-Reinigungsdienst). phone_display = amtliche GBP-Schreibweise (Vorwahl 01575). openingHours aus GBP uebernommen (Mo-Fr 8-18, Sa 9-14, So zu) fuer NAP-/Schema-Konsistenz. NAP-Aenderung nach Bau = Re-Generierung -> gelockt.",
+  "name": "Blankstein",
+  "rechtstraeger": "Haus- & Gartenservice Havelland GbR",
+  "marke_zusatz": "Steinreinigung & Terrassenpflege im Havelland",
+  "gbp_name": "Blankstein Steinreinigung & Terrassenpflege",
+  "inhaber": "Noah Telo",
+  "street": "Darmstädter Str. 15",
+  "zip": "14612",
+  "city": "Falkensee",
+  "phone_e164": "+4915756963736",
+  "phone_display": "01575 6963736",
+  "email": "blankstein.havelland@gmail.com",
+  "domain": "https://blankstein-havelland.de",
+  "kleinunternehmer_19": true,
+  "openingHours": [
+    { "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+    { "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "14:00" }
+  ],
+  "geo": {
+    "lat": 52.585035,
+    "lng": 13.079492
+  },
+  "servicegebiet": "Definiert durch die bedienten Orte (locations.json) — Launch: 7 Kern-Orte, Erweiterung GSC-getriggert. KEIN fester km-Radius (Entscheidung 2026-06-18: Gebiet = wo wir tätig sind / wofür Seiten gebaut werden).",
+  "fahrtkosten": "keine im Servicegebiet — Besichtigung kostenlos & unverbindlich (Entscheidung 2026-06-18)",
+  "areaServed_pattern": "PostalAddress IMMER Falkensee-Zentrale (GbR-Sitz, on-page dezent); je Ortsseite areaServed{name + PLZ}. GBP = Service-Area = bediente Orte.",
+  "rechtsform": "GbR",
+  "gesellschafter": [
+    "Noah Telo Boughenou",
+    "Pierre Maurice Brehm"
+  ]
+}

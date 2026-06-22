@@ -1,0 +1,84 @@
+{
+  "title": "Über uns – Blankstein Steinreinigung im Havelland",
+  "meta": "Blankstein – die Steinreinigung von Noah und Maurice im Havelland. Wie wir arbeiten, welche Geräte wir nutzen und was es kostet – ehrlich erklärt.",
+  "h1": "Wer hinter Blankstein steckt",
+  "lead": "Blankstein reinigt und verfugt Pflaster- und Terrassenflächen im Havelland und am westlichen Berliner Rand. Auf dieser Seite zeigen wir, wer wir sind, wie wir genau arbeiten und mit welchen Geräten – damit Sie vorher wissen, was Sie bekommen.",
+  "inhaber": {
+    "title": "Zwei Inhaber, eine Firma",
+    "body": [
+      "Blankstein ist eine Marke der Haus- und Gartenservice Havelland GbR. Geführt wird sie von den beiden Gesellschaftern Noah Telo Boughenou und Pierre Maurice Brehm. Wir sind im Havelland zu Hause und arbeiten in der Region, in der wir auch wohnen.",
+      "Wir machen eine Sache und die richtig: Stein- und Terrassenflächen reinigen, neu verfugen und auf Wunsch imprägnieren. Holzarbeiten oder andere Gewerke bieten wir nicht an – dafür kennen wir unser Verfahren im Detail."
+    ]
+  },
+  "verfahren": {
+    "title": "So reinigen wir – die 5 Schritte",
+    "intro": "Wir arbeiten nach einem festen Ablauf. Jeder Schritt hat einen Zweck, und am Ende sieht die Fläche nicht nur sauber aus, sondern bleibt es auch länger. Das ist der komplette Ablauf beim Gesamtpaket.",
+    "schritte": [
+      {
+        "titel": "Reinigen",
+        "text": "Wir reinigen die gesamte Fläche inklusive Fugen mit Hochdruck und einem rotierenden Flächenreiniger (Kränzle und Benziner). Der Flächenreiniger arbeitet gleichmäßig und streifenfrei."
+      },
+      {
+        "titel": "Schmutz absaugen",
+        "text": "Den gelösten Schmutz saugen wir nass ab, statt ihn im Garten zu verteilen. So bleibt bei Ihnen keine Matsch-Sauerei zurück."
+      },
+      {
+        "titel": "Trocknen und neu verfugen",
+        "text": "Nach dem Trocknen verteilen wir GaLaBau-Fugensand und fegen ihn vollständig in die Fugen ein. Die Neuverfugung stabilisiert die Fläche und bremst neuen Bewuchs."
+      },
+      {
+        "titel": "Sand abpusten",
+        "text": "Mit dem Stihl-Bläser pusten wir den Sandfilm von den Steinen, der Sand in den Fugen bleibt liegen. Die Oberfläche ist danach sauber."
+      },
+      {
+        "titel": "Nano-Imprägnierung (optional)",
+        "text": "Auf Wunsch tragen wir mit einer Pumpe eine Nano-Imprägnierung auf. Sie verzögert, dass sich die Fläche so schnell wieder zusetzt."
+      }
+    ]
+  },
+  "equipment": {
+    "title": "Womit wir arbeiten",
+    "items": [
+      "Kränzle-Hochdruckreiniger für die kontrollierte Reinigung",
+      "Benzin-Hochdruckreiniger für mehr Leistung auf großen Flächen",
+      "Rotierender Flächenreiniger für ein gleichmäßiges, streifenfreies Ergebnis",
+      "Nassauger für die saubere Absaugung des gelösten Schmutzes",
+      "Stihl-Bläser zum Abpusten des Sandfilms nach der Neuverfugung",
+      "Pumpe für das Auftragen der Nano-Imprägnierung"
+    ]
+  },
+  "seriositaet": {
+    "title": "Was Sie von uns erwarten können",
+    "body": [
+      "Unsere Preise sind Richtpreise: 7 €/m² für Reinigung und Neuverfugung, 8 €/m² zusätzlich mit Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Fläche liegt also bei rund 280 € beziehungsweise 320 €. Es gibt keinen Mindestauftragswert, und im Servicegebiet berechnen wir keine Fahrtkosten.",
+      "Den verbindlichen Preis nennen wir, nachdem wir die Fläche gesehen haben – per Foto und Maßen über WhatsApp oder bei einer kostenlosen, unverbindlichen Besichtigung. Was wir vorher zusagen, gilt: keine Aufpreise nach dem Termin. Bleibt nach der Reinigung irgendwo ein Rest, bessern wir kostenlos nach. Unser Servicegebiet umfasst Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow."
+    ]
+  },
+  "differenzierung": {
+    "title": "Warum wir nur Stein machen",
+    "body": [
+      "Wir bieten kein Rundum-Programm an, sondern genau ein Gewerk: Stein- und Terrassenflächen. Das hat einen Grund. Wer jede Woche dieselben Pflaster- und Terrassentypen vor sich hat, merkt schnell, welcher Stein wie viel Druck verträgt, wo sich Fugen schneller auswaschen und welcher Fugensand wirklich liegen bleibt. Diese Routine bekommt man nur, wenn man sich auf eine Sache festlegt.",
+      "Für Sie heißt das: Wir improvisieren nicht an Ihrer Fläche herum. Wir kommen mit einem eingespielten Ablauf, den wir an genau diesen Flächen Hunderte Male gefahren haben, und liefern ein Ergebnis, das wir vorher zusagen können. Andere Gewerke vermitteln wir lieber an Leute weiter, die das genauso intensiv machen wie wir den Stein."
+    ]
+  },
+  "cta_title": "Schicken Sie uns ein Foto",
+  "cta_text": "Foto Ihrer Fläche plus die ungefähren Maße per WhatsApp – Sie bekommen Ihren Richtpreis in etwa 30 Minuten zurück. Sind die Maße unklar oder die Fläche kompliziert, kommen wir kostenlos und unverbindlich vorbei.",
+  "faqs": [
+    {
+      "q": "Beschädigt der Hochdruck meine Pflastersteine?",
+      "a": "Nein, solange er richtig eingesetzt wird. Wir arbeiten mit einem rotierenden Flächenreiniger statt mit einer Punkt-Lanze, sodass sich der Druck gleichmäßig verteilt, und verfugen danach neu. So bleibt der Stein heil."
+    },
+    {
+      "q": "Was kostet die Reinigung?",
+      "a": "7 €/m² für Reinigung und Neuverfugung, 8 €/m² zusätzlich mit Nano-Imprägnierung. Das sind Richtpreise und Endpreise ohne versteckte Kosten. Bei 20 m² sind das rund 140 € beziehungsweise 160 €, bei 60 m² rund 420 € beziehungsweise 480 €."
+    },
+    {
+      "q": "Wie bekomme ich ein Angebot?",
+      "a": "Am schnellsten per WhatsApp: ein Foto Ihrer Fläche und die ungefähren Maße schicken, wir melden uns in etwa 30 Minuten mit dem Richtpreis. Alternativ kommen wir kostenlos und unverbindlich zu Ihnen."
+    },
+    {
+      "q": "In welchem Gebiet seid ihr unterwegs?",
+      "a": "Im Havelland und am westlichen Berliner Rand: Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Innerhalb dieses Gebiets berechnen wir keine Fahrtkosten."
+    }
+  ]
+}

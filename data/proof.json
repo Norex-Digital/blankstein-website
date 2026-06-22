@@ -1,0 +1,13 @@
+{
+  "_meta": "Cold-Start-Trust-Layer. Steuert echte vs. Platzhalter-Inhalte. Bei 0/leer -> ehrliche Empty-States (kein Fake-Stern). Wird mit Auftraegen/Reviews/Reels befuellt.",
+  "google_reviews": { "count": 0, "rating": null, "place_id": null, "_lookup": "GBP EXISTIERT + verwaltet (Stand 2026-06-18): 'Blankstein Steinreinigung & Terrassenpflege', Kategorie Hochdruck-Reinigungsdienst (= Spec §6), Tel 01575 6963736, Oeffnungszeiten Mo-Fr 8-18 / Sa 9-14 / So zu. Profilstaerke noch niedrig, 0 Reviews. TODO: Website-URL im GBP eintragen (bei Go-Live), place_id/kgmid ziehen, Review-Velocity starten." },
+  "auftraege_abgeschlossen": 0,
+  "stat_tiles_erlaubt": false,
+  "vorher_nachher": {
+    "echt": [],
+    "platzhalter_label": "Beispielhafte Darstellung",
+    "hinweis": "KI-/Demo-Vorher-Nachher NIE als konkretes Kundenergebnis labeln (UWG). Mit echten Demo-Flaeche-Fotos ersetzen."
+  },
+  "reels": { "aktiv": false, "_hinweis": "Reel-Slots technisch fertig, leer by default. Aktivierung via data/reels.json (Architektur §10)." },
+  "garantie_status": "GELOCKT 2026-06-18 (Maurice): Endpreis-Zusage (genanntes Angebot = Endpreis, kein Aufpreis/keine Nachkalkulation) + kostenlose Nacharbeit bei sichtbarem Moos-/Algen-Restbelag. KEINE Geld-zurueck-Garantie. Vor Launch juristisch final abklopfen (bindende Werbung auf allen Money-Hubs)."
+}

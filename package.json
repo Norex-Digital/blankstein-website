@@ -1,0 +1,10 @@
+{
+  "name": "blankstein-website",
+  "private": true,
+  "description": "Statische Website Blankstein Steinreinigung & Terrassenpflege (Generator: scripts/generate.mjs).",
+  "scripts": {
+    "reviews": "node scripts/fetch-reviews.mjs",
+    "build": "node scripts/fetch-reviews.mjs && node scripts/generate.mjs",
+    "qa": "node scripts/validate-data.mjs && node scripts/generate.mjs && node scripts/gates.mjs"
+  }
+}

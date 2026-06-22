@@ -1,0 +1,24 @@
+{
+  "_meta": "Zentrale Build-Konstanten. Generator bricht ab, wenn ein required-Feld ein Platzhalter-Pattern (XXXX / TBD / null) traegt. ga4/gtm/web3forms = bewusste Platzhalter (3 offene Punkte aus bau-fakten, nicht-blockierend, vor Launch einsetzen).",
+  "domain": "https://blankstein-havelland.de",
+  "ga4_id": "TBD-P0",
+  "gtm_id": "TBD-P0",
+  "web3forms_key": "TBD-P0",
+  "indexnow_key": "TBD-P0",
+  "preise": {
+    "satz_basis": 7,
+    "satz_impraegnierung": 8,
+    "einheit": "m²",
+    "leistung_basis": "Reinigung inkl. Neuverfugung (Fugensand)",
+    "leistung_impraegnierung": "Reinigung + Neuverfugung + Nano-Imprägnierung",
+    "mindestauftragswert": null,
+    "_hinweis": "Bruttopreise/Endpreise (§19 Kleinunternehmer). Kein Mindestauftragswert zum Start (Entscheidung Maurice 2026-06-18)."
+  },
+  "aktive_welle": 1,
+  "content_stand": "2026-06-18",
+  "wellen": {
+    "1": "Home + 4 Money-Hubs + 7 Kern-Ortsseiten (lokale Hubs) + 12 Ratgeber + Reel-Landing /start + Basis ~33 Seiten",
+    "2": "restliche Ratgeber (->15) + weitere Orte (Nauen/Gatow, GSC-getriggert)"
+  },
+  "saison_gate": "Peak Apr-Mai + Zweit-Peak September. Content vor Peak indexiert. Haupt-Ziel Fruehjahr 2027 (live bis Jan-Feb 2027), September-2026 als Zwischenziel."
+}

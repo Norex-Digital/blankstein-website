@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "zweck": "7 Kern-Orte zum Launch (Architektur §1/§7, revidiert 2026-06-18). URL = lokaler Hub /{ort}/ (Stein+Terrasse als getrennte H2-Sektionen) — KEINE Service×Ort-Einzelseiten. Auswahl: Heimat-Radius Geo-A + kaufkraeftiger Premium-Berlin-Rand.",
+    "ortsteile_von": {},
+    "premium_hinweis": "gross-glienicke + kladow = Premium-Berlin-Rand (kaufkraeftige EFH/Villen).",
+    "phase2": "Nauen, Berlin-Gatow = Welle 2 (GSC-getriggert)."
+  },
+  "orte": [
+    { "slug": "falkensee",          "name": "Falkensee",          "plz": "14612", "geo": "A", "typ": ["B2C"], "heimat": true,  "premium": false },
+    { "slug": "dallgow-doeberitz",  "name": "Dallgow-Döberitz",   "plz": "14624", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": false },
+    { "slug": "brieselang",         "name": "Brieselang",         "plz": "14656", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": false },
+    { "slug": "schoenwalde-glien",  "name": "Schönwalde-Glien",   "plz": "14621", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": false },
+    { "slug": "wustermark",         "name": "Wustermark",         "plz": "14641", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": false },
+    { "slug": "gross-glienicke",    "name": "Groß Glienicke",     "plz": "14476", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": true },
+    { "slug": "kladow",             "name": "Kladow",             "plz": "14089", "geo": "A", "typ": ["B2C"], "heimat": false, "premium": true }
+  ]
+}

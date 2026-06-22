@@ -1,0 +1,5 @@
+{
+  "_meta": "Dormanter Reel-Schalter (Architektur §10 / WF2 §G). aktiv:false + leeres reels[] => Reel-Slots werden NICHT gerendert (Website konvertiert ohne Reels via Rechner + Besichtigung). Eintrag in reels[] => Slot wird live. Erste echte Reels = Demo-Fläche (Noah), keine KI-Fakes. UTM-getrackt.",
+  "aktiv": false,
+  "reels": []
+}

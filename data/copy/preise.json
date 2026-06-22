@@ -1,0 +1,91 @@
+{
+  "title": "Preise: Steinreinigung pro m² | Blankstein",
+  "meta": "Was kostet die Steinreinigung im Havelland? Richtpreis ab 7 €/m² inkl. Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Endpreise, Angebot per WhatsApp-Foto.",
+  "h1": "Preise Steinreinigung: Was kostet die Reinigung pro m²?",
+  "h1_em": "pro m²",
+  "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen, das Angebot kommt in etwa 30 Minuten zurück.",
+  "kosten_tabelle": {
+    "caption": "Richtpreise pro m² und Rechenbeispiele für 20, 40 und 60 m² — Endpreise ohne versteckte Kosten.",
+    "head": [
+      "Fläche",
+      "Reinigung + Neuverfugung (7 €/m²)",
+      "+ Nano-Imprägnierung (8 €/m²)"
+    ],
+    "rows": [
+      [
+        "Richtpreis pro m²",
+        "7 €/m²",
+        "8 €/m²"
+      ],
+      [
+        "20 m² (kleine Terrasse)",
+        "ca. 140 €",
+        "ca. 160 €"
+      ],
+      [
+        "40 m² (Terrasse + Weg)",
+        "ca. 280 €",
+        "ca. 320 €"
+      ],
+      [
+        "60 m² (Einfahrt)",
+        "ca. 420 €",
+        "ca. 480 €"
+      ]
+    ]
+  },
+  "kostenfaktoren": {
+    "title": "Was den Preis pro m² beeinflusst",
+    "items": [
+      "Größe der Fläche: Sie bestimmt den Gesamtaufwand und damit, wie viel Zeit und Material wir einplanen. Der Richtpreis pro m² bleibt dabei gleich — bei 20 wie bei 60 m².",
+      "Zustand und Verschmutzungsgrad: Leichter Grünbelag geht schnell, festsitzende Flechten oder jahrelang vernachlässigte Fugen brauchen mehr Durchgänge.",
+      "Zugänglichkeit: Eine ebenerdige Terrasse direkt an der Einfahrt ist schneller bearbeitet als eine Fläche, zu der wir Geräte und Wasser über Treppen oder durch enge Durchgänge tragen.",
+      "Belagart: Pflasterstein, Beton, Platten oder Naturstein reagieren unterschiedlich — die Wahl von Druck und Verfahren richtet sich nach dem Material.",
+      "Mit oder ohne Imprägnierung: Die Nano-Imprägnierung als letzter Schritt macht aus 7 €/m² 8 €/m² und verzögert, dass sich Schmutz und Grünbelag wieder festsetzen.",
+      "Neuverfugung: Der GaLaBau-Fugensand zum Auffüllen der Fugen ist im Richtpreis bereits enthalten, nicht extra."
+    ]
+  },
+  "richtpreis_erklaerung": {
+    "title": "Warum wir online einen Richtpreis statt eines fest zugesagten Betrags nennen",
+    "body": [
+      "Online bekommen Sie von uns einen ehrlichen Richtpreis, keinen vorab fest zugesagten Betrag — und das hat einen einfachen Grund. Was eine Fläche wirklich kostet, hängt von ihrem Zustand ab: zwei gleich große Terrassen können sich um das Doppelte an Aufwand unterscheiden, wenn die eine nur leichten Grünbelag hat und die andere seit Jahren nicht gereinigt wurde. Größe, Verschmutzungsgrad, Zugänglichkeit und Belagart bestimmen, wie viele Durchgänge wir mit dem rotierenden Flächenreiniger fahren und wie viel Fugensand am Ende hineingeht. Einen verbindlichen Preis allein aus der Ferne zu nennen, ohne die Fläche gesehen zu haben, wäre nicht seriös — entweder wir würden zu hoch ansetzen, oder Sie müssten am Ende nachzahlen.",
+      "Deshalb läuft es bei uns anders herum: Sie schicken uns ein Foto und die ungefähren Maße per WhatsApp, und wir rechnen Ihnen den Preis aus. Dieser gilt für die angegebenen Maße und den auf dem Foto erkennbaren Zustand. Sind die Maße unklar oder die Fläche schwer einzuschätzen, kommen wir kostenlos vorbei und messen vor Ort — dann ist der bei der Besichtigung genannte Preis der verbindliche."
+    ]
+  },
+  "conversion": {
+    "title": "Ihren Preis in etwa 30 Minuten",
+    "body": [
+      "Der schnellste Weg zu Ihrem Preis: Schicken Sie uns ein bis zwei Fotos Ihrer Fläche und die ungefähren Maße in m² per WhatsApp. In der Regel haben wir Ihnen das Angebot innerhalb von etwa 30 Minuten zurückgeschickt — Sie müssen dafür weder einen Termin abwarten noch ein langes Formular ausfüllen. Das funktioniert für die meisten Terrassen, Einfahrten und Wege problemlos.",
+      "Sie kennen Ihre Quadratmeter nicht oder die Fläche ist verwinkelt? Kein Problem — dann kommen wir kostenlos und unverbindlich vorbei, messen vor Ort und besprechen alles in Ruhe. So oder so bekommen Sie einen klaren Preis, bevor wir mit der Arbeit anfangen."
+    ]
+  },
+  "garantie_text": "Der Preis, den Sie nach Foto bekommen, gilt für die angegebenen Maße und den auf dem Foto erkennbaren Zustand — kein Aufschlag hinterher. Weichen Maße oder Zustand ab, ist der bei einer Besichtigung genannte Preis der verbindliche. Bleibt nach der Reinigung irgendwo Restbelag zurück, arbeiten wir kostenlos nach, bis die Fläche sauber ist.",
+  "faqs": [
+    {
+      "q": "Was kostet Steinreinigung pro m²?",
+      "a": "Bei Blankstein liegt der Richtpreis bei 7 €/m² für Reinigung inklusive Neuverfugung mit Fugensand, oder 8 €/m² wenn zusätzlich eine Nano-Imprägnierung aufgetragen wird. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Terrasse kostet damit etwa 280 € beziehungsweise 320 €. Der genaue Betrag hängt vom Zustand der Fläche ab und wird nach einem Foto oder einer Besichtigung festgelegt."
+    },
+    {
+      "q": "Gibt es einen Mindestauftragswert oder Fahrtkosten?",
+      "a": "Nein. Es gibt keinen Mindestauftragswert, und innerhalb unseres Servicegebiets fallen keine Fahrtkosten an. Sie zahlen den Richtpreis pro m² für die gereinigte Fläche, sonst nichts. Unser Gebiet umfasst das Havelland und den westlichen Berliner Rand, unter anderem Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow."
+    },
+    {
+      "q": "Warum bekomme ich online einen Richtpreis statt eines festen Betrags?",
+      "a": "Weil der Aufwand vom Zustand der Fläche abhängt, nicht nur von der Größe. Eine stark vermooste Terrasse braucht mehr Durchgänge als eine leicht verschmutzte gleicher Größe. Einen verbindlichen Betrag allein aus der Ferne zu nennen wäre nicht seriös. Deshalb rechnen wir Ihren Preis nach einem WhatsApp-Foto mit Maßen aus — er gilt für die angegebenen Maße und den erkennbaren Zustand. Bei abweichenden Maßen messen wir kostenlos vor Ort."
+    },
+    {
+      "q": "Ist die Neuverfugung im Preis enthalten?",
+      "a": "Ja. Der Richtpreis von 7 €/m² enthält das Auffüllen der Fugen mit GaLaBau-Fugensand bereits — das ist kein Extra, das später dazukommt. Nach dem Reinigen und Trocknen verfugen wir die Fläche neu und blasen den überschüssigen Sand ab. Nur die Nano-Imprägnierung ist optional und macht aus 7 €/m² den Satz von 8 €/m²."
+    },
+    {
+      "q": "Was bringt die Nano-Imprägnierung für 1 € mehr pro m²?",
+      "a": "Die Nano-Imprägnierung ist der letzte Arbeitsschritt und versiegelt die gereinigte Fläche. Sie verzögert, dass sich Schmutz, Wasser und Grünbelag wieder festsetzen, sodass die Fläche länger sauber bleibt und die nächste Reinigung leichter fällt. Für diesen Schutz steigt der Richtpreis von 7 €/m² auf 8 €/m². Ob sie sich für Ihre Fläche lohnt, besprechen wir beim Angebot."
+    },
+    {
+      "q": "Bleibt es bei dem genannten Preis?",
+      "a": "Ja, für die angegebenen Maße und den auf dem Foto erkennbaren Zustand — da schlagen wir hinterher nichts drauf. Weichen die tatsächlichen Maße oder der Zustand ab, gilt der Preis, den wir bei einer kostenlosen Besichtigung vor Ort nennen. Sollte nach der Reinigung irgendwo Restbelag zurückbleiben, arbeiten wir kostenlos nach, bis die Fläche sauber ist. So wissen Sie vorher, was Sie zahlen."
+    }
+  ],
+  "cta_title": "Foto schicken, Preis erhalten",
+  "cta_text": "Richtpreis ab 7 €/m² inklusive Neuverfugung — schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp, und Sie haben Ihr Angebot in etwa 30 Minuten. Der Preis gilt für die angegebenen Maße und den erkennbaren Zustand. Lieber persönlich? Wir kommen kostenlos und unverbindlich vorbei und messen vor Ort."
+}

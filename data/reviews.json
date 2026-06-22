@@ -1,0 +1,10 @@
+{
+  "_meta": "Echte Google-Reviews vom GBP. source=manual (von Hand gepflegt) ODER places-api (automatisch via scripts/fetch-reviews.mjs beim Build, sobald GOOGLE_PLACES_KEY + place_id gesetzt). Bei leerem reviews[] => Empty-State, NICHTS wird gerendert (kein Fake-Stern). UWG/Google-Policy: nur ECHTE Reviews, Schema-Zahlen MUESSEN exakt den sichtbaren entsprechen (wird automatisch erzwungen, da Anzeige + Schema aus dieser Datei). Eintrag-Format siehe unten.",
+  "_eintrag_format": { "author": "Vorname N.", "ort": "Falkensee", "rating": 5, "text": "Bewertungstext …", "date": "2026-06-22", "relative": "vor 2 Tagen" },
+  "source": "manual",
+  "place_id": null,
+  "profile_url": null,
+  "rating": null,
+  "count": 0,
+  "reviews": []
+}

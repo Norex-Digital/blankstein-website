@@ -1,0 +1,289 @@
+{
+  "_meta": "Copy-Layer der lokalen Orts-Hubs. Verknüpfung mit locations.json über den Slug-Key. URL = /{slug}/. Bündelt Stein- + Terrassenreinigung als getrennte H2-Sektionen (KEINE Service×Ort-Einzelseiten, Architektur §1/§7). Jeder Ort braucht EIGENEN lokalen Content (Ortsteile, Charakter, Anfahrt) — kein Template-Klon (NearDup-Gate <40%). Ton: bodenständig-sachlich wie die Money-Hubs, KEIN gehobenes/Luxus-Vokabular (kein 'Werterhalt/wertig/repräsentativ/gehoben/Anwesen' — Maurice 2026-06-18). Regeln: Richtpreis (nie Festpreis), kein Heißwasser/'kein Hochdruck', kein Kleinunternehmer-Framing (nur Impressum), Endpreis-Zusage, echte Umlaute. h1_em IMMER kurz (≤~15 Z., Phrase, kein nacktes Substantiv).",
+  "orte": {
+    "falkensee": {
+      "archetyp": "heimat",
+      "title": "Stein- & Terrassenreinigung Falkensee | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Falkensee: Pflaster, Einfahrt und Terrasse mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Falkensee",
+      "h1": "Stein- & Terrassenreinigung in Falkensee",
+      "h1_em": "direkt vor Ort",
+      "intro": "Falkensee ist unser Sitz — kurze Wege, planbare Termine. Pflaster, Einfahrten und Terrassen in ganz Falkensee reinigen wir materialschonend und verfugen neu.",
+      "hero_img": "ort-falkensee",
+      "hero_alt": "Frisch gereinigter Plattenweg vor einem Einfamilienhaus in Falkensee",
+      "lokal_title": "Ihr Steinreiniger direkt in Falkensee.",
+      "lokal_body": [
+        "Falkensee ist mit Abstand die größte Stadt im Havelland und stark von Einfamilienhäusern geprägt — also von genau den Pflaster-Einfahrten, Hofflächen und Terrassen, die mit den Jahren vergrünen. Weil wir hier unseren Sitz haben, sind wir schnell bei Ihnen und kennen die typischen Beläge in den Wohngebieten.",
+        "Ob in Falkenhagen, Finkenkrug, Seegefeld oder Waldheim: Schicken Sie uns ein, zwei Fotos und die ungefähren Maße per WhatsApp, und Sie bekommen meist innerhalb von rund 30 Minuten ein konkretes Angebot. Reicht das nicht, kommen wir kostenlos vorbei — die Anfahrt ist im Stadtgebiet ohnehin kurz."
+      ],
+      "stein_text": "Verblasste, vermooste Pflaster-Einfahrten und Hofflächen bringen wir mit dem Flächenreiniger gleichmäßig sauber und verfugen die Fugen anschließend neu mit Sand — so sackt nichts nach und das Unkraut bleibt länger weg. Gerade die älteren Bestandshäuser in Falkensee haben oft großzügige Pflasterflächen, die sich porentief auffrischen lassen.",
+      "terrasse_text": "Naturstein-, Beton- und Keramikterrassen reinigen wir streifenfrei und materialschonend — ohne ausgewaschene Fugen. Viele Falkenseer Gärten liegen halbschattig, dort vergrünen Terrassen besonders schnell; mit einer Nano-Imprägnierung für 1 €/m² mehr bleibt die Fläche danach deutlich länger sauber.",
+      "gebiet_text": "Wir sind in ganz Falkensee unterwegs — in Falkenhagen, Finkenkrug, Seegefeld und Waldheim ebenso wie in den angrenzenden Wohngebieten an der Berliner Stadtgrenze. Anfahrtskosten fallen im Stadtgebiet nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "dallgow-doeberitz",
+        "brieselang",
+        "schoenwalde-glien"
+      ],
+      "faqs": [
+        {
+          "q": "Reinigt ihr in ganz Falkensee?",
+          "a": "Ja. Falkensee ist unser Sitz, wir sind in allen Stadtteilen unterwegs — Falkenhagen, Finkenkrug, Seegefeld und Waldheim — sowie in den angrenzenden Wohngebieten. Innerhalb des Stadtgebiets fallen keine Anfahrtskosten an, und die Vor-Ort-Besichtigung ist kostenlos und unverbindlich."
+        },
+        {
+          "q": "Was kostet die Stein- oder Terrassenreinigung in Falkensee?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, oder 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 40 m² große Einfahrt liegt damit bei rund 280 bis 320 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten."
+        },
+        {
+          "q": "Wie schnell könnt ihr in Falkensee da sein?",
+          "a": "Weil wir unseren Sitz in Falkensee haben, sind die Wege kurz und die Termine gut planbar. Schicken Sie uns tagsüber Fotos und die Maße per WhatsApp, bekommen Sie in der Regel innerhalb von rund 30 Minuten ein Angebot; den Reinigungstermin stimmen wir dann zeitnah ab."
+        },
+        {
+          "q": "Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?",
+          "a": "Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Wir arbeiten mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. So wird die Fläche porentief sauber, ohne dass das Material Schaden nimmt."
+        }
+      ],
+      "cta_title": "Saubere Fläche in Falkensee?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Kurze Wege, da wir direkt in Falkensee sitzen."
+    },
+    "dallgow-doeberitz": {
+      "archetyp": "standard",
+      "title": "Steinreinigung Dallgow-Döberitz | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Dallgow-Döberitz: Pflaster, Einfahrt und Terrasse porentief sauber — Flächenreiniger, Neuverfugung, Imprägnierung. Ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Dallgow-Döberitz",
+      "h1": "Stein- & Terrassenreinigung in Dallgow-Döberitz",
+      "h1_em": "wieder sauber",
+      "intro": "In Dallgow-Döberitz reihen sich neue Einfamilienhäuser an der Berliner Stadtgrenze — deren Pflaster und Terrassen reinigen wir materialschonend und verfugen neu.",
+      "hero_img": "ort-dallgow-doeberitz",
+      "hero_alt": "Gereinigte Klinker-Einfahrt vor einem Einfamilienhaus in Dallgow-Döberitz",
+      "lokal_title": "Saubere Einfahrten und Terrassen in Dallgow-Döberitz.",
+      "lokal_body": [
+        "Dallgow-Döberitz ist über die Jahre stark gewachsen — viele Häuser in Seeburg, Rohrbeck und dem Kernort sind noch recht neu, mit großen Pflasterflächen vor der Tür. Wenn sich darin Moos und Grünbelag festsetzen, sieht man das schnell.",
+        "Wir holen den Belag wieder gleichmäßig sauber, füllen die Fugen mit frischem Sand auf und räumen den gelösten Schmutz weg. Schicken Sie uns Fotos und die Maße per WhatsApp — durch die Lage nah an Berlin sind die Termine gut planbar."
+      ],
+      "stein_text": "Vermooste Pflaster-Einfahrten und Hofflächen bringen wir mit dem Flächenreiniger wieder gleichmäßig sauber und verfugen die Fugen neu mit Sand — so sackt nichts nach und das Unkraut bleibt länger weg.",
+      "terrasse_text": "Ob Naturstein oder Feinsteinzeug: Wir reinigen Terrassen materialschonend, ohne ausgewaschene Fugen oder Schleier. Mit einer Nano-Imprägnierung perlt das Wasser danach ab und die Fläche bleibt länger sauber.",
+      "gebiet_text": "Wir reinigen in ganz Dallgow-Döberitz — im Kernort ebenso wie in Seeburg, Rohrbeck und Döberitz. Anfahrtskosten fallen nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "falkensee",
+        "wustermark",
+        "brieselang"
+      ],
+      "faqs": [
+        {
+          "q": "Reinigt ihr auch in Seeburg und Rohrbeck?",
+          "a": "Ja, wir sind in allen Ortsteilen von Dallgow-Döberitz unterwegs — im Kernort, in Seeburg, Rohrbeck und Döberitz. Die Nähe zur Berliner Stadtgrenze hält die Wege kurz, Anfahrtskosten berechnen wir nicht und die Vor-Ort-Besichtigung ist kostenlos."
+        },
+        {
+          "q": "Lohnt sich die Reinigung bei einer noch recht neuen Einfahrt?",
+          "a": "Gerade dann. Wer Moos und Grünbelag früh entfernen lässt und die Fugen nachfüllt, hält die Fläche länger schön und beugt absackenden Steinen vor. Eine regelmäßige Pflege ist deutlich günstiger als eine spätere Neuverlegung."
+        },
+        {
+          "q": "Was kostet die Reinigung in Dallgow-Döberitz?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung bei 8 €/m². Eine 50 m² große Einfahrt liegt damit bei rund 350 bis 400 €. Das verbindliche Angebot erstellen wir nach Fotos oder bei einer kostenlosen Besichtigung — alle Preise sind Endpreise ohne versteckte Kosten."
+        }
+      ],
+      "cta_title": "Flächen in Dallgow-Döberitz auffrischen?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Kurze Wege an die Berliner Stadtgrenze."
+    },
+    "brieselang": {
+      "archetyp": "standard",
+      "title": "Stein- & Terrassenreinigung Brieselang | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Brieselang: vermooste Pflaster und Terrassen am Waldrand wieder sauber — Flächenreiniger, Neuverfugung, Imprägnierung. Ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Brieselang",
+      "h1": "Stein- & Terrassenreinigung in Brieselang",
+      "h1_em": "trotz Schatten",
+      "intro": "Brieselang liegt halbschattig am Bredower Forst, wo Pflaster und Terrassen schnell vergrünen — genau die bringen wir materialschonend wieder sauber.",
+      "hero_img": "ort-brieselang",
+      "hero_alt": "Frisch gereinigte Steinfläche vor einem Wohnhaus in Brieselang",
+      "lokal_title": "Gegen Moos und Grün am Brieselanger Waldrand.",
+      "lokal_body": [
+        "Die ruhige, grüne Lage ist der Grund, warum viele nach Brieselang ziehen — und zugleich der Grund, warum hier Terrassen und Wege schneller veralgen als anderswo. Wo Bäume Schatten werfen und es länger feucht bleibt, haben Moos und Grünbelag leichtes Spiel, vor allem in Bredow und Zeestow.",
+        "Dagegen hilft kein kurzes Abkärchern, sondern eine gründliche Reinigung mit anschließender Neuverfugung — und für Flächen, die immer wieder vergrünen, eine Nano-Imprägnierung. So bleibt das Ergebnis deutlich länger erhalten. Fotos und Maße per WhatsApp genügen für ein erstes Angebot."
+      ],
+      "stein_text": "Schattige Wege und Einfahrten setzen in Brieselang schnell einen grünen Film an. Wir lösen ihn porentief mit dem Flächenreiniger, saugen den Schmutz ab und füllen die Fugen neu — damit nicht gleich das nächste Grün nachwächst.",
+      "terrasse_text": "Terrassen am Waldrand brauchen mehr als nur Reinigung. Nach der materialschonenden Aufbereitung empfehlen wir an dauerhaft schattigen Stellen die Nano-Imprägnierung: Wasser perlt ab, Algen finden weniger Halt und die Fläche bleibt spürbar länger sauber.",
+      "gebiet_text": "Wir reinigen in ganz Brieselang — im Ort selbst sowie in Bredow und Zeestow. Anfahrtskosten fallen nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "falkensee",
+        "wustermark",
+        "schoenwalde-glien"
+      ],
+      "faqs": [
+        {
+          "q": "Warum vergrünt meine Terrasse in Brieselang so schnell?",
+          "a": "Die waldnahe, halbschattige Lage hält Flächen länger feucht — ideale Bedingungen für Moos und Algen. Eine gründliche Reinigung mit Neuverfugung schafft Abhilfe; an dauerhaft schattigen Stellen verlängert eine Nano-Imprägnierung das saubere Ergebnis deutlich."
+        },
+        {
+          "q": "Bringt die Imprägnierung bei meiner schattigen Fläche etwas?",
+          "a": "Ja, gerade dort. Die Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein, Wasser perlt ab und Schmutz findet weniger Halt. An den feuchten, schattigen Lagen rund um den Bredower Forst lohnt sie sich besonders — für 1 €/m² mehr als die reine Reinigung."
+        },
+        {
+          "q": "Was kostet die Reinigung in Brieselang?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, mit Imprägnierung bei 8 €/m². Eine 25 m² große Terrasse liegt damit bei rund 175 bis 200 €. Das verbindliche Angebot kommt nach Fotos oder Besichtigung — alle Preise sind Endpreise ohne versteckte Kosten."
+        }
+      ],
+      "cta_title": "Schluss mit Grün in Brieselang?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Auch für schattige Lagen am Waldrand."
+    },
+    "schoenwalde-glien": {
+      "archetyp": "standard",
+      "title": "Steinreinigung Schönwalde-Glien | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Schönwalde-Glien: große Hofeinfahrten und Terrassen gleichmäßig sauber — Flächenreiniger, Neuverfugung, Imprägnierung. Ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Schönwalde-Glien",
+      "h1": "Stein- & Terrassenreinigung in Schönwalde-Glien",
+      "h1_em": "Hof für Hof",
+      "intro": "Schönwalde-Glien ist ländlich und großzügig — die weitläufigen Hofeinfahrten und Pflasterflächen, die mit den Jahren vermoosen, reinigen wir gleichmäßig und verfugen neu.",
+      "hero_img": "ort-schoenwalde-glien",
+      "hero_alt": "Gereinigter Plattenweg vor einem Haus in Schönwalde-Glien",
+      "lokal_title": "Große Höfe und Wege in Schönwalde-Glien — gleichmäßig sauber.",
+      "lokal_body": [
+        "Die Gemeinde besteht aus mehreren Dörfern — Schönwalde-Dorf, Schönwalde-Siedlung, Glien, Paaren, Pausin, Perwenitz und Wansdorf. Typisch sind große Grundstücke mit langen Zufahrten und weiten Hofflächen. Auf so viel Fläche fällt ungleichmäßiger Schmutz oder Streifenbildung sofort auf.",
+        "Deshalb arbeiten wir mit dem Flächenreiniger statt mit der Hand-Lanze: gleichmäßiger Abtrag ohne Streifen, auch auf großen Flächen. Anschließend füllen wir die Fugen neu auf, damit das Pflaster stabil bleibt. Schicken Sie uns Fotos und die ungefähren Quadratmeter — gerade bei großen Höfen lohnt sich vorab ein realistischer Richtpreis."
+      ],
+      "stein_text": "Weitläufige Hofeinfahrten reinigen wir gleichmäßig und streifenfrei, entfernen Moos und Grünbelag bis in die Fugen und verfugen mit frischem Sand neu — für ein durchgehend sauberes Bild über die ganze Fläche.",
+      "terrasse_text": "Ob am Haupthaus oder am Gartenhaus: Terrassen reinigen wir materialschonend und ohne ausgewaschene Fugen. Auf Wunsch versiegeln wir die Fläche, damit sie auch bei wenig Pflege länger sauber bleibt — praktisch bei großen Grundstücken, wo nicht jede Ecke ständig im Blick ist.",
+      "gebiet_text": "Wir reinigen in allen Ortsteilen von Schönwalde-Glien — von Schönwalde-Dorf und der Siedlung über Glien und Paaren bis Pausin, Perwenitz und Wansdorf. Anfahrtskosten fallen nicht an, die Besichtigung ist kostenlos.",
+      "nachbarorte": [
+        "falkensee",
+        "brieselang",
+        "dallgow-doeberitz"
+      ],
+      "faqs": [
+        {
+          "q": "Reinigt ihr auch große Hofeinfahrten in Schönwalde-Glien?",
+          "a": "Ja, große Flächen sind unser Alltag. Mit rotierenden Flächenreinigern arbeiten wir auch weite Höfe gleichmäßig und streifenfrei ab — etwas, das mit der Hand-Lanze kaum sauber gelingt. Den Richtpreis berechnen Sie vorab über die Quadratmeter, das verbindliche Angebot kommt nach Fotos oder Besichtigung."
+        },
+        {
+          "q": "Kommt ihr auch in die kleineren Ortsteile wie Pausin oder Perwenitz?",
+          "a": "Ja. Wir bedienen die gesamte Gemeinde Schönwalde-Glien, einschließlich Glien, Paaren, Pausin, Perwenitz und Wansdorf. Anfahrtskosten berechnen wir innerhalb des Servicegebiets nicht, die Vor-Ort-Besichtigung ist kostenlos und unverbindlich."
+        },
+        {
+          "q": "Was kostet die Reinigung großer Flächen?",
+          "a": "Auch große Flächen rechnen wir transparent über den Quadratmeter ab: 7 €/m² inklusive Reinigung und Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Eine 80 m² große Hoffläche liegt damit bei rund 560 bis 640 €. Alle Preise sind Endpreise ohne versteckte Kosten."
+        }
+      ],
+      "cta_title": "Hof oder Terrasse in Schönwalde-Glien?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Auch große Flächen, gleichmäßig sauber."
+    },
+    "wustermark": {
+      "archetyp": "standard",
+      "title": "Stein- & Terrassenreinigung Wustermark | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Wustermark und Elstal: moderne Pflaster- und Feinsteinzeug-Flächen streifenfrei reinigen, neu verfugen, imprägnieren. Ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Wustermark",
+      "h1": "Stein- & Terrassenreinigung in Wustermark",
+      "h1_em": "wie neu",
+      "intro": "Rund um Wustermark und Elstal stehen viele neue Häuser mit modernen Pflaster- und Feinsteinzeug-Flächen — die reinigen wir streifenfrei und materialschonend.",
+      "hero_img": "ort-wustermark",
+      "hero_alt": "Gereinigter Plattenweg vor einem Einfamilienhaus in Wustermark",
+      "lokal_title": "Moderne Flächen in Wustermark und Elstal sauber halten.",
+      "lokal_body": [
+        "In den Neubaugebieten von Elstal, Priort und dem Kernort sieht man viele moderne Beläge: glattes Feinsteinzeug auf der Terrasse, sauber verlegtes Verbundpflaster in der Einfahrt. Solche Flächen sehen lange gut aus — bis sich der erste Grünschleier oder Reifenabrieb festsetzt und das einheitliche Bild stört.",
+        "Wir reinigen genau auf diese Beläge abgestimmt: gleichmäßiger Druck, das passende Mittel, kein Aufrauen und kein Schleier. Anschließend verfugen wir neu und imprägnieren auf Wunsch, damit die Fläche frisch bleibt. Ein, zwei Fotos und die Maße per WhatsApp genügen für ein zügiges Angebot."
+      ],
+      "stein_text": "Verbundpflaster-Einfahrten in den Neubaugebieten zeigen schnell Reifenspuren und Grün in den Fugen. Wir reinigen sie gleichmäßig, saugen den Schmutz ab und füllen die Fugen neu — so wirkt die Einfahrt wieder so frisch wie kurz nach dem Einzug.",
+      "terrasse_text": "Feinsteinzeug und Keramik reinigen wir streifenfrei und ohne die Oberfläche aufzurauen — bei modernen Terrassen kommt es genau darauf an. Eine Nano-Imprägnierung hält die Fläche danach länger sauber, ohne den matten, modernen Look zu verändern.",
+      "gebiet_text": "Wir reinigen in ganz Wustermark — im Kernort sowie in Elstal, Priort, Buchow-Karpzow und Hoppenrade. Anfahrtskosten fallen nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "dallgow-doeberitz",
+        "brieselang",
+        "falkensee"
+      ],
+      "faqs": [
+        {
+          "q": "Reinigt ihr auch im Neubaugebiet Elstal?",
+          "a": "Ja, wir sind in ganz Wustermark unterwegs, auch in Elstal, Priort und den weiteren Ortsteilen. Gerade die modernen Beläge in den Neubaugebieten reinigen wir materialgerecht — streifenfrei und ohne die Oberfläche anzugreifen. Anfahrtskosten fallen nicht an."
+        },
+        {
+          "q": "Kann man Feinsteinzeug überhaupt mit Hochdruck reinigen?",
+          "a": "Ja, wenn man es richtig macht. Wir arbeiten mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und stellen ihn auf den Belag ein — so wird Feinsteinzeug streifenfrei sauber, ohne dass die glatte Oberfläche aufraut oder Schleier zurückbleiben."
+        },
+        {
+          "q": "Was kostet die Reinigung in Wustermark?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung bei 8 €/m². Eine 35 m² große Terrasse liegt damit bei rund 245 bis 280 €. Das verbindliche Angebot kommt nach Fotos oder Besichtigung — alle Preise sind Endpreise ohne versteckte Kosten."
+        }
+      ],
+      "cta_title": "Frische Flächen in Wustermark?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Materialgerecht, auch für moderne Beläge."
+    },
+    "gross-glienicke": {
+      "archetyp": "standard",
+      "title": "Stein- & Terrassenreinigung Groß Glienicke | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Groß Glienicke: Naturstein-Terrassen und Einfahrten am See materialschonend reinigen, neu verfugen, imprägnieren. Ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Groß Glienicke",
+      "h1": "Stein- & Terrassenreinigung in Groß Glienicke",
+      "h1_em": "am See",
+      "intro": "Am Groß Glienicker See liegen Naturstein-Terrassen und Pflaster-Einfahrten, die mit der Zeit vergrünen — die reinigen wir materialschonend und verfugen neu.",
+      "hero_img": "ort-gross-glienicke",
+      "hero_alt": "Gereinigte Steinfläche vor einem Wohnhaus in Groß Glienicke",
+      "lokal_title": "Stein und Terrasse in Groß Glienicke wieder sauber.",
+      "lokal_body": [
+        "Groß Glienicke liegt schön ruhig am See, zwischen Potsdam und Berlin-Kladow. Auf vielen Grundstücken liegt Naturstein — auf der Terrasse, in der Einfahrt, am Weg. Naturstein braucht bei der Reinigung etwas mehr Sorgfalt, damit die Oberfläche nicht aufraut.",
+        "Wir stellen Druck und Reinigungsmittel aufs Material ein, saugen den Schmutz sauber ab statt ihn ins Beet zu spülen, und verfugen neu. Auf Wunsch schützt eine Imprägnierung die Fläche, damit sie länger sauber bleibt. Fotos und Maße per WhatsApp genügen für ein erstes Angebot."
+      ],
+      "stein_text": "Einfahrten und Wege reinigen wir gründlich, aber materialschonend, holen den ursprünglichen Farbton zurück und verfugen neu — auch bei empfindlichem Natursteinpflaster, ohne Spuren zu hinterlassen.",
+      "terrasse_text": "Naturstein reagiert empfindlich auf zu viel Druck. Wir stellen Technik und Reinigungsmittel aufs Material ein, sodass Oberfläche und Kanten heil bleiben. Eine Nano-Imprägnierung danach hält die Fläche länger sauber.",
+      "gebiet_text": "Wir reinigen in Groß Glienicke und den angrenzenden Lagen am See. Anfahrtskosten fallen im Servicegebiet nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "kladow",
+        "falkensee",
+        "dallgow-doeberitz"
+      ],
+      "faqs": [
+        {
+          "q": "Reinigt ihr empfindlichen Naturstein schonend?",
+          "a": "Ja, darauf achten wir. Wir arbeiten mit angepasstem Druck, größerem Abstand und einem materialgerechten Reinigungsmittel, sodass Oberfläche und Kanten unversehrt bleiben. Wo nötig, reinigen wir mit weniger Druck und mehr Einwirkzeit."
+        },
+        {
+          "q": "Bringt die Imprägnierung bei einer Natursteinterrasse etwas?",
+          "a": "Ja. Die Nano-Imprägnierung frischt die Farbe auf, lässt Wasser abperlen und schützt vor Auswaschung und schneller Wiederverschmutzung. An schattigen Stellen lohnt sie sich besonders — für 1 €/m² mehr als die reine Reinigung."
+        },
+        {
+          "q": "Was kostet die Reinigung in Groß Glienicke?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung bei 8 €/m². Eine 40 m² große Natursteinterrasse liegt damit bei rund 280 bis 320 €. Das verbindliche Angebot erstellen wir nach Fotos oder bei einer kostenlosen Besichtigung — alle Preise sind Endpreise."
+        }
+      ],
+      "cta_title": "Stein oder Terrasse in Groß Glienicke?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Materialschonend, auch bei Naturstein."
+    },
+    "kladow": {
+      "archetyp": "standard",
+      "title": "Stein- & Terrassenreinigung Kladow | Blankstein",
+      "meta": "Stein- und Terrassenreinigung in Berlin-Kladow: Terrassen und Einfahrten an der Havel materialschonend reinigen, neu verfugen und imprägnieren. Richtpreis ab 7 €/m².",
+      "eyebrow": "Stein- & Terrassenreinigung in Kladow",
+      "h1": "Stein- & Terrassenreinigung in Kladow",
+      "h1_em": "an der Havel",
+      "intro": "Kladow liegt an der Havel im Bezirk Spandau — Klinker-, Pflaster- und Natursteinflächen, die vergrünen, reinigen wir materialschonend und verfugen neu.",
+      "hero_img": "ort-kladow",
+      "hero_alt": "Gereinigte Einfahrt vor einem Wohnhaus in Berlin-Kladow",
+      "lokal_title": "Pflaster und Klinker in Kladow auffrischen.",
+      "lokal_body": [
+        "Kladow gehört zu Berlin-Spandau und hat sich seinen dörflichen Charakter an der Havel bewahrt. Viele Häuser stehen schon länger, entsprechend gesetzt sind die Klinker-Einfahrten und Plattenwege — und entsprechend hartnäckig sitzt das Moos in den Fugen.",
+        "Wir reinigen mit dem Flächenreiniger bis in die Fugen, füllen mit frischem Sand auf und bekommen auch enge, verwinkelte Hofzufahrten gleichmäßig sauber. Schicken Sie uns ein, zwei Fotos und die Maße per WhatsApp, dann melden wir uns zügig mit einem Angebot."
+      ],
+      "stein_text": "Ältere Klinker- und Pflasterflächen setzen in den Fugen gern Moos an. Wir lösen es porentief mit dem Flächenreiniger, verfugen mit frischem Sand neu und nehmen auch schmale, verwinkelte Zufahrten gleichmäßig sauber — von der Straße bis zum Hauseingang.",
+      "terrasse_text": "Ob alte Natursteinplatten oder neuere Keramik: Wir stellen Druck und Reinigungsmittel auf den Belag ein und reinigen streifenfrei. An der feuchteren Lage zur Havel hält eine Nano-Imprägnierung die Fläche danach länger frei von Algen.",
+      "gebiet_text": "Wir reinigen in Kladow und den angrenzenden Lagen in Berlin-Spandau und am westlichen Havelland-Rand. Anfahrtskosten fallen im Servicegebiet nicht an, die Besichtigung ist kostenlos und unverbindlich.",
+      "nachbarorte": [
+        "gross-glienicke",
+        "falkensee",
+        "dallgow-doeberitz"
+      ],
+      "faqs": [
+        {
+          "q": "Seid ihr auch in Berlin-Kladow tätig?",
+          "a": "Ja. Kladow liegt am westlichen Berliner Rand, direkt in unserem Servicegebiet rund ums Havelland. Wir reinigen hier Terrassen, Einfahrten und Wege materialschonend; Anfahrtskosten fallen nicht an und die Vor-Ort-Besichtigung ist kostenlos und unverbindlich."
+        },
+        {
+          "q": "Bekommt ihr auch alte, festsitzende Verschmutzung weg?",
+          "a": "Festsitzendes Moos und vergraute Klinkerflächen lösen wir mit dem Flächenreiniger porentief. Tiefe Flecken oder dauerhafte Verfärbungen schätzen wir vorab ehrlich anhand Ihrer Fotos ein, bevor wir ein Angebot machen — wir versprechen nichts, was nicht geht."
+        },
+        {
+          "q": "Was kostet die Reinigung in Kladow?",
+          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung bei 8 €/m². Eine 30 m² große Terrasse liegt damit bei rund 210 bis 240 €. Das verbindliche Angebot kommt nach Fotos oder bei einer kostenlosen Besichtigung — alle Preise sind Endpreise ohne versteckte Kosten."
+        }
+      ],
+      "cta_title": "Saubere Flächen in Kladow?",
+      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindliches Angebot in rund 30 Minuten. Materialschonend, auch an der Havel."
+    }
+  }
+}

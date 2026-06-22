@@ -1,0 +1,120 @@
+// Deterministische Quality-Gates für den generierten Output (website/). Run: node scripts/gates.mjs
+// Fork von havelland-website/scripts/gates.mjs. Blankstein-Abweichungen:
+//   • FAQPage-JSON-LD ERLAUBT (Architektur §5: AEO-Hebel) — kein FAQPage-Verbot.
+//   • Hamburger-Selektor .menu-toggle (hero-v3), Sticky-CTA .scta.
+//   • NearDup gruppiert lokale Orts-Hubs via <body data-pagetype="ort">.
+// Exit 0 = alle harten Gates grün; Exit 1 = mindestens ein hartes Gate rot. Warnungen brechen nicht ab.
+import fs from 'fs';
+import path from 'path';
+
+const ROOT = 'website';
+const DOMAIN = JSON.parse(fs.readFileSync('data/config.json','utf8')).domain.replace(/\/$/,'');
+const hard = []; const warn = []; const ok = [];
+const FAIL = (g,d)=>hard.push(`${g}: ${d}`);
+const WARN = (g,d)=>warn.push(`${g}: ${d}`);
+const OK = g=>ok.push(g);
+
+function walk(dir){ let out=[]; for(const e of fs.readdirSync(dir,{withFileTypes:true})){ const p=path.join(dir,e.name); if(e.isDirectory()) out=out.concat(walk(p)); else if(e.name.endsWith('.html')) out.push(p); } return out; }
+const files = walk(ROOT);
+const urlOf = f => '/' + path.relative(ROOT,f).replace(/\\/g,'/').replace(/index\.html$/,'');
+const exists = u => {
+  let p = u.split('#')[0].split('?')[0];
+  if(!p.startsWith('/')) return true;
+  if(p.endsWith('/')) p = p+'index.html';
+  else if(!path.extname(p)) p = p+'/index.html';
+  return fs.existsSync(path.join(ROOT, p));
+};
+const visibleText = h => h.replace(/<script[^>]*>[\s\S]*?<\/script>/g,' ').replace(/<style[^>]*>[\s\S]*?<\/style>/g,' ').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&[a-z]+;/g,' ').replace(/\s+/g,' ').trim();
+
+let brokenLinks=0; const brokenSamples=[];
+let imgNoAlt=0, imgNoDim=0, noScta=0, noHamb=0, noOg=0; const titles=new Map(); const metas=new Map();
+// Blankstein-Translit-Liste: ASCII-Fehlerformen von Umlaut-Wörtern, die in der Copy vorkommen könnten.
+const transRe = /\b(fuer|ueber|koennen|koennt|muessen|moechten?|moeglich|schoen|groesse|groesser|qualitaet|naehe|naehere|haeufig|haeufige|natuerlich|persoenlich|zuverlaessig|regelmaessig|gruenbelag|gruen\b|fruehjahr|fruehling|gebaeude|oberflaeche|flaeche|flaechen|flaechenreiniger|impraegnierung|impraegniert|verschmutzt\b.*?flaeche|waehrend|spaeter|draussen|doeberitz|schoenwalde|grossglienicke)\b/i;
+const bodyByGroup = {};
+
+for(const f of files){
+  const h = fs.readFileSync(f,'utf8');
+  const url = urlOf(f);
+
+  const h1s = (h.match(/<h1\b/g)||[]).length;
+  if(h1s!==1) FAIL('H1', `${url} hat ${h1s} H1`);
+  if(!/<html lang="de"/.test(h)) FAIL('lang', `${url} ohne lang="de"`);
+
+  for(const m of h.matchAll(/(?:href|src)="(\/[^"#?]*)"/g)){ if(!exists(m[1])){ brokenLinks++; if(brokenSamples.length<15) brokenSamples.push(`${url} → ${m[1]}`);} }
+
+  for(const m of h.matchAll(/<img\b[^>]*>/g)){ const tag=m[0]; if(!/alt="[^"]*"/.test(tag)) imgNoAlt++; if(!/width="\d+"/.test(tag)||!/height="\d+"/.test(tag)) imgNoDim++; }
+
+  const t=(h.match(/<title>([^<]*)<\/title>/)||[])[1]||'';
+  const d=(h.match(/<meta name="description" content="([^"]*)"/)||[])[1]||'';
+  titles.set(url, t); metas.set(url, d);
+  if(t.length>60) WARN('TitleLen', `${url} Title ${t.length}>60`);
+  if(d.length<150||d.length>158) WARN('MetaLen', `${url} Meta ${d.length} (Soll 150–158)`);
+
+  const visEarly = visibleText(h);
+  if(/cdn\.tailwindcss\.com/.test(h)) FAIL('CDN', `${url} nutzt cdn.tailwindcss.com`);
+  if(/fonts\.googleapis\.com|fonts\.gstatic\.com/.test(h)) FAIL('FontCDN', `${url} lädt externe Google-Fonts (DSGVO)`);
+  if(/\{\{|\}\}/.test(visEarly)) FAIL('Mustache', `${url} enthält {{ }} im Text`);
+  const tok = visEarly.match(/\{(ort|plz|nachbarorte|service|qm|preis|[a-z_]{2,})\}/);
+  if(tok) FAIL('Token', `${url} unausgefüllter Platzhalter ${tok[0]}`);
+  if(/GTM-X|G-XXXX|G-XXXXX|WF3|TBD-P\d|TBD\b/.test(h)) FAIL('PlatzhalterID', `${url} enthält Platzhalter-ID`);
+  if(/"item":"\/[a-z]/.test(h)) FAIL('SchemaRelURL', `${url} relative Schema-URL`);
+  if(/&amp;amp;/.test(h)) FAIL('DoppelEntity', `${url} enthält &amp;amp; (Doppel-Escape)`);
+  if(/&lt;\/?em&gt;/.test(h)) FAIL('EscapedEm', `${url} escaptes <em> als sichtbarer Text`);
+  if(/491234567890/.test(h)) FAIL('WaPlatzhalter', `${url} enthält WhatsApp-Platzhalter 491234567890`);
+  if(!/class="scta"/.test(h)) noScta++;
+  if(!/class="menu-toggle"/.test(h) && !/data-pagetype="start"/.test(h)) noHamb++; // /start = bewusste Reel-Landing ohne Nav-Menue
+  if(!/property="og:image"/.test(h)) noOg++;
+  if(/srcset="\s*"/.test(h)) FAIL('LeeresSrcset', `${url} hat leeres srcset (Bild fehlt im Manifest)`);
+
+  const vis = visibleText(h);
+  const tm = vis.match(transRe);
+  if(tm) FAIL('Translit', `${url} sichtbar "${tm[0]}"`);
+
+  for(const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)){
+    try{ const j=JSON.parse(m[1]);
+      const s=JSON.stringify(j);
+      for(const idm of s.matchAll(/"@id":"([^"]+)"/g)){ if(!/^https?:\/\//.test(idm[1])) FAIL('SchemaAbsId', `${url} @id nicht absolut: ${idm[1]}`); }
+    }catch(e){ FAIL('SchemaJSON', `${url} JSON-LD nicht parsebar: ${e.message}`); }
+  }
+
+  const can=(h.match(/<link rel="canonical" href="([^"]+)"/)||[])[1];
+  const og=(h.match(/<meta property="og:url" content="([^"]+)"/)||[])[1];
+  if(can&&og&&can!==og) FAIL('CanonOG', `${url} canonical≠og:url`);
+  if(can && can!==`${DOMAIN}${url}`) WARN('CanonSelf', `${url} canonical=${can}`);
+
+  // Near-Duplicate: lokale Orts-Hubs (Generator markiert via data-pagetype="ort")
+  if(/<body[^>]*data-pagetype="ort"/.test(h)){
+    const bodyText = vis;
+    const words = bodyText.toLowerCase().replace(/[^a-zäöüß ]/g,' ').split(/\s+/).filter(w=>w.length>2);
+    const sh=new Set(); for(let i=0;i<words.length-2;i++) sh.add(words[i]+' '+words[i+1]+' '+words[i+2]);
+    if(sh.size>5) (bodyByGroup['ort']=bodyByGroup['ort']||[]).push({url, sh});
+  }
+}
+
+if(brokenLinks===0) OK('Broken-Link = 0'); else FAIL('BrokenLink', `${brokenLinks} kaputte interne Links, z.B. ${brokenSamples.slice(0,8).join(' | ')}`);
+if(imgNoAlt===0) OK('alt auf allen <img>'); else FAIL('ImgAlt', `${imgNoAlt} <img> ohne alt`);
+if(imgNoDim===0) OK('width+height auf allen <img>'); else FAIL('ImgDim', `${imgNoDim} <img> ohne width/height`);
+if(noScta===0) OK('Sticky-Mobile-CTA (.scta) auf allen Seiten'); else FAIL('StickyCTA', `${noScta} Seiten ohne .scta`);
+if(noHamb===0) OK('Mobile-Hamburger (.menu-toggle) auf allen Seiten'); else FAIL('Hamburger', `${noHamb} Seiten ohne .menu-toggle`);
+if(noOg===0) OK('og:image auf allen Seiten'); else FAIL('OgImage', `${noOg} Seiten ohne og:image`);
+{ const kf = files.find(f=>urlOf(f)==='/kontakt/'); if(kf && /<form id="anfrage"/.test(fs.readFileSync(kf,'utf8'))) OK('Kontakt-Formular vorhanden'); else FAIL('KontaktForm','/kontakt/ ohne Anfrage-Formular'); }
+
+const tvals=[...titles.values()]; const tdup=tvals.filter((v,i)=>tvals.indexOf(v)!==i);
+if(tdup.length===0) OK('Titles unique'); else FAIL('TitleDup', `${[...new Set(tdup)].length} doppelte Titles, z.B. "${tdup[0]}"`);
+const mvals=[...metas.values()]; const mdup=mvals.filter((v,i)=>mvals.indexOf(v)!==i);
+if(mdup.length===0) OK('Metas unique'); else WARN('MetaDup', `${[...new Set(mdup)].length} doppelte Metas`);
+
+function jac(a,b){ let inter=0; const small=a.size<b.size?a:b, big=a.size<b.size?b:a; for(const x of small) if(big.has(x)) inter++; return inter/(a.size+b.size-inter); }
+let dupPairs=0; let maxSim=0; const dupSamples=[]; let comparedFamilies=0;
+for(const g in bodyByGroup){ const arr=bodyByGroup[g]; if(arr.length<2) continue; comparedFamilies++;
+  for(let i=0;i<arr.length;i++) for(let j=i+1;j<arr.length;j++){ const s=jac(arr[i].sh,arr[j].sh); if(s>maxSim) maxSim=s; if(s>0.40){ dupPairs++; if(dupSamples.length<6) dupSamples.push(`${arr[i].url}~${arr[j].url}=${(s*100).toFixed(0)}%`);} }
+}
+if(comparedFamilies===0) WARN('NearDup', 'keine Orts-Hub-Gruppe mit ≥2 Seiten im Output (Home/Basis-only Build?)');
+else if(dupPairs===0) OK(`Near-Duplicate <40% (max ${(maxSim*100).toFixed(0)}% Ähnlichkeit, ${comparedFamilies} Gruppen)`);
+else FAIL('NearDup', `${dupPairs} Orts-Hub-Paare ≥40% ähnlich (max ${(maxSim*100).toFixed(0)}%), z.B. ${dupSamples.join(' | ')}`);
+
+console.log(`\n=== GATES Blankstein (${files.length} Seiten) ===`);
+console.log('GRÜN:'); ok.forEach(g=>console.log('  ✓ '+g));
+if(warn.length){ console.log(`WARN (${warn.length}):`); warn.slice(0,25).forEach(w=>console.log('  ! '+w)); if(warn.length>25) console.log(`  … +${warn.length-25}`); }
+if(hard.length){ console.log(`\nROT (${hard.length}):`); hard.slice(0,40).forEach(h=>console.log('  ✗ '+h)); if(hard.length>40) console.log(`  … +${hard.length-40}`); console.log('\nERGEBNIS: ROT'); process.exit(1); }
+console.log('\nERGEBNIS: GRÜN (alle harten Gates bestanden)'); process.exit(0);
