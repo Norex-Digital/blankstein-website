@@ -11,7 +11,7 @@
 #
 # Pillow >= 11 mit nativem AVIF-Support (features.check('avif') == True).
 import sys, os, json
-from PIL import Image
+from PIL import Image, ImageOps
 
 ASSET_DIR = "assets/img"
 MANIFEST = os.path.join(ASSET_DIR, "manifest.json")
@@ -31,7 +31,8 @@ def emit(src, slug, profile):
     if profile not in PROFILES:
         sys.exit(f"Unbekanntes Profil '{profile}' (erlaubt: {', '.join(PROFILES)})")
     p = PROFILES[profile]
-    im = Image.open(src).convert("RGB")
+    im = Image.open(src)
+    im = ImageOps.exif_transpose(im).convert("RGB")  # EXIF-Rotation anwenden (Handy-Hochformat korrekt)
     sw, sh = im.size
     os.makedirs(ASSET_DIR, exist_ok=True)
 
