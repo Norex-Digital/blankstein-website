@@ -973,8 +973,25 @@ function notFound() {
 function sitemaps() {
   const urls = written.filter(u => u !== '/danke/');
   const lm = (config.content_stand && /^\d{4}-\d{2}-\d{2}$/.test(config.content_stand)) ? `<lastmod>${config.content_stand}</lastmod>` : '';
-  const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u => `<url><loc>${DOMAIN}${u}</loc>${lm}</url>`).join('\n')}\n</urlset>\n`;
-  fs.writeFileSync('website/sitemap.xml', sm);
+  // Sitemap-Split (Wellen-Indexierung): URLs nach Typ in Teil-Sitemaps, ein Index verweist darauf.
+  const svcSet = new Set(services.map(s => `/${s.slug}/`));
+  const ortSet = new Set([...orte.map(o => `/${o.slug}/`), '/servicegebiet/']);
+  const groups = { services: [], standorte: [], ratgeber: [], core: [] };
+  for (const u of urls) {
+    if (u.startsWith('/ratgeber')) groups.ratgeber.push(u);
+    else if (svcSet.has(u)) groups.services.push(u);
+    else if (ortSet.has(u)) groups.standorte.push(u);
+    else groups.core.push(u);
+  }
+  const urlset = us => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${us.map(u => `<url><loc>${DOMAIN}${u}</loc>${lm}</url>`).join('\n')}\n</urlset>\n`;
+  const parts = [];
+  for (const [name, us] of Object.entries(groups)) {
+    if (!us.length) continue; // leere Gruppe (Teilbuild) -> keine Datei, kein Index-Eintrag
+    fs.writeFileSync(`website/sitemap-${name}.xml`, urlset(us));
+    parts.push(name);
+  }
+  const index = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${parts.map(n => `<sitemap><loc>${DOMAIN}/sitemap-${n}.xml</loc>${lm}</sitemap>`).join('\n')}\n</sitemapindex>\n`;
+  fs.writeFileSync('website/sitemap.xml', index);
   fs.writeFileSync('website/robots.txt', `User-agent: *\nAllow: /\n\n# AI-Crawler erlaubt (AEO/GEO — Architektur §8)\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\nUser-agent: Claude-Web\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
   const llms = `# Blankstein\n\n> Steinreinigung, Terrassenreinigung, Pflasterreinigung und Steinversiegelung im Havelland und am westlichen Berliner Rand. Verfahren: rotierende Flächenreiniger (kontrollierter Hochdruck), Neuverfugung mit Fugensand, Nano-Imprägnierung, saubere Nass-Absaugung. Richtpreis ${P.satz_basis} €/m² (mit Imprägnierung ${P.satz_impraegnierung} €/m²), Endpreise ohne versteckte Kosten. Angebot per Foto + Maße über WhatsApp in rund 30 Minuten oder kostenlose Vor-Ort-Besichtigung. Sitz: ${nap.city}.\n\n## Leistungen\n${services.map(s => `- ${s.name}`).join('\n')}\n\n## Servicegebiet\n${orte.map(o => `- ${o.name} (${o.plz})`).join('\n')}\n\n## Kontakt\n- Telefon: ${nap.phone_display}\n- WhatsApp: ${waHref('Hallo Blankstein')}\n- Ort: ${nap.street}, ${nap.zip} ${nap.city}\n`;
   fs.writeFileSync('website/llms.txt', llms);
