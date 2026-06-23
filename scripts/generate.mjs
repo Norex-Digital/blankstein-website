@@ -206,16 +206,24 @@ const PROZ = [
 ];
 function uspSection({ id = '', label = 'Womit wir arbeiten', title, sub, items }) {
   const cards = (items && items.length) ? items.map((it, i) => Array.isArray(it) ? it : [USP[i % USP.length][0], it.title, it.sub]) : USP;
+  const bento = cards.length === 4 && cards.every(c => c[3] && IMG[c[3]]);
+  let grid;
+  if (bento) {
+    const span = [' bento-hero', '', '', ' bento-wide'];
+    grid = `<div class="bento-grid reveal">${cards.map(([ic, t, d, img, alt, lead], i) => {
+      const hero = i === 0;
+      const ov = hero ? `<span class="bento-eyebrow">01 · Schritt</span><h3>${t}</h3><p>${lead || ''}</p>` : `<h3>${t}</h3>`;
+      const sz = (hero || i === 3) ? '(max-width:760px) 92vw, 480px' : '(max-width:760px) 46vw, 240px';
+      return `<figure class="bento-tile${span[i]}">${pic(img, { alt: alt || t, sizes: sz })}<div class="bento-ov">${ov}</div></figure>`;
+    }).join('')}</div>`;
+  } else {
+    grid = `<div class="usp-grid">${cards.map(([ic, t, d], i) => `<div class="usp-card reveal" style="transition-delay:${i * .08}s"><div class="usp-icon">${ic}</div><div class="usp-card-title">${t}</div><p class="usp-card-text">${d}</p></div>`).join('')}</div>`;
+  }
   return `<section class="usp-section"${id ? ` id="${id}"` : ''}><div class="container">
 <div class="section-head"><div class="section-label reveal"><span class="spark"></span>${esc(label)}</div>
 <h2 class="section-title reveal" style="transition-delay:.08s">${esc(title)}</h2>
 <p class="section-sub reveal" style="transition-delay:.16s">${esc(sub)}</p></div>
-<div class="usp-grid">${cards.map(([ic, t, d, img, alt, lead], i) => {
-  if (img && IMG[img]) {
-    return `<div class="usp-card md-card reveal" style="transition-delay:${i * .08}s"><div class="md-img">${pic(img, { alt: alt || t, sizes: '(max-width:560px) 92vw, (max-width:900px) 46vw, 320px' })}<div class="md-title-ov"><span class="usp-card-title">${t}</span></div></div><div class="md-body"><p class="usp-card-text">${lead || d}</p></div></div>`;
-  }
-  return `<div class="usp-card reveal" style="transition-delay:${i * .08}s"><div class="usp-icon">${ic}</div><div class="usp-card-title">${t}</div><p class="usp-card-text">${d}</p></div>`;
-}).join('')}</div>
+${grid}
 </div></section>`;
 }
 function processSection({ id = 'ablauf', title, sub }) {
