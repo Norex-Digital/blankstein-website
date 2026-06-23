@@ -193,10 +193,10 @@ const written = [];
 // ====================================================================
 // Globale USP-Kacheln (bau-fakten, gelten fuer alle Hubs)
 const USP = [
-  [ICON.spray, 'Flächenreiniger statt Lanze', 'Wir reinigen mit rotierenden Flächenreinigern — gleichmäßiger Abtrag, keine Streifen, keine ausgewaschenen Fugen. Hochdruck, aber kontrolliert eingesetzt.', 'usp-flaechenreiniger', 'Rotierender Flächenreiniger an einem Hochdruckreiniger reinigt graue Pflastersteine'],
-  [ICON.grid, 'Neuverfugung mit Sand', 'Nach der Reinigung füllen wir die Fugen mit frischem GaLaBau-Sand auf. Das hält das Pflaster stabil und bremst Unkraut aus.', 'usp-verfugung', 'Fugensand wird mit einem Besen in die Fugen von Pflastersteinen eingekehrt'],
-  [ICON.drop, 'Nano-Imprägnierung', 'Auf Wunsch versiegeln wir die Fläche. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt länger sauber.', 'usp-impraegnierung', 'Wasser perlt auf einer frisch imprägnierten Steinfläche ab'],
-  [ICON.vacuum, 'Saubere Absaugung', 'Den gelösten Schmutz saugen wir nass ab. Keine Matsch-Sauerei in Beeten, auf dem Rasen oder an der Hauswand.', 'usp-absaugung', 'Ein Nass-Sauger nimmt Schmutzwasser von einer Pflasterfläche auf']
+  [ICON.spray, 'Flächenreiniger statt Lanze', 'Wir reinigen mit rotierenden Flächenreinigern — gleichmäßiger Abtrag, keine Streifen, keine ausgewaschenen Fugen. Hochdruck, aber kontrolliert eingesetzt.', 'usp-flaechenreiniger', 'Rotierender Flächenreiniger an einem Hochdruckreiniger reinigt graue Pflastersteine', 'Gleichmäßiger Abtrag — ohne Streifen und ausgewaschene Fugen.'],
+  [ICON.grid, 'Neuverfugung mit Sand', 'Nach der Reinigung füllen wir die Fugen mit frischem GaLaBau-Sand auf. Das hält das Pflaster stabil und bremst Unkraut aus.', 'usp-verfugung', 'Fugensand wird mit einem Besen in die Fugen von Pflastersteinen eingekehrt', 'Frischer GaLaBau-Sand hält das Pflaster stabil und bremst Unkraut.'],
+  [ICON.drop, 'Nano-Imprägnierung', 'Auf Wunsch versiegeln wir die Fläche. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt länger sauber.', 'usp-impraegnierung', 'Wasser perlt auf einer frisch imprägnierten Steinfläche ab', 'Auf Wunsch: Wasser perlt ab, die Fläche bleibt länger sauber.'],
+  [ICON.vacuum, 'Saubere Absaugung', 'Den gelösten Schmutz saugen wir nass ab. Keine Matsch-Sauerei in Beeten, auf dem Rasen oder an der Hauswand.', 'usp-absaugung', 'Ein Nass-Sauger nimmt Schmutzwasser von einer Pflasterfläche auf', 'Schmutzwasser wird abgesaugt — keine Sauerei in den Beeten.']
 ];
 const PROZ = [
   ['01', 'Richtpreis berechnen', 'Fläche grob schätzen, Regler ziehen — Sie sehen sofort den Rahmen. Ohne Kontaktdaten, ohne Verpflichtung.', '1 Minute'],
@@ -210,11 +210,11 @@ function uspSection({ id = '', label = 'Womit wir arbeiten', title, sub, items }
 <div class="section-head"><div class="section-label reveal"><span class="spark"></span>${esc(label)}</div>
 <h2 class="section-title reveal" style="transition-delay:.08s">${esc(title)}</h2>
 <p class="section-sub reveal" style="transition-delay:.16s">${esc(sub)}</p></div>
-<div class="usp-grid">${cards.map(([ic, t, d, img, alt], i) => {
-  const hasImg = img && IMG[img];
-  const head = hasImg ? `<div class="md-img">${pic(img, { alt: alt || t, sizes: '(max-width:560px) 92vw, (max-width:900px) 46vw, 320px' })}</div>` : `<div class="usp-icon">${ic}</div>`;
-  const body = hasImg ? `<div class="md-body"><div class="usp-card-title">${t}</div><p class="usp-card-text">${d}</p></div>` : `<div class="usp-card-title">${t}</div><p class="usp-card-text">${d}</p>`;
-  return `<div class="usp-card${hasImg ? ' md-card' : ''} reveal" style="transition-delay:${i * .08}s">${head}${body}</div>`;
+<div class="usp-grid">${cards.map(([ic, t, d, img, alt, lead], i) => {
+  if (img && IMG[img]) {
+    return `<div class="usp-card md-card reveal" style="transition-delay:${i * .08}s"><div class="md-img">${pic(img, { alt: alt || t, sizes: '(max-width:560px) 92vw, (max-width:900px) 46vw, 320px' })}<div class="md-title-ov"><span class="usp-card-title">${t}</span></div></div><div class="md-body"><p class="usp-card-text">${lead || d}</p></div></div>`;
+  }
+  return `<div class="usp-card reveal" style="transition-delay:${i * .08}s"><div class="usp-icon">${ic}</div><div class="usp-card-title">${t}</div><p class="usp-card-text">${d}</p></div>`;
 }).join('')}</div>
 </div></section>`;
 }
