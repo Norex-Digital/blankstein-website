@@ -1,11 +1,11 @@
 {
-  "_meta": "Single Source fuer NAP. Schema + Footer + Impressum ziehen NUR hieraus. NAP 1:1 konsistent mit dem bestehenden GBP 'Blankstein Steinreinigung & Terrassenpflege' (Kategorie Hochdruck-Reinigungsdienst). phone_display = amtliche GBP-Schreibweise (Vorwahl 01575). openingHours aus GBP uebernommen (Mo-Fr 8-18, Sa 9-14, So zu) fuer NAP-/Schema-Konsistenz. NAP-Aenderung nach Bau = Re-Generierung -> gelockt.",
+  "_meta": "Single Source fuer NAP. Schema + Footer + Impressum ziehen NUR hieraus. NAP 1:1 konsistent mit dem GBP 'Blankstein Steinreinigung & Terrassenpflege' (Kategorie Hochdruck-Reinigungsdienst). ADRESSE = Melli-Beese-Straße 17, 14612 Falkensee = Maurice Brehms Anschrift = exakt die im GBP hinterlegte (bewusst NICHT Noahs Darmstaedter Str. 15, damit Blankstein und Haus-Garten verschiedene reale Gesellschafter-Anschriften nutzen — beide ladungsfaehig). geo hausnummer-genau (Nominatim 2026-06-23). phone_display = amtliche GBP-Schreibweise (Vorwahl 01575). openingHours aus GBP (Mo-Fr 8-18, Sa 9-14, So zu). NAP-Aenderung = Re-Generierung -> gelockt.",
   "name": "Blankstein",
   "rechtstraeger": "Haus- & Gartenservice Havelland GbR",
   "marke_zusatz": "Steinreinigung & Terrassenpflege im Havelland",
   "gbp_name": "Blankstein Steinreinigung & Terrassenpflege",
   "inhaber": "Noah Telo",
-  "street": "Darmstädter Str. 15",
+  "street": "Melli-Beese-Straße 17",
   "zip": "14612",
   "city": "Falkensee",
   "phone_e164": "+4915756963736",
@@ -18,8 +18,8 @@
     { "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "14:00" }
   ],
   "geo": {
-    "lat": 52.585035,
-    "lng": 13.079492
+    "lat": 52.559516,
+    "lng": 13.080866
   },
   "servicegebiet": "Definiert durch die bedienten Orte (locations.json) — Launch: 7 Kern-Orte, Erweiterung GSC-getriggert. KEIN fester km-Radius (Entscheidung 2026-06-18: Gebiet = wo wir tätig sind / wofür Seiten gebaut werden).",
   "fahrtkosten": "keine im Servicegebiet — Besichtigung kostenlos & unverbindlich (Entscheidung 2026-06-18)",
