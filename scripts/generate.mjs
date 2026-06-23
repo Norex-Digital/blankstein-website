@@ -215,7 +215,7 @@ function uspSection({ id = '', label = 'Womit wir arbeiten', title, sub, items }
     const span = [' bento-hero', '', '', ' bento-wide'];
     grid = `<div class="bento-grid reveal">${cards.map(([ic, t, d, img, alt, lead], i) => {
       const hero = i === 0;
-      const ov = hero ? `<span class="bento-eyebrow">01 · Schritt</span><h3>${t}</h3><p>${lead || ''}</p>` : `<h3>${t}</h3>`;
+      const ov = `<span class="bento-eyebrow">0${i + 1}</span><h3>${t}</h3>${hero ? `<p>${lead || ''}</p>` : ''}`;
       const sz = (hero || i === 3) ? '(max-width:760px) 92vw, 480px' : '(max-width:760px) 46vw, 240px';
       return `<figure class="bento-tile${span[i]}">${pic(img, { alt: alt || t, sizes: sz })}<div class="bento-ov">${ov}</div></figure>`;
     }).join('')}</div>`;
