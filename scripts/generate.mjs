@@ -3,6 +3,9 @@
 // im Design von design/hero-v3.html. Copy = bau-fakten.md + 02_seitenarchitektur.md (NICHT die veraltete hero-v3-Copy:
 // kein Heisswasser, kein "kein Hochdruck", online IMMER Richtpreis statt "Festpreis"). FAQPage-JSON-LD bewusst gesetzt (AEO §5).
 import fs from 'fs';
+import crypto from 'node:crypto';
+// Cache-Busting: kurzer Inhalts-Hash der CSS -> ?v=… am <link>, damit Browser nach jeder CSS-Änderung frisch lädt
+const CSS_VER = crypto.createHash('md5').update(fs.readFileSync('assets/css/site.css')).digest('hex').slice(0, 8);
 
 const J = f => JSON.parse(fs.readFileSync(`data/${f}`, 'utf8'));
 const services = J('services.json').services;
@@ -125,7 +128,7 @@ function head(title, desc, canonical, schemaGraph, opts = {}) {
 <link rel="icon" type="image/png" href="/assets/img/logo.png">
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v=${CSS_VER}">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[${schemaGraph}]}</script>
 </head><body${opts.pagetype ? ` data-pagetype="${opts.pagetype}"` : ''}>${ANALYTICS_BODY}`;
