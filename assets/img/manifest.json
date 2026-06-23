@@ -832,5 +832,53 @@
   "avif": true,
   "fb_ext": "jpg",
   "fb_w": 600
+ },
+ "usp-flaechenreiniger": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "usp-verfugung": {
+  "w": 2048,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "usp-impraegnierung": {
+  "w": 2048,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
+ },
+ "usp-absaugung": {
+  "w": 2048,
+  "h": 2048,
+  "widths": [
+   400,
+   600,
+   800
+  ],
+  "avif": true,
+  "fb_ext": "jpg",
+  "fb_w": 600
  }
 }
