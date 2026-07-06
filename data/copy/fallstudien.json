@@ -1,0 +1,47 @@
+{
+  "_meta": "Auftrags-Protokolle (Spec §2.3) — NUR echtes Material (previews/ASSET-LISTE.md). Tabellen tragen ausschließlich belegte Felder (Objekt/Zustand/Maßnahme/Beleg) — KEINE m²-/Dauer-Erfindungen (UWG). Review-Zitate sind echte Google-Reviews, objekt-zugeordnet (Kategorie, nicht Auftrags-Behauptung); Zuordnungs-Regel: Zitat-Tag nennt IMMER das Objekt aus der Review selbst. Treppe hat kein passendes Review — bewusst ohne Zitat. Brücke-Satz = Spec-Wortlaut (V3, gelockt).",
+  "titel": "Drei Aufträge, drei Belege.",
+  "intro": "Zu jedem Protokoll gehört echtes Material und, wo vorhanden, eine Google-Bewertung zum selben Flächentyp. Ort nennen wir aus Datenschutzgründen nur grob.",
+  "bruecke": "Das Vorher-Bild kam vom Kunden per WhatsApp — derselbe Weg steht Ihnen offen.",
+  "protokolle": [
+    {
+      "id": "einfahrt-video",
+      "kicker": "Protokoll 01 · Einfahrt, Havelland",
+      "titel": "Sechseckpflaster, flächiger Schmutzbelag",
+      "media": { "typ": "video", "file": "reel-einfahrt-vn", "poster": "reel-einfahrt-vn-poster", "aria": "Echtes Video: Reinigung einer Einfahrt aus Sechseckpflaster, vorne noch verschmutzt, hinten gereinigt" },
+      "tabelle": [
+        ["Objekt", "Einfahrt, Sechseckpflaster"],
+        ["Zustand", "Festgetretener Schmutz- und Grünbelag auf der ganzen Fläche"],
+        ["Maßnahme", "Flächenreiniger, danach Neuverfugung mit GaLaBau-Sand"],
+        ["Beleg", "Videoaufnahme vom Auftrag — halb gereinigte Fläche im Bild"]
+      ],
+      "review": { "author": "Mattis B.", "objekt": "Einfahrt", "text": "Ich bin super zufrieden mit dem Ergebnis und der Arbeit, meine Einfahrt sieht endlich wieder sauber und gepflegt aus." }
+    },
+    {
+      "id": "treppe-vn",
+      "kicker": "Protokoll 02 · Außentreppe, Hauseingang",
+      "titel": "Zwei Aufnahmen, dieselbe Treppe.",
+      "media": { "typ": "vn", "vorher": "proof-vn-vorher", "nachher": "proof-vn-nachher", "alt_vorher": "Außentreppe vor der Reinigung — verwitterter Schmutz- und Grünfilm auf allen Stufen (echtes Kundenfoto)", "alt_nachher": "Dieselbe Außentreppe nach der Reinigung — gleichmäßig helle Stufen (echtes Kundenfoto)" },
+      "tabelle": [
+        ["Objekt", "Außentreppe mit Podest, Hauseingang"],
+        ["Zustand", "Verwitterter Schmutz- und Grünfilm"],
+        ["Maßnahme", "Flächenreiniger, Kanten per Hand, Absaugung per Nasssauger"],
+        ["Beleg", "Zwei Aufnahmen, dieselbe Treppe — unbearbeitet"]
+      ],
+      "hinweis": "Stufen sind Handarbeit: Der Flächenreiniger nimmt die Flächen, die Kanten gehen wir gezielt nach."
+    },
+    {
+      "id": "pflaster-split",
+      "kicker": "Protokoll 03 · Pflasterfläche, Havelland",
+      "titel": "Eine Fläche, eine Diagonale — gereinigt gegen ungereinigt",
+      "media": { "typ": "img", "slug": "hub-steinreinigung-vn", "alt": "Echter In-Bild-Vergleich: Pflasterfläche halb gereinigt, halb verschmutzt entlang einer Diagonale" },
+      "tabelle": [
+        ["Objekt", "Pflasterfläche am Wohnhaus"],
+        ["Zustand", "Grauschleier und Belag, Fugen bewachsen"],
+        ["Maßnahme", "Flächenreiniger in Bahnen, Neuverfugung mit GaLaBau-Sand"],
+        ["Beleg", "Ein Foto, beide Zustände im selben Bild"]
+      ],
+      "review": { "author": "Louis", "objekt": "Einfahrt", "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen." }
+    }
+  ]
+}
