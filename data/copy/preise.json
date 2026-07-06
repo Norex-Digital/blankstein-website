@@ -3,7 +3,7 @@
   "meta": "Was kostet die Steinreinigung im Havelland? Richtpreis ab 7 €/m² inkl. Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Endpreise, Angebot per WhatsApp-Foto.",
   "h1": "Preise Steinreinigung: Was kostet die Reinigung pro m²?",
   "h1_em": "pro m²",
-  "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen, das Angebot kommt in etwa 30 Minuten zurück.",
+  "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen. Antwort < 2 h — werktags 8–18 Uhr.",
   "kosten_tabelle": {
     "caption": "Richtpreise pro m² und Rechenbeispiele für 20, 40 und 60 m² — Endpreise ohne versteckte Kosten.",
     "head": [
@@ -74,9 +74,9 @@
     ]
   },
   "conversion": {
-    "title": "Ihren Preis in etwa 30 Minuten",
+    "title": "Ihr Preis nach zwei Fotos",
     "body": [
-      "Der schnellste Weg zu Ihrem Preis: Schicken Sie uns ein bis zwei Fotos Ihrer Fläche und die ungefähren Maße in m² per WhatsApp. In der Regel haben wir Ihnen das Angebot innerhalb von etwa 30 Minuten zurückgeschickt — Sie müssen dafür weder einen Termin abwarten noch ein langes Formular ausfüllen. Das funktioniert für die meisten Terrassen, Einfahrten und Wege problemlos.",
+      "Der schnellste Weg zu Ihrem Preis: Schicken Sie uns ein bis zwei Fotos Ihrer Fläche und die ungefähren Maße in m² per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr — Sie müssen dafür weder einen Termin abwarten noch ein langes Formular ausfüllen. Das funktioniert für die meisten Terrassen, Einfahrten und Wege problemlos.",
       "Sie kennen Ihre Quadratmeter nicht oder die Fläche ist verwinkelt? Kein Problem — dann kommen wir kostenlos und unverbindlich vorbei, messen vor Ort und besprechen alles in Ruhe. So oder so bekommen Sie einen klaren Preis, bevor wir mit der Arbeit anfangen."
     ]
   },
@@ -100,5 +100,5 @@
     }
   ],
   "cta_title": "Foto schicken, Preis erhalten",
-  "cta_text": "Richtpreis ab 7 €/m² inklusive Neuverfugung — schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp, und Sie haben Ihr Angebot in etwa 30 Minuten. Der Preis gilt für die angegebenen Maße und den erkennbaren Zustand. Lieber persönlich? Wir kommen kostenlos und unverbindlich vorbei und messen vor Ort."
+  "cta_text": "Richtpreis ab 7 €/m² inklusive Neuverfugung — schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Der Preis gilt für die angegebenen Maße und den erkennbaren Zustand. Lieber persönlich? Wir kommen kostenlos und unverbindlich vorbei und messen vor Ort."
 }

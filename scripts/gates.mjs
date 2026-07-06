@@ -82,9 +82,12 @@ for(const f of files){
   if(can&&og&&can!==og) FAIL('CanonOG', `${url} canonical≠og:url`);
   if(can && can!==`${DOMAIN}${url}`) WARN('CanonSelf', `${url} canonical=${can}`);
 
-  // Near-Duplicate: lokale Orts-Hubs (Generator markiert via data-pagetype="ort")
+  // Near-Duplicate: lokale Orts-Hubs (Generator markiert via data-pagetype="ort").
+  // Verglichen wird NUR <main> (Sichttext-Content) — Microbar/Header/Footer/Sticky sind site-weit
+  // identisches Boilerplate und wuerden die Content-Aehnlichkeit kuenstlich aufblasen (P2-Chrome, 2026-07-06).
   if(/<body[^>]*data-pagetype="ort"/.test(h)){
-    const bodyText = vis;
+    const mainM = h.match(/<main id="main">([\s\S]*?)<\/main>/);
+    const bodyText = mainM ? visibleText(mainM[1]) : vis;
     const words = bodyText.toLowerCase().replace(/[^a-zäöüß ]/g,' ').split(/\s+/).filter(w=>w.length>2);
     const sh=new Set(); for(let i=0;i<words.length-2;i++) sh.add(words[i]+' '+words[i+1]+' '+words[i+2]);
     if(sh.size>5) (bodyByGroup['ort']=bodyByGroup['ort']||[]).push({url, sh});

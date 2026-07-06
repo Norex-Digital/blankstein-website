@@ -1,10 +1,17 @@
 {
-  "_meta": "Echte Google-Reviews vom GBP. source=manual (von Hand gepflegt) ODER places-api (automatisch via scripts/fetch-reviews.mjs beim Build, sobald GOOGLE_PLACES_KEY + place_id gesetzt). Bei leerem reviews[] => Empty-State, NICHTS wird gerendert (kein Fake-Stern). UWG/Google-Policy: nur ECHTE Reviews, Schema-Zahlen MUESSEN exakt den sichtbaren entsprechen (wird automatisch erzwungen, da Anzeige + Schema aus dieser Datei). Eintrag-Format siehe unten.",
-  "_eintrag_format": { "author": "Vorname N.", "ort": "Falkensee", "rating": 5, "text": "Bewertungstext …", "date": "2026-06-22", "relative": "vor 2 Tagen" },
+  "_meta": "Echte Google-Reviews vom GBP. source=manual (Fallback-Datenstand SERP-verifiziert 06.07.2026, Quelle previews/ASSET-LISTE.md) ODER gbp-api (automatisch via scripts/sync-gbp-reviews.mjs, folgt in Etappe C — Token liegt nur auf dem Mac). Bei leerem reviews[] => Empty-State, NICHTS wird gerendert (kein Fake-Stern). UWG/Google-Policy: nur ECHTE Reviews, Anzeige-Zahlen exakt wie auf Google. BLOCKLIST: 'Christian Brehm' NIE rendern (Verwandtschaft — Generator filtert zusätzlich). Nur die 4 inventarisierten Zitate; 5 weitere noch nicht inventarisiert.",
+  "_eintrag_format": { "author": "Vorname N.", "objekt": "Einfahrt", "rating": 5, "text": "Bewertungstext …", "date": "2026-06-22", "relative": "vor 2 Tagen" },
   "source": "manual",
-  "place_id": null,
-  "profile_url": null,
-  "rating": null,
-  "count": 0,
-  "reviews": []
+  "place_id": "ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
+  "cid": "14142805656851355288",
+  "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
+  "rating": 5.0,
+  "count": 10,
+  "blocklist": ["Christian Brehm"],
+  "reviews": [
+    { "author": "Chenoa R.", "objekt": "Einfahrt", "rating": 5, "text": "Wow einfach toll! Unsere Einfahrt wurde wieder einwandfrei sauber gemacht! Ich habe direkt einen Termin für die Besichtigung am nächsten Tag bekommen 🙂 gerne wieder!!" },
+    { "author": "Louis", "objekt": "Einfahrt", "rating": 5, "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen." },
+    { "author": "Emir H.", "objekt": "Terrasse", "rating": 5, "text": "Meine Terrasse wurde letztens gründlich und sauber gereinigt. Das Ergebnis ist super geworden … Freundlicher Service und klare Empfehlung!" },
+    { "author": "Mattis B.", "objekt": "Einfahrt", "rating": 5, "text": "Ich bin super zufrieden mit dem Ergebnis und der Arbeit, meine Einfahrt sieht endlich wieder sauber und gepflegt aus. Perfekt für den Sommer, kann ich nur empfehlen 🔥" }
+  ]
 }

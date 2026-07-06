@@ -7,7 +7,8 @@
   ],
   "avif": false,
   "fb_ext": "png",
-  "fb_w": 386
+  "fb_w": 386,
+  "source": "neutral"
  },
  "logo-weiss": {
   "w": 322,
@@ -17,7 +18,8 @@
   ],
   "avif": false,
   "fb_ext": "png",
-  "fb_w": 322
+  "fb_w": 322,
+  "source": "neutral"
  },
  "demo-vorher": {
   "w": 864,
@@ -29,7 +31,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "demo-nachher": {
   "w": 864,
@@ -41,7 +44,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "og-default": {
   "w": 1200,
@@ -51,7 +55,8 @@
   ],
   "avif": false,
   "fb_ext": "jpg",
-  "fb_w": 1200
+  "fb_w": 1200,
+  "source": "neutral"
  },
  "svc-steinreinigung": {
   "w": 946,
@@ -63,7 +68,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "echt"
  },
  "svc-terrassenreinigung": {
   "w": 864,
@@ -75,7 +81,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "svc-pflasterreinigung": {
   "w": 946,
@@ -87,7 +94,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "echt"
  },
  "svc-steinversiegelung": {
   "w": 1792,
@@ -99,7 +107,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "gal-weg": {
   "w": 864,
@@ -111,7 +120,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "gal-treppe": {
   "w": 864,
@@ -123,7 +133,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "gal-terrasse": {
   "w": 864,
@@ -135,7 +146,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "gal-flaeche": {
   "w": 864,
@@ -147,7 +159,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "gal-einfahrt": {
   "w": 864,
@@ -159,7 +172,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "gal-gartenweg": {
   "w": 864,
@@ -171,7 +185,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-hero": {
   "w": 864,
@@ -183,7 +198,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "hub-steinreinigung-vn": {
   "w": 1536,
@@ -195,7 +211,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "echt"
  },
  "hub-steinreinigung-gal1": {
   "w": 864,
@@ -207,7 +224,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-gal2": {
   "w": 864,
@@ -219,7 +237,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-gal3": {
   "w": 864,
@@ -231,7 +250,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-gal4": {
   "w": 864,
@@ -243,7 +263,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-gal5": {
   "w": 1536,
@@ -255,7 +276,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-steinreinigung-gal6": {
   "w": 864,
@@ -267,7 +289,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "schaden-hochdruck": {
   "w": 1792,
@@ -279,7 +302,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "hub-terrasse-gal1": {
   "w": 864,
@@ -291,7 +315,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-terrasse-gal2": {
   "w": 864,
@@ -303,7 +328,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-terrasse-gal4": {
   "w": 864,
@@ -315,7 +341,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-terrasse-gal5": {
   "w": 864,
@@ -327,7 +354,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-pflaster-gal2": {
   "w": 946,
@@ -339,7 +367,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-pflaster-gal3": {
   "w": 946,
@@ -351,7 +380,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-pflaster-gal5": {
   "w": 1536,
@@ -363,7 +393,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-pflaster-gal6": {
   "w": 864,
@@ -375,7 +406,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-versiegelung-gal1": {
   "w": 1792,
@@ -387,7 +419,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-versiegelung-gal2": {
   "w": 1792,
@@ -399,7 +432,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-versiegelung-hero": {
   "w": 1792,
@@ -411,7 +445,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-steinreinigung-einfahrt": {
   "w": 946,
@@ -423,7 +458,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-steinreinigung-wegetreppen": {
   "w": 1536,
@@ -435,7 +471,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "hub-versiegelung-edu": {
   "w": 864,
@@ -447,7 +484,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "hub-pflaster-vn": {
   "w": 946,
@@ -459,7 +497,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "echt"
  },
  "hub-terrasse-heroimg": {
   "w": 864,
@@ -471,7 +510,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-falkensee": {
   "w": 864,
@@ -483,7 +523,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-dallgow-doeberitz": {
   "w": 864,
@@ -495,7 +536,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-brieselang": {
   "w": 864,
@@ -507,7 +549,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-schoenwalde-glien": {
   "w": 864,
@@ -519,7 +562,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-wustermark": {
   "w": 864,
@@ -531,7 +575,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-gross-glienicke": {
   "w": 864,
@@ -543,7 +588,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "ort-kladow": {
   "w": 864,
@@ -555,7 +601,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-pflastersteine-reinigen": {
   "w": 864,
@@ -567,7 +614,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-gruenbelag-moos": {
   "w": 864,
@@ -579,7 +627,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "rg-aufgerissene-fugen": {
   "w": 864,
@@ -591,7 +640,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "rg-gruenbelag-entfernen": {
   "w": 864,
@@ -603,7 +653,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-terrasse-reinigen": {
   "w": 864,
@@ -615,7 +666,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-naturstein": {
   "w": 864,
@@ -627,7 +679,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-serioese": {
   "w": 2752,
@@ -639,7 +692,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-was-kostet": {
   "w": 864,
@@ -651,7 +705,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-impraegnierung": {
   "w": 864,
@@ -663,7 +718,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-ohne-hochdruck": {
   "w": 864,
@@ -675,7 +731,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-einfahrt-spuren": {
   "w": 864,
@@ -687,7 +744,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-material-guide": {
   "w": 864,
@@ -699,7 +757,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 768
+  "fb_w": 768,
+  "source": "ki"
  },
  "rg-terrasse-grau": {
   "w": 864,
@@ -711,7 +770,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "rg-pflaster-detail": {
   "w": 864,
@@ -723,7 +783,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "rg-schaden-fuge": {
   "w": 864,
@@ -735,7 +796,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "servicegebiet-karte": {
   "w": 1600,
@@ -747,7 +809,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 960
+  "fb_w": 960,
+  "source": "karte"
  },
  "proof-ergebnis-1": {
   "w": 1536,
@@ -759,7 +822,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "proof-arbeit-1": {
   "w": 1536,
@@ -771,7 +835,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "proof-vn-vorher": {
   "w": 946,
@@ -783,7 +848,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "proof-vn-nachher": {
   "w": 946,
@@ -795,7 +861,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "proof-ergebnis-2": {
   "w": 1536,
@@ -807,7 +874,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "proof-arbeit-2": {
   "w": 1536,
@@ -819,7 +887,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "trust-team": {
   "w": 1152,
@@ -831,7 +900,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "echt"
  },
  "usp-flaechenreiniger": {
   "w": 1024,
@@ -843,7 +913,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "usp-verfugung": {
   "w": 2048,
@@ -855,7 +926,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "usp-impraegnierung": {
   "w": 2048,
@@ -867,7 +939,8 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  },
  "usp-absaugung": {
   "w": 1344,
@@ -879,6 +952,7 @@
   ],
   "avif": true,
   "fb_ext": "jpg",
-  "fb_w": 600
+  "fb_w": 600,
+  "source": "ki"
  }
 }
