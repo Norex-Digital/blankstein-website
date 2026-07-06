@@ -1,0 +1,175 @@
+{
+ "_meta": "Generiert von generate.mjs — Input für scripts/build-og-images.py (og:image 1200×630 je Seite, Spec §4). Nicht von Hand editieren.",
+ "jobs": [
+  {
+   "slug": "home",
+   "motif": "proof-vn-nachher",
+   "title": "Steinreinigung Havelland — Richtpreis 7 €/m²"
+  },
+  {
+   "slug": "steinreinigung",
+   "motif": "hub-steinreinigung-einfahrt",
+   "title": "Steinreinigung im Havelland"
+  },
+  {
+   "slug": "terrassenreinigung",
+   "motif": "proof-arbeit-2",
+   "title": "Terrassenreinigung im Havelland"
+  },
+  {
+   "slug": "pflasterreinigung",
+   "motif": "hub-pflaster-vn",
+   "title": "Pflasterreinigung im Havelland"
+  },
+  {
+   "slug": "steinversiegelung",
+   "motif": "proof-ergebnis-1",
+   "title": "Steinversiegelung im Havelland"
+  },
+  {
+   "slug": "falkensee",
+   "motif": "hub-steinreinigung-einfahrt",
+   "title": "Stein- & Terrassenreinigung Falkensee"
+  },
+  {
+   "slug": "dallgow-doeberitz",
+   "motif": "hub-pflaster-gal2",
+   "title": "Steinreinigung Dallgow-Döberitz"
+  },
+  {
+   "slug": "brieselang",
+   "motif": "hub-pflaster-gal3",
+   "title": "Stein- & Terrassenreinigung Brieselang"
+  },
+  {
+   "slug": "schoenwalde-glien",
+   "motif": "proof-ergebnis-1",
+   "title": "Steinreinigung Schönwalde-Glien"
+  },
+  {
+   "slug": "wustermark",
+   "motif": "hub-steinreinigung-gal5",
+   "title": "Stein- & Terrassenreinigung Wustermark"
+  },
+  {
+   "slug": "gross-glienicke",
+   "motif": "hub-steinreinigung-wegetreppen",
+   "title": "Stein- & Terrassenreinigung Groß Glienicke"
+  },
+  {
+   "slug": "kladow",
+   "motif": "hub-pflaster-gal5",
+   "title": "Stein- & Terrassenreinigung Kladow"
+  },
+  {
+   "slug": "servicegebiet",
+   "motif": "servicegebiet-karte",
+   "title": "Servicegebiet"
+  },
+  {
+   "slug": "ratgeber-pflastersteine-reinigen",
+   "motif": "proof-arbeit-1",
+   "title": "Pflastersteine reinigen: Methoden, Hausmittel & Kosten"
+  },
+  {
+   "slug": "ratgeber-gruenbelag-entfernen",
+   "motif": "proof-arbeit-2",
+   "title": "Grünbelag entfernen — ohne Schrubben"
+  },
+  {
+   "slug": "ratgeber-terrasse-reinigen",
+   "motif": "proof-ergebnis-1",
+   "title": "Terrasse reinigen: Kärcher, Hausmittel oder Profi?"
+  },
+  {
+   "slug": "ratgeber-naturstein-reinigen",
+   "motif": "proof-ergebnis-2",
+   "title": "Naturstein reinigen: was hilft, was schadet"
+  },
+  {
+   "slug": "ratgeber-serioese-steinreinigung-erkennen",
+   "motif": "hub-steinreinigung-wegetreppen",
+   "title": "Seriöse Steinreinigung erkennen: 7 Merkmale"
+  },
+  {
+   "slug": "ratgeber-was-kostet-steinreinigung",
+   "motif": "hub-pflaster-gal2",
+   "title": "Was kostet Steinreinigung? Preise pro m²"
+  },
+  {
+   "slug": "ratgeber-hochdruckreiniger-fehler",
+   "motif": "hub-steinreinigung-gal5",
+   "title": "Hochdruckreiniger-Fehler: Pflaster nicht beschädigen"
+  },
+  {
+   "slug": "ratgeber-gruenbelag-kommt-immer-wieder",
+   "motif": "hub-pflaster-gal5",
+   "title": "Grünbelag kommt immer wieder? Imprägnierung hilft"
+  },
+  {
+   "slug": "ratgeber-pflaster-ohne-hochdruck-reinigen",
+   "motif": "proof-arbeit-1",
+   "title": "Pflaster ohne Hochdruckreiniger reinigen"
+  },
+  {
+   "slug": "ratgeber-einfahrt-reinigen-oel-reifenspuren",
+   "motif": "proof-arbeit-2",
+   "title": "Einfahrt reinigen: Öl- und Reifenspuren entfernen"
+  },
+  {
+   "slug": "ratgeber-welcher-reiniger-fuer-welchen-stein",
+   "motif": "proof-ergebnis-1",
+   "title": "Welcher Reiniger für welchen Stein?"
+  },
+  {
+   "slug": "ratgeber",
+   "motif": "hub-pflaster-gal3",
+   "title": "Ratgeber: Stein & Terrasse reinigen"
+  },
+  {
+   "slug": "preise",
+   "motif": "proof-ergebnis-2",
+   "title": "Preise: Steinreinigung pro m²"
+  },
+  {
+   "slug": "ueber-uns",
+   "motif": "trust-team",
+   "title": "Über uns — wer hinter Blankstein steht"
+  },
+  {
+   "slug": "bewertungen",
+   "motif": "proof-vn-nachher",
+   "title": "Bewertungen — 5,0 auf Google"
+  },
+  {
+   "slug": "start",
+   "motif": "hub-steinreinigung-vn",
+   "title": "Richtpreis per Foto — Antwort < 2 h"
+  },
+  {
+   "slug": "kontakt",
+   "motif": "trust-team",
+   "title": "Kontakt — Anfrage per Foto"
+  },
+  {
+   "slug": "impressum",
+   "motif": "hub-steinreinigung-einfahrt",
+   "title": "Impressum"
+  },
+  {
+   "slug": "datenschutz",
+   "motif": "proof-arbeit-2",
+   "title": "Datenschutz"
+  },
+  {
+   "slug": "danke",
+   "motif": "trust-team",
+   "title": "Danke — Anfrage eingegangen"
+  },
+  {
+   "slug": "404",
+   "motif": "hub-steinreinigung-vn",
+   "title": "Seite nicht gefunden"
+  }
+ ]
+}
