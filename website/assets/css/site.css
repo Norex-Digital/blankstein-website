@@ -248,6 +248,7 @@ section{position:relative}
 .svc-pin:hover .svc-pin-dot,.svc-pin:focus-visible .svc-pin-dot,.svc-pin.is-active .svc-pin-dot{transform:scale(1.35);background:var(--blue)}
 .svc-pin:hover .svc-pin-lbl,.svc-pin:focus-visible .svc-pin-lbl,.svc-pin.is-active .svc-pin-lbl{background:var(--blue);color:#fff}
 .svc-map-attr{position:absolute;right:8px;top:6px;margin:0;font-size:.66rem;line-height:1.2;color:#5b6b78;background:rgba(255,255,255,.78);padding:2px 6px;border-radius:5px;z-index:3}
+@media(max-width:560px){.svc-map-attr{position:static;background:none;padding:3px 0 0;text-align:right}}
 .geo-note{font-size:.82rem;color:var(--muted);margin-top:8px}
 /* Orts-Karten — typografisch, ohne Foto */
 .ort-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left}
@@ -397,7 +398,7 @@ section{position:relative}
 /* ─── Protokoll-Tabelle + Oeffnungszeiten (Mono) ─── */
 .proto-table{width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:.76rem;margin-top:.8rem}
 .proto-table th{text-align:left;font-weight:400;color:var(--muted);padding:.38rem .8rem .38rem 0;white-space:nowrap;vertical-align:top;letter-spacing:.04em}
-.proto-table td{font-weight:500;color:var(--ink);padding:.38rem 0}
+.proto-table td{font-weight:500;color:var(--ink);padding:.38rem 0;font-family:var(--font-body);font-variant-numeric:tabular-nums}
 .proto-table tr+tr th,.proto-table tr+tr td{border-top:1px dotted var(--line)}
 .hours{width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:.8rem}
 .hours th{text-align:left;font-weight:400;padding:.3rem 0}

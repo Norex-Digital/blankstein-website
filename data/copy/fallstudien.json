@@ -8,25 +8,65 @@
       "id": "einfahrt-video",
       "kicker": "Protokoll 01 · Einfahrt, Havelland",
       "titel": "Sechseckpflaster, flächiger Schmutzbelag",
-      "media": { "typ": "video", "file": "reel-einfahrt-vn", "poster": "reel-einfahrt-vn-poster", "aria": "Echtes Video: Reinigung einer Einfahrt aus Sechseckpflaster, vorne noch verschmutzt, hinten gereinigt" },
+      "media": {
+        "typ": "video",
+        "file": "reel-einfahrt-vn",
+        "poster": "reel-einfahrt-vn-poster",
+        "aria": "Echtes Video: Reinigung einer Einfahrt aus Sechseckpflaster, vorne noch verschmutzt, hinten gereinigt"
+      },
       "tabelle": [
-        ["Objekt", "Einfahrt, Sechseckpflaster"],
-        ["Zustand", "Festgetretener Schmutz- und Grünbelag auf der ganzen Fläche"],
-        ["Maßnahme", "Flächenreiniger, danach Neuverfugung mit GaLaBau-Sand"],
-        ["Beleg", "Videoaufnahme vom Auftrag — halb gereinigte Fläche im Bild"]
+        [
+          "Objekt",
+          "Einfahrt, Sechseckpflaster"
+        ],
+        [
+          "Zustand",
+          "Festgetretener Schmutz- und Grünbelag auf der ganzen Fläche"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger, danach Neuverfugung mit GaLaBau-Sand"
+        ],
+        [
+          "Beleg",
+          "Videoaufnahme vom Auftrag — halb gereinigte Fläche im Bild"
+        ]
       ],
-      "review": { "author": "Mattis B.", "objekt": "Einfahrt", "text": "Ich bin super zufrieden mit dem Ergebnis und der Arbeit, meine Einfahrt sieht endlich wieder sauber und gepflegt aus." }
+      "review": {
+        "author": "Mattis B.",
+        "objekt": "Einfahrt",
+        "text": "Ich bin super zufrieden mit dem Ergebnis und der Arbeit, meine Einfahrt sieht endlich wieder sauber und gepflegt aus."
+      }
     },
     {
       "id": "treppe-vn",
       "kicker": "Protokoll 02 · Außentreppe, Hauseingang",
       "titel": "Zwei Aufnahmen, dieselbe Treppe.",
-      "media": { "typ": "vnpair", "vorher": "proof-vn-vorher", "nachher": "proof-vn-nachher", "alt_vorher": "Außentreppe vor der Reinigung — verwitterter Schmutz- und Grünfilm auf allen Stufen (echtes Kundenfoto)", "alt_nachher": "Dieselbe Außentreppe nach der Reinigung — gleichmäßig helle Stufen (echtes Kundenfoto)", "aria": "Vorher-Nachher-Vergleich der Außentreppe: zwei Aufnahmen nebeneinander" },
+      "media": {
+        "typ": "vnpair",
+        "vorher": "proof-vn-vorher",
+        "nachher": "proof-vn-nachher",
+        "alt_vorher": "Außentreppe vor der Reinigung — verwitterter Schmutz- und Grünfilm auf allen Stufen (echtes Kundenfoto)",
+        "alt_nachher": "Dieselbe Außentreppe nach der Reinigung — gleichmäßig helle Stufen (echtes Kundenfoto)",
+        "aria": "Vorher-Nachher-Vergleich der Außentreppe: zwei Aufnahmen nebeneinander"
+      },
       "tabelle": [
-        ["Objekt", "Außentreppe mit Podest, Hauseingang"],
-        ["Zustand", "Verwitterter Schmutz- und Grünfilm"],
-        ["Maßnahme", "Flächenreiniger, Kanten per Hand, Absaugung per Nasssauger"],
-        ["Beleg", "Zwei Aufnahmen, dieselbe Treppe — unbearbeitet"]
+        [
+          "Objekt",
+          "Außentreppe mit Podest, Hauseingang"
+        ],
+        [
+          "Zustand",
+          "Verwitterter Schmutz- und Grünfilm"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger, Kanten per Hand, Absaugung per Nasssauger"
+        ],
+        [
+          "Beleg",
+          "Zwei Aufnahmen, dieselbe Treppe — unbearbeitet"
+        ]
       ],
       "hinweis": "Stufen sind Handarbeit: Der Flächenreiniger nimmt die Flächen, die Kanten gehen wir gezielt nach."
     },
@@ -34,28 +74,64 @@
       "id": "pflaster-split",
       "kicker": "Protokoll 03 · Pflasterfläche, Havelland",
       "titel": "Eine Fläche, eine Diagonale — gereinigt gegen ungereinigt",
-      "media": { "typ": "img", "slug": "hub-steinreinigung-vn", "alt": "Echter In-Bild-Vergleich: Pflasterfläche halb gereinigt, halb verschmutzt entlang einer Diagonale" },
+      "media": {
+        "typ": "img",
+        "slug": "hub-steinreinigung-vn",
+        "alt": "Echter In-Bild-Vergleich: Pflasterfläche halb gereinigt, halb verschmutzt entlang einer Diagonale"
+      },
       "tabelle": [
-        ["Objekt", "Pflasterfläche am Wohnhaus"],
-        ["Zustand", "Grauschleier und Belag, Fugen bewachsen"],
-        ["Maßnahme", "Flächenreiniger in Bahnen, Neuverfugung mit GaLaBau-Sand"],
-        ["Beleg", "Ein Foto, beide Zustände im selben Bild"]
+        [
+          "Objekt",
+          "Pflasterfläche am Wohnhaus"
+        ],
+        [
+          "Zustand",
+          "Grauschleier und Belag, Fugen bewachsen"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger in Bahnen, Neuverfugung mit GaLaBau-Sand"
+        ],
+        [
+          "Beleg",
+          "Ein Foto, beide Zustände im selben Bild"
+        ]
       ],
-      "review": { "author": "Louis", "objekt": "Einfahrt", "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen." }
+      "review": {
+        "author": "Louis",
+        "objekt": "Einfahrt",
+        "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen."
+      }
     },
     {
       "id": "terrasse-video",
       "home": false,
       "kicker": "Protokoll 04 · Terrasse, Havelland",
       "titel": "Graue Terrasse, Bahn für Bahn",
-      "media": { "typ": "video", "file": "terrasse-arbeit", "poster": "terrasse-arbeit-poster", "aria": "Echtes Video: Terrassenreinigung mit dem rotierenden Flächenreiniger — eine saubere Bahn auf grauer Terrasse" },
+      "media": {
+        "typ": "video",
+        "file": "terrasse-arbeit",
+        "poster": "terrasse-arbeit-poster",
+        "aria": "Echtes Video: Terrassenreinigung mit dem rotierenden Flächenreiniger — eine saubere Bahn auf grauer Terrasse"
+      },
       "tabelle": [
-        ["Objekt", "Terrasse am Einfamilienhaus"],
-        ["Zustand", "Flächiger Grauschleier auf den Platten"],
-        ["Maßnahme", "Flächenreiniger in Bahnen, Absaugung per Nasssauger"],
-        ["Beleg", "Ungeschnittenes Video aus dem Einsatz"]
-      ],
-      "review": { "author": "Emir H.", "objekt": "Terrasse", "text": "Meine Terrasse wurde letztens gründlich und sauber gereinigt. Das Ergebnis ist super geworden … Freundlicher Service und klare Empfehlung!" }
+        [
+          "Objekt",
+          "Terrasse am Einfamilienhaus"
+        ],
+        [
+          "Zustand",
+          "Flächiger Grauschleier auf den Platten"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger in Bahnen, Absaugung per Nasssauger"
+        ],
+        [
+          "Beleg",
+          "Ungeschnittenes Video aus dem Einsatz"
+        ]
+      ]
     }
   ]
 }

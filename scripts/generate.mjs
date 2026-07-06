@@ -388,7 +388,7 @@ function zuletztLeiste() {
   const posterImg = `<span class="pv-wrap">${VIDEO_BADGE}<img src="/assets/img/reel-einfahrt-vn-poster.jpg" width="768" height="1365" loading="lazy" decoding="async" alt="Echtes Video-Standbild: Einfahrt aus Sechseck-Pflaster, halb gereinigt, halb verschmutzt"></span>`;
   const items = [
     [posterImg, 'Einfahrt, Sechseckpflaster · Video vom Auftrag'],
-    [pic('proof-arbeit-1', { badge: true, alt: 'Rotierender Flächenreiniger im Einsatz auf einer halb gereinigten Pflasterfläche — echtes Arbeitsfoto', sizes: '250px' }), 'Pflasterweg · Flächenreiniger im Einsatz'],
+    [pic('proof-arbeit-2', { badge: true, alt: 'Mitarbeiter führt den Flächenreiniger über eine halb gereinigte Betonpflasterfläche im Garten — echtes Arbeitsfoto', sizes: '250px' }), 'Einsatz im Garten · Betonpflaster'],
     [pic('hub-steinreinigung-einfahrt', { badge: true, alt: 'Lange Einfahrt aus grauem Betonpflaster nach der Reinigung — echtes Kundenfoto', sizes: '250px' }), 'Einfahrt, Betonpflaster · nach Reinigung'],
     [pic('hub-steinreinigung-vn', { badge: true, alt: 'Pflasterfläche halb gereinigt, halb verschmutzt — echtes Arbeitsfoto', sizes: '250px' }), 'Pflasterfläche · Reinigung läuft'],
     [pic('proof-ergebnis-1', { badge: true, alt: 'Gereinigte Hoffläche aus grauem Pflaster mit hellen Zierstein-Einlagen — echtes Kundenfoto', sizes: '250px' }), 'Hoffläche mit Ziersteinen · nach Reinigung'],
@@ -1201,7 +1201,6 @@ function kontakt() {
 <a class="btn btn-hline" href="tel:${tel}">${ICON.phone} <span class="mono">${esc(nap.phone_display)}</span></a>
 <a class="btn btn-hline" href="mailto:${esc(nap.email)}">${ICON.mail} ${esc(nap.email)}</a>
 </div>
-<p class="kf-alt mono">${SLA_HTML}</p>
 </div>`;
   // Dropzone + Submit-JS: max 5 Bilder, Liste mit Entfernen; generate_lead NUR bei erfolgreichem Versand (Spec §3.8).
   // Vorbefüllung: liest den Konfigurator-Zustand (sessionStorage bs_konf) — m², Flächentyp, Ort wandern mit.
@@ -1235,7 +1234,7 @@ ${protoTable([['Firma', nap.gbp_name], ['Adresse', `${nap.street}, ${nap.zip} ${
 <div class="kt-card">
 <p class="doc-label">Öffnungszeiten</p>
 <table class="hours hours-light"><tr><th scope="row">Montag–Freitag</th><td>8–18 Uhr</td></tr><tr><th scope="row">Samstag</th><td>9–14 Uhr</td></tr><tr><th scope="row">Sonntag</th><td>geschlossen</td></tr></table>
-<p class="kt-note mono">WhatsApp geht jederzeit — wir antworten zu den Öffnungszeiten.</p>
+<p class="kt-note">WhatsApp geht jederzeit — wir antworten zu den Öffnungszeiten.</p>
 </div>
 </aside>`;
   // Ohne freigeschaltetes Formular einspaltig (QA R1: leere linke Spalte neben langer Sidebar wirkte kaputt)
