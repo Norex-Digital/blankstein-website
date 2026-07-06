@@ -1,7 +1,7 @@
 {
   "_meta": "Copy der Reel-Landing /start — Link-in-Bio-Ziel fuer Instagram/TikTok-Reels (Architektur §10). Schlank/distraction-free (eigenes lean-Chrome: Logo + 1 CTA, kein Nav-Menue), mobile-first (Reel-Traffic ist mobil). noindex,follow + NICHT in Nav/Sitemap. UTM wird site-weit erfasst und bis zum Lead durchgereicht (an WhatsApp-Text + Formular-Feld). Empty-State-Trust: KEINE Fake-Reviews. Regeln: Richtpreis (nie Festpreis), echte Umlaute, bodenstaendig, kein Luxus-Vokabular.",
-  "title": "Richtpreis per Foto — Antwort < 2 h | Blankstein",
-  "meta": "Pflaster, Einfahrt oder Terrasse vergruent? Foto und Maße per WhatsApp an Blankstein — Antwort werktags < 2 h. Kostenlose Besichtigung, keine Fahrtkosten im Havelland.",
+  "title": "Richtpreis per Foto — Antwort < 2 h werktags | Blankstein",
+  "meta": "Pflaster, Einfahrt oder Terrasse vergrünt? Foto und Maße per WhatsApp an Blankstein. Antwort < 2 h — werktags 8–18 Uhr. Kostenlose Besichtigung im Havelland.",
   "eyebrow": "Schön, dass du da bist",
   "h1": "Deine Fläche —",
   "h1_em": "wieder sauber",
@@ -23,15 +23,15 @@
   "steps": [
     { "n": "01", "t": "Foto + Maße schicken", "d": "Ein, zwei Fotos deiner Fläche und die ungefähren Quadratmeter per WhatsApp. Mehr brauchen wir für den Anfang nicht." },
     { "n": "02", "t": "Richtpreis erhalten", "d": "Reichen die Infos, bekommst du deinen konkreten Richtpreis. Antwort < 2 h — werktags 8–18 Uhr. Unklar oder groß? Wir kommen kostenlos vorbei." },
-    { "n": "03", "t": "Termin & blitzsauber", "d": "Zum Termin reinigen wir, verfugen neu und imprägnieren auf Wunsch — und räumen hinter uns auf." }
+    { "n": "03", "t": "Termin & fertig", "d": "Zum Termin reinigen wir, verfugen neu und imprägnieren auf Wunsch — und räumen hinter uns auf." }
   ],
   "trust_title": "Warum Blankstein",
   "trust": [
     { "t": "Richtpreis ab 7 €/m²", "d": "Reinigung und Neuverfugung zum klaren m²-Satz, mit Nano-Imprägnierung 8 €/m². Endpreis ohne versteckte Kosten." },
     { "t": "Kostenlose Besichtigung", "d": "Unverbindlich und gratis. Im Havelland und am westlichen Berliner Rand fallen keine Fahrtkosten an." },
     { "t": "Materialschonend", "d": "Rotierende Flächenreiniger statt Punktstrahl — gleichmäßig sauber, ohne ausgewaschene Fugen." },
-    { "t": "Nacharbeit-Garantie", "d": "Bleibt Moos oder Algen zurück, kommen wir kostenlos nach. Der genannte Preis bleibt." }
+    { "t": "Nacharbeit-Garantie", "d": "Bleiben Moos oder Algen zurück, arbeiten wir kostenlos nach. Der genannte Preis bleibt." }
   ],
   "cta_title": "Bereit? Schick uns deine Fläche.",
-  "cta_sub": "Foto + Maße genügen — Antwort werktags < 2 h. Kostenlos und unverbindlich."
+  "cta_sub": "Foto + Maße genügen. Antwort < 2 h — werktags 8–18 Uhr. Kostenlos und unverbindlich."
 }

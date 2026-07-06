@@ -673,11 +673,11 @@ ${ortsLeiste()}`;
 function home() {
   const faqs = [
     { q: 'Was kostet die Steinreinigung pro Quadratmeter?', a: 'Unser Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung mit frischem Fugensand, oder 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 30 m² große Terrasse liegt damit bei exakt 210 € — mit Imprägnierung bei 240 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten.' },
-    { q: 'Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?', a: 'Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Genau deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen, und verfugen anschließend neu. So wird die Fläche gründlich sauber, ohne dass das Material Schaden nimmt.' },
+    { q: 'Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?', a: 'Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen, und verfugen anschließend neu. So wird die Fläche gründlich sauber, ohne dass das Material Schaden nimmt.' },
     { q: 'Wie schnell bekomme ich ein Angebot?', a: 'Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Fläche per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich.' },
-    { q: 'Kann ich das Ergebnis sehen, bevor ich beauftrage?', a: 'Ja. Auf Wunsch reinigen wir bei der kostenlosen Besichtigung 1 m² Probefläche — kostenlos. Sie sehen das Ergebnis direkt auf Ihrem eigenen Stein und entscheiden danach in Ruhe. Auf der Website zeigen wir außerdem nur gekennzeichnetes, echtes Material aus Kundenaufträgen.' },
+    { q: 'Kann ich das Ergebnis sehen, bevor ich beauftrage?', a: 'Ja. Auf Wunsch reinigen wir bei der kostenlosen Besichtigung 1 m² Probefläche. Sie sehen das Ergebnis direkt auf Ihrem eigenen Stein und entscheiden danach in Ruhe. Auf der Website zeigen wir außerdem nur gekennzeichnetes, echtes Material aus Kundenaufträgen.' },
     { q: 'In welchem Gebiet seid ihr tätig?', a: 'Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege zu Ihnen kurz und die Termine planbar.' },
-    { q: 'Was bringt die Nano-Imprägnierung?', a: 'Die Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein. Wasser perlt ab, Moos und Schmutz finden weniger Halt, und die Fläche bleibt nach der Reinigung deutlich länger sauber. Sie kostet 1 €/m² mehr und lohnt sich vor allem bei schattigen oder stark bewachsenen Flächen, die sonst schnell wieder vergrünen.' },
+    { q: 'Was bringt die Nano-Imprägnierung?', a: 'Die Nano-Imprägnierung kostet 1 €/m² Aufpreis und legt einen unsichtbaren Schutzfilm auf den Stein. Wasser perlt ab, Moos und Schmutz finden weniger Halt, die Fläche bleibt nach der Reinigung länger sauber. Sie lohnt sich vor allem bei schattigen oder stark bewachsenen Flächen, die sonst schnell wieder vergrünen.' },
     { q: 'Kommen Anfahrts- oder Besichtigungskosten dazu?', a: 'Nein. Innerhalb unseres Servicegebiets im Havelland und am westlichen Berliner Rand ist die Vor-Ort-Besichtigung kostenlos und unverbindlich, und es fallen keine Anfahrtskosten an. Sie zahlen ausschließlich die vereinbarte Leistung zum genannten Endpreis.' },
     { q: 'Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?', a: 'Bleibt nach unserer Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation. So wissen Sie schon vor dem Termin genau, woran Sie sind.' }
   ];
@@ -712,7 +712,7 @@ ${faqBlock(faqs, { title: 'Was Eigenheimbesitzer uns oft fragen' })}`;
 
   const schema = `${orgSchema()},${websiteSchema()},${breadcrumb([{ name: 'Start', url: '/' }])}${faqSchema('/', faqs)}`;
   const title = clampTitle('Steinreinigung Havelland — Richtpreis 7 €/m² | Blankstein');
-  const meta = mkMeta('Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos: Flächenreiniger, Neuverfugung, auf Wunsch Nano-Imprägnierung. Richtpreis 7 €/m².');
+  const meta = mkMeta('Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos: Flächenreiniger, Neuverfugung, Nano-Imprägnierung. Richtpreis 7 €/m² — Foto genügt.');
   write('/', head(title, meta, '/', schema, { pagetype: 'home', og: { slug: 'home', motif: 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + SCTA + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push('/');
 }
@@ -1222,7 +1222,7 @@ ${protoTable([['Firma', nap.gbp_name], ['Adresse', `${nap.street}, ${nap.zip} ${
 <div class="kt-card">
 <p class="doc-label">Öffnungszeiten</p>
 <table class="hours hours-light"><tr><th scope="row">Montag–Freitag</th><td>8–18 Uhr</td></tr><tr><th scope="row">Samstag</th><td>9–14 Uhr</td></tr><tr><th scope="row">Sonntag</th><td>geschlossen</td></tr></table>
-<p class="kt-note mono">WhatsApp geht jederzeit — beantwortet wird zu den Öffnungszeiten.</p>
+<p class="kt-note mono">WhatsApp geht jederzeit — wir antworten zu den Öffnungszeiten.</p>
 </div>
 <figure class="kt-map">${pic('servicegebiet-karte', { badge: true, alt: 'Karte des Blankstein-Servicegebiets im Havelland und am westlichen Berliner Rand', sizes: '(max-width:900px) 92vw, 380px' })}<figcaption>Kostenlose Anfahrt im gesamten Gebiet — <a href="/servicegebiet/">alle Orte im Überblick</a>.</figcaption></figure>
 </aside>`;
@@ -1241,7 +1241,7 @@ ${formHtml}
 ${side}
 </div></section>`;
   const schema = `${orgSchema()},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Kontakt', url }])}`;
-  const meta = mkMeta(`Kontakt zu Blankstein Steinreinigung in ${nap.city}: Anfrage per WhatsApp oder Formular mit Foto-Upload, Telefon ${nap.phone_display} — Antwort werktags unter 2 Stunden, Besichtigung im Havelland kostenlos.`);
+  const meta = mkMeta(`Kontakt zu Blankstein Steinreinigung in ${nap.city}: Anfrage per WhatsApp, Formular mit Foto-Upload oder Telefon ${nap.phone_display}. Antwort werktags in unter 2 h.`);
   write(url, head('Kontakt — Anfrage per Foto | Blankstein', meta, url, schema, { pagetype: 'kontakt', og: { slug: 'kontakt', motif: 'trust-team' } }) + header + mainWrap(main) + footer + sctaBar(WA_DEFAULT) + kontaktJS + FOOT_JS + '</body></html>');
   written.push(url);
 }
@@ -1344,7 +1344,7 @@ function danke() {
 function notFound() {
   const main = `<section class="bw-hero o-hero"><div class="container">
 <p class="doc-label">Fehler 404</p>
-<h1 class="bw-h1">Diese Seite gibt es <em>nicht mehr</em> — oder nie.</h1>
+<h1 class="bw-h1">Diese Seite gibt es <em>nicht mehr</em> — oder gab es nie.</h1>
 <p class="bw-lede">Der Link ist vermutlich veraltet oder vertippt. Was Sie wahrscheinlich suchen:</p>
 <div class="weiter-links" style="margin-bottom:1.6rem">
 <a href="/">Startseite mit allen dokumentierten Aufträgen →</a>

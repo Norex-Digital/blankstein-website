@@ -1,7 +1,7 @@
 {
   "_meta": "Copy /ueber-uns/ (Etappe D, PROTOKOLL-Voice Spec §5). Gerendert von ueberUns() — Aufbau Spec §4: Inhaberblock groß · Verfahren · Geräte-Ledger · Garantie. Regeln (gelockt): Geräte GENERISCH benennen (kein Kränzle/K7/Stihl-Namedropping — Klärung offen, Kickoff-Guardrail), Preise EXAKT m²×7/8 (kein 'rund'), Richtpreis nie Festpreis, kein Heißwasser, kein 'kein Hochdruck', SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', KEINE 'Hunderte Male'-Claims oder erfundene Auftragszahlen (UWG), echte Umlaute. h1 darf <em> tragen.",
-  "title": "Über uns — wer hinter Blankstein steht | Blankstein",
-  "meta": "Blankstein sind Noah Telo und Maurice Brehm aus Falkensee: Steinreinigung im Havelland als Inhaber-Betrieb. Verfahren, Geräte und Zusagen — hier nachlesbar erklärt.",
+  "title": "Über uns — die zwei Inhaber hinter Blankstein",
+  "meta": "Blankstein sind Noah Telo und Maurice Brehm aus Falkensee: Steinreinigung im Havelland als Inhaber-Betrieb. Verfahren, Geräte und Garantie — hier erklärt.",
   "h1": "Zwei Inhaber. Ein Gewerk. <em>Keine Subunternehmer.</em>",
   "lead": "Blankstein reinigt und verfugt Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand. Wer anfragt, schreibt mit einem von uns beiden — und sieht denselben Menschen später auf dem Grundstück. Auf dieser Seite steht, wie wir arbeiten und was wir zusagen.",
   "hero_tabelle": [
@@ -19,7 +19,7 @@
   },
   "verfahren": {
     "title": "Das Verfahren, Schritt für Schritt",
-    "intro": "Fester Ablauf, jedes Mal gleich. Jeder Schritt hat einen Zweck — am Ende ist die Fläche nicht nur sauber, sie bleibt es auch länger.",
+    "intro": "Fester Ablauf, jedes Mal gleich. Jeder Schritt hat einen Zweck — am Ende ist die Fläche sauber und bleibt es länger.",
     "schritte": [
       { "titel": "Reinigen mit dem Flächenreiniger", "text": "Die gesamte Fläche inklusive Fugen wird mit rotierender Hochdrucktechnik unter einer Haube gereinigt. Der Druck verteilt sich gleichmäßig statt auf einen Punkt — gründlich, ohne Streifenbild, ohne Spritzfahnen an Fassade und Fenstern." },
       { "titel": "Schmutzwasser absaugen", "text": "Der gelöste Schmutz wird mit dem Nasssauger aufgenommen statt in Beet und Rasen gespült. Die Fläche ist nach dem Termin begehbar, das Grundstück bleibt sauber." },
@@ -43,16 +43,16 @@
   "seriositaet": {
     "title": "Preise, nachrechenbar",
     "body": [
-      "Gerechnet wird exakt m² mal Satz: 7 €/m² für Reinigung, Absaugung und Neuverfugung — 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet damit exakt 280 €, mit Imprägnierung 320 €. Endpreise, kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
-      "Der Rechner-Wert ist ein Richtpreis. Verbindlich wird er nach Foto-Prüfung oder Besichtigung — und dann gilt die Endpreis-Zusage: Der bestätigte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als gedacht."
+      "Gerechnet wird exakt m² mal Satz: 7 €/m² für Reinigung, Absaugung und Neuverfugung — 8 €/m² mit zusätzlicher Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet damit exakt 280 €, mit Imprägnierung 320 €. Endpreise, kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
+      "Der so errechnete Wert ist ein Richtpreis. Verbindlich wird er nach Foto-Prüfung oder Besichtigung — und dann gilt die Endpreis-Zusage: Der bestätigte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als gedacht."
     ]
   },
   "cta_title": "Ein Foto genügt für den Anfang.",
   "cta_text": "Foto der Fläche plus ungefähre Maße per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Sind Maße oder Belag unklar, kommen wir kostenlos vorbei — auf Wunsch mit 1 m² Probefläche bei der Besichtigung.",
   "faqs": [
     { "q": "Wer führt die Arbeiten bei mir aus?", "a": "Immer einer von uns beiden Inhabern — Noah Telo oder Maurice Brehm. Wir vergeben keine Aufträge an Subunternehmer weiter. Wer die Anfrage beantwortet, steht später auch auf dem Grundstück." },
-    { "q": "Beschädigt der Hochdruck meine Pflastersteine?", "a": "Nicht bei unserem Verfahren. Wir arbeiten mit einem rotierenden Flächenreiniger statt mit einer Punkt-Lanze — der Druck verteilt sich gleichmäßig über die Fläche. Was die Reinigung an Fugensand mitnimmt, füllen wir danach mit GaLaBau-Sand wieder auf." },
-    { "q": "Was kostet die Reinigung genau?", "a": "7 €/m² für Reinigung und Neuverfugung, 8 €/m² zusätzlich mit Nano-Imprägnierung — gerechnet exakt Fläche mal Satz. 20 m² kosten also 140 € beziehungsweise 160 €, 60 m² kosten 420 € beziehungsweise 480 €. Das sind Richtpreise; verbindlich wird der Preis nach Foto oder Besichtigung, dann mit Endpreis-Zusage." },
+    { "q": "Beschädigt der Hochdruck meine Pflastersteine?", "a": "Nicht bei unserem Verfahren. Wir arbeiten mit einem rotierenden Flächenreiniger statt mit einer Punktstrahl-Lanze — der Druck verteilt sich gleichmäßig über die Fläche. Was die Reinigung an Fugensand mitnimmt, füllen wir danach mit GaLaBau-Sand wieder auf." },
+    { "q": "Was kostet die Reinigung genau?", "a": "7 €/m² für Reinigung und Neuverfugung, 8 €/m² mit zusätzlicher Nano-Imprägnierung — gerechnet exakt Fläche mal Satz. 20 m² kosten also 140 € beziehungsweise 160 €, 60 m² kosten 420 € beziehungsweise 480 €. Das sind Richtpreise; verbindlich wird der Preis nach Foto oder Besichtigung, dann mit Endpreis-Zusage." },
     { "q": "Warum macht ihr nur Steinflächen?", "a": "Weil Routine das Ergebnis bestimmt. Wer sich auf ein Gewerk festlegt, kennt jeden Belagstyp, jede Fugensituation und die passende Druckeinstellung. Andere Gewerke überlassen wir Betrieben, die dort genauso zu Hause sind wie wir auf dem Stein." },
     { "q": "In welchem Gebiet seid ihr unterwegs?", "a": "Im Havelland und am westlichen Berliner Rand: Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Innerhalb dieses Gebiets fallen keine Anfahrtskosten an, die Besichtigung ist kostenlos." }
   ]

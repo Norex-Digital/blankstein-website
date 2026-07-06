@@ -1,7 +1,7 @@
 {
   "_meta": "Auftrags-Protokolle (Spec §2.3) — NUR echtes Material (previews/ASSET-LISTE.md). Tabellen tragen ausschließlich belegte Felder (Objekt/Zustand/Maßnahme/Beleg) — KEINE m²-/Dauer-Erfindungen (UWG). Review-Zitate sind echte Google-Reviews, objekt-zugeordnet (Kategorie, nicht Auftrags-Behauptung); Zuordnungs-Regel: Zitat-Tag nennt IMMER das Objekt aus der Review selbst. Treppe hat kein passendes Review — bewusst ohne Zitat. Brücke-Satz = Spec-Wortlaut (V3, gelockt). home:false = nicht in der Home-Protokollliste (Hub-only, z. B. Terrassen-Video). Optionales Feld ort (Ortsname) aktiviert den 'Zuletzt in [Ort]'-Slot der Orts-Hubs — NUR setzen, wenn der Auftrag wirklich dort war.",
   "titel": "Drei Aufträge, drei Belege.",
-  "intro": "Zu jedem Protokoll gehört echtes Material und, wo vorhanden, eine Google-Bewertung zum selben Flächentyp. Ort nennen wir aus Datenschutzgründen nur grob.",
+  "intro": "Zu jedem Protokoll gehört echtes Material und, wo vorhanden, eine Google-Bewertung zum selben Flächentyp. Den Ort nennen wir aus Datenschutzgründen nur grob.",
   "bruecke": "Das Vorher-Bild kam vom Kunden per WhatsApp — derselbe Weg steht Ihnen offen.",
   "protokolle": [
     {

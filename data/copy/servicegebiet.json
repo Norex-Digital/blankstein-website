@@ -3,7 +3,7 @@
   "orte": [
     {
       "slug": "falkensee",
-      "charakter": "Unser Heimatort und Mittelpunkt des Servicegebiets, mit dichter Einfamilienhaus-Bebauung und vielen gepflasterten Einfahrten und Terrassen."
+      "charakter": "Unser Heimatort und Mittelpunkt des Servicegebiets — dichte Einfamilienhaus-Bebauung, viele gepflasterte Einfahrten und Terrassen."
     },
     {
       "slug": "dallgow-doeberitz",
@@ -11,7 +11,7 @@
     },
     {
       "slug": "brieselang",
-      "charakter": "Liegt am Bredower Forst, viele Grundstücke grenzen an Wald, dadurch setzen sich auf den Flächen schneller Moos und Laub ab."
+      "charakter": "Liegt am Bredower Forst: Viele Grundstücke grenzen an Wald, auf den Flächen sammeln sich Moos und Laub schneller an."
     },
     {
       "slug": "schoenwalde-glien",
@@ -19,15 +19,15 @@
     },
     {
       "slug": "wustermark",
-      "charakter": "Mit dem Neubaugebiet Elstal, viele neue Häuser und frisch verlegte Wege rund um die Wohnsiedlungen."
+      "charakter": "Zum Ort gehört das Neubaugebiet Elstal — viele neue Häuser und frisch verlegte Wege rund um die Wohnsiedlungen."
     },
     {
       "slug": "gross-glienicke",
-      "charakter": "Ortslage am Groß Glienicker See, Grundstücke mit Terrassen und Gartenwegen in Wassernähe."
+      "charakter": "Am Groß Glienicker See gelegen — Grundstücke mit Terrassen und Gartenwegen in Wassernähe."
     },
     {
       "slug": "kladow",
-      "charakter": "Berliner Ortsteil im Bezirk Spandau nahe der Havel, am östlichen Rand unseres Gebiets mit gut erreichbaren Wohnstraßen."
+      "charakter": "Berliner Ortsteil im Bezirk Spandau nahe der Havel — der östliche Rand unseres Gebiets, auch hier ohne Fahrtkosten."
     }
   ]
 }
