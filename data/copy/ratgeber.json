@@ -8,6 +8,7 @@
       "h1": "Pflastersteine reinigen: Methoden, Hausmittel und wann sich der Profi lohnt",
       "lead": "Verblasste, vermooste Pflastersteine lassen jede Einfahrt ungepflegt wirken. Hier lesen Sie, wie Sie Pflaster Schritt für Schritt selbst reinigen, welche Hausmittel helfen und welche schaden, was die professionelle Reinigung kostet — und woran Sie merken, dass sich der Profi lohnt.",
       "hero_img": "rg-pflastersteine-reinigen",
+      "hero_pos": "center 90%",
       "hero_alt": "Pflastersteine einer Hofeinfahrt, teils mit Moos und Grünbelag in den Fugen",
       "cta_service": "pflasterreinigung",
       "updated": "2026-06-18",
@@ -210,6 +211,7 @@
       "h1": "Grünbelag entfernen — ohne stundenlanges Schrubben",
       "lead": "Grüner Schleier auf Terrasse und Pflaster sieht nicht nur ungepflegt aus, er wird bei Nässe auch rutschig. Hier lesen Sie, mit welchen Methoden Sie Grünbelag wirklich loswerden, warum die Ursache fast immer Feuchte und Schatten ist, was chemische Grünbelagentferner taugen — und ab wann sich der Profi rechnet.",
       "hero_img": "rg-gruenbelag-entfernen",
+      "hero_pos": "center 100%",
       "hero_alt": "Vergrünte Terrassen- und Pflasterfläche mit grünem Belag vor der Reinigung",
       "cta_service": "steinreinigung",
       "updated": "2026-06-18",
@@ -717,9 +719,9 @@
             "Hochdruck ist nicht pauschal schädlich — es kommt auf das Werkzeug und die Steinart an. Ein rotierender Flächenreiniger verteilt den Druck gleichmäßig über eine breite Fläche und arbeitet streifenfrei. Genau so reinigen wir bei Blankstein: kontrolliert, mit dem Flächenreiniger und genug Abstand, statt mit einer scharfen Punktstrahl-Lanze, die in Sekunden Fugen aufreißt und die Oberfläche zerstört.",
             "Bei weichen, saugfähigen oder schichtigen Steinen ist Vorsicht geboten. Sandstein kann unter zu hohem Druck oberflächlich abplatzen, Schiefer löst sich in Schichten. Hier ist die mechanische Reinigung mit weicher Bürste oft die sichere Wahl. Wer unsicher ist, welcher Druck der eigene Stein verträgt, sollte an einer Ecke beginnen und das Ergebnis prüfen, bevor die ganze Fläche dran ist. Und in jedem Fall gilt: Nach dem Hochdruck sind die Fugen offen — ohne frischen Sand kommt das Grün schnell zurück und die Steine sacken nach."
           ],
-          "img": "schaden-hochdruck",
-          "img_alt": "Lose und ausgewaschene Pflastersteine nach falsch geführtem Hochdruckstrahl",
-          "img_caption": "Falsch geführte Punkt-Lanze: ausgewaschene Fugen und gelöste Steine. Beispielhafte Darstellung."
+          "img": "rg-schaden-fuge",
+          "img_alt": "Helle Steinplatten mit offenen, vermoosten Fugen — empfindlicher Belag vor der Reinigung",
+          "img_caption": "Offene, bewachsene Fugen bei Plattenbelägen: Mit der Punkt-Lanze wird daraus schnell ein Schaden. Beispielhafte Darstellung."
         },
         {
           "h2": "Lassen sich Öl- und Rostflecken aus Naturstein entfernen?",
@@ -1138,6 +1140,7 @@
       "h1": "Hochdruckreiniger-Fehler vermeiden: Pflaster reinigen, ohne den Stein zu beschädigen",
       "lead": "Der Hochdruckreiniger ist das schnellste Werkzeug gegen Moos und Grünbelag auf dem Pflaster — aber auch das, mit dem die meisten Schäden passieren. Hier lesen Sie, welche Hochdruckreiniger-Fehler die Fugen auswaschen und die Steine aufrauen, woran Sie eine falsch geführte Lanze erkennen und wie Sie mit rotierendem Flächenreiniger, genug Abstand und anschließender Neuverfugung sauber und dauerhaft arbeiten.",
       "hero_img": "schaden-hochdruck",
+      "hero_pos": "center 100%",
       "hero_alt": "Lose und ausgewaschene Pflastersteine nach falschem Hochdruckeinsatz mit zu nah geführter Punkt-Lanze",
       "cta_service": "steinreinigung",
       "updated": "2026-06-18",
@@ -1315,7 +1318,8 @@
       "h1": "Grünbelag kommt immer wieder? Warum das passiert und wie eine Imprägnierung hilft",
       "lead": "Kaum ist die Terrasse oder Einfahrt sauber, wird sie nach wenigen Monaten wieder grün. Das ist normal — und liegt fast immer an Feuchtigkeit, Schatten und offenen Fugen. Hier lesen Sie, warum Grünbelag zurückkommt, wie eine Nano-Imprägnierung den Befall verlangsamt, was sie kostet und warum sie die Reinigung nicht ersetzt, sondern ergänzt.",
       "hero_img": "rg-impraegnierung",
-      "hero_alt": "Frisch gereinigte Pflasterfläche wird mit Nano-Imprägnierung behandelt, das Wasser perlt sichtbar ab",
+      "hero_pos": "center 88%",
+      "hero_alt": "Sauber gereinigter Plattenweg am Haus — die Ausgangslage, bevor eine Imprägnierung neuen Grünbelag verzögert",
       "cta_service": "steinversiegelung",
       "updated": "2026-06-18",
       "sektionen": [
@@ -1481,6 +1485,7 @@
       "h1": "Pflaster ohne Hochdruckreiniger reinigen: Methoden, Hausmittel und die Grenzen der Handarbeit",
       "lead": "Nicht jeder hat einen Hochdruckreiniger im Schuppen — und nicht jede Fläche braucht einen. Bei leichtem Schmutz, Grünschleier und losem Moos kommen Sie mit Handarbeit, etwas Soda und Geduld oft erstaunlich weit. Hier lesen Sie, welche Methoden ohne Hochdruck funktionieren, wie Sie Schritt für Schritt vorgehen, was Ihren Fugen schadet — und ab wann reine Muskelkraft nicht mehr reicht.",
       "hero_img": "rg-ohne-hochdruck",
+      "hero_pos": "center 92%",
       "hero_alt": "Person reinigt Pflastersteine mit Fugenbürste und Eimer von Hand, ohne Hochdruckreiniger",
       "cta_service": "pflasterreinigung",
       "updated": "2026-06-18",
@@ -1671,6 +1676,7 @@
       "h1": "Einfahrt reinigen: Öl- und Reifenspuren von Pflaster und Beton entfernen",
       "lead": "Dunkle Ölflecken vom Auto und schwarze Reifenspuren ziehen jede Einfahrt nach unten — und sie sind hartnäckig. Hier lesen Sie, womit Sie frische und alte Spuren angehen, welche Hausmittel und Spezialmittel wirklich etwas bringen, warum sich tiefe Ölflecken nicht immer vollständig entfernen lassen und wann sich die Reinigung durch den Profi rechnet.",
       "hero_img": "rg-einfahrt-spuren",
+      "hero_pos": "center 95%",
       "hero_alt": "Einfahrt aus Pflaster mit dunklen Ölflecken und schwarzen Reifenspuren vor der Reinigung",
       "cta_service": "pflasterreinigung",
       "updated": "2026-06-18",

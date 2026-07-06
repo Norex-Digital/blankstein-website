@@ -21,7 +21,7 @@
       "id": "treppe-vn",
       "kicker": "Protokoll 02 · Außentreppe, Hauseingang",
       "titel": "Zwei Aufnahmen, dieselbe Treppe.",
-      "media": { "typ": "vn", "vorher": "proof-vn-vorher", "nachher": "proof-vn-nachher", "alt_vorher": "Außentreppe vor der Reinigung — verwitterter Schmutz- und Grünfilm auf allen Stufen (echtes Kundenfoto)", "alt_nachher": "Dieselbe Außentreppe nach der Reinigung — gleichmäßig helle Stufen (echtes Kundenfoto)" },
+      "media": { "typ": "vnpair", "vorher": "proof-vn-vorher", "nachher": "proof-vn-nachher", "alt_vorher": "Außentreppe vor der Reinigung — verwitterter Schmutz- und Grünfilm auf allen Stufen (echtes Kundenfoto)", "alt_nachher": "Dieselbe Außentreppe nach der Reinigung — gleichmäßig helle Stufen (echtes Kundenfoto)", "aria": "Vorher-Nachher-Vergleich der Außentreppe: zwei Aufnahmen nebeneinander" },
       "tabelle": [
         ["Objekt", "Außentreppe mit Podest, Hauseingang"],
         ["Zustand", "Verwitterter Schmutz- und Grünfilm"],

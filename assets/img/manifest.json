@@ -839,8 +839,8 @@
   "source": "echt"
  },
  "proof-vn-vorher": {
-  "w": 946,
-  "h": 2048,
+  "w": 800,
+  "h": 1133,
   "widths": [
    400,
    600,
@@ -852,8 +852,8 @@
   "source": "echt"
  },
  "proof-vn-nachher": {
-  "w": 946,
-  "h": 2048,
+  "w": 800,
+  "h": 1133,
   "widths": [
    400,
    600,
