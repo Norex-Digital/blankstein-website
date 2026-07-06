@@ -34,9 +34,23 @@ LOGO = "assets/img/logo-weiss.png"
 QUALITY = 84
 
 
+MONTSERRAT_VAR = "assets/fonts/montserrat-var.ttf"  # variable TTF (github google/fonts, OFL) — WOFF2 kann Pillow nicht
+
+
 def find_font(bold=True, size=48):
-    """Sora/Inter liegen nur als WOFF2 vor (Pillow kann kein WOFF2) — plattformuebergreifende TTF-Kette,
-    Fallback auf Pillows skalierbaren Default (Pillow >= 10.1)."""
+    """Titel rendert in Montserrat wie die Site-Headlines (seit Typo-Umbau 07.07.).
+    Variable TTF + set_variation_by_axes (800 = ExtraBold, 500 = Medium fuer die Fusszeile);
+    Fallback: System-TTF-Kette, dann Pillows skalierbarer Default (Pillow >= 10.1)."""
+    if os.path.exists(MONTSERRAT_VAR):
+        try:
+            f = ImageFont.truetype(MONTSERRAT_VAR, size)
+            try:
+                f.set_variation_by_axes([800 if bold else 500])
+            except OSError:
+                pass  # FreeType ohne Variation-Support: Default-Instanz (400) ist akzeptabel
+            return f
+        except OSError:
+            pass
     candidates = (
         ["C:/Windows/Fonts/segoeuib.ttf", "C:/Windows/Fonts/arialbd.ttf",
          "/System/Library/Fonts/Supplemental/Arial Bold.ttf", "/Library/Fonts/Arial Bold.ttf",
@@ -122,7 +136,7 @@ def render(job):
     for ln in lines:
         d.text((72, y), ln, font=f_title, fill=FG)
         y += round(f_title.size * 1.22)
-    # Mono-artige Fusszeile
+    # Fusszeile (Montserrat Medium)
     f_sub = find_font(bold=False, size=26)
     d.text((72, H - 92), "blankstein-havelland.de · Richtpreis 7 €/m²", font=f_sub, fill=FG_MUTED)
     return img

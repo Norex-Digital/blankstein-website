@@ -173,7 +173,7 @@ function head(title, desc, canonical, schemaGraph, opts = {}) {
 <meta name="description" content="${esc(desc)}">${opts.noindex ? '\n<meta name="robots" content="noindex, follow">' : ''}${canonTags}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">${ogUrlTag}<meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Blankstein">${ogImg}
 <link rel="icon" type="image/png" href="/assets/img/logo.png">
-<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css?v=${CSS_VER}">
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
