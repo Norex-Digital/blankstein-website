@@ -77,27 +77,20 @@ function mkMeta(s) {
 
 // ---------- Bilder: Manifest + <picture> + Provenance (Spec §3.6) ----------
 // manifest.json trägt je Slug ein Pflichtfeld source: "echt"|"ki"|"karte"|"neutral" (Wahrheit: previews/ASSET-LISTE.md).
-// Badge-Rendering ist OPT-IN via badge:true (bricht keine Alt-Verwendungen); Beweis-Slot-Gates folgen in gates.mjs.
+// Sichtbare Provenance-Badges entfernt (Maurice 2026-07-07). badge-Param ist No-op; KI-Ehrlichkeit bleibt im alt-Text; Beweis-Slot-Gates in gates.mjs unveraendert.
 const IMG = JSON.parse(fs.readFileSync('assets/img/manifest.json', 'utf8'));
 const KI_LABEL = 'Illustration — beispielhafte Darstellung';
-const BADGE_HTML = {
-  echt: '<span class="badge b-echt">Echtes Foto · Kundenauftrag</span>',
-  ki: `<span class="badge b-ki">${KI_LABEL}</span>`,
-  karte: '<span class="badge b-karte">Kartenmaterial © OpenStreetMap</span>'
-};
-const VIDEO_BADGE = '<span class="badge b-video">Echtes Video · Kundenauftrag</span>';
 function pic(slug, { cls = '', alt = '', sizes = '100vw', lcp = false, decorative = false, badge = false } = {}) {
   const m = IMG[slug];
   if (!m) return '';
-  // KI-Bilder: Label auch im alt-Text erzwingen, sobald das Badge gerendert wird (UWG-Kennzeichnung)
-  if (badge && m.source === 'ki' && alt && !/beispielhafte Darstellung/i.test(alt)) alt = `${alt} (${KI_LABEL})`;
+  // KI-Bilder: Ehrlichkeit im alt-Text (unsichtbar) — sichtbares Label auf Maurice-Wunsch entfernt
+  if (m.source === 'ki' && alt && !/beispielhafte Darstellung/i.test(alt)) alt = `${alt} (${KI_LABEL})`;
   const ss = ext => m.widths.map(w => `/assets/img/${slug}-${w}.${ext} ${w}w`).join(', ');
   const sources = (m.avif ? `<source type="image/avif" srcset="${ss('avif')}" sizes="${sizes}">` : '') + `<source type="image/webp" srcset="${ss('webp')}" sizes="${sizes}">`;
   const aAttr = decorative ? 'alt="" role="presentation"' : `alt="${esc(alt)}"`;
   const lAttr = lcp ? 'fetchpriority="high" decoding="async"' : 'loading="lazy" decoding="async"';
   const picture = `<picture style="display:contents">${sources}<img${cls ? ` class="${cls}"` : ''} src="/assets/img/${slug}-${m.fb_w}.${m.fb_ext}" width="${m.w}" height="${m.h}" ${aAttr} ${lAttr}></picture>`;
-  const badgeHtml = badge ? BADGE_HTML[m.source] : '';
-  return badgeHtml ? `<span class="pv-wrap">${badgeHtml}${picture}</span>` : picture;
+  return picture;
 }
 const imgAbs = slug => { const m = IMG[slug]; return m ? `${DOMAIN}/assets/img/${slug}-${m.fb_w}.${m.fb_ext}` : ''; };
 function logoImg(slug, cls, h) { const m = IMG[slug]; const w = Math.round(m.w * h / m.h); return `<img src="/assets/img/${slug}.${m.fb_ext}" alt="Blankstein — Steinreinigung im Havelland" width="${w}" height="${h}" class="${cls}">`; }
@@ -222,7 +215,7 @@ ${AMPEL_SPAN('foot-status')}
 <figure class="foot-map">${pic('servicegebiet-karte', { alt: 'Karte des Blankstein-Servicegebiets im Havelland und am westlichen Berliner Rand', sizes: '300px' })}<figcaption>© OpenStreetMap-Mitwirkende</figcaption></figure>
 </div>
 </div>
-<div class="foot-legal"><span>Alle als „Echtes Foto" oder „Echtes Video" gekennzeichneten Medien sind unbearbeitete Aufnahmen aus eigenen Kundenaufträgen. Illustrationen sind als solche gekennzeichnet.</span><span>© 2026 Blankstein · ${esc(nap.rechtstraeger)}</span></div>
+<div class="foot-legal"><span>© 2026 Blankstein · ${esc(nap.rechtstraeger)}</span></div>
 </div></footer>`;
 // Schlankes Chrome fuer die Reel-Landing /start (distraction-free: Logo + 1 CTA, KEIN Nav-Menue/Hamburger; Footer nur Pflichtlinks).
 const leanHeader = wa => `<header class="site-header header-lean" id="header"><div class="container nav-row">
@@ -385,7 +378,7 @@ ${o.tabelle ? `<figcaption>${protoTable(o.tabelle)}</figcaption>` : ''}
 
 // §2.7 Zuletzt-dokumentiert-Leiste: horizontale Medienleiste, NUR echtes Material (Beweis-Slot).
 function zuletztLeiste() {
-  const posterImg = `<span class="pv-wrap">${VIDEO_BADGE}<img src="/assets/img/reel-einfahrt-vn-poster.jpg" width="768" height="1365" loading="lazy" decoding="async" alt="Echtes Video-Standbild: Einfahrt aus Sechseck-Pflaster, halb gereinigt, halb verschmutzt"></span>`;
+  const posterImg = `<img src="/assets/img/reel-einfahrt-vn-poster.jpg" width="768" height="1365" loading="lazy" decoding="async" alt="Echtes Video-Standbild: Einfahrt aus Sechseck-Pflaster, halb gereinigt, halb verschmutzt">`;
   const items = [
     [posterImg, 'Einfahrt, Sechseckpflaster · Video vom Auftrag'],
     [pic('proof-arbeit-2', { badge: true, alt: 'Mitarbeiter führt den Flächenreiniger über eine halb gereinigte Betonpflasterfläche im Garten — echtes Arbeitsfoto', sizes: '250px' }), 'Einsatz im Garten · Betonpflaster'],
@@ -402,15 +395,14 @@ function zuletztLeiste() {
 
 // §2.3 Auftrags-Protokolle: alternierende Medien+Mono-Tabellen-Karten + objekt-zugeordnete Review-Zitate + Brücke.
 function protoMedia(m, { lcp = false } = {}) {
-  if (m.typ === 'video') return `<figure class="media-frame case-frame video-shell">${VIDEO_BADGE}<video controls preload="none" playsinline poster="/assets/img/${m.poster}.jpg" aria-label="${esc(m.aria || '')}"><source src="/assets/video/${m.file}.mp4" type="video/mp4">Ihr Browser kann dieses Video nicht abspielen.</video></figure>`;
+  if (m.typ === 'video') return `<figure class="media-frame case-frame video-shell"><video controls preload="none" playsinline poster="/assets/img/${m.poster}.jpg" aria-label="${esc(m.aria || '')}"><source src="/assets/video/${m.file}.mp4" type="video/mp4">Ihr Browser kann dieses Video nicht abspielen.</video></figure>`;
   // 'vnpair': zwei Aufnahmen NEBENEINANDER mit Vorher/Nachher-Labels — für V/N-Paare, deren Bildausschnitte
   // nicht deckungsgleich sind (QA R1: Wipe-Slider suggeriert identischen Ausschnitt und wirkt sonst kaputt).
   if (m.typ === 'vnpair') return `<figure class="case-frame"><div class="vn-pair" role="group" aria-label="${esc(m.aria || 'Vorher-Nachher-Vergleich: zwei Aufnahmen nebeneinander')}">
-<span class="badge b-echt">Echtes Foto · Kundenauftrag</span>
 <span class="vn-half">${pic(m.vorher, { alt: m.alt_vorher, sizes: '(max-width:820px) 46vw, 220px', lcp })}<span class="comparison-label label-before">Vorher</span></span>
 <span class="vn-half">${pic(m.nachher, { alt: m.alt_nachher, sizes: '(max-width:820px) 46vw, 220px' })}<span class="comparison-label label-after">Nachher</span></span>
 </div></figure>`;
-  if (m.typ === 'vn') return `<figure class="case-frame"><div class="comparison" role="slider" tabindex="0" aria-label="${esc(m.aria || 'Vorher-Nachher-Vergleich — mit den Pfeiltasten oder dem Regler verschieben')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">${pic(m.vorher, { cls: 'comparison-before', alt: m.alt_vorher, sizes: '(max-width:820px) 92vw, 420px', lcp })}${pic(m.nachher, { cls: 'comparison-after', alt: m.alt_nachher, sizes: '(max-width:820px) 92vw, 420px' })}<span class="badge b-echt">Echtes Foto · Kundenauftrag</span><span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span><div class="comparison-handle"></div></div></figure>`;
+  if (m.typ === 'vn') return `<figure class="case-frame"><div class="comparison" role="slider" tabindex="0" aria-label="${esc(m.aria || 'Vorher-Nachher-Vergleich — mit den Pfeiltasten oder dem Regler verschieben')}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">${pic(m.vorher, { cls: 'comparison-before', alt: m.alt_vorher, sizes: '(max-width:820px) 92vw, 420px', lcp })}${pic(m.nachher, { cls: 'comparison-after', alt: m.alt_nachher, sizes: '(max-width:820px) 92vw, 420px' })}<span class="comparison-label label-before">Vorher</span><span class="comparison-label label-after">Nachher</span><div class="comparison-handle"></div></div></figure>`;
   return `<figure class="media-frame case-frame">${pic(m.slug, { badge: true, alt: m.alt || '', sizes: '(max-width:820px) 92vw, 420px', lcp })}</figure>`;
 }
 function protokolleSection(fc) {
