@@ -5,7 +5,7 @@
   "h1_em": "pro m²",
   "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen. Antwort < 2 h — werktags 8–18 Uhr.",
   "kosten_tabelle": {
-    "caption": "Richtpreise pro m² und Rechenbeispiele für 20, 40 und 60 m² — Endpreise ohne versteckte Kosten.",
+    "caption": "Richtpreise pro m² und exakte Rechenbeispiele — gerechnet wird immer m² × Satz, Endpreise ohne versteckte Kosten.",
     "head": [
       "Fläche",
       "Reinigung + Neuverfugung (7 €/m²)",
@@ -19,18 +19,18 @@
       ],
       [
         "20 m² (kleine Terrasse)",
-        "ca. 140 €",
-        "ca. 160 €"
+        "140 €",
+        "160 €"
       ],
       [
         "40 m² (Terrasse + Weg)",
-        "ca. 280 €",
-        "ca. 320 €"
+        "280 €",
+        "320 €"
       ],
       [
         "60 m² (Einfahrt)",
-        "ca. 420 €",
-        "ca. 480 €"
+        "420 €",
+        "480 €"
       ]
     ]
   },
@@ -64,7 +64,7 @@
       "Auf Wunsch Nano-Imprägnierung, damit die Fläche länger sauber bleibt",
       "Endpreis-Zusage und kostenlose Nacharbeit, falls irgendwo Belag zurückbleibt"
     ],
-    "footer": "Eine 40-m²-Fläche liegt bei rund 280 € — fertig gereinigt, neu verfugt und ohne Risiko für den Stein. Ohne Ihren Wochenend-Tag, ohne Gerätemiete, ohne Nacharbeit auf eigene Faust."
+    "footer": "Eine 40-m²-Fläche kostet 280 € (40 × 7 €) — fertig gereinigt, neu verfugt und ohne Risiko für den Stein. Ohne Ihren Wochenend-Tag, ohne Gerätemiete, ohne Nacharbeit auf eigene Faust."
   },
   "richtpreis_erklaerung": {
     "title": "Sie zahlen nie mehr als angesagt.",
@@ -84,7 +84,7 @@
   "faqs": [
     {
       "q": "Was kostet Steinreinigung pro m²?",
-      "a": "Bei Blankstein liegt der Richtpreis bei 7 €/m² für Reinigung inklusive Neuverfugung mit Fugensand, oder 8 €/m² wenn zusätzlich eine Nano-Imprägnierung aufgetragen wird. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Terrasse kostet damit etwa 280 € beziehungsweise 320 €. Der genaue Betrag hängt vom Zustand der Fläche ab und wird nach einem Foto oder einer Besichtigung festgelegt."
+      "a": "Bei Blankstein liegt der Richtpreis bei 7 €/m² für Reinigung inklusive Neuverfugung mit Fugensand, oder 8 €/m² wenn zusätzlich eine Nano-Imprägnierung aufgetragen wird. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Terrasse kostet damit exakt 280 €, mit Imprägnierung 320 €. Der genaue Betrag hängt vom Zustand der Fläche ab und wird nach einem Foto oder einer Besichtigung festgelegt."
     },
     {
       "q": "Gibt es einen Mindestauftragswert oder Fahrtkosten?",

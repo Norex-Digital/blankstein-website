@@ -1,344 +1,265 @@
 {
-  "_meta": "Copy-Layer der Money-Hubs. Verknuepfung mit services.json ueber 'slug'. Felder werden vom Generator (hub()) gerendert + per esc() escaped — also Klartext, keine HTML-Tags. Regeln (gelockt): online IMMER 'Richtpreis' (nie 'Festpreis'), KEIN Heisswasser, KEIN 'kein Hochdruck' (Flaechenreiniger = kontrollierter Hochdruck), Preise 7/8 EUR/m2 Endpreise (§19), Garantie = Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck). FAQ = AEO-Direktantworten. Echte Umlaute (kein fuer/flaeche/impraegnierung). Stand: Muster-Hub steinreinigung — die 3 weiteren Hubs folgen nach Abnahme.",
+  "_meta": "Copy-Layer der 4 Money-Hubs (Etappe C, PROTOKOLL-Voice Spec §5). Verknuepfung mit services.json ueber 'slug'. Gerendert von hub() — alle Felder Klartext (esc), AUSSER h1 (traegt <em>). Schema: eyebrow/h1/lede/wa_text/wa_label + hero_media{typ,slug|vorher/nachher|file/poster}+hero_tabelle (Beweis-Hero) + edu{label,h2,body[],img?,img_alt?,caption?} (Schadens-Edukation, frageorientierte H2) + protokoll_id(+protokoll_hinweis) → fallstudien.json + belag{h2,intro,rows[[belag,flaeche,einschaetzung]],note} (AEO-Tabelle) + review_author (Snippet-Zuordnung) + faq_title/faqs (Direktantworten 40–60 Woerter) + ratgeber[] (Slug-Whitelist aus copy/ratgeber.json). Regeln (gelockt): IMMER 'Richtpreis' (nie Festpreis), KEIN Heisswasser, KEIN 'kein Hochdruck', Preise EXAKT m²×7/8 (keine Spannen, kein 'rund X bis Y'), Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck), SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', Geraete generisch, echte Umlaute. Hero-Medien: NUR echtes Material (ASSET-LISTE) — KI nur in edu, gelabelt.",
   "hubs": [
     {
       "slug": "steinreinigung",
       "title": "Steinreinigung im Havelland | Blankstein",
-      "meta": "Steinreinigung im Havelland: Pflaster, Terrasse und Wege gründlich sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
-      "eyebrow": "Steinreinigung im Havelland",
-      "hero_img": "hub-steinreinigung-vn",
-      "hero_alt": "Hoffläche während der Reinigung — links noch vermoost, rechts schon sauber",
-      "h1": "Steinreinigung im Havelland —",
-      "h1_em": "gleichmäßig sauber",
-      "intro": "Pflaster, Terrassen, Einfahrten und Wege im Havelland — gründlich gereinigt, materialschonend und mit frischer Neuverfugung.",
-      "schaden_title": "Nicht der Hochdruck schadet — die falsche Anwendung.",
-      "schaden_body": [
-        "Eine Punkt-Lanze, zu nah und zu lange auf einer Stelle, wäscht Fugen aus, raut die Oberfläche auf und sprengt bei Naturstein die Kanten ab. Genau diese Schäden sehen wir, wenn vorher unsachgemäß gearbeitet wurde — und sie sind teuer zu beheben.",
-        "Wir machen es anders: rotierende Flächenreiniger verteilen den Druck gleichmäßig über die ganze Fläche, statt ihn auf einen Punkt zu bündeln. So lösen wir Moos, Algen und Grünbelag gründlich, ohne das Material anzugreifen — und füllen die Fugen danach wieder mit frischem Sand auf."
+      "meta": "Steinreinigung im Havelland: Flächenreiniger, Nasssauger, Neuverfugung mit GaLaBau-Sand — dokumentiert mit echten Fotos. Richtpreis 7 €/m², mit Imprägnierung 8 €/m².",
+      "eyebrow": "Leistung · Steinreinigung",
+      "h1": "Steinreinigung im Havelland — <em>belegt statt behauptet</em>.",
+      "lede": "Einfahrt, Weg, Hof oder Treppe: Wir reinigen Steinflächen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen neu mit GaLaBau-Sand. Das Arbeitsfoto auf dieser Seite ist echt — eine Fläche, beide Zustände.",
+      "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für eine Steinreinigung. Foto und ungefähre Maße schicke ich gleich mit.",
+      "wa_label": "Fläche fotografieren, Preis erhalten",
+      "hero_media": { "typ": "img", "slug": "hub-steinreinigung-vn", "alt": "Echtes Arbeitsfoto: Pflasterfläche entlang einer Diagonale halb gereinigt, halb verschmutzt" },
+      "hero_tabelle": [
+        ["Objekt", "Pflasterfläche am Wohnhaus"],
+        ["Zustand vorher", "Grauschleier, Fugen bewachsen"],
+        ["Maßnahme", "Flächenreiniger in Bahnen, Neuverfugung"],
+        ["Beleg", "Ein Foto, beide Zustände im selben Bild"]
       ],
-      "usp_title": "Materialschonend — weil die Methode stimmt.",
-      "usp_sub": "Vier Schritte, die wir bei jeder Steinfläche gleich sauber durchziehen — vom ersten Strahl bis zur fertig verfugten, geschützten Fläche.",
-      "leistung_title": "Welche Flächen wir reinigen.",
-      "leistung_sub": "Ob glatter Betonstein, alter Klinker oder empfindlicher Naturstein — wir stellen Druck, Düse und Reinigungsmittel auf das Material ein.",
-      "leistungsumfang": [
-        {
-          "h": "Pflaster & Hofflächen",
-          "t": "Betonstein, Klinker und Verbundpflaster — Moos und Grünbelag raus, Fugen neu verfüllt, damit nichts nachsackt.",
-          "img": "hub-steinreinigung-gal5",
-          "alt": "Frisch gereinigte Pflasterstein-Hoffläche vor einem Wohnhaus im Havelland"
-        },
-        {
-          "h": "Terrassen",
-          "t": "Naturstein, Betonplatten, Keramik und Feinsteinzeug — gleichmäßig sauber, ohne ausgewaschene Fugen oder Schleier.",
-          "img": "hub-steinreinigung-gal4",
-          "alt": "Gereinigte Terrasse mit Sitzplatz und Natursteinplatten im Havelland"
-        },
-        {
-          "h": "Einfahrten",
-          "t": "Stark befahrene Flächen mit Reifen- und Schmutzspuren — gründlich gereinigt und auf Wunsch gegen erneute Verschmutzung versiegelt.",
-          "img": "hub-steinreinigung-einfahrt",
-          "alt": "Frisch gereinigte Pflaster-Einfahrt mit Zufahrt zum Haus im Havelland"
-        },
-        {
-          "h": "Wege & Treppen",
-          "t": "Gehwege, Stufen und Eingangsbereiche — auch verwinkelte Flächen, die mit der Hand-Lanze nur schwer gleichmäßig sauber werden.",
-          "img": "hub-steinreinigung-wegetreppen",
-          "alt": "Frisch gereinigter geschwungener Plattenweg am Haus"
-        }
-      ],
-      "gal_title": "So sehen unsere Steinflächen danach aus",
-      "gal_sub": "Pflaster, Terrasse und Wege — gründlich gereinigt, neu verfugt und auf Wunsch versiegelt. Beispielhafte Darstellung; echte Projektfotos folgen.",
-      "reviews_title": "Noch keine öffentlichen Bewertungen — und das sagen wir ehrlich.",
-      "reviews_body": "Blankstein ist frisch gestartet, deshalb sammeln wir gerade die ersten Google-Bewertungen. Statt erfundener Sterne setzen wir auf das, was Sie vorab prüfen können: eine Endpreis-Zusage ohne Aufpreis, transparente Quadratmeter-Preise und echtes Equipment. Die ersten Vorher-Nachher-Bilder von unserer Demo-Fläche zeigen wir offen als solche.",
+      "edu": {
+        "label": "Ehrlich eingeordnet",
+        "h2": "Schadet Hochdruck dem Stein?",
+        "body": [
+          "Falsch angewendet: ja. Eine Punkt-Lanze, zu nah und zu lange auf einer Stelle, wäscht den Fugensand aus, raut Oberflächen auf und sprengt bei Naturstein die Kanten. Solche Schäden sehen wir regelmäßig — sie kosten am Ende mehr als jede Reinigung.",
+          "Deshalb arbeiten wir mit rotierenden Flächenreinigern: Der Druck verteilt sich gleichmäßig über die Fläche statt auf einen Punkt. Was die Reinigung an Fugensand mitnimmt, füllen wir danach mit frischem GaLaBau-Sand wieder auf. Gründlich sauber, Material unversehrt."
+        ],
+        "img": "schaden-hochdruck",
+        "img_alt": "Ausgewaschene Fugen und lose Pflastersteine nach falsch eingesetztem Hochdruck",
+        "caption": "So sieht eine Fläche aus, wenn die Punkt-Lanze zu nah kam."
+      },
+      "protokoll_id": "treppe-vn",
+      "belag": {
+        "h2": "Welcher Belag verträgt welche Reinigung?",
+        "intro": "Die fünf Beläge, die im Havelland am häufigsten liegen — und wie wir sie einschätzen.",
+        "rows": [
+          ["Betonpflaster", "Einfahrt, Hof, Wege", "Standardfall — sehr gut geeignet"],
+          ["Klinker", "Einfahrt, Wege", "Gut geeignet, mit angepasster Druckeinstellung"],
+          ["Waschbeton & Betonplatten", "Terrasse, Podeste", "Gut geeignet, inklusive Neuverfugung"],
+          ["Feinsteinzeug & Keramik", "Moderne Terrassen", "Geeignet — reduzierter Druck, streifenfrei"],
+          ["Naturstein (Granit, Sandstein)", "Treppen, Terrassen", "Nach Prüfung: der Zustand entscheidet, deshalb erst Foto oder Besichtigung"]
+        ],
+        "note": "Unsicher, was bei Ihnen liegt? Ein Foto per WhatsApp genügt — wir ordnen den Belag ein, bevor ein Angebot entsteht."
+      },
+      "review_author": "Chenoa R.",
+      "faq_title": "Was Kunden zur Steinreinigung fragen",
       "faqs": [
         {
           "q": "Was kostet die Steinreinigung pro Quadratmeter?",
-          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung mit frischem Fugensand, oder 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 40 m² große Pflasterfläche liegt damit bei rund 280 bis 320 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten."
+          "a": "7 €/m² für Reinigung, Absaugung und Neuverfugung mit GaLaBau-Sand — mit Nano-Imprägnierung 8 €/m². Gerechnet wird exakt Fläche mal Satz: 40 m² kosten 280 €, mit Imprägnierung 320 €. Verbindlich wird der Richtpreis nach Foto-Prüfung oder Besichtigung, danach gilt die Endpreis-Zusage."
         },
         {
-          "q": "Beschädigt der Hochdruck mein Pflaster oder meinen Naturstein?",
-          "a": "Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Genau deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. So wird die Fläche gründlich sauber, ohne dass das Material Schaden nimmt."
+          "q": "Beschädigt Hochdruck mein Pflaster oder meinen Naturstein?",
+          "a": "Falsch angewendet: ja. Eine Punkt-Lanze zu nah am Stein wäscht Fugen aus und raut Oberflächen auf. Wir arbeiten deshalb mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. Bei Naturstein passen wir Druck und Abstand zusätzlich an das Material an."
         },
         {
-          "q": "Reinigt ihr auch empfindlichen Naturstein?",
-          "a": "Ja. Bei Naturstein wie Sandstein, Granit oder Travertin stellen wir Druck und Abstand vorsichtiger ein und wählen ein materialgerechtes Reinigungsmittel. Wo nötig arbeiten wir mit weniger Druck und mehr Einwirkzeit, damit die Oberfläche und die Kanten unversehrt bleiben."
+          "q": "Welche Flächen reinigt Blankstein?",
+          "a": "Einfahrten, Terrassen, Wege, Treppen und Hofflächen — aus Betonpflaster, Klinker, Waschbeton, Feinsteinzeug oder Naturstein. Treppenkanten gehen wir per Hand nach, der Flächenreiniger übernimmt die Flächen. Ob ein Belag geeignet ist, klären wir am Foto, bevor ein Angebot entsteht."
         },
         {
-          "q": "Kommt der Grünbelag nach der Reinigung schnell wieder?",
-          "a": "Nach der reinen Reinigung siedeln sich Moos und Algen mit der Zeit wieder an, vor allem an schattigen Stellen. Die Neuverfugung mit Sand bremst das, weil weniger Schmutz in offenen Fugen hängen bleibt. Wer länger Ruhe will, nimmt die Nano-Imprägnierung für 1 €/m² mehr — dann perlt Wasser ab und die Fläche bleibt deutlich länger sauber."
+          "q": "Wie läuft die Anfrage ab?",
+          "a": "Sie schicken ein, zwei Fotos und die ungefähren Quadratmeter per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Reicht das Bild für eine sichere Einschätzung nicht, kommen wir kostenlos vorbei — auf Wunsch reinigen wir bei der Besichtigung 1 m² Probefläche, kostenlos."
         },
         {
-          "q": "Wie schnell bekomme ich ein Angebot?",
-          "a": "Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Fläche per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich."
-        },
-        {
-          "q": "Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?",
-          "a": "Bleibt nach unserer Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation. So wissen Sie schon vor dem Termin genau, woran Sie sind."
+          "q": "Was passiert, wenn nach der Reinigung Belag zurückbleibt?",
+          "a": "Dann arbeiten wir kostenlos nach, bis die Fläche sauber ist — ohne Diskussion. Und der bestätigte Preis ist der Rechnungsbetrag: kein Aufpreis, auch wenn die Fläche hartnäckiger ist als gedacht. Beide Zusagen stehen im Angebot, nicht nur auf dieser Seite."
         }
       ],
-      "garantie_text": "Endpreis-Zusage: Der Preis, den wir vor dem Termin nennen, ist der Endpreis — kein Aufpreis, keine Nachkalkulation. Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach.",
-      "gebiet_text": "Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege kurz und die Termine planbar.",
-      "cta_title": "Bereit für eine saubere Steinfläche?",
-      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindlich nach Foto-Prüfung. Antwort < 2 h — werktags 8–18 Uhr. Havelland & westlicher Berlin-Rand."
+      "ratgeber": ["pflastersteine-reinigen", "was-kostet-steinreinigung", "serioese-steinreinigung-erkennen"]
     },
     {
       "slug": "terrassenreinigung",
       "title": "Terrassenreinigung im Havelland | Blankstein",
-      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik gründlich sauber — mit Flächenreiniger, Neuverfugung und Imprägnierung. Richtpreis ab 7 €/m².",
-      "eyebrow": "Terrassenreinigung im Havelland",
-      "hero_img": "hub-terrasse-heroimg",
-      "hero_alt": "Frisch gereinigte Terrasse unter einer Holzpergola im Havelland",
-      "h1": "Terrassenreinigung im Havelland —",
-      "h1_em": "materialschonend sauber",
-      "intro": "Terrassen aus Naturstein, Betonplatten, Keramik und Feinsteinzeug — streifenfrei gereinigt, materialschonend und neu verfugt.",
-      "hero_caption": "Terrassenfläche im Havelland — Reinigung, Neuverfugung & Imprägnierung.",
-      "proof_video": { "file": "terrasse-arbeit", "poster": "terrasse-arbeit-poster", "label": "Echte Arbeit", "title": "So reinigen wir eine Terrasse — in echt.", "sub": "Kurzer Clip von einem echten Auftrag: der rotierende Flächenreiniger zieht eine saubere Bahn über die graue Terrasse.", "caption": "Terrassenreinigung mit dem Flächenreiniger — echtes Video von uns." },
-      "schaden_title": "Nicht der Hochdruck schadet der Terrasse — die falsche Anwendung.",
-      "schaden_body": [
-        "Auf Terrassenplatten richtet eine Punkt-Lanze schnell Schaden an: Sie wäscht die Fugen aus, raut die Oberfläche auf und sprengt bei Naturstein die Kanten ab. Bei Keramik und Feinsteinzeug entscheidet der richtige Druck und das passende Reinigungsmittel über das Ergebnis.",
-        "Wir arbeiten mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen, lösen Moos, Algen und Grünschleier gründlich und füllen die Fugen anschließend mit frischem Sand auf — materialschonend und ohne Streifen."
+      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik streifenfrei gereinigt und neu verfugt — mit echtem Einsatzvideo. Richtpreis 7 €/m².",
+      "eyebrow": "Leistung · Terrassenreinigung",
+      "h1": "Terrassenreinigung — <em>streifenfrei, nicht schöngefilmt</em>.",
+      "lede": "Naturstein, Betonplatten, Keramik oder Feinsteinzeug: Wir stellen Druck und Reinigungsmittel auf den Belag ein, reinigen mit dem Flächenreiniger und verfugen neu. Foto und Video auf dieser Seite stammen aus laufenden Einsätzen — ungestellt.",
+      "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für meine Terrasse. Foto und ungefähre Maße schicke ich gleich mit.",
+      "wa_label": "Terrassen-Foto senden",
+      "hero_media": { "typ": "img", "slug": "proof-arbeit-2", "alt": "Echtes Arbeitsfoto: Terrassenreinigung mit dem rotierenden Flächenreiniger im Einsatz" },
+      "hero_tabelle": [
+        ["Objekt", "Terrasse am Einfamilienhaus"],
+        ["Gerät", "Rotierender Flächenreiniger"],
+        ["Schritt", "Reinigung in Bahnen, danach Absaugung"],
+        ["Beleg", "Foto aus dem laufenden Einsatz"]
       ],
-      "usp_title": "Materialschonend — weil die Methode stimmt.",
-      "usp_sub": "Vier Schritte, die wir bei jeder Terrasse gleich sauber durchziehen — von der ersten Bahn bis zur fertig verfugten, geschützten Fläche.",
-      "leistung_title": "Welche Terrassen wir reinigen.",
-      "leistung_sub": "Ob Naturstein, Betonplatte oder Feinsteinzeug — wir stellen Druck, Düse und Reinigungsmittel auf den Belag ein, damit Oberfläche und Fugen unversehrt bleiben.",
-      "leistungsumfang": [
-        {
-          "h": "Naturstein-Terrasse",
-          "t": "Sandstein, Granit, Travertin — mit angepasstem Druck und materialgerechtem Mittel gereinigt, ohne die Oberfläche aufzurauen.",
-          "img": "hub-terrasse-gal1",
-          "alt": "Gereinigte Naturstein-Terrasse aus warmen Sandstein-Platten mit Sitzplatz"
-        },
-        {
-          "h": "Betonplatten",
-          "t": "Grau gewordene Betonplatten werden wieder gleichmäßig hell — Moos und Algen raus, Fugen neu verfüllt.",
-          "img": "hub-terrasse-gal2",
-          "alt": "Gereinigte Terrasse aus großformatigen Betonplatten an einem Wohnhaus"
-        },
-        {
-          "h": "Keramik & Feinsteinzeug",
-          "t": "Moderne Keramik- und Feinsteinplatten reinigen wir streifenfrei und schonend — kein Aufrauen, kein Schleier.",
-          "img": "hub-terrasse-gal5",
-          "alt": "Gereinigte moderne Terrasse aus Feinsteinzeug mit Lounge-Möbeln"
-        },
-        {
-          "h": "Terrassenfugen",
-          "t": "Ausgewaschene oder vermooste Fugen füllen wir mit frischem Sand auf — das bremst Unkraut und hält die Platten stabil.",
-          "img": "hub-terrasse-gal4",
-          "alt": "Frisch verfugte Terrasse aus rotem Klinker mit Sitzplatz"
-        }
-      ],
+      "edu": {
+        "label": "Ehrlich eingeordnet",
+        "h2": "Warum wird eine Terrasse nach dem Kärchern streifig?",
+        "body": [
+          "Mit der Punkt-Lanze reinigt man in schmalen, ungleich geführten Bahnen — jede Überlappung zeichnet sich später als Streifen ab. Dazu wäscht der gebündelte Strahl die Fugen aus und raut empfindliche Platten auf; Naturstein verliert dabei schnell die Kanten.",
+          "Der rotierende Flächenreiniger arbeitet unter einer Haube mit konstantem Abstand zur Platte: eine Bahn, ein Bild, keine Ränder. Bei Keramik und Naturstein nehmen wir Druck zurück und geben dem Reinigungsmittel mehr Zeit — das Ergebnis bleibt gleichmäßig, das Material heil."
+        ]
+      },
+      "protokoll_id": "terrasse-video",
+      "belag": {
+        "h2": "Welche Terrassenbeläge reinigen wir — und wie?",
+        "intro": "Der Belag bestimmt Druck, Mittel und Tempo. So gehen wir die vier häufigsten Terrassen an.",
+        "rows": [
+          ["Betonplatten", "Terrasse, Podest", "Standardfall — sehr gut geeignet"],
+          ["Waschbeton", "Ältere Terrassen", "Gut geeignet, inklusive Neuverfugung"],
+          ["Keramik & Feinsteinzeug", "Moderne Terrassen", "Geeignet — reduzierter Druck, kein Aufrauen, kein Schleier"],
+          ["Naturstein (Sandstein, Travertin, Granit)", "Terrasse, Sitzplatz", "Nach Prüfung — Druck und Reinigungsmittel richten sich nach dem Material"]
+        ],
+        "note": "Schicken Sie ein Foto Ihrer Platten mit — wir nennen Belag und Vorgehen, bevor wir den Preis bestätigen."
+      },
+      "review_author": "Chenoa R.",
+      "faq_title": "Was Kunden zur Terrassenreinigung fragen",
       "faqs": [
         {
-          "q": "Was kostet die Terrassenreinigung pro Quadratmeter?",
-          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung, oder 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 30 m² große Terrasse liegt damit bei rund 210 bis 240 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten."
+          "q": "Was kostet die Terrassenreinigung?",
+          "a": "Der Satz ist derselbe wie bei jeder Steinfläche: 7 €/m² inklusive Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Eine 30-m²-Terrasse: 30 × 7 € = 210 €, mit Imprägnierung 240 €. Verbindlich wird der Preis nach Foto oder Besichtigung — danach gilt er, ohne Nachkalkulation."
         },
         {
-          "q": "Beschädigt die Reinigung meine Terrassenplatten?",
-          "a": "Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Genau deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. So wird die Terrasse gründlich sauber, ohne dass das Material Schaden nimmt."
+          "q": "Verträgt Feinsteinzeug oder Keramik die Reinigung?",
+          "a": "Ja, mit der richtigen Einstellung. Der Flächenreiniger verteilt den Druck gleichmäßig, wir fahren ihn bei dichten, glatten Platten bewusst niedriger — so wird die Terrasse streifenfrei sauber, ohne dass die Oberfläche aufraut oder ein Schleier zurückbleibt."
         },
         {
-          "q": "Reinigt ihr auch empfindlichen Naturstein und Keramik?",
-          "a": "Ja. Bei Naturstein wie Sandstein oder Travertin und bei Keramik stellen wir Druck und Abstand vorsichtiger ein und wählen ein materialgerechtes Reinigungsmittel. Wo nötig arbeiten wir mit weniger Druck und mehr Einwirkzeit, damit Oberfläche und Kanten unversehrt bleiben."
+          "q": "Wie reinigt ihr empfindlichen Naturstein?",
+          "a": "Mit weniger Druck, mehr Abstand und einem Reinigungsmittel, das zum Stein passt. Sandstein, Travertin und Granit reagieren unterschiedlich — deshalb prüfen wir das Material vorab am Foto. Wo nötig, arbeiten wir mit längerer Einwirkzeit statt mit mehr Druck, damit Kanten und Oberfläche unversehrt bleiben."
         },
         {
-          "q": "Kommt der Grünbelag auf der Terrasse schnell wieder?",
-          "a": "Nach der reinen Reinigung siedeln sich Moos und Algen mit der Zeit wieder an, vor allem an schattigen Stellen. Die Neuverfugung bremst das. Wer länger Ruhe will, nimmt die Nano-Imprägnierung für 1 €/m² mehr — dann perlt Wasser ab und die Terrasse bleibt deutlich länger sauber."
+          "q": "Wie lange bleibt die Terrasse nach der Reinigung sauber?",
+          "a": "Das hängt an der Lage: Schattige, feuchte Terrassen setzen schneller wieder Grünbelag an. Die Neuverfugung bremst das. Wer länger Ruhe will, nimmt die Nano-Imprägnierung für 1 €/m² mehr — Wasser perlt ab, Moos und Algen finden deutlich weniger Halt."
         },
         {
-          "q": "Wie schnell bekomme ich ein Angebot?",
-          "a": "Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Terrasse per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich."
-        },
-        {
-          "q": "Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?",
-          "a": "Bleibt nach unserer Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation. So wissen Sie schon vor dem Termin genau, woran Sie sind."
+          "q": "Bleibt nach dem Termin Schmutzwasser im Garten zurück?",
+          "a": "Nein. Wir saugen gelösten Schmutz und Wasser mit dem Nasssauger direkt auf, statt sie in Beet und Rasen zu spülen. Die Terrasse ist nach dem Termin begehbar, Möbel stellen wir zurück — und bleibt irgendwo Restbelag, arbeiten wir kostenlos nach."
         }
       ],
-      "garantie_text": "Endpreis-Zusage: Der Preis, den wir vor dem Termin nennen, ist der Endpreis — kein Aufpreis, keine Nachkalkulation. Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach.",
-      "gebiet_text": "Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege kurz und die Termine planbar.",
-      "cta_title": "Bereit für eine saubere Terrasse?",
-      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindlich nach Foto-Prüfung. Antwort < 2 h — werktags 8–18 Uhr. Havelland & westlicher Berlin-Rand."
+      "ratgeber": ["terrasse-reinigen", "naturstein-reinigen", "welcher-reiniger-fuer-welchen-stein"]
     },
     {
       "slug": "pflasterreinigung",
       "title": "Pflasterreinigung im Havelland | Blankstein",
-      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Gehwege gründlich sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
-      "eyebrow": "Pflasterreinigung im Havelland",
-      "hero_img": "hub-pflaster-vn",
-      "hero_alt": "Bogenpflaster während der Reinigung — eine Seite gereinigt, die andere noch vermoost",
-      "h1": "Pflasterreinigung im Havelland —",
-      "h1_em": "Fuge für Fuge sauber",
-      "intro": "Einfahrten, Hofflächen und Gehwege aus Pflaster — gründlich gereinigt, materialschonend und mit frischer Neuverfugung.",
-      "hero_caption": "Pflasterfläche im Havelland — Reinigung, Neuverfugung & Imprägnierung.",
-      "schaden_title": "Nicht der Hochdruck schadet dem Pflaster — die falsche Anwendung.",
-      "schaden_body": [
-        "Eine Punkt-Lanze, zu nah und zu lange auf einer Stelle, wäscht den Fugensand komplett aus und treibt die Steine auseinander. Danach sackt das Pflaster nach, wird uneben und vergrünt in den offenen Fugen erst recht.",
-        "Wir reinigen mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen, saugen den gelösten Schmutz nass ab und füllen die Fugen anschließend mit frischem GaLaBau-Sand auf — so bleibt die Fläche stabil und gleichmäßig sauber."
+      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege mit Flächenreiniger gereinigt, abgesaugt und mit GaLaBau-Sand neu verfugt. Richtpreis 7 €/m² — Foto genügt.",
+      "eyebrow": "Leistung · Pflasterreinigung",
+      "h1": "Pflasterreinigung im Havelland — <em>Fugen inklusive</em>.",
+      "lede": "Einfahrten, Hofflächen und Gehwege aus Pflaster: Wir reinigen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen mit frischem GaLaBau-Sand. Das Arbeitsfoto dazu ist echt — halb gereinigt, halb im Ausgangszustand.",
+      "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für mein Pflaster. Foto und ungefähre Maße schicke ich gleich mit.",
+      "wa_label": "Pflaster-Foto senden",
+      "hero_media": { "typ": "img", "slug": "hub-pflaster-vn", "alt": "Echtes Arbeitsfoto: Bogenpflaster, eine Hälfte gereinigt, die andere noch verschmutzt" },
+      "hero_tabelle": [
+        ["Objekt", "Pflasterfläche, Bogenverband"],
+        ["Zustand vorher", "Moos und Grünbelag, Fugen bewachsen"],
+        ["Maßnahme", "Flächenreiniger, Neuverfugung mit GaLaBau-Sand"],
+        ["Beleg", "Eine Fläche, beide Zustände im Bild"]
       ],
-      "usp_title": "Materialschonend — weil die Methode stimmt.",
-      "usp_sub": "Vier Schritte, die wir bei jeder Pflasterfläche gleich sauber durchziehen — vom ersten Strahl bis zur fertig verfugten, geschützten Fläche.",
-      "leistung_title": "Welche Pflasterflächen wir reinigen.",
-      "leistung_sub": "Ob Betonstein, Klinker oder Verbundpflaster — wir reinigen, saugen den Schmutz ab und verfugen neu, damit nichts nachsackt.",
-      "leistungsumfang": [
-        {
-          "h": "Einfahrten",
-          "t": "Stark befahrene Flächen mit Reifen- und Schmutzspuren — gründlich gereinigt und auf Wunsch gegen erneute Verschmutzung versiegelt.",
-          "img": "hub-pflaster-gal2",
-          "alt": "Gereinigte Pflaster-Einfahrt vor einem Einfamilienhaus im Havelland"
-        },
-        {
-          "h": "Hofeinfahrt & Hofflächen",
-          "t": "Große Hofflächen werden wieder gleichmäßig sauber — ohne Streifen, mit frisch verfüllten Fugen.",
-          "img": "hub-pflaster-gal5",
-          "alt": "Gereinigte große Hoffläche aus Betonpflaster"
-        },
-        {
-          "h": "Gehwege",
-          "t": "Wege und Zugänge reinigen wir gleichmäßig — auch verwinkelte Flächen, die mit der Hand-Lanze nur schwer sauber werden.",
-          "img": "hub-pflaster-gal3",
-          "alt": "Frisch gereinigter Gehweg aus Betonpflaster entlang der Hauswand"
-        },
-        {
-          "h": "Pflasterfugen",
-          "t": "Ausgewaschene Fugen füllen wir mit frischem Sand auf — das bremst Unkraut und hält die Steine stabil.",
-          "img": "hub-pflaster-gal6",
-          "alt": "Frisch verfugte Pflasterfläche in warmem Rotton"
-        }
-      ],
+      "edu": {
+        "label": "Ehrlich eingeordnet",
+        "h2": "Warum sackt Pflaster nach falscher Reinigung ab?",
+        "body": [
+          "Die Fugen halten ein Pflaster zusammen. Eine Punkt-Lanze bläst den Fugensand heraus — danach arbeiten die Steine, kippeln unter Last, und in die offenen Fugen wächst das nächste Grün schneller nach als vorher.",
+          "Bei uns ist die Neuverfugung deshalb kein Extra, sondern Teil des Quadratmeterpreises: Nach Reinigung und Absaugung füllen wir die Fugen mit frischem GaLaBau-Sand auf. Die Fläche bleibt stabil, eben und länger sauber."
+        ],
+        "img": "proof-arbeit-1",
+        "img_alt": "Echtes Arbeitsfoto: rotierender Flächenreiniger im Einsatz auf einer Pflasterfläche",
+        "caption": "Gleichmäßiger Druck unter der Haube — danach kommt frischer Sand in die Fugen."
+      },
+      "protokoll_id": "einfahrt-video",
+      "belag": {
+        "h2": "Welches Pflaster können wir reinigen?",
+        "intro": "Vom Neubaugebiets-Verbundstein bis zum Sechseckpflaster aus DDR-Zeiten — die Einschätzung nach Belag.",
+        "rows": [
+          ["Betonpflaster", "Einfahrt, Hoffläche", "Standardfall — sehr gut geeignet"],
+          ["Verbundpflaster", "Einfahrt, Stellplatz", "Sehr gut geeignet, auch bei Reifenabrieb"],
+          ["Sechseckpflaster", "Wege, ältere Einfahrten", "Gut geeignet — ein dokumentierter Auftrag steht oben auf dieser Seite"],
+          ["Klinkerpflaster", "Wege, Vorgärten", "Gut geeignet, mit angepasster Einstellung"],
+          ["Natursteinpflaster", "Höfe, Zufahrten", "Nach Prüfung — Kanten und Oberfläche entscheiden über den Druck"]
+        ],
+        "note": "Belag unklar? Foto schicken — wir ordnen ihn ein und rechnen den Richtpreis auf die Fläche."
+      },
+      "review_author": "Louis",
+      "faq_title": "Was Kunden zur Pflasterreinigung fragen",
       "faqs": [
         {
-          "q": "Was kostet die Pflasterreinigung pro Quadratmeter?",
-          "a": "Der Richtpreis liegt bei 7 €/m² inklusive Reinigung und Neuverfugung mit frischem Fugensand, oder 8 €/m² zusätzlich mit Nano-Imprägnierung. Eine 40 m² große Einfahrt liegt damit bei rund 280 bis 320 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten."
+          "q": "Was kostet die Pflasterreinigung einer Einfahrt?",
+          "a": "Exakt Fläche mal Satz: Eine 40-m²-Einfahrt kostet 40 × 7 € = 280 €, mit Nano-Imprägnierung 320 €. Im Preis stecken Reinigung, Absaugung und die Neuverfugung mit GaLaBau-Sand. Verbindlich wird der Richtpreis nach Foto-Prüfung oder kostenloser Besichtigung — danach gilt die Endpreis-Zusage."
         },
         {
-          "q": "Beschädigt der Hochdruck mein Pflaster?",
-          "a": "Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — wäscht die Fugen aus und treibt die Steine auseinander. Genau deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. So bleibt die Fläche stabil und gründlich sauber."
+          "q": "Bekommt ihr Öl- und Reifenspuren aus dem Pflaster?",
+          "a": "Reifenabrieb, Moos und flächigen Schmutz lösen wir zuverlässig. Tief eingezogene Ölflecken sind ehrlicherweise Glückssache — sie sitzen oft im Stein, nicht auf ihm. Wir schätzen das vorab am Foto ein und sagen es Ihnen, bevor ein Angebot entsteht. Versprochen wird nur, was geht."
         },
         {
-          "q": "Bekommt ihr Reifen- und Ölspuren aus der Einfahrt?",
-          "a": "Reifenabrieb, Moos und allgemeine Verschmutzung lösen wir mit Flächenreiniger und passendem Reinigungsmittel zuverlässig. Tief eingezogene Ölflecken lassen sich nicht immer vollständig entfernen — das schätzen wir ehrlich anhand Ihrer Fotos ein, bevor wir ein Angebot machen."
+          "q": "Wächst das Unkraut in den Fugen gleich wieder nach?",
+          "a": "In offenen Fugen: ja, und zwar schnell. Deshalb füllen wir die Fugen nach der Reinigung mit frischem Sand — das nimmt Samen und Schmutz den Halt. Die Nano-Imprägnierung für 1 €/m² mehr verzögert den Neubewuchs zusätzlich, besonders an schattigen Stellen."
         },
         {
-          "q": "Kommt das Unkraut in den Fugen schnell wieder?",
-          "a": "Solange die Fugen offen sind, siedelt sich schnell wieder Grün an. Deshalb füllen wir sie nach der Reinigung mit frischem Sand auf — das bremst das Unkraut spürbar. Mit der Nano-Imprägnierung für 1 €/m² mehr bleibt die Fläche noch länger sauber."
+          "q": "Kann die Reinigung mein Pflaster beschädigen?",
+          "a": "Nicht mit unserer Methode. Schäden entstehen durch Punkt-Lanzen, die Fugen auswaschen und Steine lockern. Der rotierende Flächenreiniger verteilt den Druck gleichmäßig, und die Neuverfugung stellt den Verbund danach wieder her. Bei Natursteinpflaster passen wir den Druck zusätzlich an."
         },
         {
-          "q": "Wie schnell bekomme ich ein Angebot?",
-          "a": "Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Fläche per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich."
-        },
-        {
-          "q": "Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?",
-          "a": "Bleibt nach unserer Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation. So wissen Sie schon vor dem Termin genau, woran Sie sind."
+          "q": "Wie schnell bekomme ich ein Angebot für mein Pflaster?",
+          "a": "Foto plus ungefähre Quadratmeter per WhatsApp — Antwort < 2 h — werktags 8–18 Uhr. Bei unklaren Flächen kommen wir kostenlos vorbei und messen nach; auf Wunsch reinigen wir dabei 1 m² Probefläche, kostenlos. Das Angebot danach ist verbindlich."
         }
       ],
-      "garantie_text": "Endpreis-Zusage: Der Preis, den wir vor dem Termin nennen, ist der Endpreis — kein Aufpreis, keine Nachkalkulation. Bleibt nach der Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach.",
-      "gebiet_text": "Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege kurz und die Termine planbar.",
-      "cta_title": "Bereit für ein sauberes Pflaster?",
-      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindlich nach Foto-Prüfung. Antwort < 2 h — werktags 8–18 Uhr. Havelland & westlicher Berlin-Rand."
+      "ratgeber": ["hochdruckreiniger-fehler", "einfahrt-reinigen-oel-reifenspuren", "pflaster-ohne-hochdruck-reinigen"]
     },
     {
       "slug": "steinversiegelung",
       "title": "Steinversiegelung im Havelland | Blankstein",
-      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung für Pflaster und Terrasse — Wasser perlt ab, Moos und Schmutz finden weniger Halt. Richtpreis 8 €/m².",
-      "eyebrow": "Steinversiegelung im Havelland",
-      "hero_img": "hub-versiegelung-hero",
-      "hero_alt": "Frisch imprägnierte Steinfläche, auf der das Wasser abperlt",
-      "h1": "Steinversiegelung im Havelland —",
-      "h1_em": "länger sauber",
-      "intro": "Nano-Imprägnierung für Ihre frisch gereinigte Fläche — Wasser perlt ab, Moos und Schmutz finden weniger Halt, sie bleibt länger sauber.",
-      "hero_caption": "Versiegelte Steinfläche, Havelland — Schutz, der länger sauber hält.",
-      "schaden_title": "Versiegelung ist kein Ersatz für die Reinigung.",
-      "schaden_body": [
-        "Wer eine schmutzige Fläche imprägniert, schließt Moos, Algen und Schmutz unter dem Schutzfilm mit ein — der Belag bleibt sichtbar, nur eben versiegelt. Das Ergebnis sieht am Ende oft schlechter aus als vorher.",
-        "Deshalb reinigen wir die Fläche zuerst gründlich mit dem Flächenreiniger, verfugen neu und lassen sie trocknen. Erst auf den sauberen, trockenen Stein kommt die Nano-Imprägnierung — nur so hält der Schutz, was er verspricht."
+      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach gründlicher Reinigung und Neuverfugung — Wasser perlt ab, die Fläche bleibt länger sauber. 8 €/m² komplett.",
+      "eyebrow": "Leistung · Steinversiegelung",
+      "h1": "Steinversiegelung — <em>erst sauber, dann geschützt</em>.",
+      "lede": "Die Nano-Imprägnierung ist bei uns der letzte Schritt nach Reinigung und Neuverfugung: 8 €/m² statt 7 €/m², alles inklusive. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt deutlich länger sauber.",
+      "wa_text": "Hallo Blankstein, ich interessiere mich für die Steinversiegelung. Foto und ungefähre Maße meiner Fläche schicke ich gleich mit.",
+      "wa_label": "Fläche zur Prüfung senden",
+      "hero_media": { "typ": "img", "slug": "proof-ergebnis-2", "alt": "Echtes Kundenfoto: frisch gereinigte Pflasterfläche — die Grundlage für jede Imprägnierung" },
+      "hero_tabelle": [
+        ["Objekt", "Pflasterfläche nach der Reinigung"],
+        ["Status", "Sauber, neu verfugt, trocken"],
+        ["Nächster Schritt", "Nano-Imprägnierung auf den trockenen Stein"],
+        ["Beleg", "Echtes Foto — Versiegelungs-Doku folgt"]
       ],
-      "edu_img": "hub-versiegelung-edu",
-      "edu_alt": "Frisch gereinigte, trockene Steinfläche, bereit für die Imprägnierung",
-      "edu_caption": "Nur sauberer, trockener Stein nimmt die Imprägnierung an.",
-      "usp_title": "Sauber zuerst, dann geschützt.",
-      "usp_sub": "Vier Schritte — wir reinigen, verfugen und saugen ab, und versiegeln erst die saubere, trockene Fläche. Nur so wirkt der Schutz dauerhaft.",
-      "leistung_title": "Was die Versiegelung leistet.",
-      "leistung_sub": "Eine Nano-Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein — gegen Wasser, Schmutz und schnelle Wiederverschmutzung.",
-      "leistungsumfang": [
-        {
-          "h": "Nano-Imprägnierung & Schutz",
-          "t": "Ein unsichtbarer Schutzfilm zieht in den Stein ein — ohne Glanz, atmungsaktiv. Wasser perlt ab, Moos und Schmutz finden weniger Halt, die Fläche bleibt deutlich länger sauber.",
-          "img": "hub-versiegelung-gal1",
-          "alt": "Wasser perlt auf einer versiegelten Terrasse ab"
-        },
-        {
-          "h": "Auffrischung & Schutz",
-          "t": "Die Imprägnierung frischt die Farbe des Steins auf und schützt vor Auswaschung — besonders sinnvoll bei schattigen, bewachsenen Flächen, die sonst schnell wieder vergrünen.",
-          "img": "hub-versiegelung-gal2",
-          "alt": "Versiegelte moderne Terrasse mit aufgefrischter Steinfarbe"
-        }
-      ],
+      "edu": {
+        "label": "Ehrlich eingeordnet",
+        "h2": "Kann man eine schmutzige Fläche einfach versiegeln?",
+        "body": [
+          "Nein — und wer es trotzdem anbietet, verkauft Ihnen ein konserviertes Problem. Die Imprägnierung schließt ein, was auf dem Stein liegt: Moos, Algen, Grauschleier. Der Belag bleibt sichtbar, nur eben unter einer Schutzschicht.",
+          "Deshalb gibt es die Versiegelung bei uns nicht ohne Reinigung: erst Flächenreiniger, dann Neuverfugung, dann trocknen lassen. Erst auf den sauberen, trockenen Stein kommt die Nano-Imprägnierung — nur so hält der Schutz, was er verspricht."
+        ],
+        "img": "hub-versiegelung-edu",
+        "img_alt": "Frisch gereinigte, trockene Steinfläche, bereit für die Imprägnierung",
+        "caption": "Nur sauberer, trockener Stein nimmt die Imprägnierung an."
+      },
+      "protokoll_id": "pflaster-split",
+      "protokoll_hinweis": "Ein dokumentierter Versiegelungs-Auftrag folgt. Bis dahin zeigen wir, was vor jeder Versiegelung passiert: die Reinigung — hier aus einem echten Auftrag.",
+      "belag": {
+        "h2": "Welche Beläge lohnen sich für die Versiegelung?",
+        "intro": "Nicht jeder Stein braucht eine Imprägnierung. Unsere Einschätzung nach Belag — inklusive der Fälle, in denen wir abraten.",
+        "rows": [
+          ["Betonpflaster", "Einfahrt, Hof", "Nimmt die Imprägnierung sehr gut an — lohnender Standardfall"],
+          ["Betonplatten & Waschbeton", "Terrasse, Podest", "Gut geeignet, der Farbton wird leicht aufgefrischt"],
+          ["Naturstein", "Terrasse, Wege", "Nach Prüfung — offenporige Steine profitieren am meisten"],
+          ["Feinsteinzeug & Keramik", "Moderne Terrassen", "Sehr dicht: Die Imprägnierung zieht kaum ein und ist meist unnötig — das sagen wir offen"]
+        ],
+        "note": "Ob sich die Imprägnierung bei Ihrer Fläche lohnt, prüfen wir am Foto — und raten ab, wenn sie wenig bringt."
+      },
+      "review_author": "Mattis B.",
+      "faq_title": "Was Kunden zur Steinversiegelung fragen",
       "faqs": [
         {
-          "q": "Was kostet die Steinversiegelung pro Quadratmeter?",
-          "a": "Die Nano-Imprägnierung kostet 1 €/m² mehr als die reine Reinigung — 8 statt 7 €/m², jeweils inklusive Reinigung und Neuverfugung. Eine 30 m² große Terrasse liegt damit bei rund 240 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten."
+          "q": "Was kostet die Steinversiegelung?",
+          "a": "1 €/m² mehr als die reine Reinigung: 8 statt 7 €/m², inklusive Reinigung, Absaugung und Neuverfugung. Eine 30-m²-Terrasse: 30 × 8 € = 240 €. Es gibt keine getrennte Versiegelungs-Rechnung — der Satz deckt den kompletten Ablauf ab, als Endpreis ohne versteckte Kosten."
         },
         {
-          "q": "Was bringt die Versiegelung konkret?",
-          "a": "Die Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein. Wasser perlt ab, Moos und Schmutz finden weniger Halt, und die Fläche bleibt nach der Reinigung deutlich länger sauber. Sie lohnt sich vor allem bei schattigen oder stark bewachsenen Flächen, die sonst schnell wieder vergrünen."
+          "q": "Was bringt die Nano-Imprägnierung konkret?",
+          "a": "Sie legt einen unsichtbaren, atmungsaktiven Schutzfilm auf den Stein — ohne Glanz. Wasser perlt ab, Moos und Algen finden weniger Halt, und die Fläche bleibt nach der Reinigung deutlich länger sauber. Am meisten lohnt sie sich bei schattigen oder feuchten Lagen, die sonst schnell wieder vergrünen."
         },
         {
           "q": "Muss die Fläche vor der Versiegelung gereinigt werden?",
-          "a": "Ja, immer. Auf schmutzigem oder feuchtem Stein hält die Imprägnierung nicht und würde den Belag mit einschließen. Deshalb reinigen wir die Fläche zuerst gründlich, verfugen neu und lassen sie trocknen — erst dann tragen wir die Imprägnierung auf."
+          "a": "Ja, immer. Auf schmutzigem oder feuchtem Stein hält die Imprägnierung nicht — sie würde den Belag nur einschließen. Deshalb reinigen wir zuerst gründlich, verfugen neu und lassen die Fläche trocknen. Erst dann tragen wir die Imprägnierung auf. Anders machen wir es nicht."
         },
         {
           "q": "Wie lange hält die Imprägnierung?",
-          "a": "Je nach Beanspruchung und Witterung hält der Schutz mehrere Jahre. An stark befahrenen oder dauerhaft schattigen Stellen lässt die Wirkung früher nach. Die Imprägnierung lässt sich jederzeit auffrischen — wir sagen Ihnen ehrlich, wann sich das lohnt."
-        },
-        {
-          "q": "Kann man jeden Stein versiegeln?",
-          "a": "Die meisten Pflaster-, Beton- und Natursteinflächen lassen sich gut imprägnieren. Bei sehr dichten oder bereits beschichteten Belägen prüfen wir vorab anhand Ihrer Fotos, ob die Imprägnierung sinnvoll einzieht — und sagen es Ihnen offen, wenn sie wenig bringt."
+          "a": "Je nach Beanspruchung und Witterung mehrere Jahre. An stark befahrenen oder dauerhaft schattigen Stellen lässt die Wirkung früher nach — das gehört zur ehrlichen Einordnung dazu. Auffrischen lässt sich der Schutz jederzeit; wann sich das lohnt, sagen wir Ihnen auf Nachfrage konkret."
         },
         {
           "q": "Was ist, wenn das Wasser danach nicht abperlt?",
-          "a": "Perlt das Wasser nach der Imprägnierung nicht ab, bessern wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation."
+          "a": "Dann bessern wir kostenlos nach — das ist Teil der Zusage, genau wie der Endpreis: Der vorab bestätigte Betrag ist der Rechnungsbetrag, ohne Aufschlag. Und wenn wir am Foto sehen, dass Ihr Belag die Imprägnierung kaum annimmt, raten wir vorher ab statt zu verkaufen."
         }
       ],
-      "garantie_text": "Endpreis-Zusage: Der Preis, den wir vor dem Termin nennen, ist der Endpreis — kein Aufpreis, keine Nachkalkulation. Perlt das Wasser nach der Imprägnierung nicht ab, bessern wir kostenlos nach.",
-      "gebiet_text": "Wir versiegeln und reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege kurz und die Termine planbar.",
-      "cta_title": "Schutz für Ihre saubere Steinfläche?",
-      "cta_sub": "Foto + Maße genügen — Richtpreis sofort, verbindlich nach Foto-Prüfung. Antwort < 2 h — werktags 8–18 Uhr. Havelland & westlicher Berlin-Rand.",
-      "usp_items": [
-        {
-          "title": "Erst reinigen, dann versiegeln",
-          "sub": "Die Imprägnierung ist kein Ersatz für die Reinigung. Wir lösen Moos, Algen und Schmutz zuerst mit dem rotierenden Flächenreiniger — sonst würde der Schutzfilm den Belag nur einschließen."
-        },
-        {
-          "title": "Neuverfugung als Untergrund",
-          "sub": "Vor der Versiegelung füllen wir die Fugen mit frischem GaLaBau-Sand auf. Nur eine stabile, geschlossene Fläche nimmt die Imprägnierung gleichmäßig an."
-        },
-        {
-          "title": "Nano-Schutzfilm mit Abperleffekt",
-          "sub": "Der unsichtbare Schutzfilm zieht in den Stein ein — ohne Glanz, atmungsaktiv. Wasser perlt ab, Moos und Schmutz finden weniger Halt, die Fläche bleibt deutlich länger sauber."
-        },
-        {
-          "title": "Nur auf sauberem, trockenem Stein",
-          "sub": "Wir saugen den gelösten Schmutz nass ab und lassen die Fläche trocknen. Erst auf den trockenen Stein kommt die Imprägnierung — nur so hält der Schutz, was er verspricht."
-        }
-      ],
-      "prozess_items": [
-        {
-          "titel": "Richtpreis berechnen",
-          "text": "Fläche grob schätzen, Regler ziehen — Sie sehen sofort den Rahmen. Die Versiegelung liegt bei 8 €/m² inklusive Reinigung und Neuverfugung. Ohne Kontaktdaten, ohne Verpflichtung."
-        },
-        {
-          "titel": "Foto + Maße schicken",
-          "text": "Ein, zwei Fotos Ihrer Fläche und die ungefähren m² per WhatsApp. Daran sehen wir auch, ob der Stein die Imprägnierung gut annimmt — und sagen es Ihnen offen, wenn sie wenig bringt."
-        },
-        {
-          "titel": "Reinigen, verfugen, trocknen",
-          "text": "Zum Termin reinigen wir die Fläche mit dem Flächenreiniger, verfugen neu und lassen den Stein trocknen. Auf feuchtem oder schmutzigem Untergrund hält keine Imprägnierung."
-        },
-        {
-          "titel": "Versiegeln",
-          "text": "Erst auf den sauberen, trockenen Stein tragen wir die Nano-Imprägnierung auf. Wasser perlt ab, die Fläche bleibt länger sauber — und wir räumen hinter uns auf."
-        }
-      ]
+      "ratgeber": ["gruenbelag-kommt-immer-wieder", "gruenbelag-entfernen", "welcher-reiniger-fuer-welchen-stein"]
     }
   ]
 }

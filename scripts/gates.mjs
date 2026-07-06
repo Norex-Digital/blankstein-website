@@ -32,6 +32,29 @@ let imgNoAlt=0, imgNoDim=0, noScta=0, noHamb=0, noOg=0; const titles=new Map(); 
 const transRe = /\b(fuer|ueber|koennen|koennt|muessen|moechten?|moeglich|schoen|groesse|groesser|qualitaet|naehe|naehere|haeufig|haeufige|natuerlich|persoenlich|zuverlaessig|regelmaessig|gruenbelag|gruen\b|fruehjahr|fruehling|gebaeude|oberflaeche|flaeche|flaechen|flaechenreiniger|impraegnierung|impraegniert|verschmutzt\b.*?flaeche|waehrend|spaeter|draussen|doeberitz|schoenwalde|grossglienicke)\b/i;
 const bodyByGroup = {};
 
+// ---- Provenance (Spec §3.6): manifest.json braucht source je Slug; KI hat in Beweis-Slots nichts verloren ----
+const IMGM = JSON.parse(fs.readFileSync('assets/img/manifest.json','utf8'));
+const VALID_SRC = new Set(['echt','ki','karte','neutral']);
+for(const [slug,m] of Object.entries(IMGM)) if(!VALID_SRC.has(m.source)) FAIL('ProvenanceSource', `manifest ${slug}: source fehlt/ungültig (${m.source})`);
+const KI_SLUGS = new Set(Object.entries(IMGM).filter(([,m])=>m.source==='ki').map(([s])=>s));
+// Beweis-Slot-Container im Output (P2-Sektionen): Beweis-Hero, Zuletzt-Leiste, Protokoll-Frames, Konfigurator-Kacheln
+const PROOF_SLOT_RE = [
+  ['bw-hero', /<section class="bw-hero[^"]*"[\s\S]*?<\/section>/g],
+  ['archiv-strip', /<section class="archiv-strip[^"]*"[\s\S]*?<\/section>/g],
+  ['case-frame', /<figure class="[^"]*case-frame[^"]*"[\s\S]*?<\/figure>/g],
+  ['k-tile', /<button[^>]*class="k-tile"[\s\S]*?<\/button>/g]
+];
+const imgSlugsIn = html => { const out=new Set(); for(const m of html.matchAll(/\/assets\/img\/([a-z0-9-]+?)-\d+\.(?:avif|webp|jpe?g|png)/g)) out.add(m[1]); for(const m of html.matchAll(/poster="\/assets\/img\/([a-z0-9-]+)\.jpg"/g)) out.add(m[1]); return out; };
+let kiInProof=0; const kiSamples=[];
+// ---- Blocklist + verbotene Phrasen (Spec §6.1) ----
+const BLOCK_NAME = /Christian Brehm/i;
+const FORBIDDEN = [
+  [/Festpreis/i, 'Festpreis (online immer Richtpreis)'],
+  [/Heißwasser|Heisswasser/i, 'Heißwasser (war JR, nicht Blankstein)'],
+  [/30 Minuten|30-Minuten/i, '30 Minuten (SLA ist "Antwort < 2 h — werktags 8–18 Uhr")'],
+  [/kein(?:en)? Hochdruck\b/i, '"kein Hochdruck" (wir nutzen Hochdruck korrekt via Flächenreiniger)']
+];
+
 for(const f of files){
   const h = fs.readFileSync(f,'utf8');
   const url = urlOf(f);
@@ -70,6 +93,19 @@ for(const f of files){
   const tm = vis.match(transRe);
   if(tm) FAIL('Translit', `${url} sichtbar "${tm[0]}"`);
 
+  // Blocklist (Spec §3.7): "Christian Brehm" darf NIRGENDS im Output auftauchen (auch nicht in Schema/alt)
+  if(BLOCK_NAME.test(h)) FAIL('Blocklist', `${url} enthält "Christian Brehm"`);
+  // Verbotene Phrasen im Sichttext (Guardrails, gelockt)
+  for(const [re,why] of FORBIDDEN){ const m=vis.match(re); if(m) FAIL('Phrase', `${url} sichtbar "${m[0]}" — ${why}`); }
+  // KI-Bilder in Beweis-Slots (Spec §3.6b) = ROT
+  for(const [slot,re] of PROOF_SLOT_RE){
+    for(const seg of h.matchAll(re)){
+      for(const slug of imgSlugsIn(seg[0])){
+        if(KI_SLUGS.has(slug)){ kiInProof++; if(kiSamples.length<8) kiSamples.push(`${url} ${slot}:${slug}`); }
+      }
+    }
+  }
+
   for(const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)){
     try{ const j=JSON.parse(m[1]);
       const s=JSON.stringify(j);
@@ -101,6 +137,7 @@ if(noScta===0) OK('Sticky-Mobile-CTA (.scta) auf allen Seiten'); else FAIL('Stic
 if(noHamb===0) OK('Mobile-Hamburger (.menu-toggle) auf allen Seiten'); else FAIL('Hamburger', `${noHamb} Seiten ohne .menu-toggle`);
 if(noOg===0) OK('og:image auf allen Seiten'); else FAIL('OgImage', `${noOg} Seiten ohne og:image`);
 { const kf = files.find(f=>urlOf(f)==='/kontakt/'); if(kf && /<form id="anfrage"/.test(fs.readFileSync(kf,'utf8'))) OK('Kontakt-Formular vorhanden'); else FAIL('KontaktForm','/kontakt/ ohne Anfrage-Formular'); }
+if(kiInProof===0) OK('Beweis-Slots frei von KI-Bildern (Provenance §3.6)'); else FAIL('KiInBeweis', `${kiInProof} KI-Bilder in Beweis-Slots: ${kiSamples.join(' | ')}`);
 
 const tvals=[...titles.values()]; const tdup=tvals.filter((v,i)=>tvals.indexOf(v)!==i);
 if(tdup.length===0) OK('Titles unique'); else FAIL('TitleDup', `${[...new Set(tdup)].length} doppelte Titles, z.B. "${tdup[0]}"`);

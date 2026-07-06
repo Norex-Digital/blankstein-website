@@ -119,7 +119,7 @@
         },
         {
           "h2": "Was kostet die professionelle Pflasterreinigung?",
-          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt liegt damit bei etwa 280 bis 320 €. Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und vor allem viel Zeit.",
+          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und vor allem viel Zeit.",
           "body": [
             "Die reine Geräteseite ist beim Selbermachen überschaubar: Ein Hochdruckreiniger mit Flächenreiniger lässt sich für etwa 30 bis 50 € am Tag mieten, dazu kommen Fugensand und gegebenenfalls Reiniger. Was Heimwerker unterschätzen, ist der Zeitaufwand — eine größere Einfahrt kostet schnell einen ganzen Wochenend-Tag, inklusive Trocknen und Verfugen.",
             "Der Profi kalkuliert transparent über die Quadratmeter und bringt Flächenreiniger, Absaugung und Material mit. Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen; das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Online nennen wir bewusst keinen festen Preis vorab, weil Zustand und Größe der Fläche den Aufwand bestimmen. Die folgende Tabelle stellt beide Wege gegenüber."
@@ -179,7 +179,7 @@
         },
         {
           "q": "Was kostet es, Pflastersteine reinigen zu lassen?",
-          "a": "Als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt liegt damit bei etwa 280 bis 320 €. Das verbindliche Angebot erstellt der Betrieb nach Fotos und Maßen oder vor Ort; alle Preise sollten Endpreise ohne versteckte Kosten sein."
+          "a": "Als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Das verbindliche Angebot erstellt der Betrieb nach Fotos und Maßen oder vor Ort; alle Preise sollten Endpreise ohne versteckte Kosten sein."
         },
         {
           "q": "Muss man Pflaster nach dem Reinigen neu verfugen?",
@@ -307,7 +307,7 @@
         },
         {
           "h2": "Was kostet die professionelle Grünbelag-Entfernung?",
-          "antwort": "Die professionelle Reinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €. Wer selbst arbeitet, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und viel Zeit.",
+          "antwort": "Die professionelle Reinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €. Wer selbst arbeitet, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und viel Zeit.",
           "body": [
             "Der Profi rechnet transparent über die Quadratmeter und bringt Hochdruckreiniger, rotierenden Flächenreiniger, Absaugung und Material mit. Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen — einen verbindlichen Preis vorab nennen wir online bewusst nicht, weil Zustand und Größe der Fläche den Aufwand bestimmen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung.",
             "Die 7 €/m² und 8 €/m² sind Endpreise ohne versteckte Kosten. Im Servicegebiet kommen keine Fahrtkosten dazu, und es gibt keinen Mindestauftragswert. Wer selbst zum Hochdruckreiniger greift, spart die reine Arbeitsleistung, sollte aber realistisch rechnen: Gerätemiete, Fugensand und ein ganzer Wochenend-Tag kommen zusammen — und ohne Absaugung wird die Fläche schnell zur Matsch-Sauerei."
@@ -328,12 +328,12 @@
               [
                 "Profi inkl. Neuverfugung",
                 "Termin, rund 1 bis 2 Std.",
-                "ca. 280 € (7 €/m²)"
+                "280 € (40 m² × 7 €)"
               ],
               [
                 "Profi inkl. Nano-Imprägnierung",
                 "Termin",
-                "ca. 320 € (8 €/m²)"
+                "320 € (40 m² × 8 €)"
               ]
             ]
           }
@@ -530,7 +530,7 @@
         },
         {
           "h2": "Was kostet die professionelle Terrassenreinigung?",
-          "antwort": "Die professionelle Terrassenreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €. Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und vor allem viel Zeit.",
+          "antwort": "Die professionelle Terrassenreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €. Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand und vor allem viel Zeit.",
           "body": [
             "Der Profi rechnet klar über die Quadratmeter und bringt Flächenreiniger, Absaugung und Material selbst mit. Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen; das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung. Online nennen wir bewusst keinen festen Preis vorab, weil Zustand und Größe der Fläche den Aufwand bestimmen. Mit Zustand ist konkret gemeint, wie stark die Fläche vergrünt oder verschmutzt ist und in welchem Zustand die Fugen sind – tief sitzendes Moos und komplett ausgewaschene Fugen kosten mehr Zeit als ein leichter Grauschleier.",
             "Die Endpreise gelten ohne versteckte Kosten: kein Mindestauftragswert, keine Fahrtkosten im Servicegebiet rund ums Havelland. Im Preis steckt das komplette Verfahren – Hochdruck mit rotierendem Flächenreiniger, saubere Absaugung des gelösten Schmutzes statt Matsch-Sauerei, die Neuverfugung mit GaLaBau-Fugensand und auf Wunsch die Nano-Imprägnierung. Ehrlich bleibt: Tiefe, alte Ölflecken lassen sich nicht immer restlos entfernen."
@@ -551,12 +551,12 @@
               [
                 "Profi inkl. Neuverfugung",
                 "Termin, ca. 1–2 Std.",
-                "ca. 280 € (7 €/m²)"
+                "280 € (40 m² × 7 €)"
               ],
               [
                 "Profi inkl. Imprägnierung",
                 "Termin",
-                "ca. 320 € (8 €/m²)"
+                "320 € (40 m² × 8 €)"
               ]
             ]
           }
@@ -741,7 +741,7 @@
         },
         {
           "h2": "Was kostet die professionelle Natursteinreinigung?",
-          "antwort": "Die professionelle Reinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €. Das sind Endpreise ohne versteckte Kosten — den konkreten Preis nennen wir erst nach Fotos oder Besichtigung, weil Zustand und Steinart den Aufwand bestimmen.",
+          "antwort": "Die professionelle Reinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €. Das sind Endpreise ohne versteckte Kosten — den konkreten Preis nennen wir erst nach Fotos oder Besichtigung, weil Zustand und Steinart den Aufwand bestimmen.",
           "body": [
             "Der Profi kalkuliert transparent über die Quadratmeter und bringt Flächenreiniger, Absaugung und Material mit. Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen; das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung. Online nennen wir bewusst nur einen Richtwert, weil empfindliche Steinarten mehr Sorgfalt verlangen als robuster Granit. Im Servicegebiet kommen keine Fahrtkosten dazu, und es gibt keinen Mindestauftragswert.",
             "Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Reiniger, Sand und vor allem viel Zeit — plus das Risiko, mit dem falschen Mittel den Stein zu beschädigen. Gerade bei Kalkstein und Marmor wiegt dieses Risiko schwer, weil ein Säureschaden teuer nachzuschleifen ist. Unsere Zusage: der genannte Endpreis hält, und falls etwas nicht passt, bessern wir kostenlos nach."
@@ -762,12 +762,12 @@
               [
                 "Profi inkl. Neuverfugung",
                 "Termin, ca. 1 bis 2 Std.",
-                "ca. 280 € (7 €/m²)"
+                "280 € (40 m² × 7 €)"
               ],
               [
                 "Profi inkl. Nano-Imprägnierung",
                 "Termin",
-                "ca. 320 € (8 €/m²)"
+                "320 € (40 m² × 8 €)"
               ]
             ]
           }
@@ -908,7 +908,7 @@
         },
         {
           "h2": "Wie sieht ein faires Angebot aus?",
-          "antwort": "Ein faires Angebot beruht auf Fotos und Maßen oder einer Besichtigung und nennt einen nachvollziehbaren Quadratmeterpreis. Bei Blankstein sind das als Richtpreis 7 €/m² für Reinigung und Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €.",
+          "antwort": "Ein faires Angebot beruht auf Fotos und Maßen oder einer Besichtigung und nennt einen nachvollziehbaren Quadratmeterpreis. Bei Blankstein sind das als Richtpreis 7 €/m² für Reinigung und Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €.",
           "body": [
             "Online nennen wir bewusst keinen festen Preis vorab, weil Zustand und Größe der Fläche den Aufwand bestimmen. Der Quadratmeterpreis ist ein Richtpreis und damit ein ehrlicher Rahmen: Sie wissen, woran Sie sind, und das verbindliche Angebot entsteht, sobald wir Ihre Fläche kennen. Der dort genannte Preis ist der Endpreis, ohne versteckte Kosten. Schicken Sie uns ein paar Fotos und die ungefähren Maße per WhatsApp — Sie bekommen eine konkrete Summe. Antwort < 2 h — werktags 8–18 Uhr.",
             "Im Servicegebiet — Havelland und westlicher Berliner Rand, etwa Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark und Groß Glienicke — gibt es keinen Mindestauftragswert und keine Fahrtkosten. Wenn Ihnen ein Foto-Angebot nicht reicht, ist die kostenlose und unverbindliche Besichtigung das Auffangnetz: Wir schauen uns die Fläche vor Ort an und rechnen transparent über die Quadratmeter. Erst dann steht der verbindliche Preis fest — und genau dieser im Angebot genannte Preis ist auch der Endpreis."
@@ -954,7 +954,7 @@
         },
         {
           "q": "Was kostet eine professionelle Steinreinigung wirklich?",
-          "a": "Als Richtpreis etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €. Der im verbindlichen Angebot genannte Preis ist der Endpreis ohne versteckte Kosten; im Servicegebiet fallen kein Mindestauftragswert und keine Fahrtkosten an."
+          "a": "Als Richtpreis etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €. Der im verbindlichen Angebot genannte Preis ist der Endpreis ohne versteckte Kosten; im Servicegebiet fallen kein Mindestauftragswert und keine Fahrtkosten an."
         },
         {
           "q": "Woran erkenne ich, dass nur halbe Arbeit gemacht wird?",
@@ -1237,7 +1237,7 @@
         },
         {
           "h2": "Wie viel kostet die professionelle Reinigung statt selbst zu schrubben?",
-          "antwort": "Als Richtwert kostet die professionelle Pflasterreinigung rund 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung etwa 8 €/m². Eine 40 m² große Einfahrt liegt damit bei ungefähr 280 bis 320 €. Es sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert, keine Fahrtkosten im Servicegebiet.",
+          "antwort": "Als Richtwert kostet die professionelle Pflasterreinigung rund 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung etwa 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Es sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert, keine Fahrtkosten im Servicegebiet.",
           "body": [
             "Der größte Vorteil beim Profi ist nicht nur die Zeitersparnis, sondern dass die typischen Hochdruckreiniger-Fehler gar nicht erst passieren. Wir arbeiten mit rotierendem Flächenreiniger, saugen den gelösten Schmutz nass ab — statt ihn in die Beete zu spritzen — und verfugen die Fläche anschließend mit GaLaBau-Fugensand neu. Auf Wunsch kommt eine Nano-Imprägnierung obendrauf, die das nächste Grün länger fernhält.",
             "Online nennen wir vorab bewusst nur einen Richtpreis, weil Zustand, Größe und Material der Fläche den Aufwand bestimmen. Die 7 €/m² sind ein unverbindlicher Rahmen; das verbindliche Angebot entsteht nach Fotos und Maßen über WhatsApp (Antwort < 2 h — werktags 8–18 Uhr) oder bei einer kostenlosen, unverbindlichen Besichtigung. So wissen Sie vorher, woran Sie sind, und es gibt am Ende keine Überraschung auf der Rechnung."
@@ -1419,7 +1419,7 @@
         },
         {
           "h2": "Was kostet Reinigung mit Imprägnierung?",
-          "antwort": "Als Richtwert kostet die Reinigung mit Neuverfugung etwa 7 €/m², mit zusätzlicher Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse liegt damit bei etwa 280 bis 320 €. Diese Angabe ist ein unverbindlicher Rahmen — der im verbindlichen Angebot genannte Preis ist dann der Endpreis ohne Nachberechnung.",
+          "antwort": "Als Richtwert kostet die Reinigung mit Neuverfugung etwa 7 €/m², mit zusätzlicher Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Terrasse kostet damit 280 €, mit Imprägnierung 320 €. Diese Angabe ist ein unverbindlicher Rahmen — der im verbindlichen Angebot genannte Preis ist dann der Endpreis ohne Nachberechnung.",
           "body": [
             "Der Aufpreis für die Imprägnierung beträgt also rund 1 €/m². Dafür halten Sie den sauberen Zustand deutlich länger und sparen sich auf Dauer Reinigungstermine — gerade bei schattigen, schnell vergrünenden Flächen rechnet sich das oft schon nach der ersten verlängerten Pause. Bei Blankstein gibt es keinen festen Preis vorab, weil Zustand und Größe den Aufwand bestimmen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung; der dort genannte Preis ist dann der Endpreis, ohne versteckte Kosten oder spätere Nachberechnung. Im Servicegebiet fallen keine Fahrtkosten an und es gibt keinen Mindestauftragswert."
           ],
@@ -1593,7 +1593,7 @@
         },
         {
           "h2": "Was kostet die professionelle Pflasterreinigung?",
-          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt liegt damit bei etwa 280 bis 320 €. Wer selbst von Hand reinigt, spart die Arbeitskosten, zahlt aber mit viel Zeit und Muskelkraft.",
+          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Wer selbst von Hand reinigt, spart die Arbeitskosten, zahlt aber mit viel Zeit und Muskelkraft.",
           "body": [
             "Wir kalkulieren transparent über die Quadratmeter, und im Preis steckt schon alles drin: Reinigung mit Flächenreiniger, saubere Absaugung, Neuverfugung mit Fugensand und auf Wunsch die Imprägnierung. Den genauen Preis nennen wir nach Fotos und Maßen, weil Zustand und Größe der Fläche den Aufwand bestimmen. Das verbindliche Angebot entsteht so per WhatsApp (Antwort < 2 h — werktags 8–18 Uhr), alternativ bei einer kostenlosen, unverbindlichen Besichtigung vor Ort.",
             "Die genannten Beträge sind Endpreise ohne versteckte Kosten. Im Servicegebiet — Havelland und westlicher Berliner Rand — kommen keine Fahrtkosten dazu, und es gibt keinen Mindestauftragswert. Unsere Zusage: Der genannte Endpreis steht, und sollte etwas nicht passen, arbeiten wir kostenlos nach."
@@ -1778,7 +1778,7 @@
         },
         {
           "h2": "Was kostet die professionelle Einfahrtreinigung?",
-          "antwort": "Als Richtwert kostet die Reinigung etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt liegt damit bei etwa 280 bis 320 €. Das sind Endpreise ohne versteckte Kosten, im Servicegebiet ohne Mindestauftragswert und ohne Fahrtkosten.",
+          "antwort": "Als Richtwert kostet die Reinigung etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Das sind Endpreise ohne versteckte Kosten, im Servicegebiet ohne Mindestauftragswert und ohne Fahrtkosten.",
           "body": [
             "Wir kalkulieren transparent über die Quadratmeter. Der Richtpreis ist dabei ein unverbindlicher Rahmen — einen verbindlichen Preis nennen wir online bewusst nicht vorab, weil Zustand, Größe und Art der Verschmutzung den Aufwand bestimmen. Eine stark verölte Fläche braucht mehr Vorbehandlung als eine, die nur vergraut ist. Im Servicegebiet kommen keine Anfahrtskosten dazu — der Quadratmeterpreis ist schon der Endpreis, egal ob Sie am Ortsrand oder mitten im Ort wohnen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung.",
             "Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand, Ölbinder und Reiniger — und vor allem viel Zeit und Rückenarbeit. Besonders ab etwa 30 bis 40 m² lohnt der Profi, weil die Mietgeräte für solche Flächen oft zu schwach sind und ein ganzer Tag draufgeht. Beim Öl-Sonderfall gilt: Auch der Profi kann tiefe, alte Flecken nicht in jedem Fall restlos entfernen. Was wir zusagen, ist der Endpreis und eine kostenlose Nacharbeit, falls etwas nicht passt — keine Versprechen auf ein Ergebnis, das das Material nicht hergibt."
@@ -1799,12 +1799,12 @@
               [
                 "Profi inkl. Neuverfugung",
                 "Termin, ca. 1 bis 2 Std.",
-                "ca. 280 € (7 €/m²)"
+                "280 € (40 m² × 7 €)"
               ],
               [
                 "Profi inkl. Imprägnierung",
                 "Termin",
-                "ca. 320 € (8 €/m²)"
+                "320 € (40 m² × 8 €)"
               ]
             ]
           }
@@ -1833,7 +1833,7 @@
         },
         {
           "q": "Was kostet es, eine 40 m² Einfahrt reinigen zu lassen?",
-          "a": "Als Richtwert liegt eine 40 m² große Einfahrt bei etwa 280 bis 320 €, je nachdem ob eine Nano-Imprägnierung dazukommt. Das entspricht 7 €/m² für Reinigung und Neuverfugung oder 8 €/m² mit Imprägnierung. Das sind Endpreise ohne versteckte Kosten. Den verbindlichen Preis nennen wir nach Fotos und Maßen, weil der Verschmutzungsgrad den Aufwand bestimmt."
+          "a": "Eine 40 m² große Einfahrt kostet als Richtpreis 280 €, mit Nano-Imprägnierung 320 €. Das entspricht 7 €/m² für Reinigung und Neuverfugung oder 8 €/m² mit Imprägnierung. Das sind Endpreise ohne versteckte Kosten. Den verbindlichen Preis nennen wir nach Fotos und Maßen, weil der Verschmutzungsgrad den Aufwand bestimmt."
         },
         {
           "q": "Hilft eine Imprägnierung gegen Öl- und Reifenspuren?",
@@ -1978,7 +1978,7 @@
         },
         {
           "h2": "Wann lohnt sich der Profi statt Selbstversuch?",
-          "antwort": "Der Profi lohnt sich, wenn Sie sich beim Material unsicher sind, große Flächen anstehen oder das Ergebnis dauerhaft halten soll. Als Richtwert kostet die professionelle Reinigung etwa 7 €/m² inklusive Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Fläche liegt damit bei etwa 280 bis 320 €.",
+          "antwort": "Der Profi lohnt sich, wenn Sie sich beim Material unsicher sind, große Flächen anstehen oder das Ergebnis dauerhaft halten soll. Als Richtwert kostet die professionelle Reinigung etwa 7 €/m² inklusive Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Fläche kostet damit 280 €, mit Imprägnierung 320 €.",
           "body": [
             "Wer sicher weiß, welcher Stein verlegt ist, und nur eine kleine, robuste Betonfläche reinigen will, kommt mit Soda, Bürste und einem geliehenen Hochdruckgerät gut zurecht. Schwieriger wird es bei Naturstein, gemischten Belägen oder großen Flächen — hier ist das Risiko, mit dem falschen Mittel Schaden anzurichten, real. Beim Profi entfällt das Rätselraten: Wir wählen den passenden Reiniger, reinigen mit rotierendem Flächenreiniger gleichmäßig und streifenfrei, saugen den gelösten Schmutz nass ab, verfugen mit GaLaBau-Fugensand neu und imprägnieren auf Wunsch mit Nano-Versiegelung.",
             "Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen, keinen festen Preis nennen wir vorab online, weil Zustand, Material und Größe den Aufwand bestimmen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung. Es gibt keinen Mindestauftragswert und im Servicegebiet keine Fahrtkosten."
@@ -1999,12 +1999,12 @@
               [
                 "Profi inkl. Neuverfugung",
                 "Termin, ca. 1 bis 2 Std.",
-                "ca. 280 € (7 €/m²)"
+                "280 € (40 m² × 7 €)"
               ],
               [
                 "Profi inkl. Nano-Imprägnierung",
                 "Termin",
-                "ca. 320 € (8 €/m²)"
+                "320 € (40 m² × 8 €)"
               ]
             ]
           }
