@@ -3,35 +3,36 @@
   "captured_at": "lokal",
   "pages": {
     "/": {
-      "title": "Steinreinigung &amp; Terrassenpflege Havelland | Blankstein",
-      "title_len": 59,
-      "meta": "Steinreinigung, Terrassen- und Pflasterreinigung im Havelland: Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m², Angebot per Foto.",
-      "meta_len": 156,
-      "h1": "Pflaster &amp; Terrasse —wieder wie neu.",
+      "title": "Steinreinigung Havelland — Richtpreis 7 €/m² | Blankstein",
+      "title_len": 57,
+      "meta": "Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos: Flächenreiniger, Neuverfugung, Nano-Imprägnierung. Richtpreis 7 €/m² — Foto genügt.",
+      "meta_len": 154,
+      "h1": "Steinreinigung, dokumentiert.Nicht versprochen.",
       "h1_count": 1,
-      "h2_count": 8,
+      "h2_count": 6,
       "canonical": "https://blankstein-havelland.de/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/home.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
         "FAQPage",
-        "HomeAndConstructionBusiness"
+        "HomeAndConstructionBusiness",
+        "WebSite"
       ],
-      "faq_count": 7,
-      "internal_links": 22,
-      "word_count": 1082
+      "faq_count": 8,
+      "internal_links": 39,
+      "word_count": 1682
     },
     "/steinreinigung/": {
       "title": "Steinreinigung im Havelland | Blankstein",
       "title_len": 40,
-      "meta": "Steinreinigung im Havelland: Pflaster, Terrasse und Wege porentief sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
-      "meta_len": 155,
-      "h1": "Steinreinigung im Havelland —wieder wie neu",
+      "meta": "Steinreinigung im Havelland: Flächenreiniger, Nasssauger, Neuverfugung mit GaLaBau-Sand — belegt mit echten Fotos. Richtpreis 7 €/m² — ein Foto genügt.",
+      "meta_len": 151,
+      "h1": "Steinreinigung im Havelland — belegt statt behauptet.",
       "h1_count": 1,
-      "h2_count": 8,
+      "h2_count": 6,
       "canonical": "https://blankstein-havelland.de/steinreinigung/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/steinreinigung.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -39,20 +40,20 @@
         "HomeAndConstructionBusiness",
         "Service"
       ],
-      "faq_count": 6,
-      "internal_links": 26,
-      "word_count": 987
+      "faq_count": 5,
+      "internal_links": 46,
+      "word_count": 1294
     },
     "/terrassenreinigung/": {
       "title": "Terrassenreinigung im Havelland | Blankstein",
       "title_len": 44,
-      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik porentief sauber — mit Flächenreiniger, Neuverfugung und Imprägnierung. Richtpreis ab 7.",
-      "meta_len": 158,
-      "h1": "Terrassenreinigung im Havelland —wieder wie neu",
+      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik streifenfrei gereinigt und neu verfugt — mit echtem Einsatzvideo. Richtpreis 7 €/m².",
+      "meta_len": 154,
+      "h1": "Terrassenreinigung — streifenfrei, nicht schöngefilmt.",
       "h1_count": 1,
-      "h2_count": 9,
+      "h2_count": 6,
       "canonical": "https://blankstein-havelland.de/terrassenreinigung/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/terrassenreinigung.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -60,20 +61,20 @@
         "HomeAndConstructionBusiness",
         "Service"
       ],
-      "faq_count": 6,
-      "internal_links": 26,
-      "word_count": 1023
+      "faq_count": 5,
+      "internal_links": 46,
+      "word_count": 1257
     },
     "/pflasterreinigung/": {
       "title": "Pflasterreinigung im Havelland | Blankstein",
       "title_len": 43,
-      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Gehwege porentief sauber — mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
-      "meta_len": 156,
-      "h1": "Pflasterreinigung im Havelland —wieder wie neu",
+      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege mit dem Flächenreiniger gereinigt, abgesaugt und neu verfugt. Richtpreis 7 €/m² — ein Foto genügt.",
+      "meta_len": 153,
+      "h1": "Pflasterreinigung im Havelland — Fugen inklusive.",
       "h1_count": 1,
-      "h2_count": 8,
+      "h2_count": 6,
       "canonical": "https://blankstein-havelland.de/pflasterreinigung/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/pflasterreinigung.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -81,20 +82,20 @@
         "HomeAndConstructionBusiness",
         "Service"
       ],
-      "faq_count": 6,
-      "internal_links": 26,
-      "word_count": 957
+      "faq_count": 5,
+      "internal_links": 46,
+      "word_count": 1305
     },
     "/steinversiegelung/": {
       "title": "Steinversiegelung im Havelland | Blankstein",
       "title_len": 43,
-      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung für Pflaster und Terrasse — Wasser perlt ab, Moos und Schmutz finden weniger Halt. Richtpreis 8 €/m².",
-      "meta_len": 152,
-      "h1": "Steinversiegelung im Havelland —länger sauber",
+      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach Reinigung und Neuverfugung — Wasser perlt ab, die Fläche bleibt länger sauber. 8 €/m² komplett.",
+      "meta_len": 151,
+      "h1": "Steinversiegelung — erst sauber, dann geschützt.",
       "h1_count": 1,
-      "h2_count": 8,
+      "h2_count": 6,
       "canonical": "https://blankstein-havelland.de/steinversiegelung/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/steinversiegelung.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -102,20 +103,20 @@
         "HomeAndConstructionBusiness",
         "Service"
       ],
-      "faq_count": 6,
-      "internal_links": 26,
-      "word_count": 1008
+      "faq_count": 5,
+      "internal_links": 46,
+      "word_count": 1357
     },
     "/falkensee/": {
       "title": "Stein- &amp; Terrassenreinigung Falkensee | Blankstein",
       "title_len": 54,
-      "meta": "Stein- und Terrassenreinigung in Falkensee: Pflaster, Einfahrt und Terrasse mit Flächenreiniger, Neuverfugung und Nano-Imprägnierung. Richtpreis ab 7 €/m².",
-      "meta_len": 155,
-      "h1": "Stein- &amp; Terrassenreinigung in Falkenseedirekt vor Ort",
+      "meta": "Stein- und Terrassenreinigung in Falkensee vom Betrieb vor Ort: Reinigung, Neuverfugung, Nano-Imprägnierung ab 7 €/m². Fotos senden, Richtpreis erhalten.",
+      "meta_len": 153,
+      "h1": "Stein- &amp; Terrassenreinigung in Falkensee — direkt vor Ort",
       "h1_count": 1,
-      "h2_count": 9,
+      "h2_count": 5,
       "canonical": "https://blankstein-havelland.de/falkensee/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/falkensee.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -124,19 +125,19 @@
         "Service"
       ],
       "faq_count": 4,
-      "internal_links": 23,
-      "word_count": 851
+      "internal_links": 30,
+      "word_count": 813
     },
     "/dallgow-doeberitz/": {
       "title": "Steinreinigung Dallgow-Döberitz | Blankstein",
       "title_len": 44,
-      "meta": "Stein- und Terrassenreinigung in Dallgow-Döberitz: Pflaster, Einfahrt und Terrasse porentief sauber — Flächenreiniger, Neuverfugung, Imprägnierung. Ab 7 €/m².",
-      "meta_len": 158,
-      "h1": "Stein- &amp; Terrassenreinigung in Dallgow-Döberitzwieder sauber",
+      "meta": "Steinreinigung Dallgow-Döberitz: Pflaster, Einfahrt und Terrasse gründlich sauber — Neuverfugung und Imprägnierung, ab 7 €/m². Jetzt Richtpreis anfragen.",
+      "meta_len": 153,
+      "h1": "Stein- &amp; Terrassenreinigung in Dallgow-Döberitz — wieder sauber",
       "h1_count": 1,
-      "h2_count": 9,
+      "h2_count": 5,
       "canonical": "https://blankstein-havelland.de/dallgow-doeberitz/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/dallgow-doeberitz.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -145,144 +146,19 @@
         "Service"
       ],
       "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 724
+      "internal_links": 30,
+      "word_count": 705
     },
     "/brieselang/": {
       "title": "Stein- &amp; Terrassenreinigung Brieselang | Blankstein",
       "title_len": 55,
-      "meta": "Stein- und Terrassenreinigung in Brieselang: vermooste Pflaster und Terrassen am Waldrand wieder sauber — Flächenreiniger, Neuverfugung, Imprägnierung.",
-      "meta_len": 151,
-      "h1": "Stein- &amp; Terrassenreinigung in Brieselangtrotz Schatten",
-      "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/brieselang/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "FAQPage",
-        "HomeAndConstructionBusiness",
-        "Service"
-      ],
-      "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 750
-    },
-    "/schoenwalde-glien/": {
-      "title": "Steinreinigung Schönwalde-Glien | Blankstein",
-      "title_len": 44,
-      "meta": "Stein- und Terrassenreinigung in Schönwalde-Glien: große Hofeinfahrten und Terrassen gleichmäßig sauber — Flächenreiniger, Neuverfugung, Imprägnierung.",
-      "meta_len": 151,
-      "h1": "Stein- &amp; Terrassenreinigung in Schönwalde-GlienHof für Hof",
-      "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/schoenwalde-glien/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "FAQPage",
-        "HomeAndConstructionBusiness",
-        "Service"
-      ],
-      "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 752
-    },
-    "/wustermark/": {
-      "title": "Stein- &amp; Terrassenreinigung Wustermark | Blankstein",
-      "title_len": 55,
-      "meta": "Stein- und Terrassenreinigung in Wustermark und Elstal: moderne Pflaster- und Feinsteinzeug-Flächen streifenfrei reinigen, neu verfugen, imprägnieren. Ab 7.",
-      "meta_len": 156,
-      "h1": "Stein- &amp; Terrassenreinigung in Wustermarkwie neu",
-      "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/wustermark/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "FAQPage",
-        "HomeAndConstructionBusiness",
-        "Service"
-      ],
-      "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 751
-    },
-    "/gross-glienicke/": {
-      "title": "Stein- &amp; Terrassenreinigung Groß Glienicke | Blankstein",
-      "title_len": 59,
-      "meta": "Stein- und Terrassenreinigung in Groß Glienicke: Naturstein-Terrassen und Einfahrten am See materialschonend reinigen, neu verfugen, imprägnieren. Ab 7 €/m².",
-      "meta_len": 157,
-      "h1": "Stein- &amp; Terrassenreinigung in Groß Glienickeam See",
-      "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/gross-glienicke/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "FAQPage",
-        "HomeAndConstructionBusiness",
-        "Service"
-      ],
-      "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 728
-    },
-    "/kladow/": {
-      "title": "Stein- &amp; Terrassenreinigung Kladow | Blankstein",
-      "title_len": 51,
-      "meta": "Stein- und Terrassenreinigung in Berlin-Kladow: Terrassen und Einfahrten an der Havel materialschonend reinigen, neu verfugen und imprägnieren. Richtpreis ab.",
-      "meta_len": 158,
-      "h1": "Stein- &amp; Terrassenreinigung in Kladowan der Havel",
-      "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/kladow/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "FAQPage",
-        "HomeAndConstructionBusiness",
-        "Service"
-      ],
-      "faq_count": 3,
-      "internal_links": 23,
-      "word_count": 738
-    },
-    "/servicegebiet/": {
-      "title": "Servicegebiet | Blankstein",
-      "title_len": 26,
-      "meta": "Servicegebiet von Blankstein: Stein- und Terrassenreinigung in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke.",
-      "meta_len": 149,
-      "h1": "Unser Servicegebiet im Havelland &amp; am Berliner Rand",
-      "h1_count": 1,
-      "h2_count": 4,
-      "canonical": "https://blankstein-havelland.de/servicegebiet/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
-      "noindex": false,
-      "schema_types": [
-        "BreadcrumbList",
-        "CollectionPage",
-        "HomeAndConstructionBusiness"
-      ],
-      "faq_count": 0,
-      "internal_links": 37,
-      "word_count": 336
-    },
-    "/preise/": {
-      "title": "Preise: Steinreinigung pro m² | Blankstein",
-      "title_len": 42,
-      "meta": "Was kostet die Steinreinigung im Havelland? Richtpreis ab 7 €/m² inkl. Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Endpreise, Angebot per WhatsApp-Foto.",
+      "meta": "Steinreinigung in Brieselang: vermooste Pflaster und Terrassen am Waldrand gründlich sauber — inkl. Neuverfugung, ab 7 €/m². Jetzt Foto-Angebot anfragen.",
       "meta_len": 153,
-      "h1": "Preise Steinreinigung: Was kostet die Reinigung pro m²?",
+      "h1": "Stein- &amp; Terrassenreinigung in Brieselang — trotz Schatten",
       "h1_count": 1,
-      "h2_count": 9,
-      "canonical": "https://blankstein-havelland.de/preise/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "h2_count": 5,
+      "canonical": "https://blankstein-havelland.de/brieselang/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/brieselang.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -291,19 +167,103 @@
         "Service"
       ],
       "faq_count": 4,
-      "internal_links": 22,
-      "word_count": 1261
+      "internal_links": 30,
+      "word_count": 784
     },
-    "/ratgeber/": {
-      "title": "Ratgeber: Stein &amp; Terrasse reinigen | Blankstein",
-      "title_len": 52,
-      "meta": "Ratgeber von Blankstein: Pflaster, Einfahrt und Terrasse richtig reinigen, Grünbelag entfernen, Fugen und Imprägnierung — praktische Anleitungen.",
-      "meta_len": 145,
-      "h1": "Ratgeber rund um Stein &amp; Terrasse",
+    "/schoenwalde-glien/": {
+      "title": "Steinreinigung Schönwalde-Glien | Blankstein",
+      "title_len": 44,
+      "meta": "Steinreinigung Schönwalde-Glien: große Höfe und Terrassen streifenfrei sauber — Neuverfugung inklusive, ab 7 €/m². Richtpreis vorab selbst kalkulieren.",
+      "meta_len": 151,
+      "h1": "Stein- &amp; Terrassenreinigung in Schönwalde-Glien — Hof für Hof",
       "h1_count": 1,
-      "h2_count": 2,
-      "canonical": "https://blankstein-havelland.de/ratgeber/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "h2_count": 5,
+      "canonical": "https://blankstein-havelland.de/schoenwalde-glien/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/schoenwalde-glien.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Service"
+      ],
+      "faq_count": 3,
+      "internal_links": 30,
+      "word_count": 731
+    },
+    "/wustermark/": {
+      "title": "Stein- &amp; Terrassenreinigung Wustermark | Blankstein",
+      "title_len": 55,
+      "meta": "Steinreinigung in Wustermark und Elstal: Verbundpflaster und Feinsteinzeug streifenfrei reinigen, neu verfugen — ab 7 €/m². Jetzt unverbindlich anfragen.",
+      "meta_len": 153,
+      "h1": "Stein- &amp; Terrassenreinigung in Wustermark — gleichmäßig sauber",
+      "h1_count": 1,
+      "h2_count": 5,
+      "canonical": "https://blankstein-havelland.de/wustermark/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/wustermark.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Service"
+      ],
+      "faq_count": 3,
+      "internal_links": 30,
+      "word_count": 732
+    },
+    "/gross-glienicke/": {
+      "title": "Stein- &amp; Terrassenreinigung Groß Glienicke | Blankstein",
+      "title_len": 59,
+      "meta": "Steinreinigung in Groß Glienicke: Naturstein-Terrassen und Einfahrten am See schonend reinigen und neu verfugen — ab 7 €/m². Jetzt Fotos per WhatsApp senden.",
+      "meta_len": 157,
+      "h1": "Stein- &amp; Terrassenreinigung in Groß Glienicke — am See",
+      "h1_count": 1,
+      "h2_count": 5,
+      "canonical": "https://blankstein-havelland.de/gross-glienicke/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/gross-glienicke.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Service"
+      ],
+      "faq_count": 4,
+      "internal_links": 30,
+      "word_count": 755
+    },
+    "/kladow/": {
+      "title": "Stein- &amp; Terrassenreinigung Kladow | Blankstein",
+      "title_len": 51,
+      "meta": "Stein- und Terrassenreinigung in Berlin-Kladow: Klinker, Platten und Terrassen an der Havel materialschonend sauber — ab 7 €/m². Jetzt Angebot anfordern.",
+      "meta_len": 153,
+      "h1": "Stein- &amp; Terrassenreinigung in Kladow — an der Havel",
+      "h1_count": 1,
+      "h2_count": 5,
+      "canonical": "https://blankstein-havelland.de/kladow/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/kladow.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Service"
+      ],
+      "faq_count": 3,
+      "internal_links": 30,
+      "word_count": 708
+    },
+    "/servicegebiet/": {
+      "title": "Servicegebiet | Blankstein",
+      "title_len": 26,
+      "meta": "Servicegebiet Blankstein: Stein- und Terrassenreinigung in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow.",
+      "meta_len": 156,
+      "h1": "Havelland &amp; westlicher Berliner Rand — Anfahrt kostenlos.",
+      "h1_count": 1,
+      "h2_count": 3,
+      "canonical": "https://blankstein-havelland.de/servicegebiet/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/servicegebiet.jpg",
       "noindex": false,
       "schema_types": [
         "BreadcrumbList",
@@ -311,8 +271,49 @@
         "HomeAndConstructionBusiness"
       ],
       "faq_count": 0,
-      "internal_links": 29,
-      "word_count": 806
+      "internal_links": 42,
+      "word_count": 442
+    },
+    "/preise/": {
+      "title": "Steinreinigung Preise: ab 7 €/m² | Blankstein",
+      "title_len": 45,
+      "meta": "Was kostet die Steinreinigung im Havelland? Richtpreis ab 7 €/m² inkl. Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Endpreise, Angebot per WhatsApp-Foto.",
+      "meta_len": 153,
+      "h1": "Preise Steinreinigung: Was kostet die Reinigung pro m²?",
+      "h1_count": 1,
+      "h2_count": 6,
+      "canonical": "https://blankstein-havelland.de/preise/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/preise.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "FAQPage",
+        "HomeAndConstructionBusiness",
+        "Service"
+      ],
+      "faq_count": 4,
+      "internal_links": 27,
+      "word_count": 1266
+    },
+    "/ratgeber/": {
+      "title": "Ratgeber: Stein &amp; Terrasse reinigen | Blankstein",
+      "title_len": 52,
+      "meta": "Ratgeber von Blankstein: Pflaster, Einfahrt und Terrasse richtig reinigen, Grünbelag entfernen, Fugen sanieren und imprägnieren — praktische Anleitungen.",
+      "meta_len": 153,
+      "h1": "Stein &amp; Terrasse: selber machen — und wann besser nicht.",
+      "h1_count": 1,
+      "h2_count": 11,
+      "canonical": "https://blankstein-havelland.de/ratgeber/",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/ratgeber.jpg",
+      "noindex": false,
+      "schema_types": [
+        "BreadcrumbList",
+        "CollectionPage",
+        "HomeAndConstructionBusiness"
+      ],
+      "faq_count": 0,
+      "internal_links": 35,
+      "word_count": 952
     },
     "/ratgeber/pflastersteine-reinigen/": {
       "title": "Pflastersteine reinigen: Methoden, Hausmittel &amp; Kosten",
@@ -323,7 +324,7 @@
       "h1_count": 1,
       "h2_count": 11,
       "canonical": "https://blankstein-havelland.de/ratgeber/pflastersteine-reinigen/",
-      "og_image": "https://blankstein-havelland.de/assets/img/og-default-1200.jpg",
+      "og_image": "https://blankstein-havelland.de/assets/img/og/ratgeber-pflastersteine-reinigen.jpg",
       "noindex": false,
       "schema_types": [
         "Article",
@@ -332,8 +333,8 @@
         "HomeAndConstructionBusiness"
       ],
       "faq_count": 5,
-      "internal_links": 22,
-      "word_count": 1970
+      "internal_links": 29,
+      "word_count": 2076
     }
   }
 }

@@ -1,11 +1,11 @@
 {
   "_meta": "Copy der Reel-Landing /start — Link-in-Bio-Ziel fuer Instagram/TikTok-Reels (Architektur §10). Schlank/distraction-free (eigenes lean-Chrome: Logo + 1 CTA, kein Nav-Menue), mobile-first (Reel-Traffic ist mobil). noindex,follow + NICHT in Nav/Sitemap. UTM wird site-weit erfasst und bis zum Lead durchgereicht (an WhatsApp-Text + Formular-Feld). Empty-State-Trust: KEINE Fake-Reviews. Regeln: Richtpreis (nie Festpreis), echte Umlaute, bodenstaendig, kein Luxus-Vokabular.",
-  "title": "Angebot per Foto in rund 30 Minuten | Blankstein",
-  "meta": "Pflaster, Einfahrt oder Terrasse vergruent? Foto und Maße per WhatsApp an Blankstein — Richtpreis meist in rund 30 Minuten. Kostenlose Besichtigung, keine Fahrtkosten im Havelland.",
+  "title": "Richtpreis per Foto fürs Havelland | Blankstein",
+  "meta": "Pflaster, Einfahrt oder Terrasse vergrünt? Foto und Maße per WhatsApp genügen. Antwort < 2 h — werktags 8–18 Uhr. Kostenlose Besichtigung im Havelland.",
   "eyebrow": "Schön, dass du da bist",
-  "h1": "Deine Fläche wieder",
-  "h1_em": "wie neu",
-  "lead": "Pflaster, Einfahrt oder Terrasse vergrünt? Schick uns ein, zwei Fotos und die ungefähren Maße per WhatsApp — du bekommst meist innerhalb von rund 30 Minuten deinen Richtpreis. Kostenlose Besichtigung, keine Fahrtkosten im Havelland und am westlichen Berliner Rand.",
+  "h1": "Deine Fläche —",
+  "h1_em": "wieder sauber",
+  "lead": "Pflaster, Einfahrt oder Terrasse vergrünt? Schick uns ein, zwei Fotos und die ungefähren Maße per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Kostenlose Besichtigung, keine Fahrtkosten im Havelland und am westlichen Berliner Rand.",
   "wa_text": "Hallo Blankstein, ich möchte ein Angebot für meine Fläche. Ich schicke gleich ein, zwei Fotos, die ungefähren Maße und meinen Ort.",
   "flaechen_title": "Was sollen wir reinigen?",
   "flaechen": [
@@ -16,22 +16,22 @@
   ],
   "fallback_lead": "Kein WhatsApp? Ruf uns an, schreib eine E-Mail oder nutz das kurze Formular — wir melden uns genauso schnell.",
   "form_title": "Lieber per Formular?",
-  "form_sub": "Ein paar Angaben genügen. Wir melden uns meist innerhalb von rund 30 Minuten.",
+  "form_sub": "Ein paar Angaben genügen. Antwort < 2 h — werktags 8–18 Uhr.",
   "hero_img": "hub-steinreinigung-vn",
   "hero_alt": "Hoffläche während der Reinigung — links noch vermoost, rechts schon sauber",
   "steps_title": "So einfach geht's",
   "steps": [
     { "n": "01", "t": "Foto + Maße schicken", "d": "Ein, zwei Fotos deiner Fläche und die ungefähren Quadratmeter per WhatsApp. Mehr brauchen wir für den Anfang nicht." },
-    { "n": "02", "t": "Richtpreis in ~30 Min", "d": "Reichen die Infos, bekommst du zeitnah einen konkreten Richtpreis. Unklar oder groß? Wir kommen kostenlos vorbei." },
-    { "n": "03", "t": "Termin & blitzsauber", "d": "Zum Termin reinigen wir, verfugen neu und imprägnieren auf Wunsch — und räumen hinter uns auf." }
+    { "n": "02", "t": "Richtpreis erhalten", "d": "Reichen die Infos, bekommst du deinen konkreten Richtpreis. Antwort < 2 h — werktags 8–18 Uhr. Unklar oder groß? Wir kommen kostenlos vorbei." },
+    { "n": "03", "t": "Termin & fertig", "d": "Zum Termin reinigen wir, verfugen neu und imprägnieren auf Wunsch — und räumen hinter uns auf." }
   ],
   "trust_title": "Warum Blankstein",
   "trust": [
     { "t": "Richtpreis ab 7 €/m²", "d": "Reinigung und Neuverfugung zum klaren m²-Satz, mit Nano-Imprägnierung 8 €/m². Endpreis ohne versteckte Kosten." },
     { "t": "Kostenlose Besichtigung", "d": "Unverbindlich und gratis. Im Havelland und am westlichen Berliner Rand fallen keine Fahrtkosten an." },
     { "t": "Materialschonend", "d": "Rotierende Flächenreiniger statt Punktstrahl — gleichmäßig sauber, ohne ausgewaschene Fugen." },
-    { "t": "Nacharbeit-Garantie", "d": "Bleibt Moos oder Algen zurück, kommen wir kostenlos nach. Der genannte Preis bleibt." }
+    { "t": "Nacharbeit-Garantie", "d": "Bleiben Moos oder Algen zurück, arbeiten wir kostenlos nach. Der genannte Preis bleibt." }
   ],
   "cta_title": "Bereit? Schick uns deine Fläche.",
-  "cta_sub": "Foto + Maße genügen — Richtpreis meist in rund 30 Minuten. Kostenlos und unverbindlich."
+  "cta_sub": "Foto + Maße genügen. Antwort < 2 h — werktags 8–18 Uhr. Kostenlos und unverbindlich."
 }

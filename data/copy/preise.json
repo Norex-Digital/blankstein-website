@@ -1,15 +1,15 @@
 {
-  "title": "Preise: Steinreinigung pro m² | Blankstein",
+  "title": "Steinreinigung Preise: ab 7 €/m² | Blankstein",
   "meta": "Was kostet die Steinreinigung im Havelland? Richtpreis ab 7 €/m² inkl. Neuverfugung, 8 €/m² mit Nano-Imprägnierung. Endpreise, Angebot per WhatsApp-Foto.",
   "h1": "Preise Steinreinigung: Was kostet die Reinigung pro m²?",
   "h1_em": "pro m²",
-  "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen, das Angebot kommt in etwa 30 Minuten zurück.",
+  "lead": "Bei Blankstein zahlen Sie für Terrassen- und Pflasterreinigung einen Richtpreis ab 7 €/m² inklusive Neuverfugung mit Fugensand, oder 8 €/m² mit zusätzlicher Nano-Imprägnierung. Das sind Endpreise ohne versteckte Kosten — kein Mindestauftragswert und im Servicegebiet auch keine Fahrtkosten. Den genauen Betrag bekommen Sie nach einem kurzen Blick auf Ihre Fläche: Foto und Maße per WhatsApp genügen. Antwort < 2 h — werktags 8–18 Uhr.",
   "kosten_tabelle": {
-    "caption": "Richtpreise pro m² und Rechenbeispiele für 20, 40 und 60 m² — Endpreise ohne versteckte Kosten.",
+    "caption": "Steinreinigung kostet bei Blankstein 7 €/m² inklusive Neuverfugung oder 8 €/m² mit Nano-Imprägnierung — Richtpreise, gerechnet immer m² × Satz.",
     "head": [
       "Fläche",
-      "Reinigung + Neuverfugung (7 €/m²)",
-      "+ Nano-Imprägnierung (8 €/m²)"
+      "Reinigung + Neuverfugung",
+      "Mit Nano-Imprägnierung"
     ],
     "rows": [
       [
@@ -19,18 +19,18 @@
       ],
       [
         "20 m² (kleine Terrasse)",
-        "ca. 140 €",
-        "ca. 160 €"
+        "140 €",
+        "160 €"
       ],
       [
         "40 m² (Terrasse + Weg)",
-        "ca. 280 €",
-        "ca. 320 €"
+        "280 €",
+        "320 €"
       ],
       [
         "60 m² (Einfahrt)",
-        "ca. 420 €",
-        "ca. 480 €"
+        "420 €",
+        "480 €"
       ]
     ]
   },
@@ -47,7 +47,7 @@
   },
   "vergleich": {
     "title": "Selbst machen — oder machen lassen?",
-    "intro": "Ein Baumarkt-Hochdruckreiniger kostet weniger als unsere Reinigung. Was dabei oft untergeht: die Zeit, das Material und das Risiko für Ihren Stein. Ehrlich gegenübergestellt.",
+    "intro": "Ein Baumarkt-Hochdruckreiniger kostet weniger als unsere Reinigung. Was dabei oft untergeht: die Zeit, das Material und das Risiko für Ihren Stein.",
     "diy_title": "Mit dem Baumarkt-Gerät selbst",
     "diy": [
       "Gerät leihen oder kaufen, dazu Fugensand und Reinigungsmittel besorgen",
@@ -64,19 +64,19 @@
       "Auf Wunsch Nano-Imprägnierung, damit die Fläche länger sauber bleibt",
       "Endpreis-Zusage und kostenlose Nacharbeit, falls irgendwo Belag zurückbleibt"
     ],
-    "footer": "Eine 40-m²-Fläche liegt bei rund 280 € — fertig gereinigt, neu verfugt und ohne Risiko für den Stein. Ohne Ihren Wochenend-Tag, ohne Gerätemiete, ohne Nacharbeit auf eigene Faust."
+    "footer": "Eine 40-m²-Fläche kostet 280 € (40 × 7 €) — fertig gereinigt, neu verfugt und ohne Risiko für den Stein. Ohne Ihren Wochenend-Tag, ohne Gerätemiete, ohne Nacharbeit auf eigene Faust."
   },
   "richtpreis_erklaerung": {
     "title": "Sie zahlen nie mehr als angesagt.",
     "body": [
-      "Fair heißt für uns: Der Preis, den wir Ihnen nach Foto oder Besichtigung nennen, ist der Endpreis — kein Aufschlag hinterher, keine Nachkalkulation. Online bekommen Sie deshalb einen ehrlichen Richtpreis, keinen aus der Ferne fest zugesagten Betrag — und das hat einen einfachen Grund. Was eine Fläche wirklich kostet, hängt von ihrem Zustand ab: zwei gleich große Terrassen können sich um das Doppelte an Aufwand unterscheiden, wenn die eine nur leichten Grünbelag hat und die andere seit Jahren nicht gereinigt wurde. Größe, Verschmutzungsgrad, Zugänglichkeit und Belagart bestimmen, wie viele Durchgänge wir mit dem rotierenden Flächenreiniger fahren und wie viel Fugensand am Ende hineingeht. Einen verbindlichen Preis allein aus der Ferne zu nennen, ohne die Fläche gesehen zu haben, wäre nicht seriös — entweder wir würden zu hoch ansetzen, oder Sie müssten am Ende nachzahlen.",
+      "Fair heißt für uns: Der Preis, den wir Ihnen nach Foto oder Besichtigung nennen, ist der Endpreis — kein Aufschlag hinterher, keine Nachkalkulation. Online bekommen Sie deshalb einen Richtpreis, keinen aus der Ferne fest zugesagten Betrag. Was eine Fläche wirklich kostet, hängt von ihrem Zustand ab: zwei gleich große Terrassen können sich um das Doppelte an Aufwand unterscheiden, wenn die eine nur leichten Grünbelag hat und die andere seit Jahren nicht gereinigt wurde. Größe, Verschmutzungsgrad, Zugänglichkeit und Belagart bestimmen, wie viele Durchgänge wir mit dem rotierenden Flächenreiniger fahren und wie viel Fugensand am Ende hineingeht. Einen verbindlichen Preis allein aus der Ferne zu nennen, ohne die Fläche gesehen zu haben, wäre nicht seriös — entweder wir würden zu hoch ansetzen, oder Sie müssten am Ende nachzahlen.",
       "Deshalb läuft es bei uns anders herum: Sie schicken uns ein Foto und die ungefähren Maße per WhatsApp, und wir rechnen Ihnen den Preis aus. Dieser gilt für die angegebenen Maße und den auf dem Foto erkennbaren Zustand. Sind die Maße unklar oder die Fläche schwer einzuschätzen, kommen wir kostenlos vorbei und messen vor Ort — dann ist der bei der Besichtigung genannte Preis der verbindliche."
     ]
   },
   "conversion": {
-    "title": "Ihren Preis in etwa 30 Minuten",
+    "title": "Ihr Preis nach zwei Fotos",
     "body": [
-      "Der schnellste Weg zu Ihrem Preis: Schicken Sie uns ein bis zwei Fotos Ihrer Fläche und die ungefähren Maße in m² per WhatsApp. In der Regel haben wir Ihnen das Angebot innerhalb von etwa 30 Minuten zurückgeschickt — Sie müssen dafür weder einen Termin abwarten noch ein langes Formular ausfüllen. Das funktioniert für die meisten Terrassen, Einfahrten und Wege problemlos.",
+      "Der schnellste Weg zu Ihrem Preis: Schicken Sie uns ein bis zwei Fotos Ihrer Fläche und die ungefähren Maße in m² per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Sie müssen weder einen Termin abwarten noch ein langes Formular ausfüllen. Das funktioniert für die meisten Terrassen, Einfahrten und Wege.",
       "Sie kennen Ihre Quadratmeter nicht oder die Fläche ist verwinkelt? Kein Problem — dann kommen wir kostenlos und unverbindlich vorbei, messen vor Ort und besprechen alles in Ruhe. So oder so bekommen Sie einen klaren Preis, bevor wir mit der Arbeit anfangen."
     ]
   },
@@ -84,7 +84,7 @@
   "faqs": [
     {
       "q": "Was kostet Steinreinigung pro m²?",
-      "a": "Bei Blankstein liegt der Richtpreis bei 7 €/m² für Reinigung inklusive Neuverfugung mit Fugensand, oder 8 €/m² wenn zusätzlich eine Nano-Imprägnierung aufgetragen wird. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Terrasse kostet damit etwa 280 € beziehungsweise 320 €. Der genaue Betrag hängt vom Zustand der Fläche ab und wird nach einem Foto oder einer Besichtigung festgelegt."
+      "a": "Bei Blankstein liegt der Richtpreis bei 7 €/m² für Reinigung inklusive Neuverfugung mit Fugensand, oder 8 €/m² wenn zusätzlich eine Nano-Imprägnierung aufgetragen wird. Das sind Endpreise ohne versteckte Kosten. Eine 40-m²-Terrasse kostet damit exakt 280 €, mit Imprägnierung 320 €. Der genaue Betrag hängt vom Zustand der Fläche ab und wird nach einem Foto oder einer Besichtigung festgelegt."
     },
     {
       "q": "Gibt es einen Mindestauftragswert oder Fahrtkosten?",
@@ -100,5 +100,5 @@
     }
   ],
   "cta_title": "Foto schicken, Preis erhalten",
-  "cta_text": "Richtpreis ab 7 €/m² inklusive Neuverfugung — schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp, und Sie haben Ihr Angebot in etwa 30 Minuten. Der Preis gilt für die angegebenen Maße und den erkennbaren Zustand. Lieber persönlich? Wir kommen kostenlos und unverbindlich vorbei und messen vor Ort."
+  "cta_text": "Richtpreis ab 7 €/m² inklusive Neuverfugung — schicken Sie uns ein Foto Ihrer Fläche und die ungefähren Maße per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Der Preis gilt für die angegebenen Maße und den erkennbaren Zustand. Lieber persönlich? Wir kommen kostenlos und unverbindlich vorbei und messen vor Ort."
 }
