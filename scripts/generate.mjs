@@ -176,9 +176,12 @@ function head(title, desc, canonical, schemaGraph, opts = {}) {
 // ---------- Chrome: Microbar + Header + Local-Trust-Footer + Sticky-Bar (Spec §2.1/§2.13/§3.2) ----------
 const mainWrap = m => `<main id="main">${m}</main>`; // <main>-Landmark + Skip-Link-Ziel (Spec §4 MUSS)
 const AMPEL_SPAN = cls => `<span class="status${cls ? ` ${cls}` : ''}" data-ampel><span class="status-tx">Mo–Fr 8–18 · Sa 9–14</span></span>`;
+// Microbar (Maurice 2026-07-07): links nur die klickbare Telefonnummer, rechts Erreichbarkeits-Ampel
+// + 5,0-Google-Ranking als Dauer-Trust. Keine Adresse (steht im Footer + Kontakt). reviewsData direkt
+// nutzen (REV_COUNT/fmtRating sind erst weiter unten definiert → TDZ).
 const microbar = `<div class="microbar"><div class="container microbar-in">
-<span class="mb-nap"><span class="mb-adr">${esc(nap.street)} · ${esc(nap.zip)} ${esc(nap.city)} · </span><a href="tel:${tel}">${esc(nap.phone_display)}</a></span>
-${AMPEL_SPAN('')}
+<a class="mb-tel" href="tel:${tel}">${ICON.phone}<span class="mono">${esc(nap.phone_display)}</span></a>
+<span class="mb-right">${AMPEL_SPAN('')}${reviewsData.count ? `<a class="mb-rate" href="${reviewsData.profile_url || GBP_REVIEWS_URL}" target="_blank" rel="noopener"><span class="mb-star" aria-hidden="true">★</span> <span class="mono">${Number(reviewsData.rating || 5).toFixed(1).replace('.', ',')}</span> · ${reviewsData.count} auf Google</a>` : ''}</span>
 </div></div>`;
 const NAV = [['Leistungen', '/#leistungen'], ['Preise', '/preise/'], ['Bewertungen', '/bewertungen/'], ['Über uns', '/ueber-uns/'], ['Servicegebiet', '/servicegebiet/'], ['Ratgeber', '/ratgeber/'], ['Kontakt', '/kontakt/']];
 const header = `${microbar}<header class="site-header" id="header"><div class="container nav-row">
