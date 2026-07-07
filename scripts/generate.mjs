@@ -462,6 +462,7 @@ function belagSection(b) {
 <h2 class="sec-h2">${esc(b.h2)}</h2>
 ${b.intro ? `<p class="sec-sub">${esc(b.intro)}</p>` : ''}
 <div class="tbl-shell"><div class="tbl-wrap"><table class="mtbl">
+<caption class="sr-only">${esc(b.h2)} — Einschätzung von Blankstein je Belag.</caption>
 <thead><tr><th scope="col">Belag</th><th scope="col">Typische Fläche</th><th scope="col">Unsere Einschätzung</th></tr></thead>
 <tbody>${b.rows.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td><td>${esc(r[2])}</td></tr>`).join('')}</tbody>
 </table></div></div>
@@ -669,7 +670,7 @@ ${reviewWall()}
 
 ${ortsLeiste()}`;
   const schema = `${orgSchema()},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Bewertungen', url }])}`;
-  const meta = mkMeta(`Blankstein bei Google: ${fmtRating(REV_RATING || 5)} von 5 aus ${REV_COUNT} Bewertungen. Hier alle zitierten Kundenstimmen zur Steinreinigung im Havelland — jede einzeln zum öffentlichen Google-Profil verlinkt.`);
+  const meta = mkMeta(`Blankstein bei Google: ${fmtRating(REV_RATING || 5)} von 5 aus ${REV_COUNT} Bewertungen. Kundenstimmen zur Steinreinigung im Havelland, jede direkt zum öffentlichen Google-Profil verlinkt.`);
   write(url, head(clampTitle('Bewertungen — 5,0 auf Google | Blankstein'), meta, url, schema, { pagetype: 'bewertungen', og: { slug: 'bewertungen', motif: 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + sctaBar(waMsg) + FOOT_JS + '</body></html>');
   written.push(url);
 }

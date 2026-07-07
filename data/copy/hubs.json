@@ -10,12 +10,28 @@
       "lede": "Einfahrt, Weg, Hof oder Treppe: Wir reinigen Steinflächen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen neu mit GaLaBau-Sand. Das Arbeitsfoto auf dieser Seite ist echt — eine Fläche, beide Zustände.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für eine Steinreinigung. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Fläche fotografieren, Preis erhalten",
-      "hero_media": { "typ": "img", "slug": "hub-steinreinigung-vn", "alt": "Echtes Arbeitsfoto: Pflasterfläche entlang einer Diagonale halb gereinigt, halb verschmutzt" },
+      "hero_media": {
+        "typ": "img",
+        "slug": "hub-steinreinigung-vn",
+        "alt": "Echtes Arbeitsfoto: Pflasterfläche entlang einer Diagonale halb gereinigt, halb verschmutzt"
+      },
       "hero_tabelle": [
-        ["Objekt", "Pflasterfläche am Wohnhaus"],
-        ["Zustand vorher", "Grauschleier, Fugen bewachsen"],
-        ["Maßnahme", "Flächenreiniger in Bahnen, Neuverfugung"],
-        ["Beleg", "Ein Foto, beide Zustände im selben Bild"]
+        [
+          "Objekt",
+          "Pflasterfläche am Wohnhaus"
+        ],
+        [
+          "Zustand vorher",
+          "Grauschleier, Fugen bewachsen"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger in Bahnen, Neuverfugung"
+        ],
+        [
+          "Beleg",
+          "Ein Foto, beide Zustände im selben Bild"
+        ]
       ],
       "edu": {
         "label": "Ehrlich eingeordnet",
@@ -33,11 +49,31 @@
         "h2": "Welcher Belag verträgt welche Reinigung?",
         "intro": "Die fünf Beläge, die im Havelland am häufigsten liegen — und wie wir sie einschätzen.",
         "rows": [
-          ["Betonpflaster", "Einfahrt, Hof, Wege", "Standardfall — sehr gut geeignet"],
-          ["Klinker", "Einfahrt, Wege", "Gut geeignet, mit angepasster Druckeinstellung"],
-          ["Waschbeton & Betonplatten", "Terrasse, Podeste", "Gut geeignet, inklusive Neuverfugung"],
-          ["Feinsteinzeug & Keramik", "Moderne Terrassen", "Geeignet — reduzierter Druck, streifenfrei"],
-          ["Naturstein (Granit, Sandstein)", "Treppen, Terrassen", "Nach Prüfung: der Zustand entscheidet, deshalb erst Foto oder Besichtigung"]
+          [
+            "Betonpflaster",
+            "Einfahrt, Hof, Wege",
+            "Standardfall — sehr gut geeignet"
+          ],
+          [
+            "Klinker",
+            "Einfahrt, Wege",
+            "Gut geeignet, mit angepasster Druckeinstellung"
+          ],
+          [
+            "Waschbeton & Betonplatten",
+            "Terrasse, Podeste",
+            "Gut geeignet, inklusive Neuverfugung"
+          ],
+          [
+            "Feinsteinzeug & Keramik",
+            "Moderne Terrassen",
+            "Geeignet — reduzierter Druck, streifenfrei"
+          ],
+          [
+            "Naturstein (Granit, Sandstein)",
+            "Treppen, Terrassen",
+            "Nach Prüfung: der Zustand entscheidet, deshalb erst Foto oder Besichtigung"
+          ]
         ],
         "note": "Unsicher, was bei Ihnen liegt? Ein Foto per WhatsApp genügt — wir ordnen den Belag ein, bevor ein Angebot entsteht."
       },
@@ -57,6 +93,10 @@
           "a": "Einfahrten, Terrassen, Wege, Treppen und Hofflächen — aus Betonpflaster, Klinker, Waschbeton, Feinsteinzeug oder Naturstein. Treppenkanten gehen wir per Hand nach, der Flächenreiniger übernimmt die Flächen. Ob ein Belag geeignet ist, klären wir am Foto, bevor ein Angebot entsteht."
         },
         {
+          "q": "Entfernt ihr auch Grünbelag, Algen und Moos?",
+          "a": "Ja — Grünbelag entfernen ist der häufigste Auftrag bei uns. Der rotierende Flächenreiniger löst Grünbelag, Algen und Moos samt Sporen aus der Oberfläche, die Neuverfugung nimmt dem Bewuchs den Halt in den Fugen. Auf Wunsch hält die Nano-Imprägnierung für 1 €/m² mehr den Grünbelag danach spürbar länger fern."
+        },
+        {
           "q": "Wie läuft die Anfrage ab?",
           "a": "Sie schicken ein, zwei Fotos und die ungefähren Quadratmeter per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Reicht das Bild für eine sichere Einschätzung nicht, kommen wir kostenlos vorbei — auf Wunsch reinigen wir bei der Besichtigung 1 m² Probefläche, kostenlos."
         },
@@ -65,7 +105,11 @@
           "a": "Dann arbeiten wir kostenlos nach, bis die Fläche sauber ist — ohne Diskussion. Und der bestätigte Preis ist der Rechnungsbetrag: kein Aufpreis, auch wenn die Fläche hartnäckiger ist als gedacht. Beide Zusagen stehen im Angebot, nicht nur auf dieser Seite."
         }
       ],
-      "ratgeber": ["pflastersteine-reinigen", "was-kostet-steinreinigung", "serioese-steinreinigung-erkennen"]
+      "ratgeber": [
+        "pflastersteine-reinigen",
+        "was-kostet-steinreinigung",
+        "serioese-steinreinigung-erkennen"
+      ]
     },
     {
       "slug": "terrassenreinigung",
@@ -76,12 +120,28 @@
       "lede": "Naturstein, Betonplatten, Keramik oder Feinsteinzeug: Wir stellen Druck und Reinigungsmittel auf den Belag ein, reinigen mit dem Flächenreiniger und verfugen neu. Foto und Video auf dieser Seite stammen aus laufenden Einsätzen — ungestellt.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für meine Terrasse. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Terrassen-Foto senden",
-      "hero_media": { "typ": "img", "slug": "proof-arbeit-2", "alt": "Echtes Arbeitsfoto: Terrassenreinigung mit dem rotierenden Flächenreiniger im Einsatz" },
+      "hero_media": {
+        "typ": "img",
+        "slug": "proof-arbeit-2",
+        "alt": "Echtes Arbeitsfoto: Terrassenreinigung mit dem rotierenden Flächenreiniger im Einsatz"
+      },
       "hero_tabelle": [
-        ["Objekt", "Terrasse am Einfamilienhaus"],
-        ["Gerät", "Rotierender Flächenreiniger"],
-        ["Schritt", "Reinigung in Bahnen, danach Absaugung"],
-        ["Beleg", "Foto aus dem laufenden Einsatz"]
+        [
+          "Objekt",
+          "Terrasse am Einfamilienhaus"
+        ],
+        [
+          "Gerät",
+          "Rotierender Flächenreiniger"
+        ],
+        [
+          "Schritt",
+          "Reinigung in Bahnen, danach Absaugung"
+        ],
+        [
+          "Beleg",
+          "Foto aus dem laufenden Einsatz"
+        ]
       ],
       "edu": {
         "label": "Ehrlich eingeordnet",
@@ -96,10 +156,26 @@
         "h2": "Welche Terrassenbeläge reinigen wir — und wie?",
         "intro": "Der Belag bestimmt Druck, Mittel und Tempo. So gehen wir die vier häufigsten Terrassen an.",
         "rows": [
-          ["Betonplatten", "Terrasse, Podest", "Standardfall — sehr gut geeignet"],
-          ["Waschbeton", "Ältere Terrassen", "Gut geeignet, inklusive Neuverfugung"],
-          ["Keramik & Feinsteinzeug", "Moderne Terrassen", "Geeignet — reduzierter Druck, kein Aufrauen, kein Schleier"],
-          ["Naturstein (Sandstein, Travertin, Granit)", "Terrasse, Sitzplatz", "Nach Prüfung — Druck und Reinigungsmittel richten sich nach dem Material"]
+          [
+            "Betonplatten",
+            "Terrasse, Podest",
+            "Standardfall — sehr gut geeignet"
+          ],
+          [
+            "Waschbeton",
+            "Ältere Terrassen",
+            "Gut geeignet, inklusive Neuverfugung"
+          ],
+          [
+            "Keramik & Feinsteinzeug",
+            "Moderne Terrassen",
+            "Geeignet — reduzierter Druck, kein Aufrauen, kein Schleier"
+          ],
+          [
+            "Naturstein (Sandstein, Travertin, Granit)",
+            "Terrasse, Sitzplatz",
+            "Nach Prüfung — Druck und Reinigungsmittel richten sich nach dem Material"
+          ]
         ],
         "note": "Schicken Sie ein Foto Ihrer Platten mit — wir nennen Belag und Vorgehen, bevor wir den Preis bestätigen."
       },
@@ -127,7 +203,11 @@
           "a": "Nein. Wir saugen gelösten Schmutz und Wasser mit dem Nasssauger direkt auf, statt sie in Beet und Rasen zu spülen. Die Terrasse ist nach dem Termin begehbar, Möbel stellen wir zurück — und bleibt irgendwo Restbelag, arbeiten wir kostenlos nach."
         }
       ],
-      "ratgeber": ["terrasse-reinigen", "naturstein-reinigen", "welcher-reiniger-fuer-welchen-stein"]
+      "ratgeber": [
+        "terrasse-reinigen",
+        "naturstein-reinigen",
+        "welcher-reiniger-fuer-welchen-stein"
+      ]
     },
     {
       "slug": "pflasterreinigung",
@@ -138,12 +218,28 @@
       "lede": "Einfahrten, Hofflächen und Gehwege aus Pflaster: Wir reinigen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen mit frischem GaLaBau-Sand. Das Arbeitsfoto dazu ist echt — halb gereinigt, halb im Ausgangszustand.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für mein Pflaster. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Pflaster-Foto senden",
-      "hero_media": { "typ": "img", "slug": "hub-pflaster-vn", "alt": "Echtes Arbeitsfoto: Bogenpflaster, eine Hälfte gereinigt, die andere noch verschmutzt" },
+      "hero_media": {
+        "typ": "img",
+        "slug": "hub-pflaster-vn",
+        "alt": "Echtes Arbeitsfoto: Bogenpflaster, eine Hälfte gereinigt, die andere noch verschmutzt"
+      },
       "hero_tabelle": [
-        ["Objekt", "Pflasterfläche, Bogenverband"],
-        ["Zustand vorher", "Moos und Grünbelag, Fugen bewachsen"],
-        ["Maßnahme", "Flächenreiniger, Neuverfugung mit GaLaBau-Sand"],
-        ["Beleg", "Eine Fläche, beide Zustände im Bild"]
+        [
+          "Objekt",
+          "Pflasterfläche, Bogenverband"
+        ],
+        [
+          "Zustand vorher",
+          "Moos und Grünbelag, Fugen bewachsen"
+        ],
+        [
+          "Maßnahme",
+          "Flächenreiniger, Neuverfugung mit GaLaBau-Sand"
+        ],
+        [
+          "Beleg",
+          "Eine Fläche, beide Zustände im Bild"
+        ]
       ],
       "edu": {
         "label": "Ehrlich eingeordnet",
@@ -161,11 +257,31 @@
         "h2": "Welches Pflaster können wir reinigen?",
         "intro": "Vom Neubaugebiets-Verbundstein bis zum Sechseckpflaster aus DDR-Zeiten — die Einschätzung nach Belag.",
         "rows": [
-          ["Betonpflaster", "Einfahrt, Hoffläche", "Standardfall — sehr gut geeignet"],
-          ["Verbundpflaster", "Einfahrt, Stellplatz", "Sehr gut geeignet, auch bei Reifenabrieb"],
-          ["Sechseckpflaster", "Wege, ältere Einfahrten", "Gut geeignet — ein dokumentierter Auftrag steht oben auf dieser Seite"],
-          ["Klinkerpflaster", "Wege, Vorgärten", "Gut geeignet, mit angepasster Einstellung"],
-          ["Natursteinpflaster", "Höfe, Zufahrten", "Nach Prüfung — Kanten und Oberfläche entscheiden über den Druck"]
+          [
+            "Betonpflaster",
+            "Einfahrt, Hoffläche",
+            "Standardfall — sehr gut geeignet"
+          ],
+          [
+            "Verbundpflaster",
+            "Einfahrt, Stellplatz",
+            "Sehr gut geeignet, auch bei Reifenabrieb"
+          ],
+          [
+            "Sechseckpflaster",
+            "Wege, ältere Einfahrten",
+            "Gut geeignet — ein dokumentierter Auftrag steht oben auf dieser Seite"
+          ],
+          [
+            "Klinkerpflaster",
+            "Wege, Vorgärten",
+            "Gut geeignet, mit angepasster Einstellung"
+          ],
+          [
+            "Natursteinpflaster",
+            "Höfe, Zufahrten",
+            "Nach Prüfung — Kanten und Oberfläche entscheiden über den Druck"
+          ]
         ],
         "note": "Belag unklar? Foto schicken — wir ordnen ihn ein und rechnen den Richtpreis auf die Fläche."
       },
@@ -193,7 +309,11 @@
           "a": "Foto plus ungefähre Quadratmeter per WhatsApp — Antwort < 2 h — werktags 8–18 Uhr. Bei unklaren Flächen kommen wir kostenlos vorbei und messen nach; auf Wunsch reinigen wir dabei 1 m² Probefläche, kostenlos. Das Angebot danach ist verbindlich."
         }
       ],
-      "ratgeber": ["hochdruckreiniger-fehler", "einfahrt-reinigen-oel-reifenspuren", "pflaster-ohne-hochdruck-reinigen"]
+      "ratgeber": [
+        "hochdruckreiniger-fehler",
+        "einfahrt-reinigen-oel-reifenspuren",
+        "pflaster-ohne-hochdruck-reinigen"
+      ]
     },
     {
       "slug": "steinversiegelung",
@@ -204,12 +324,28 @@
       "lede": "Die Nano-Imprägnierung ist bei uns der letzte Schritt nach Reinigung und Neuverfugung: 8 €/m² statt 7 €/m², alles inklusive. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt deutlich länger sauber.",
       "wa_text": "Hallo Blankstein, ich interessiere mich für die Steinversiegelung. Foto und ungefähre Maße meiner Fläche schicke ich gleich mit.",
       "wa_label": "Fläche zur Prüfung senden",
-      "hero_media": { "typ": "img", "slug": "proof-ergebnis-2", "alt": "Echtes Kundenfoto: frisch gereinigte Pflasterfläche — die Grundlage für jede Imprägnierung" },
+      "hero_media": {
+        "typ": "img",
+        "slug": "proof-ergebnis-2",
+        "alt": "Echtes Kundenfoto: frisch gereinigte Pflasterfläche — die Grundlage für jede Imprägnierung"
+      },
       "hero_tabelle": [
-        ["Objekt", "Pflasterfläche nach der Reinigung"],
-        ["Status", "Sauber, neu verfugt, trocken"],
-        ["Nächster Schritt", "Nano-Imprägnierung auf den trockenen Stein"],
-        ["Beleg", "Echtes Foto — Versiegelungs-Doku folgt"]
+        [
+          "Objekt",
+          "Pflasterfläche nach der Reinigung"
+        ],
+        [
+          "Status",
+          "Sauber, neu verfugt, trocken"
+        ],
+        [
+          "Nächster Schritt",
+          "Nano-Imprägnierung auf den trockenen Stein"
+        ],
+        [
+          "Beleg",
+          "Echtes Foto — Versiegelungs-Doku folgt"
+        ]
       ],
       "edu": {
         "label": "Ehrlich eingeordnet",
@@ -228,10 +364,26 @@
         "h2": "Welche Beläge lohnen sich für die Versiegelung?",
         "intro": "Nicht jeder Stein braucht eine Imprägnierung. Unsere Einschätzung nach Belag — inklusive der Fälle, in denen wir abraten.",
         "rows": [
-          ["Betonpflaster", "Einfahrt, Hof", "Nimmt die Imprägnierung sehr gut an — lohnender Standardfall"],
-          ["Betonplatten & Waschbeton", "Terrasse, Podest", "Gut geeignet, der Farbton wird leicht aufgefrischt"],
-          ["Naturstein", "Terrasse, Wege", "Nach Prüfung — offenporige Steine profitieren am meisten"],
-          ["Feinsteinzeug & Keramik", "Moderne Terrassen", "Sehr dicht: Die Imprägnierung zieht kaum ein und ist meist unnötig — das sagen wir offen"]
+          [
+            "Betonpflaster",
+            "Einfahrt, Hof",
+            "Nimmt die Imprägnierung sehr gut an — lohnender Standardfall"
+          ],
+          [
+            "Betonplatten & Waschbeton",
+            "Terrasse, Podest",
+            "Gut geeignet, der Farbton wird leicht aufgefrischt"
+          ],
+          [
+            "Naturstein",
+            "Terrasse, Wege",
+            "Nach Prüfung — offenporige Steine profitieren am meisten"
+          ],
+          [
+            "Feinsteinzeug & Keramik",
+            "Moderne Terrassen",
+            "Sehr dicht: Die Imprägnierung zieht kaum ein und ist meist unnötig — das sagen wir offen"
+          ]
         ],
         "note": "Ob sich die Imprägnierung bei Ihrer Fläche lohnt, prüfen wir am Foto — und raten ab, wenn sie wenig bringt."
       },
@@ -259,7 +411,11 @@
           "a": "Dann bessern wir kostenlos nach — das ist Teil der Zusage, genau wie der Endpreis: Der vorab bestätigte Betrag ist der Rechnungsbetrag, ohne Aufschlag. Und wenn wir am Foto sehen, dass Ihr Belag die Imprägnierung kaum annimmt, raten wir vorher ab statt zu verkaufen."
         }
       ],
-      "ratgeber": ["gruenbelag-kommt-immer-wieder", "gruenbelag-entfernen", "welcher-reiniger-fuer-welchen-stein"]
+      "ratgeber": [
+        "gruenbelag-kommt-immer-wieder",
+        "gruenbelag-entfernen",
+        "welcher-reiniger-fuer-welchen-stein"
+      ]
     }
   ]
 }
