@@ -600,7 +600,9 @@ function revStars(n) { let s = ''; for (let i = 1; i <= 5; i++) s += `<span clas
 function reviewWall({ excludeAuthors = [] } = {}) {
   // excludeAuthors (QA R1): auf der Startseite die bereits in den Protokollen voll zitierten
   // Rezensionen nicht ein zweites Mal ausspielen — identischer Wortlaut zweimal wirkt recycelt.
-  const pool = REV.filter(r => !excludeAuthors.includes(r.author));
+  // Textstärkste zuerst: die Home featured die inhaltlich reichsten Rezensionen,
+  // nicht die (per Datum) neuesten Kurz-/Username-Reviews.
+  const pool = REV.filter(r => !excludeAuthors.includes(r.author)).slice().sort((a, b) => (b.text || '').length - (a.text || '').length);
   if (!pool.length) return '';
   const gLink = () => `<a href="${REV_URL}" target="_blank" rel="noopener">auf Google ↗</a>`;
   const meta = rv => `<p class="rw-meta mono"><strong>${esc(rv.author)}</strong>${(rv.objekt || rv.ort) ? ` <span class="obj">${esc(rv.objekt || rv.ort)}</span>` : ''} ${gLink()}</p>`;
@@ -615,6 +617,17 @@ function reviewWall({ excludeAuthors = [] } = {}) {
 </div>
 <div class="rw-grid">${wide}${cards}${navyCard}</div>
 </div></section>`;
+}
+// Vollansicht für /bewertungen/: ALLE Rezensionen als Karten (textstärkste zuerst), ohne Aggregat-Kopf
+// (den liefert der bw-hero) — Maurice-Wunsch „alle zeigen".
+function reviewGridFull() {
+  if (!REV.length) return '';
+  const gLink = () => `<a href="${REV_URL}" target="_blank" rel="noopener">auf Google ↗</a>`;
+  const meta = rv => `<p class="rw-meta mono"><strong>${esc(rv.author)}</strong>${(rv.objekt || rv.ort) ? ` <span class="obj">${esc(rv.objekt || rv.ort)}</span>` : ''} ${gLink()}</p>`;
+  const cards = REV.slice().sort((a, b) => (b.text || '').length - (a.text || '').length)
+    .map(rv => `<article class="rw-card"><span class="g-mark mono" aria-hidden="true">G</span>${revStars(rv.rating)}<blockquote>„${esc(rv.text)}“</blockquote>${meta(rv)}</article>`).join('');
+  const navyCard = `<article class="rw-card rw-dark"><p class="rw-dark-label mono">Verifizierbar statt behauptet</p><p>Jedes Zitat stammt aus einer öffentlichen Google-Rezension. Der Link führt direkt zum Profil.</p><a href="${REV_URL}" target="_blank" rel="noopener">Google-Rezensionen öffnen ↗</a></article>`;
+  return `<section class="rw-sec"><div class="container"><div class="rw-grid">${cards}${navyCard}</div></div></section>`;
 }
 // Review-Snippet (Kurzform für Hubs, Spec §4): Aggregat + 1 Zitat + Deeplink.
 // Zitat-Wahl: bevorzugt per Autor (hub-copy review_author), sonst per Objekt-Kategorie, sonst erstes.
@@ -652,7 +665,7 @@ function bewertungen() {
 </div>
 </div></section>
 
-${reviewWall()}
+${reviewGridFull()}
 
 <section class="lokal-sec"><div class="container">
 <p class="doc-label">Transparenz</p>
