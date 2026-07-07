@@ -169,16 +169,17 @@ if(imgNoDim===0) OK('width+height auf allen <img>'); else FAIL('ImgDim', `${imgN
 if(noScta===0) OK('Sticky-Mobile-CTA (.scta) auf allen Seiten'); else FAIL('StickyCTA', `${noScta} Seiten ohne .scta`);
 if(noHamb===0) OK('Mobile-Hamburger (.menu-toggle) auf allen Seiten'); else FAIL('Hamburger', `${noHamb} Seiten ohne .menu-toggle`);
 if(noOg===0) OK('og:image auf allen Seiten'); else FAIL('OgImage', `${noOg} Seiten ohne og:image`);
-// Kontakt-Wahrheit (Spec §3.5): mit Key echtes Web3Forms-Formular + Foto-Dropzone; ohne Key
-// ehrlicher Hinweis (.kf-off) — und NIE ein Submit-Handler, der still zu WhatsApp umleitet.
+// Kontakt-Wahrheit (Spec §3.5, rev. 07.07.): mit Key echtes Web3Forms-Text-Formular (KEIN Datei-Upload —
+// Attachments sind Web3Forms-PRO-only und blockieren im Free-Plan den Versand; Fotos laufen über WhatsApp);
+// ohne Key ehrlicher Hinweis (.kf-off) — und NIE ein Submit-Handler, der still zu WhatsApp umleitet.
 {
   const kf = files.find(f=>urlOf(f)==='/kontakt/');
   const kh = kf ? fs.readFileSync(kf,'utf8') : '';
   if(!kf) FAIL('KontaktForm','/kontakt/ fehlt im Output');
   else if(FORM_OK){
     if(!/<form id="anfrage"[^>]*web3forms/.test(kh)) FAIL('KontaktForm','/kontakt/ ohne Web3Forms-Formular trotz echtem Key');
-    else if(!/id="dz-input"[^>]*name="attachment"/.test(kh)) FAIL('KontaktDropzone','/kontakt/ Formular ohne Foto-Upload (attachment)');
-    else OK('Kontakt-Formular mit Foto-Dropzone (Web3Forms)');
+    else if(/name="attachment"/.test(kh)) FAIL('KontaktAttachment','/kontakt/ hat Datei-Upload — Web3Forms Free lehnt Attachments ab (Fotos via WhatsApp)');
+    else OK('Kontakt-Formular (Web3Forms Free, Text-only; Fotos via WhatsApp)');
   } else {
     if(!kh.includes('kf-off')) FAIL('KontaktEhrlich','/kontakt/ ohne ehrlichen Kein-Key-Hinweis (.kf-off)');
     else OK('Kontakt ehrlich ohne Formular (kein Web3Forms-Key)');

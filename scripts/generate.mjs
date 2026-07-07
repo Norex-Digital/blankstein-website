@@ -1194,7 +1194,7 @@ ${ortsLeiste()}`;
   written.push(url);
 }
 
-// KONTAKT (Spec §3.5 + §4): zweispaltig — links Formular mit Foto-Dropzone (Web3Forms-Attachments,
+// KONTAKT (Spec §3.5 + §4): zweispaltig — links Text-Formular (Web3Forms Free; Fotos via WhatsApp, da Attachments PRO-only),
 // nur bei echtem Key; ohne Key ehrlicher Hinweis + Kanäle, NIE stiller WhatsApp-Redirect),
 // rechts NAP-Karte + Öffnungszeiten + Ampel + Gebietskarte. DSGVO-Checkbox mit sauberem Grid-Layout (Befund-Fix).
 function kontakt() {

@@ -856,17 +856,9 @@ section{position:relative}
 .fchip span{display:inline-block;padding:.55rem .9rem;border:1.5px solid var(--line);border-radius:2px;background:#fff;color:var(--text);font-size:.88rem;font-weight:500;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
 .fchip input:checked+span{border-color:var(--accent);background:var(--accent-bg);color:var(--accent-d);font-weight:600}
 .fchip input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
-.dz{border:1.5px dashed var(--line);border-radius:3px;background:var(--off);padding:1.3rem 1.1rem;text-align:center;cursor:pointer;transition:border-color .15s,background .15s}
-.dz:hover,.dz.drag{border-color:var(--accent);background:var(--accent-bg)}
-.dz.has-files{text-align:left}
-.dz input[type=file]{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
-.dz-ic{display:inline-flex;color:var(--accent);margin-bottom:.4rem}
-.dz-ic svg{width:22px;height:22px}
-.dz strong{display:block;font-family:var(--font-head);font-size:.95rem;color:var(--navy);margin-bottom:.3rem}
-.dz-sub{display:block;font-size:.7rem;color:var(--muted)}
-.dz-list{list-style:none;margin:.7rem 0 0;padding:0;display:grid;gap:.35rem}
-.dz-list li{font-family:var(--font-body);font-size:.76rem;color:var(--ink);display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-.dz-list button{background:none;border:none;color:var(--accent-d);font-family:var(--font-body);font-size:.72rem;text-decoration:underline;cursor:pointer;padding:.15rem .2rem}
+.kf-foto-hint{display:flex;gap:.7rem;align-items:flex-start;background:var(--off);border:1px solid var(--line);border-radius:8px;padding:.85rem 1rem;font-size:.84rem;line-height:1.5;color:var(--text)}
+.kf-foto-hint svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:.1rem}
+.kf-foto-hint a{color:var(--accent);font-weight:600}
 .chk2{display:grid;grid-template-columns:auto 1fr;gap:.7rem;align-items:start;font-family:var(--font-body)!important;font-weight:400!important;font-size:.82rem!important;letter-spacing:0!important;text-transform:none!important;color:var(--muted)!important}
 .chk2 input{min-height:0!important;width:19px;height:19px;margin-top:.15rem;accent-color:var(--accent)}
 .chk2 a{color:var(--accent-d);text-decoration:underline}
