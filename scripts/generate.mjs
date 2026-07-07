@@ -294,7 +294,7 @@ function konfigSection({ typ = 'Einfahrt', rate = P.satz_basis, ort = '', kontex
 <div class="konf-in">
 <fieldset class="k-step"><legend><b>1</b> Welche Fläche?</legend><div class="k-tiles" role="group" aria-label="Flächentyp wählen">${tiles}</div></fieldset>
 <fieldset class="k-step"><legend><b>2</b> Wie groß, ungefähr?</legend><div class="k-qmrow"><input type="range" id="k-range" min="5" max="300" step="5" value="${qm0}" aria-label="Fläche in Quadratmetern"><span class="k-qmval mono"><input type="number" id="k-num" min="1" max="2000" value="${qm0}" inputmode="numeric" aria-label="Quadratmeter eingeben"> m²</span></div></fieldset>
-<fieldset class="k-step"><legend><b>3</b> Welches Paket?</legend><div class="k-paks" role="group" aria-label="Paket wählen">
+<fieldset class="k-step"><legend><b>3</b> Welche Leistung?</legend><div class="k-paks" role="group" aria-label="Paket wählen">
 <button type="button" class="k-pak" data-rate="${P.satz_basis}" aria-pressed="${rate === P.satz_basis}"><strong class="mono">${P.satz_basis}&nbsp;€<small>/m²</small></strong><span>Reinigung + Neuverfugung mit GaLaBau-Sand</span></button>
 <button type="button" class="k-pak" data-rate="${P.satz_impraegnierung}" aria-pressed="${rate === P.satz_impraegnierung}"><strong class="mono">${P.satz_impraegnierung}&nbsp;€<small>/m²</small></strong><span>Zusätzlich Nano-Imprägnierung als Schmutzschutz</span></button>
 </div></fieldset>
@@ -320,7 +320,7 @@ var state={type:t0?t0.getAttribute('data-type'):'Einfahrt',qm:60,rate:pk0?+pk0.g
 var touched=false,tracked=false;
 function paket(){return state.rate===${P.satz_impraegnierung}?'Reinigung + Neuverfugung + Nano-Imprägnierung (${P.satz_impraegnierung} €/m²)':'Reinigung + Neuverfugung (${P.satz_basis} €/m²)'}
 function price(){return state.qm*state.rate}
-function waText(){return 'Hallo Blankstein, ich möchte einen Richtpreis für meine '+state.type+' (ca. '+state.qm+' m²'+(state.ort?(', '+state.ort):'')+'). Paket: '+paket()+'. Euer Rechner zeigt '+fmt.format(price())+' €.'+(ctx?(' [Seite: '+ctx+']'):'')+' Foto schicke ich gleich mit.'}
+function waText(){return 'Hallo Blankstein, ich möchte einen Richtpreis für meine '+state.type+' (ca. '+state.qm+' m²'+(state.ort?(', '+state.ort):'')+') — '+paket()+'. Euer Rechner zeigt '+fmt.format(price())+' €. Ein Foto schicke ich gleich mit.'}
 function render(){var p=fmt.format(price());var el=document.getElementById('k-price');if(el)el.textContent=p;
 el=document.getElementById('k-meta');if(el)el.textContent=state.qm+' m² × '+state.rate+' €';
 var url='https://wa.me/${waNum}?text='+encodeURIComponent(waText());
@@ -503,8 +503,8 @@ function leistungsZeilen() {
   const rows = [
     ['01', 'Steinreinigung mit dem Flächenreiniger', 'Rotierende Reinigung unter einer Haube: gleichmäßig, kontrolliert, ohne Spritzfahnen an Fassade und Fenstern. Für Einfahrten, Terrassen, Wege und Treppen.', 'im m²-Preis', 'enthalten', '/steinreinigung/'],
     ['02', 'Schmutz-Absaugung mit dem Nasssauger', 'Gelöster Schmutz und Schmutzwasser werden aufgenommen statt in Beet und Rasen gespült. Die Fläche ist nach dem Termin begehbar, das Grundstück bleibt sauber.', 'im m²-Preis', 'enthalten', null],
-    ['03', 'Neuverfugung mit GaLaBau-Sand', 'Ausgespülte Fugen werden mit Fugensand neu verfüllt. Das stabilisiert den Belag und verzögert neuen Bewuchs in den Fugen.', 'Paket 1', `${P.satz_basis} €/m²`, null],
-    ['04', 'Nano-Imprägnierung', 'Auf Wunsch versiegeln wir die gereinigte Fläche. Wasser perlt ab, Schmutz haftet schlechter, das Ergebnis hält sichtbar länger.', 'Paket 2', `${P.satz_impraegnierung} €/m²`, '/steinversiegelung/']
+    ['03', 'Neuverfugung mit GaLaBau-Sand', 'Ausgespülte Fugen werden mit Fugensand neu verfüllt. Das stabilisiert den Belag und verzögert neuen Bewuchs in den Fugen.', 'im m²-Preis', 'enthalten', null],
+    ['04', 'Nano-Imprägnierung', 'Auf Wunsch versiegeln wir die gereinigte Fläche. Wasser perlt ab, Schmutz haftet schlechter, das Ergebnis hält sichtbar länger.', 'nur mit Imprägnierung', `${P.satz_impraegnierung} €/m²`, '/steinversiegelung/']
   ];
   const hubLinks = services.filter(s => hubCopy[s.slug]).map(s => `<a href="/${s.slug}/">${esc(s.name)}</a>`).join(' · ');
   return `<section class="svcz-sec" id="leistungen"><div class="container">
@@ -1091,7 +1091,7 @@ ${tableHtml}
 <h2 class="sec-h2">${esc(kf.title || 'Was hinter dem Quadratmeterpreis steckt')}</h2>
 ${kfHtml}
 </div></section>
-${konfigSection({ kontext: 'Preise', title: 'Rechnen Sie Ihren Richtpreis aus', sub: 'Fläche, Größe, Paket — gerechnet wird exakt m² × 7 € oder 8 €. Verbindlich nach Foto-Prüfung, dann Endpreis-Zusage.' })}
+${konfigSection({ kontext: 'Preise', title: 'Rechnen Sie Ihren Richtpreis aus', sub: 'Fläche, Größe, Leistung — gerechnet wird exakt m² × 7 € oder 8 €. Verbindlich nach Foto-Prüfung, dann Endpreis-Zusage.' })}
 <section class="lokal-sec"><div class="container">
 <p class="doc-label">Preislogik</p>
 <h2 class="sec-h2">${esc(re.title || 'Warum Richtpreis statt fester Preis aus der Ferne')}</h2>
@@ -1124,7 +1124,7 @@ function ueberUns(u) {
   const schritteHtml = (vf.schritte || []).map((s, i) => `<div class="svc-row">
 <span class="svc-num mono">0${i + 1}</span>
 <div><h3>${esc(s.titel)}</h3><p>${esc(s.text)}</p></div>
-<div class="svc-meta mono">${i === 4 ? `Paket 2<br><strong>${P.satz_impraegnierung} €/m²</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
+<div class="svc-meta mono">${i === 4 ? `nur mit Imprägnierung<br><strong>${P.satz_impraegnierung} €/m²</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
 </div>`).join('');
   const gearHtml = (eq.items || []).map(([t, d]) => `<li><strong>${esc(t)}</strong><span>${esc(d)}</span></li>`).join('');
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Über uns</div>
@@ -1481,7 +1481,7 @@ ${pick}
 </div>
 ${heroImg}
 </div></div></section>
-${konfigSection({ kurz: true, kontext: 'Reel-Landing /start', title: 'Rechne deinen Richtpreis aus.', sub: 'Fläche, Größe, Paket — gerechnet wird exakt m² × 7 € oder 8 €. Ohne Kontaktdaten, ohne Verpflichtung.' })}
+${konfigSection({ kurz: true, kontext: 'Reel-Landing /start', title: 'Rechne deinen Richtpreis aus.', sub: 'Fläche, Größe, Leistung — gerechnet wird exakt m² × 7 € oder 8 €. Ohne Kontaktdaten, ohne Verpflichtung.' })}
 <section class="start-steps"><div class="container"><div class="section-head center"><h2 class="sec-h2" style="margin-inline:auto;text-align:center">${esc(c.steps_title || 'So einfach gehts')}</h2></div><div class="start-steps-grid">${steps}</div></div></section>
 ${reelStrip()}
 <section class="start-trust"><div class="container"><div class="section-head center"><h2 class="sec-h2" style="margin-inline:auto;text-align:center">${esc(c.trust_title || 'Warum Blankstein')}</h2></div><div class="start-trust-grid">${trust}</div></div></section>
