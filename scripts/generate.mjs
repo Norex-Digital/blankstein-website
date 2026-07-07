@@ -1202,21 +1202,15 @@ function kontakt() {
   const FL_CHIPS = ['Einfahrt', 'Terrasse', 'Wege & Treppen', 'Hoffläche', 'Andere Fläche'];
   const chipsHtml = FL_CHIPS.map((c, i) => `<label class="fchip"><input type="radio" name="flaechentyp" value="${esc(c)}"${i === 0 ? ' checked' : ''}><span>${esc(c)}</span></label>`).join('');
   const formHtml = FORM_OK
-    ? `<form id="anfrage" class="kf2" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+    ? `<form id="anfrage" class="kf2" action="https://api.web3forms.com/submit" method="POST" novalidate>
 <input type="hidden" name="access_key" value="${esc(config.web3forms_key)}"><input type="hidden" name="subject" value="Neue Anfrage über blankstein-havelland.de"><input type="hidden" name="from_name" value="Blankstein Website"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
 <div class="kf2-row"><label>Name<input name="name" autocomplete="name" required></label><label>Telefon<input name="tel" type="tel" autocomplete="tel" required></label></div>
 <div class="kf2-row"><label>Ort / PLZ<input name="ort" id="kf-ort" autocomplete="address-level2" placeholder="z. B. Falkensee"></label><label>Fläche in m² (ungefähr)<input name="qm" id="kf-qm" inputmode="numeric" placeholder="z. B. 60"></label></div>
 <fieldset class="fchips"><legend>Was für eine Fläche ist es?</legend><div class="fchip-row">${chipsHtml}</div></fieldset>
 <label>Kurz zum Zustand<textarea name="anliegen" rows="4" placeholder="z. B. Betonpflaster, stark vermoost, zuletzt vor 4 Jahren gereinigt" required></textarea></label>
-<div class="dz" id="dz" tabindex="0" role="button" aria-label="Fotos auswählen oder hierher ziehen">
-<input type="file" id="dz-input" name="attachment" accept="image/jpeg,image/png,image/webp,image/heic" multiple>
-<span class="dz-ic">${ICON.camera}</span>
-<strong>Fotos der Fläche hierher ziehen oder tippen</strong>
-<span class="dz-sub mono">bis zu 5 Bilder · JPG, PNG, WebP, HEIC — mit Fotos steht der Richtpreis schneller</span>
-<ul class="dz-list" id="dz-list" aria-live="polite"></ul>
-</div>
+<p class="kf-foto-hint">${ICON.camera}<span><strong>Fotos der Fläche?</strong> Am schnellsten per <a href="${waHref(WA_DEFAULT)}" target="_blank" rel="noopener">WhatsApp</a> — damit steht der Richtpreis noch schneller. Ohne Foto geht die Anfrage hier genauso.</span></p>
 <label class="chk2"><input type="checkbox" name="dsgvo" value="einverstanden" required><span>Ich bin damit einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verarbeitet werden. Details in der <a href="/datenschutz/">Datenschutzerklärung</a>.</span></label>
-<button class="btn-wa kf2-submit" type="submit">${ICON.mail} Anfrage mit Fotos senden</button>
+<button class="btn-wa kf2-submit" type="submit">${ICON.mail} Anfrage senden</button>
 <p class="kf-alt mono">${SLA_HTML}</p>
 </form>`
     : `<div id="anfrage" class="kf2 kf-off">
@@ -1227,25 +1221,15 @@ function kontakt() {
 <a class="btn btn-hline" href="mailto:${esc(nap.email)}">${ICON.mail} ${esc(nap.email)}</a>
 </div>
 </div>`;
-  // Dropzone + Submit-JS: max 5 Bilder, Liste mit Entfernen; generate_lead NUR bei erfolgreichem Versand (Spec §3.8).
-  // Vorbefüllung: liest den Konfigurator-Zustand (sessionStorage bs_konf) — m², Flächentyp, Ort wandern mit.
+  // Submit-JS (Text-only, Web3Forms Free-Plan — Attachments sind PRO-only; Fotos laufen über WhatsApp).
+  // generate_lead NUR bei erfolgreichem Versand (Spec §3.8). Vorbefüllung aus Konfigurator-Zustand (sessionStorage bs_konf).
   const kontaktJS = FORM_OK ? `<script>(function(){
 var f=document.getElementById('anfrage');if(!f)return;
 try{var s=JSON.parse(sessionStorage.getItem('bs_konf')||'null');if(s){var q=document.getElementById('kf-qm');if(q&&!q.value&&s.qm)q.value=s.qm;var o=document.getElementById('kf-ort');if(o&&!o.value&&s.ort)o.value=s.ort;if(s.type){var r=f.querySelector('input[name=flaechentyp][value="'+s.type.replace('Wege und Treppen','Wege & Treppen')+'"]');if(r)r.checked=true}}}catch(e){}
-var dz=document.getElementById('dz'),inp=document.getElementById('dz-input'),list=document.getElementById('dz-list'),MAX=5,files=[];
-function render(){list.innerHTML='';files.forEach(function(fl,i){var li=document.createElement('li');li.textContent=fl.name+' ('+Math.round(fl.size/1024)+' KB) ';var x=document.createElement('button');x.type='button';x.textContent='entfernen';x.setAttribute('aria-label',fl.name+' entfernen');x.addEventListener('click',function(ev){ev.stopPropagation();files.splice(i,1);sync()});li.appendChild(x);list.appendChild(li)});dz.classList.toggle('has-files',files.length>0)}
-function sync(){var dt=new DataTransfer();files.forEach(function(fl){dt.items.add(fl)});inp.files=dt.files;render()}
-function add(fl){for(var i=0;i<fl.length;i++){if(files.length>=MAX){alert('Maximal '+MAX+' Fotos — die weiteren schicken Sie am einfachsten per WhatsApp nach.');break}if(fl[i].type.indexOf('image/')===0||/\\.heic$/i.test(fl[i].name))files.push(fl[i])}sync()}
-dz.addEventListener('click',function(e){if(e.target.tagName!=='BUTTON')inp.click()});
-dz.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();inp.click()}});
-inp.addEventListener('change',function(){add(inp.files)});
-['dragover','dragenter'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('drag')})});
-['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.remove('drag')})});
-dz.addEventListener('drop',function(e){if(e.dataTransfer&&e.dataTransfer.files)add(e.dataTransfer.files)});
 f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}
 var b=f.querySelector('button[type=submit]'),o=b.innerHTML;b.disabled=true;b.textContent='Wird gesendet…';
 fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){return r.json()}).then(function(j){
-if(j&&j.success){if(window.dataLayer)dataLayer.push({event:'generate_lead',via:'form_kontakt',fotos:files.length});location.href='/danke/'}
+if(j&&j.success){if(window.dataLayer)dataLayer.push({event:'generate_lead',via:'form_kontakt'});location.href='/danke/'}
 else{b.disabled=false;b.innerHTML=o;alert('Das Senden hat nicht geklappt. Bitte versuchen Sie es noch einmal — oder rufen Sie uns kurz an: ${nap.phone_display}.')}
 }).catch(function(){b.disabled=false;b.innerHTML=o;alert('Das Senden hat nicht geklappt. Bitte versuchen Sie es noch einmal — oder rufen Sie uns kurz an: ${nap.phone_display}.')})});
 })();</script>` : '';
