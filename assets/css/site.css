@@ -891,18 +891,17 @@ section{position:relative}
 
 /* ─── Ratgeber-Index (rg-card statt svc-card) ─── */
 .rgx-sec{padding:clamp(2.4rem,5vw,4rem) 0;background:var(--off);border-top:1px solid var(--line)}
-.rgx-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
-.rg-card{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden;box-shadow:3px 3px 0 rgba(8,40,63,.05);transition:border-color .18s,transform .18s,box-shadow .18s}
-.rg-card:hover{border-color:rgba(26,86,219,.45);transform:translateY(-2px);box-shadow:5px 5px 0 rgba(8,40,63,.08)}
-.rg-card-img{position:relative;background:var(--stone);min-height:100%}
-.rg-card-img .pv-wrap{height:100%}
-.rg-card-img img{width:100%;height:100%;object-fit:cover}
-.rg-card-img .rg-card-body{padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.45rem}
-.rg-card-no{font-size:.7rem;font-weight:600;letter-spacing:.12em;color:var(--accent)}
-.rg-card-body h2,.rg-card-body h3{font-family:var(--font-head);font-size:1.02rem;font-weight:700;color:var(--navy);letter-spacing:-.01em;line-height:1.3}
-.rg-card-body p{font-size:.84rem;color:var(--muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.rg-card-go{margin-top:auto;font-size:.82rem;font-weight:600;color:var(--accent-d)}
-@media(max-width:860px){.rgx-grid{grid-template-columns:1fr}}
+/* Ratgeber-Index: Editorial-Karten (Themen-Chip + Lesezeit), Maurice-Wahl 07.07. Variante B */
+.rgx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.3rem}
+.rgx-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:border-color .18s,transform .18s,box-shadow .18s}
+.rgx-card:hover{border-color:rgba(26,86,219,.45);transform:translateY(-3px);box-shadow:0 10px 26px rgba(8,40,63,.1)}
+.rgx-card-img{position:relative;height:172px;background:var(--stone)}
+.rgx-card-img img{width:100%;height:100%;object-fit:cover}
+.rgx-chip{position:absolute;top:11px;left:11px;background:rgba(255,255,255,.94);color:var(--navy);font-family:var(--font-head);font-weight:700;font-size:.62rem;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
+.rgx-card-body{padding:15px 16px 17px;display:flex;flex-direction:column;flex:1;gap:.7rem}
+.rgx-card-body h2{font-family:var(--font-head);font-weight:700;color:var(--navy);font-size:1rem;line-height:1.28;letter-spacing:-.01em}
+.rgx-meta{font-size:.72rem;color:var(--muted);margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.rgx-go{color:var(--accent);font-weight:600}
 @media(max-width:480px){.rg-card{grid-template-columns:1fr}.rg-card-img{aspect-ratio:16/9}}
 
 /* ─── Konfigurator-Kurzform (/start): Text-Kacheln ─── */

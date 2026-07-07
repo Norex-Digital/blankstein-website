@@ -955,11 +955,27 @@ ${faqBlock(r.faqs)}`;
 // Ratgeber-Übersicht (/ratgeber/) — CollectionPage, verlinkt alle Artikel.
 // P2-Tokens (Etappe D): rg-card-Liste statt svc-card-Grid (Tilt-Abhängigkeit raus),
 // KI-Thumbnails sichtbar gelabelt (badge:true), CTA als proto-bridge statt cta-band.
+// Editorial-Karten (Maurice-Wahl 07.07., Variante B): Themen-Chip aus dem Slug + Lesezeit aus der Wortzahl.
+const RG_THEMA = s => (
+  /welcher-reiniger/.test(s) ? 'Material' :
+  /gruenbelag/.test(s) ? 'Grünbelag' :
+  /terrasse/.test(s) ? 'Terrasse' :
+  /naturstein/.test(s) ? 'Naturstein' :
+  /einfahrt/.test(s) ? 'Einfahrt' :
+  /kostet|preis/.test(s) ? 'Kosten' :
+  /hochdruckreiniger|fehler/.test(s) ? 'Technik' :
+  /pflaster/.test(s) ? 'Pflaster' : 'Ratgeber');
+const rgReadMin = r => {
+  const w = (r.lead || '').split(/\s+/).length
+    + (r.sektionen || []).reduce((n, s) => n + (`${s.antwort || ''} ${[].concat(s.body || []).join(' ')}`).split(/\s+/).length, 0)
+    + (r.faqs || []).reduce((n, f) => n + (f.a || '').split(/\s+/).length, 0);
+  return Math.max(2, Math.round(w / 200));
+};
 function ratgeberIndex() {
   const url = '/ratgeber/';
-  const cards = ratList.map((r, i) => `<a class="rg-card reveal" href="/ratgeber/${r.slug}/" style="transition-delay:${(i % 2) * .06}s">
-${r.hero_img && IMG[r.hero_img] ? `<div class="rg-card-img">${pic(r.hero_img, { badge: true, alt: r.hero_alt || r.h1, sizes: '(max-width:980px) 92vw, 400px' })}</div>` : ''}
-<div class="rg-card-body"><span class="rg-card-no mono">${String(i + 1).padStart(2, '0')}</span><h2>${esc(r.h1)}</h2><p>${esc(r.lead)}</p><span class="rg-card-go">Zum Ratgeber →</span></div>
+  const cards = ratList.map((r, i) => `<a class="rgx-card reveal" href="/ratgeber/${r.slug}/" style="transition-delay:${(i % 3) * .05}s">
+<div class="rgx-card-img">${r.hero_img && IMG[r.hero_img] ? pic(r.hero_img, { alt: r.hero_alt || r.h1, sizes: '(max-width:640px) 92vw, 380px' }) : ''}<span class="rgx-chip">${RG_THEMA(r.slug)}</span></div>
+<div class="rgx-card-body"><h2>${esc(r.h1)}</h2><span class="rgx-meta">${rgReadMin(r)} Min Lesezeit<span class="rgx-go">Lesen →</span></span></div>
 </a>`).join('');
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Ratgeber</div>
 <section class="bw-hero o-hero"><div class="container">
