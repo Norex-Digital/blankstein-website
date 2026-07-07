@@ -35,16 +35,19 @@ if (!fs.existsSync(TOKEN_PATH)) {
 
 const tokenFile = JSON.parse(fs.readFileSync(TOKEN_PATH, 'utf8'));
 // Token-Datei defensiv lesen (gbp-MCP-Format bzw. Google-OAuth-Standardfelder)
-const tk = tokenFile.token || tokenFile;
-let accessToken = tk.access_token || tk.accessToken || null;
-const refreshToken = tk.refresh_token || tk.refreshToken;
-const clientId = tk.client_id || tk.clientId || tokenFile.client_id;
-const clientSecret = tk.client_secret || tk.clientSecret || tokenFile.client_secret;
-const expiry = Date.parse(tk.expiry || tk.expiry_date || 0) || 0;
+// tokenFile.token ist bei diesem Format der access_token-STRING (nicht verschachtelt);
+// refresh_token/client_id/client_secret/token_uri liegen auf Top-Level (wie gbp-MCP).
+const tk = (tokenFile.token && typeof tokenFile.token === 'object') ? tokenFile.token : tokenFile;
+let accessToken = (typeof tokenFile.token === 'string' ? tokenFile.token : null) || tk.access_token || tk.accessToken || null;
+const refreshToken = tokenFile.refresh_token || tk.refresh_token || tk.refreshToken;
+const clientId = tokenFile.client_id || tk.client_id || tk.clientId;
+const clientSecret = tokenFile.client_secret || tk.client_secret || tk.clientSecret;
+const tokenUri = tokenFile.token_uri || tk.token_uri || 'https://oauth2.googleapis.com/token';
+const expiry = Date.parse(tk.expiry || tk.expiry_date || tokenFile.expiry || 0) || 0;
 
 async function refresh() {
   if (!refreshToken || !clientId || !clientSecret) throw new Error('Token abgelaufen und kein refresh_token/client_id/client_secret in der Token-Datei');
-  const r = await fetch('https://oauth2.googleapis.com/token', {
+  const r = await fetch(tokenUri, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: refreshToken, client_id: clientId, client_secret: clientSecret })
@@ -52,10 +55,10 @@ async function refresh() {
   if (!r.ok) throw new Error(`Token-Refresh fehlgeschlagen: HTTP ${r.status} ${await r.text()}`);
   const j = await r.json();
   accessToken = j.access_token;
-  // refreshten Token zurueckschreiben (naechster Lauf spart den Roundtrip)
+  // refreshten Token zurueckschreiben (naechster Lauf spart den Roundtrip); Struktur erhalten
   try {
-    tk.access_token = j.access_token;
-    tk.expiry = new Date(Date.now() + (j.expires_in || 3600) * 1000).toISOString();
+    if (typeof tokenFile.token === 'string') tokenFile.token = j.access_token; else tk.access_token = j.access_token;
+    tokenFile.expiry = new Date(Date.now() + (j.expires_in || 3600) * 1000).toISOString();
     fs.writeFileSync(TOKEN_PATH, JSON.stringify(tokenFile, null, 2));
   } catch { /* Token-Datei read-only? egal — Sync läuft mit frischem Token weiter */ }
 }
@@ -95,12 +98,19 @@ async function main() {
   } while (pageToken);
 
   const blocked = n => BLOCK.some(b => (n || '').toLowerCase().includes(b.toLowerCase()));
+  // Google wrappt fremdsprachige Kommentare als "(Translated by Google) <EN>\n\n(Original)\n<DE>".
+  // Wir wollen das deutsche Original — also den Teil NACH "(Original)"; sonst den Kommentar roh.
+  const cleanComment = c => {
+    if (!c) return '';
+    const m = c.match(/\(Original\)\s*([\s\S]*)$/i);
+    return (m ? m[1] : c.replace(/^\s*\(Translated by Google\)\s*/i, '')).trim();
+  };
   const reviews = all
     .filter(r => !blocked(r.reviewer && r.reviewer.displayName))
     .map(r => ({
       author: (r.reviewer && r.reviewer.displayName) || 'Google-Nutzer',
       rating: STARS[r.starRating] ?? null,
-      text: (r.comment || '').replace(/\s*\(Translated by Google\)[\s\S]*$/i, '').trim(),
+      text: cleanComment(r.comment),
       date: (r.createTime || '').slice(0, 10),
       review_id: r.reviewId || (r.name || '').split('/').pop()
     }))
