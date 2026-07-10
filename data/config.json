@@ -1,8 +1,8 @@
 {
     "_meta": "Zentrale Build-Konstanten. Generator bricht ab, wenn ein required-Feld ein Platzhalter-Pattern (XXXX / TBD / null) traegt. ga4/gtm/web3forms = bewusste Platzhalter (3 offene Punkte aus bau-fakten, nicht-blockierend, vor Launch einsetzen).",
     "domain": "https://blankstein-havelland.de",
-    "ga4_id": "TBD-P0",
-    "gtm_id": "TBD-P0",
+    "ga4_id": "G-MGJCB50047",
+    "gtm_id": "GTM-TTFR8JPS",
     "web3forms_key": "5d8972cf-1f2a-4856-9dd6-5aa9ea14ae3b",
     "indexnow_key": "TBD-P0",
     "preise": {
