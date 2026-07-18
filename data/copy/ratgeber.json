@@ -835,7 +835,7 @@
         },
         {
           "h2": "Die 7 Merkmale eines seriösen Betriebs",
-          "antwort": "Ein seriöser Betrieb nennt einen nachvollziehbaren Quadratmeterpreis, prüft die Fläche vor dem Angebot, erklärt sein Verfahren inklusive Neuverfugung, gibt eine erreichbare Firmenadresse an, drängt nicht zur Unterschrift, schreibt eine ordentliche Rechnung und verspricht keine erfundenen Garantien. Diese sieben Punkte trennen ehrliche Anbieter von Drückern.",
+          "antwort": "Ein seriöser Betrieb nennt einen nachvollziehbaren Quadratmeterpreis, prüft die Fläche vor dem Angebot, erklärt sein Verfahren inklusive der Fugen-Frage, gibt eine erreichbare Firmenadresse an, drängt nicht zur Unterschrift, schreibt eine ordentliche Rechnung und verspricht keine erfundenen Garantien. Diese sieben Punkte trennen ehrliche Anbieter von Drückern.",
           "body": [
             "Keines dieser Merkmale ist für sich allein ein Beweis, aber zusammen ergeben sie ein verlässliches Bild. Ein einzelner Punkt, etwa eine fehlende Adresse, muss noch nichts heißen — fehlen aber gleich mehrere, sollten Sie vorsichtig werden. Besonders die Reihenfolge verrät viel: Schaut sich der Betrieb Ihre Fläche zuerst an, oder nennt er sofort eine Summe? Gehen Sie die folgende Liste in Ruhe durch, bevor Sie zusagen — gerade bei Anbietern, die Sie nicht kennen oder die ungefragt an Ihrer Tür stehen. So sortieren Sie unseriöse Anbieter schnell aus, ohne selbst Fachmann sein zu müssen."
           ],
@@ -854,10 +854,10 @@
         },
         {
           "h2": "Welche Maschen nutzen unseriöse Anbieter?",
-          "antwort": "Unseriöse Anbieter arbeiten mit Lockangeboten, festen Preisen am Telefon ohne Besichtigung und Vorkasse-Forderungen. Typisch sind auch Haustürgeschäfte mit Zeitdruck, ein niedriger Einstiegspreis mit späteren Nachforderungen sowie das Weglassen der Neuverfugung. Wer drängt oder Bargeld vorab verlangt, ist mit Vorsicht zu behandeln.",
+          "antwort": "Unseriöse Anbieter arbeiten mit Lockangeboten, festen Preisen am Telefon ohne Besichtigung und Vorkasse-Forderungen. Typisch sind auch Haustürgeschäfte mit Zeitdruck, ein niedriger Einstiegspreis mit späteren Nachforderungen sowie das Verschweigen der Fugen-Frage. Wer drängt oder Bargeld vorab verlangt, ist mit Vorsicht zu behandeln.",
           "body": [
             "Die häufigste Masche ist das Lockangebot: Ein auffällig niedriger Preis bringt Sie zur Zusage, am Ende wird über angeblich höheren Aufwand, Anfahrt oder Zusatzmaterial deutlich mehr berechnet. Eng damit verbunden ist der Preis am Telefon — eine Summe ohne Kenntnis Ihrer Fläche ist keine echte Kalkulation, sondern ein Köder.",
-            "Vorsicht ist auch bei Vorkasse geboten. Ein etablierter Betrieb braucht keine Anzahlung in bar, bevor überhaupt gearbeitet wurde. Bei Haustürgeschäften kommt der Druck dazu: \"Wir sind gerade in der Straße, heute geht es günstiger.\" Wer Sie so zur schnellen Unterschrift drängt, nimmt Ihnen die Zeit zum Vergleichen. Und schließlich das stille Weglassen: Wird nur abgespritzt und nicht neu verfugt, sieht die Fläche kurz gut aus und vergrünt bald wieder."
+            "Vorsicht ist auch bei Vorkasse geboten. Ein etablierter Betrieb braucht keine Anzahlung in bar, bevor überhaupt gearbeitet wurde. Bei Haustürgeschäften kommt der Druck dazu: \"Wir sind gerade in der Straße, heute geht es günstiger.\" Wer Sie so zur schnellen Unterschrift drängt, nimmt Ihnen die Zeit zum Vergleichen. Und schließlich das stille Verschweigen: Wird nur abgespritzt und die offene Fuge mit keinem Wort erwähnt, sieht die Fläche kurz gut aus und vergrünt bald wieder."
           ],
           "warnung": "Finger weg von einer festen Summe am Telefon ohne Besichtigung, von auffällig niedrigen Lockangeboten und von Vorkasse in bar. Ein seriöser Betrieb nennt keinen festen Preis vorab, ohne die Fläche zu kennen, und verlangt kein Geld, bevor gearbeitet wurde."
         },
@@ -897,8 +897,8 @@
               ],
               [
                 "Verfahren",
-                "Reinigen plus Neuverfugung erklärt",
-                "nur abspritzen, Fugen bleiben offen"
+                "Verfahren und Fugen-Frage offen erklärt",
+                "nur abspritzen, offene Fugen werden verschwiegen"
               ],
               [
                 "Beratung",
@@ -926,7 +926,7 @@
           "steps": [
             "Nach Firmenadresse, Telefon und Rechnung fragen. Wer nur eine Handynummer hat und keine Adresse nennen will, fällt aus.",
             "Ein schriftliches Angebot pro Quadratmeter verlangen. Ein Pauschalbetrag ohne Kenntnis der Fläche ist kein echtes Angebot.",
-            "Das Verfahren erfragen. Wird die Neuverfugung mit Sand genannt, ist das ein gutes Zeichen — fehlt sie, hakt etwas.",
+            "Das Verfahren erfragen. Wird die Neuverfugung mit Sand erklärt und angeboten, ist das ein gutes Zeichen — wird sie mit keinem Wort erwähnt, hakt etwas.",
             "Nichts unter Zeitdruck unterschreiben. Lassen Sie sich Bedenkzeit und vergleichen Sie ruhig ein zweites Angebot."
           ]
         },
