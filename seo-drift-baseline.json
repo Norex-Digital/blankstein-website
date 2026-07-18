@@ -5,8 +5,8 @@
     "/": {
       "title": "Steinreinigung Havelland — Richtpreis 8 €/m² | Blankstein",
       "title_len": 57,
-      "meta": "Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos: Flächenreiniger, Neuverfugung, Nano-Imprägnierung. Richtpreis 8 €/m² — Foto genügt.",
-      "meta_len": 154,
+      "meta": "Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos. Richtpreis 8 €/m², Komplettpaket mit Neuverfugung und Nano 10 €/m² — Foto genügt.",
+      "meta_len": 152,
       "h1": "Steinreinigung, dokumentiert.Nicht versprochen.",
       "h1_count": 1,
       "h2_count": 6,
@@ -21,7 +21,7 @@
       ],
       "faq_count": 8,
       "internal_links": 40,
-      "word_count": 1730
+      "word_count": 1737
     },
     "/steinreinigung/": {
       "title": "Steinreinigung im Havelland | Blankstein",
@@ -334,7 +334,7 @@
       ],
       "faq_count": 5,
       "internal_links": 30,
-      "word_count": 2079
+      "word_count": 2080
     }
   }
 }

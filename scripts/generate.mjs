@@ -698,7 +698,7 @@ ${ortsLeiste()}`;
 function home() {
   const faqs = [
     { q: 'Was kostet die Steinreinigung pro Quadratmeter?', a: 'Unser Richtpreis liegt bei 8 €/m² für die Steinreinigung mit Flächenreiniger und Nass-Absaugung, oder 10 €/m² im Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 30 m² große Terrasse liegt damit bei exakt 240 € — im Komplettpaket bei 300 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten.' },
-    { q: 'Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?', a: 'Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen, und verfugen anschließend neu. So wird die Fläche gründlich sauber, ohne dass das Material Schaden nimmt.' },
+    { q: 'Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?', a: 'Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen; im Komplettpaket verfugen wir die Fläche anschließend neu. So wird sie gründlich sauber, ohne dass das Material Schaden nimmt.' },
     { q: 'Wie schnell bekomme ich ein Angebot?', a: 'Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Fläche per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich.' },
     { q: 'Kann ich das Ergebnis sehen, bevor ich beauftrage?', a: 'Ja. Auf Wunsch reinigen wir bei der kostenlosen Besichtigung 1 m² Probefläche. Sie sehen das Ergebnis direkt auf Ihrem eigenen Stein und entscheiden danach in Ruhe. Auf der Website zeigen wir außerdem nur gekennzeichnetes, echtes Material aus Kundenaufträgen.' },
     { q: 'In welchem Gebiet seid ihr tätig?', a: 'Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege zu Ihnen kurz und die Termine planbar.' },
@@ -711,7 +711,7 @@ function home() {
 ${beweisHero({
     eyebrow: 'Auftragsarchiv · Falkensee & Havelland',
     h1: 'Steinreinigung, <em>dokumentiert</em>.<br>Nicht versprochen.',
-    lede: 'Blankstein reinigt Einfahrten, Terrassen und Wege im Havelland — mit Flächenreiniger, Neuverfugung mit GaLaBau-Sand, auf Wunsch Nano-Imprägnierung. Jedes Ergebnis auf dieser Seite ist ein echter Kundenauftrag. Was kein Foto hat, behaupten wir nicht.',
+    lede: 'Blankstein reinigt Einfahrten, Terrassen und Wege im Havelland — mit Flächenreiniger und Nass-Absaugung, auf Wunsch im Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Jedes Ergebnis auf dieser Seite ist ein echter Kundenauftrag. Was kein Foto hat, behaupten wir nicht.',
     waText: WA_DEFAULT,
     media: { typ: 'vnpair', vorher: 'proof-vn-vorher', nachher: 'proof-vn-nachher', alt_vorher: 'Echtes Kundenfoto: Außentreppe vor der Reinigung, dunkler Schmutzfilm auf allen Stufen', alt_nachher: 'Echtes Kundenfoto: dieselbe Außentreppe nach der Reinigung, gleichmäßig helle Stufen', aria: 'Vorher-Nachher-Vergleich der Außentreppe: zwei Aufnahmen nebeneinander' },
     tabelle: [['Objekt', 'Außentreppe mit Podest, Hauseingang'], ['Zustand vorher', 'Verwitterter Schmutz- und Grünfilm'], ['Maßnahme', 'Flächenreiniger, Absaugung per Nasssauger'], ['Beleg', 'Zwei Aufnahmen, dieselbe Treppe']]
@@ -737,7 +737,7 @@ ${faqBlock(faqs, { title: 'Was Eigenheimbesitzer uns oft fragen' })}`;
 
   const schema = `${orgSchema()},${websiteSchema()},${breadcrumb([{ name: 'Start', url: '/' }])}${faqSchema('/', faqs)}`;
   const title = clampTitle(`Steinreinigung Havelland — Richtpreis ${P.satz_basis} €/m² | Blankstein`);
-  const meta = mkMeta(`Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos: Flächenreiniger, Neuverfugung, Nano-Imprägnierung. Richtpreis ${P.satz_basis} €/m² — Foto genügt.`);
+  const meta = mkMeta(`Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos. Richtpreis ${P.satz_basis} €/m², Komplettpaket mit Neuverfugung und Nano ${P.satz_impraegnierung} €/m² — Foto genügt.`);
   write('/', head(title, meta, '/', schema, { pagetype: 'home', og: { slug: 'home', motif: 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + SCTA + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push('/');
 }
@@ -1124,7 +1124,7 @@ function ueberUns(u) {
   const schritteHtml = (vf.schritte || []).map((s, i) => `<div class="svc-row">
 <span class="svc-num mono">0${i + 1}</span>
 <div><h3>${esc(s.titel)}</h3><p>${esc(s.text)}</p></div>
-<div class="svc-meta mono">${/verfug|imprägn/i.test(s.titel) ? `im Komplettpaket<br><strong>${P.satz_impraegnierung} €/m²</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
+<div class="svc-meta mono">${/verfug|imprägn|komplettpaket/i.test(s.titel) ? `im Komplettpaket<br><strong>${P.satz_impraegnierung} €/m²</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
 </div>`).join('');
   const gearHtml = (eq.items || []).map(([t, d]) => `<li><strong>${esc(t)}</strong><span>${esc(d)}</span></li>`).join('');
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Über uns</div>
