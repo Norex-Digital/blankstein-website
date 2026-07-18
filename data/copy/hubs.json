@@ -1,13 +1,13 @@
 {
-  "_meta": "Copy-Layer der 4 Money-Hubs (Etappe C, PROTOKOLL-Voice Spec §5). Verknuepfung mit services.json ueber 'slug'. Gerendert von hub() — alle Felder Klartext (esc), AUSSER h1 (traegt <em>). Schema: eyebrow/h1/lede/wa_text/wa_label + hero_media{typ,slug|vorher/nachher|file/poster}+hero_tabelle (Beweis-Hero) + edu{label,h2,body[],img?,img_alt?,caption?} (Schadens-Edukation, frageorientierte H2) + protokoll_id(+protokoll_hinweis) → fallstudien.json + belag{h2,intro,rows[[belag,flaeche,einschaetzung]],note} (AEO-Tabelle) + review_author (Snippet-Zuordnung) + faq_title/faqs (Direktantworten 40–60 Woerter) + ratgeber[] (Slug-Whitelist aus copy/ratgeber.json). Regeln (gelockt): IMMER 'Richtpreis' (nie Festpreis), KEIN Heisswasser, KEIN 'kein Hochdruck', Preise EXAKT m²×7/8 (keine Spannen, kein 'rund X bis Y'), Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck), SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', Geraete generisch, echte Umlaute. Hero-Medien: NUR echtes Material (ASSET-LISTE) — KI nur in edu, gelabelt.",
+  "_meta": "Copy-Layer der 4 Money-Hubs (Etappe C, PROTOKOLL-Voice Spec §5). Verknuepfung mit services.json ueber 'slug'. Gerendert von hub() — alle Felder Klartext (esc), AUSSER h1 (traegt <em>). Schema: eyebrow/h1/lede/wa_text/wa_label + hero_media{typ,slug|vorher/nachher|file/poster}+hero_tabelle (Beweis-Hero) + edu{label,h2,body[],img?,img_alt?,caption?} (Schadens-Edukation, frageorientierte H2) + protokoll_id(+protokoll_hinweis) → fallstudien.json + belag{h2,intro,rows[[belag,flaeche,einschaetzung]],note} (AEO-Tabelle) + review_author (Snippet-Zuordnung) + faq_title/faqs (Direktantworten 40–60 Woerter) + ratgeber[] (Slug-Whitelist aus copy/ratgeber.json). Regeln (gelockt): IMMER 'Richtpreis' (nie Festpreis), KEIN Heisswasser, KEIN 'kein Hochdruck', Preise EXAKT m²×8/10 (keine Spannen, kein 'rund X bis Y'; 8=Reinigung ohne Neuverfugung, 10=Komplettpaket mit Neuverfugung+Nano), Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck), SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', Geraete generisch, echte Umlaute. Hero-Medien: NUR echtes Material (ASSET-LISTE) — KI nur in edu, gelabelt.",
   "hubs": [
     {
       "slug": "steinreinigung",
       "title": "Steinreinigung im Havelland | Blankstein",
-      "meta": "Steinreinigung im Havelland: Flächenreiniger, Nasssauger, Neuverfugung mit GaLaBau-Sand — belegt mit echten Fotos. Richtpreis 7 €/m² — ein Foto genügt.",
+      "meta": "Steinreinigung im Havelland: Flächenreiniger und Nass-Absaugung — belegt mit echten Fotos. Richtpreis 8 €/m², Komplettpaket 10 €/m² — ein Foto genügt.",
       "eyebrow": "Leistung · Steinreinigung",
       "h1": "Steinreinigung im Havelland — <em>belegt statt behauptet</em>.",
-      "lede": "Einfahrt, Weg, Hof oder Treppe: Wir reinigen Steinflächen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen neu mit GaLaBau-Sand. Das Arbeitsfoto auf dieser Seite ist echt — eine Fläche, beide Zustände.",
+      "lede": "Einfahrt, Weg, Hof oder Treppe: Wir reinigen Steinflächen mit dem rotierenden Flächenreiniger und saugen das Schmutzwasser ab — im Komplettpaket verfugen wir zusätzlich neu mit GaLaBau-Sand und imprägnieren. Das Arbeitsfoto auf dieser Seite ist echt — eine Fläche, beide Zustände.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für eine Steinreinigung. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Fläche fotografieren, Preis erhalten",
       "hero_media": {
@@ -38,7 +38,7 @@
         "h2": "Schadet Hochdruck dem Stein?",
         "body": [
           "Falsch angewendet: ja. Eine Punkt-Lanze, zu nah und zu lange auf einer Stelle, wäscht den Fugensand aus, raut Oberflächen auf und sprengt bei Naturstein die Kanten. Solche Schäden sehen wir regelmäßig — sie kosten am Ende mehr als jede Reinigung.",
-          "Deshalb arbeiten wir mit rotierenden Flächenreinigern: Der Druck verteilt sich gleichmäßig über die Fläche statt auf einen Punkt. Was die Reinigung an Fugensand mitnimmt, füllen wir danach mit frischem GaLaBau-Sand wieder auf. Gründlich sauber, Material unversehrt."
+          "Deshalb arbeiten wir mit rotierenden Flächenreinigern: Der Druck verteilt sich gleichmäßig über die Fläche statt auf einen Punkt. Und im Komplettpaket füllen wir die Fugen danach mit frischem GaLaBau-Sand wieder auf. Gründlich sauber, Material unversehrt."
         ],
         "img": "schaden-hochdruck",
         "img_alt": "Ausgewaschene Fugen und lose Pflastersteine nach falsch eingesetztem Hochdruck",
@@ -62,7 +62,7 @@
           [
             "Waschbeton & Betonplatten",
             "Terrasse, Podeste",
-            "Gut geeignet, inklusive Neuverfugung"
+            "Gut geeignet, im Komplettpaket mit Neuverfugung"
           ],
           [
             "Feinsteinzeug & Keramik",
@@ -82,11 +82,11 @@
       "faqs": [
         {
           "q": "Was kostet die Steinreinigung pro Quadratmeter?",
-          "a": "7 €/m² für Reinigung, Absaugung und Neuverfugung mit GaLaBau-Sand — mit Nano-Imprägnierung 8 €/m². Gerechnet wird exakt Fläche mal Satz: 40 m² kosten 280 €, mit Imprägnierung 320 €. Verbindlich wird der Richtpreis nach Foto-Prüfung oder Besichtigung, danach gilt die Endpreis-Zusage."
+          "a": "8 €/m² für Reinigung mit Flächenreiniger und Nass-Absaugung — im Komplettpaket mit Neuverfugung (GaLaBau-Sand) und Nano-Imprägnierung 10 €/m². Gerechnet wird exakt Fläche mal Satz: 40 m² kosten 320 €, im Komplettpaket 400 €. Verbindlich wird der Richtpreis nach Foto-Prüfung oder Besichtigung, danach gilt die Endpreis-Zusage."
         },
         {
           "q": "Beschädigt Hochdruck mein Pflaster oder meinen Naturstein?",
-          "a": "Falsch angewendet: ja. Eine Punkt-Lanze zu nah am Stein wäscht Fugen aus und raut Oberflächen auf. Wir arbeiten deshalb mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen, und verfugen anschließend neu. Bei Naturstein passen wir Druck und Abstand zusätzlich an das Material an."
+          "a": "Falsch angewendet: ja. Eine Punkt-Lanze zu nah am Stein wäscht Fugen aus und raut Oberflächen auf. Wir arbeiten deshalb mit rotierenden Flächenreinigern, die den Druck gleichmäßig verteilen — im Komplettpaket verfugen wir anschließend neu. Bei Naturstein passen wir Druck und Abstand zusätzlich an das Material an."
         },
         {
           "q": "Welche Flächen reinigt Blankstein?",
@@ -94,7 +94,7 @@
         },
         {
           "q": "Entfernt ihr auch Grünbelag, Algen und Moos?",
-          "a": "Ja — Grünbelag entfernen ist der häufigste Auftrag bei uns. Der rotierende Flächenreiniger löst Grünbelag, Algen und Moos samt Sporen aus der Oberfläche, die Neuverfugung nimmt dem Bewuchs den Halt in den Fugen. Auf Wunsch hält die Nano-Imprägnierung für 1 €/m² mehr den Grünbelag danach spürbar länger fern."
+          "a": "Ja — Grünbelag entfernen ist der häufigste Auftrag bei uns. Der rotierende Flächenreiniger löst Grünbelag, Algen und Moos samt Sporen aus der Oberfläche. Im Komplettpaket für 2 €/m² mehr nimmt die Neuverfugung dem Bewuchs den Halt in den Fugen, und die Nano-Imprägnierung hält den Grünbelag danach spürbar länger fern."
         },
         {
           "q": "Wie läuft die Anfrage ab?",
@@ -114,10 +114,10 @@
     {
       "slug": "terrassenreinigung",
       "title": "Terrassenreinigung im Havelland | Blankstein",
-      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik streifenfrei gereinigt und neu verfugt — mit echtem Einsatzvideo. Richtpreis 7 €/m².",
+      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik streifenfrei gereinigt — mit echtem Einsatzvideo. Richtpreis 8 €/m², Komplettpaket 10 €/m².",
       "eyebrow": "Leistung · Terrassenreinigung",
       "h1": "Terrassenreinigung — <em>streifenfrei, nicht schöngefilmt</em>.",
-      "lede": "Naturstein, Betonplatten, Keramik oder Feinsteinzeug: Wir stellen Druck und Reinigungsmittel auf den Belag ein, reinigen mit dem Flächenreiniger und verfugen neu. Foto und Video auf dieser Seite stammen aus laufenden Einsätzen — ungestellt.",
+      "lede": "Naturstein, Betonplatten, Keramik oder Feinsteinzeug: Wir stellen Druck und Reinigungsmittel auf den Belag ein und reinigen mit dem Flächenreiniger — im Komplettpaket verfugen wir neu und imprägnieren. Foto und Video auf dieser Seite stammen aus laufenden Einsätzen — ungestellt.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für meine Terrasse. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Terrassen-Foto senden",
       "hero_media": {
@@ -164,7 +164,7 @@
           [
             "Waschbeton",
             "Ältere Terrassen",
-            "Gut geeignet, inklusive Neuverfugung"
+            "Gut geeignet, im Komplettpaket mit Neuverfugung"
           ],
           [
             "Keramik & Feinsteinzeug",
@@ -184,7 +184,7 @@
       "faqs": [
         {
           "q": "Was kostet die Terrassenreinigung?",
-          "a": "7 €/m² inklusive Neuverfugung, 8 €/m² mit Nano-Imprägnierung — der Satz ist derselbe wie bei jeder Steinfläche. Eine 30-m²-Terrasse: 30 × 7 € = 210 €, mit Imprägnierung 240 €. Verbindlich wird der Richtpreis nach Foto oder Besichtigung — danach gilt er, ohne Nachkalkulation."
+          "a": "8 €/m² für Reinigung und Nass-Absaugung, 10 €/m² im Komplettpaket mit Neuverfugung und Nano-Imprägnierung — der Satz ist derselbe wie bei jeder Steinfläche. Eine 30-m²-Terrasse: 30 × 8 € = 240 €, im Komplettpaket 300 €. Verbindlich wird der Richtpreis nach Foto oder Besichtigung — danach gilt er, ohne Nachkalkulation."
         },
         {
           "q": "Verträgt Feinsteinzeug oder Keramik die Reinigung?",
@@ -196,7 +196,7 @@
         },
         {
           "q": "Wie lange bleibt die Terrasse nach der Reinigung sauber?",
-          "a": "Das hängt an der Lage: Schattige, feuchte Terrassen setzen schneller wieder Grünbelag an. Die Neuverfugung bremst das. Wer länger Ruhe will, nimmt die Nano-Imprägnierung für 1 €/m² mehr: Der Stein nimmt weniger Feuchtigkeit auf, und Grünbelag braucht deutlich länger, um zurückzukommen."
+          "a": "Das hängt an der Lage: Schattige, feuchte Terrassen setzen schneller wieder Grünbelag an. Wer länger Ruhe will, nimmt das Komplettpaket für 2 €/m² mehr: Die Neuverfugung nimmt dem Bewuchs den Halt, die Nano-Imprägnierung lässt den Stein weniger Feuchtigkeit aufnehmen — Grünbelag braucht deutlich länger, um zurückzukommen."
         },
         {
           "q": "Bleibt nach dem Termin Schmutzwasser im Garten zurück?",
@@ -212,10 +212,10 @@
     {
       "slug": "pflasterreinigung",
       "title": "Pflasterreinigung im Havelland | Blankstein",
-      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege mit dem Flächenreiniger gereinigt, abgesaugt und neu verfugt. Richtpreis 7 €/m² — ein Foto genügt.",
+      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege mit dem Flächenreiniger gereinigt und abgesaugt. Richtpreis 8 €/m², Komplettpaket 10 €/m² — ein Foto genügt.",
       "eyebrow": "Leistung · Pflasterreinigung",
-      "h1": "Pflasterreinigung im Havelland — <em>Fugen inklusive</em>.",
-      "lede": "Einfahrten, Hofflächen und Gehwege aus Pflaster: Wir reinigen mit dem rotierenden Flächenreiniger, saugen das Schmutzwasser ab und verfugen mit frischem GaLaBau-Sand. Das Arbeitsfoto dazu ist echt — halb gereinigt, halb im Ausgangszustand.",
+      "h1": "Pflasterreinigung im Havelland — <em>gereinigt, nicht ausgewaschen</em>.",
+      "lede": "Einfahrten, Hofflächen und Gehwege aus Pflaster: Wir reinigen mit dem rotierenden Flächenreiniger und saugen das Schmutzwasser ab — im Komplettpaket verfugen wir mit frischem GaLaBau-Sand neu und imprägnieren. Das Arbeitsfoto dazu ist echt — halb gereinigt, halb im Ausgangszustand.",
       "wa_text": "Hallo Blankstein, ich möchte einen Richtpreis für mein Pflaster. Foto und ungefähre Maße schicke ich gleich mit.",
       "wa_label": "Pflaster-Foto senden",
       "hero_media": {
@@ -246,7 +246,7 @@
         "h2": "Warum sackt Pflaster nach falscher Reinigung ab?",
         "body": [
           "Die Fugen halten ein Pflaster zusammen. Eine Punkt-Lanze bläst den Fugensand heraus — danach arbeiten die Steine, kippeln unter Last, und in die offenen Fugen wächst das nächste Grün schneller nach als vorher.",
-          "Bei uns ist die Neuverfugung deshalb kein Extra, sondern Teil des Quadratmeterpreises: Nach Reinigung und Absaugung füllen wir die Fugen mit frischem GaLaBau-Sand auf. Die Fläche bleibt stabil, eben und länger sauber."
+          "Wir reinigen deshalb mit dem rotierenden Flächenreiniger, der den Druck flächig verteilt statt punktuell in die Fuge. Im Komplettpaket füllen wir die Fugen nach Reinigung und Absaugung zusätzlich mit frischem GaLaBau-Sand auf — die Fläche bleibt stabil, eben und länger sauber."
         ],
         "img": "proof-arbeit-1",
         "img_alt": "Echtes Arbeitsfoto: rotierender Flächenreiniger im Einsatz auf einer Pflasterfläche",

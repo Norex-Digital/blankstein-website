@@ -138,7 +138,7 @@ def render(job):
         y += round(f_title.size * 1.22)
     # Fusszeile (Montserrat Medium)
     f_sub = find_font(bold=False, size=26)
-    d.text((72, H - 92), "blankstein-havelland.de · Richtpreis 7 €/m²", font=f_sub, fill=FG_MUTED)
+    d.text((72, H - 92), "blankstein-havelland.de · Richtpreis 8 €/m²", font=f_sub, fill=FG_MUTED)
     return img
 
 

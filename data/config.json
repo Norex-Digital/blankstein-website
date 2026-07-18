@@ -6,13 +6,13 @@
     "web3forms_key": "5d8972cf-1f2a-4856-9dd6-5aa9ea14ae3b",
     "indexnow_key": "TBD-P0",
     "preise": {
-        "satz_basis": 7,
-        "satz_impraegnierung": 8,
+        "satz_basis": 8,
+        "satz_impraegnierung": 10,
         "einheit": "m²",
-        "leistung_basis": "Reinigung inkl. Neuverfugung (Fugensand)",
+        "leistung_basis": "Steinreinigung (ohne Neuverfugung)",
         "leistung_impraegnierung": "Reinigung + Neuverfugung + Nano-Imprägnierung",
         "mindestauftragswert": null,
-        "_hinweis": "Bruttopreise/Endpreise (§19 Kleinunternehmer). Kein Mindestauftragswert zum Start (Entscheidung Maurice 2026-06-18)."
+        "_hinweis": "Bruttopreise/Endpreise (§19 Kleinunternehmer). Kein Mindestauftragswert zum Start (Entscheidung Maurice 2026-06-18). Preisupdate 2026-07-18 (Maurice): 8 €/m² Basis-Reinigung OHNE Neuverfugung · 10 €/m² Komplett mit Neuverfugung + Nano-Imprägnierung (vorher 7 inkl. Neuverfugung / 8 mit Nano)."
     },
     "aktive_welle": 1,
     "content_stand": "2026-06-18",
