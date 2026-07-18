@@ -827,10 +827,10 @@
       "sektionen": [
         {
           "h2": "Woran erkennt man eine seriöse Steinreinigung?",
-          "antwort": "Eine seriöse Steinreinigung erkennen Sie an einem nachvollziehbaren Quadratmeterpreis, einer Besichtigung oder Fotoanfrage vor dem Angebot, einer festen Firmenadresse und einem klaren Verfahren mit Neuverfugung. Unseriös sind Haustürgeschäfte, das Drängeln zur Unterschrift und Preise, die telefonisch ohne Kenntnis der Fläche genannt werden.",
+          "antwort": "Eine seriöse Steinreinigung erkennen Sie an einem nachvollziehbaren Quadratmeterpreis, einer Besichtigung oder Fotoanfrage vor dem Angebot, einer festen Firmenadresse und einem klar erklärten Verfahren, das auch die Fugen-Frage offen anspricht. Unseriös sind Haustürgeschäfte, das Drängeln zur Unterschrift und Preise, die telefonisch ohne Kenntnis der Fläche genannt werden.",
           "body": [
             "Der wichtigste Unterschied liegt in der Reihenfolge: Ein ehrlicher Betrieb schaut sich Ihre Fläche zuerst an — per Foto und Maßen oder bei einer kostenlosen Besichtigung — und macht erst danach ein konkretes Angebot. Wer Ihnen am Telefon oder an der Tür sofort eine Summe nennt, ohne den Zustand und die Größe zu kennen, rät entweder oder rechnet darauf, später nachzufordern.",
-            "Ebenso aufschlussreich ist, ob über das ganze Verfahren gesprochen wird. Reinigen allein reicht nicht: Im Anschluss müssen die Fugen mit frischem Sand neu verfüllt werden, sonst wächst das Grün in wenigen Wochen zurück. Ein Anbieter, der die Neuverfugung gar nicht erwähnt, liefert nur halbe Arbeit. Achten Sie außerdem auf eine erreichbare Firmenadresse, eine ordentliche Rechnung und eine ruhige Beratung ohne Zeitdruck."
+            "Ebenso aufschlussreich ist, ob über das ganze Verfahren gesprochen wird. Dazu gehört die Fugen-Frage: Bleiben ausgewaschene Fugen offen, wächst das Grün in wenigen Wochen zurück. Ein seriöser Betrieb spricht das offen an und bietet die Neuverfugung an — ein Anbieter, der sie mit keinem Wort erwähnt, verschweigt Ihnen die halbe Wahrheit. Achten Sie außerdem auf eine erreichbare Firmenadresse, eine ordentliche Rechnung und eine ruhige Beratung ohne Zeitdruck."
           ]
         },
         {
@@ -844,7 +844,7 @@
             "items": [
               "Preis pro Quadratmeter, nachvollziehbar erklärt — kein Pauschalbetrag aus dem Nichts.",
               "Besichtigung oder Fotoanfrage vor dem Angebot, statt Preis am Telefon.",
-              "Das Verfahren wird erklärt: Reinigen, Absaugen, Neuverfugung, optional Imprägnierung.",
+              "Das Verfahren wird erklärt: Reinigen, Absaugen, im Komplettpaket Neuverfugung und Imprägnierung.",
               "Erreichbare Firmenadresse, Telefonnummer und ordentliche Rechnung.",
               "Keine Vorkasse-Forderung und kein Drängen auf sofortige Unterschrift.",
               "Ehrliche Caveats: alte Ölflecken oder tiefe Verfärbungen sind nicht immer entfernbar.",
@@ -1355,7 +1355,7 @@
           "antwort": "Eine reine Reinigung entfernt den sichtbaren Belag, ändert aber nichts an den Ursachen. Bleiben die Fugen offen und die Oberfläche aufgeraut, siedeln sich Sporen sofort wieder an — teils schneller als zuvor, weil Hochdruck die Oberfläche leicht aufraut und Sporen besseren Halt finden.",
           "body": [
             "Das ist der häufigste Frust: Man verbringt einen ganzen Samstag mit dem Hochdruckreiniger, die Fläche sieht aus wie neu — und ein halbes Jahr später ist alles wieder grün. Der Grund liegt im Verfahren. Eine falsch geführte Punkt-Lanze wäscht nicht nur den Schmutz weg, sondern auch den Fugensand und raut die Steinoberfläche minimal auf. Beides verschlechtert die Lage: offene Fugen halten Feuchte, die rauere Oberfläche bietet Sporen mehr Angriffsfläche.",
-            "Deshalb arbeitet ein sauberes Verfahren immer in drei Stufen — reinigen, neu verfugen und auf Wunsch imprägnieren. Erst die Neuverfugung mit GaLaBau-Fugensand schließt die Fugen wieder, und erst die Imprägnierung verändert die Oberfläche so, dass Wasser abperlt statt einzudringen. Wer nur den ersten Schritt macht, behandelt das Symptom und legt gleichzeitig den Grundstein für den nächsten Befall."
+            "Deshalb gehören zu einem vollständigen Verfahren drei Stufen — reinigen, neu verfugen und imprägnieren; bei Blankstein stecken die beiden letzten im Komplettpaket. Erst die Neuverfugung mit GaLaBau-Fugensand schließt die Fugen wieder, und erst die Imprägnierung verändert die Oberfläche so, dass Wasser abperlt statt einzudringen. Wer nur den ersten Schritt macht, behandelt das Symptom und legt gleichzeitig den Grundstein für den nächsten Befall."
           ],
           "warnung": "Eine zu nah und punktuell geführte Hochdruck-Lanze wäscht Fugen aus und raut den Stein auf. Danach kommt der Grünbelag oft schneller zurück als vorher. Mit rotierendem Flächenreiniger und ausreichend Abstand passiert das nicht."
         },
@@ -1462,7 +1462,7 @@
         }
       ],
       "cta_title": "Grünbelag dauerhaft loswerden — lieber gleich vom Profi?",
-      "cta_text": "Wir reinigen Ihre Fläche mit Flächenreiniger, verfugen neu und imprägnieren auf Wunsch, damit der Grünbelag länger wegbleibt. Richtpreis ab 7 €/m² (mit Imprägnierung 8 €/m²); das verbindliche Angebot mit Endpreis bekommen Sie per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr.",
+      "cta_text": "Wir reinigen Ihre Fläche mit Flächenreiniger — im Komplettpaket verfugen wir neu und imprägnieren, damit der Grünbelag länger wegbleibt. Richtpreis ab 8 €/m² (Komplettpaket 10 €/m²); das verbindliche Angebot mit Endpreis bekommen Sie per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr.",
       "related": [
         {
           "label": "Steinversiegelung und Imprägnierung im Havelland",
@@ -1593,14 +1593,14 @@
           "antwort": "Die Handreinigung reicht nicht mehr bei dickem, jahrealtem Moospolster, tief eingezogenen Öl- oder Reifenspuren und bei großen Flächen ab etwa 30 bis 40 Quadratmetern. Dann steht der Aufwand in keinem Verhältnis zum Ergebnis, und ein kontrollierter Hochdruckeinsatz mit anschließender Neuverfugung bringt Sie deutlich weiter.",
           "body": [
             "Es gibt einen Punkt, an dem Schrubben nicht mehr genügt. Wenn das Moos zentimeterdick in den Fugen sitzt, der Schmutz über Jahre in die offenporige Steinoberfläche gezogen ist oder die Fläche schlicht zu groß ist, schrubben Sie Stunden und sehen am Ende kaum einen Unterschied. Tiefe, alte Ölflecken lassen sich übrigens auch maschinell nicht immer restlos entfernen — das gehört zur Wahrheit dazu.",
-            "Hier setzt der Profi an. Bei Blankstein reinigen wir kontrolliert mit Hochdruck und rotierendem Flächenreiniger, der gleichmäßig und streifenfrei arbeitet, statt mit einer punktuellen Lanze die Fugen auszuwaschen. Den gelösten Schmutz saugen wir nass ab, sodass keine Matsch-Sauerei entsteht. Danach verfugen wir mit GaLaBau-Fugensand neu und imprägnieren auf Wunsch. Der Unterschied zur Handarbeit ist vor allem die Tiefe und das Tempo — und dass die Fläche danach wirklich versorgt ist und nicht offen zurückbleibt."
+            "Hier setzt der Profi an. Bei Blankstein reinigen wir kontrolliert mit Hochdruck und rotierendem Flächenreiniger, der gleichmäßig und streifenfrei arbeitet, statt mit einer punktuellen Lanze die Fugen auszuwaschen. Den gelösten Schmutz saugen wir nass ab, sodass keine Matsch-Sauerei entsteht. Im Komplettpaket verfugen wir danach mit GaLaBau-Fugensand neu und imprägnieren. Der Unterschied zur Handarbeit ist vor allem die Tiefe und das Tempo — und dass die Fläche danach wirklich versorgt ist und nicht offen zurückbleibt."
           ]
         },
         {
           "h2": "Was kostet die professionelle Pflasterreinigung?",
-          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Wer selbst von Hand reinigt, spart die Arbeitskosten, zahlt aber mit viel Zeit und Muskelkraft.",
+          "antwort": "Die professionelle Pflasterreinigung kostet als Richtwert etwa 8 €/m² mit Flächenreiniger und Nass-Absaugung, im Komplettpaket mit Neuverfugung und Nano-Imprägnierung rund 10 €/m². Eine 40 m² große Einfahrt kostet damit 320 €, im Komplettpaket 400 €. Wer selbst von Hand reinigt, spart die Arbeitskosten, zahlt aber mit viel Zeit und Muskelkraft.",
           "body": [
-            "Wir kalkulieren transparent über die Quadratmeter, und im Preis steckt schon alles drin: Reinigung mit Flächenreiniger, saubere Absaugung, Neuverfugung mit Fugensand und auf Wunsch die Imprägnierung. Den genauen Preis nennen wir nach Fotos und Maßen, weil Zustand und Größe der Fläche den Aufwand bestimmen. Das verbindliche Angebot entsteht so per WhatsApp (Antwort < 2 h — werktags 8–18 Uhr), alternativ bei einer kostenlosen, unverbindlichen Besichtigung vor Ort.",
+            "Wir kalkulieren transparent über die Quadratmeter: Im Basispreis stecken die Reinigung mit Flächenreiniger und die saubere Absaugung, im Komplettpaket kommen Neuverfugung mit Fugensand und Nano-Imprägnierung dazu. Den genauen Preis nennen wir nach Fotos und Maßen, weil Zustand und Größe der Fläche den Aufwand bestimmen. Das verbindliche Angebot entsteht so per WhatsApp (Antwort < 2 h — werktags 8–18 Uhr), alternativ bei einer kostenlosen, unverbindlichen Besichtigung vor Ort.",
             "Die genannten Beträge sind Endpreise ohne versteckte Kosten. Im Servicegebiet — Havelland und westlicher Berliner Rand — kommen keine Fahrtkosten dazu, und es gibt keinen Mindestauftragswert. Unsere Zusage: Der genannte Endpreis steht, und sollte etwas nicht passen, arbeiten wir kostenlos nach."
           ],
           "table": {
@@ -1649,11 +1649,11 @@
         },
         {
           "q": "Wie lange dauert die Handreinigung im Vergleich zum Profi?",
-          "a": "Eine schattige Terrasse von Hand zu schrubben kostet leicht einen halben bis ganzen Tag samt Neuverfugung. Der Profi schafft eine vergleichbare oder größere Fläche mit Flächenreiniger und Absaugung in rund ein bis zwei Stunden — inklusive Neuverfugung. Der Unterschied liegt vor allem in Tempo und Tiefe der Reinigung, weniger im reinen Materialeinsatz."
+          "a": "Eine schattige Terrasse von Hand zu schrubben kostet leicht einen halben bis ganzen Tag samt Neuverfugung. Der Profi schafft eine vergleichbare oder größere Fläche mit Flächenreiniger und Absaugung in rund ein bis zwei Stunden — im Komplettpaket inklusive Neuverfugung. Der Unterschied liegt vor allem in Tempo und Tiefe der Reinigung, weniger im reinen Materialeinsatz."
         }
       ],
       "cta_title": "Zu viel Moos für die Bürste? Wir übernehmen.",
-      "cta_text": "Wenn Handarbeit nicht mehr reicht, reinigen wir Ihre Fläche kontrolliert mit Flächenreiniger, saugen den Schmutz ab und verfugen neu — auf Wunsch mit Imprägnierung. Richtpreis ab 7 €/m², Angebot per Foto. Antwort < 2 h — werktags 8–18 Uhr.",
+      "cta_text": "Wenn Handarbeit nicht mehr reicht, reinigen wir Ihre Fläche kontrolliert mit Flächenreiniger und saugen den Schmutz ab — im Komplettpaket mit Neuverfugung und Imprägnierung. Richtpreis ab 8 €/m², Angebot per Foto. Antwort < 2 h — werktags 8–18 Uhr.",
       "related": [
         {
           "label": "Pflasterreinigung vom Profi im Havelland",
@@ -1766,25 +1766,25 @@
         },
         {
           "h2": "Wie reinigt der Profi die Einfahrt mit Hochdruck und Flächenreiniger?",
-          "antwort": "Der Profi reinigt die ganze Fläche mit Hochdruck und einem rotierenden Flächenreiniger, der gleichmäßig und streifenfrei arbeitet. Der gelöste Schmutz wird nass abgesaugt, danach werden die Fugen mit Sand neu verfüllt. Auf Wunsch kommt eine Nano-Imprägnierung dazu, die neue Flecken später leichter abweisbar macht.",
+          "antwort": "Der Profi reinigt die ganze Fläche mit Hochdruck und einem rotierenden Flächenreiniger, der gleichmäßig und streifenfrei arbeitet. Der gelöste Schmutz wird nass abgesaugt. Im Komplettpaket werden danach die Fugen mit Sand neu verfüllt und eine Nano-Imprägnierung aufgetragen, die neue Flecken später leichter abweisbar macht.",
           "body": [
             "Hochdruck ist bei Öl- und Reifenspuren ein wirksames Werkzeug — aber nur kontrolliert eingesetzt. Wir arbeiten mit einem rotierenden Flächenreiniger, der den Druck gleichmäßig auf die Fläche bringt. Das löst Abrieb und oberflächliches Öl, ohne dass Streifen oder ausgewaschene Stellen entstehen. Eine falsch geführte Punkt-Lanze zu nah am Stein würde dagegen die Fugen ausspülen und die Oberfläche aufrauen — genau das vermeiden wir.",
-            "Nach dem Reinigen saugen wir den gelösten Schmutz nass ab, statt ihn als Matsch in die Beete zu spülen. Anschließend lassen wir die Fläche trocknen und verfüllen die Fugen mit GaLaBau-Fugensand neu, denn nach jeder Hochdruckreinigung müssen die Fugen wieder aufgefüllt werden. Zum Abschluss wird der überschüssige Sand abgepustet. Wer mag, bekommt eine Nano-Imprägnierung mit der Pumpe aufgetragen: Sie verschließt die Poren etwas, sodass künftige Öltropfen weniger schnell einziehen."
+            "Nach dem Reinigen saugen wir den gelösten Schmutz nass ab, statt ihn als Matsch in die Beete zu spülen. Im Komplettpaket lassen wir die Fläche anschließend trocknen und verfüllen die Fugen mit GaLaBau-Fugensand neu, denn nach jeder Hochdruckreinigung sollten die Fugen wieder aufgefüllt werden. Zum Abschluss wird der überschüssige Sand abgepustet und die Nano-Imprägnierung mit der Pumpe aufgetragen: Sie verschließt die Poren etwas, sodass künftige Öltropfen weniger schnell einziehen."
           ],
           "list": {
             "title": "So läuft die Reinigung beim Profi ab",
             "items": [
               "Reinigen mit Hochdruck und rotierendem Flächenreiniger",
               "Gelösten Schmutz nass absaugen, keine Matsch-Sauerei",
-              "Fläche trocknen lassen, Fugen mit Fugensand neu verfüllen",
+              "Im Komplettpaket: Fläche trocknen lassen, Fugen mit Fugensand neu verfüllen",
               "Überschüssigen Sand abpusten",
-              "Optional Nano-Imprägnierung gegen neue Flecken"
+              "Im Komplettpaket: Nano-Imprägnierung gegen neue Flecken"
             ]
           }
         },
         {
           "h2": "Was kostet die professionelle Einfahrtreinigung?",
-          "antwort": "Als Richtwert kostet die Reinigung etwa 7 €/m² inklusive Reinigung und Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Einfahrt kostet damit 280 €, mit Imprägnierung 320 €. Das sind Endpreise ohne versteckte Kosten, im Servicegebiet ohne Mindestauftragswert und ohne Fahrtkosten.",
+          "antwort": "Als Richtwert kostet die Reinigung mit Flächenreiniger und Nass-Absaugung etwa 8 €/m², das Komplettpaket mit Neuverfugung und Nano-Imprägnierung rund 10 €/m². Eine 40 m² große Einfahrt kostet damit 320 €, im Komplettpaket 400 €. Das sind Endpreise ohne versteckte Kosten, im Servicegebiet ohne Mindestauftragswert und ohne Fahrtkosten.",
           "body": [
             "Wir kalkulieren transparent über die Quadratmeter. Der Richtpreis ist dabei ein unverbindlicher Rahmen — einen verbindlichen Preis nennen wir online bewusst nicht vorab, weil Zustand, Größe und Art der Verschmutzung den Aufwand bestimmen. Eine stark verölte Fläche braucht mehr Vorbehandlung als eine, die nur vergraut ist. Im Servicegebiet kommen keine Anfahrtskosten dazu — der Quadratmeterpreis ist schon der Endpreis, egal ob Sie am Ortsrand oder mitten im Ort wohnen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung.",
             "Wer selbst reinigt, spart die Arbeitskosten, zahlt aber Gerätemiete, Sand, Ölbinder und Reiniger — und vor allem viel Zeit und Rückenarbeit. Besonders ab etwa 30 bis 40 m² lohnt der Profi, weil die Mietgeräte für solche Flächen oft zu schwach sind und ein ganzer Tag draufgeht. Beim Öl-Sonderfall gilt: Auch der Profi kann tiefe, alte Flecken nicht in jedem Fall restlos entfernen. Was wir zusagen, ist der Endpreis und eine kostenlose Nacharbeit, falls etwas nicht passt — keine Versprechen auf ein Ergebnis, das das Material nicht hergibt."
@@ -1803,14 +1803,14 @@
                 "ca. 50 bis 100 € (Miete, Sand, Ölbinder)"
               ],
               [
-                "Profi inkl. Neuverfugung",
+                "Profi-Steinreinigung",
                 "Termin, ca. 1 bis 2 Std.",
-                "280 € (40 m² × 7 €)"
+                "320 € (40 m² × 8 €)"
               ],
               [
-                "Profi inkl. Imprägnierung",
+                "Profi-Komplettpaket (Neuverfugung + Nano)",
                 "Termin",
-                "320 € (40 m² × 8 €)"
+                "400 € (40 m² × 10 €)"
               ]
             ]
           }
@@ -1839,7 +1839,7 @@
         },
         {
           "q": "Was kostet es, eine 40 m² Einfahrt reinigen zu lassen?",
-          "a": "Eine 40 m² große Einfahrt kostet als Richtpreis 280 €, mit Nano-Imprägnierung 320 €. Das entspricht 7 €/m² für Reinigung und Neuverfugung oder 8 €/m² mit Imprägnierung. Das sind Endpreise ohne versteckte Kosten. Den verbindlichen Preis nennen wir nach Fotos und Maßen, weil der Verschmutzungsgrad den Aufwand bestimmt."
+          "a": "Eine 40 m² große Einfahrt kostet als Richtpreis 320 €, im Komplettpaket 400 €. Das entspricht 8 €/m² für die Reinigung mit Nass-Absaugung oder 10 €/m² für das Komplettpaket mit Neuverfugung und Imprägnierung. Das sind Endpreise ohne versteckte Kosten. Den verbindlichen Preis nennen wir nach Fotos und Maßen, weil der Verschmutzungsgrad den Aufwand bestimmt."
         },
         {
           "q": "Hilft eine Imprägnierung gegen Öl- und Reifenspuren?",
@@ -1847,7 +1847,7 @@
         }
       ],
       "cta_title": "Öl- und Reifenspuren lieber vom Profi entfernen lassen?",
-      "cta_text": "Wir reinigen Ihre Einfahrt mit Flächenreiniger, saugen den Schmutz ab und verfugen neu — auf Wunsch mit Nano-Imprägnierung gegen neue Flecken. Richtpreis ab 7 €/m², Angebot per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Bei tiefen, alten Ölflecken sagen wir vorab, was geht.",
+      "cta_text": "Wir reinigen Ihre Einfahrt mit Flächenreiniger und saugen den Schmutz ab — im Komplettpaket verfugen wir neu und imprägnieren gegen neue Flecken. Richtpreis ab 8 €/m², Angebot per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Bei tiefen, alten Ölflecken sagen wir vorab, was geht.",
       "related": [
         {
           "label": "Pflasterreinigung vom Profi im Havelland",
@@ -1984,9 +1984,9 @@
         },
         {
           "h2": "Wann lohnt sich der Profi statt Selbstversuch?",
-          "antwort": "Der Profi lohnt sich, wenn Sie sich beim Material unsicher sind, große Flächen anstehen oder das Ergebnis dauerhaft halten soll. Als Richtwert kostet die professionelle Reinigung etwa 7 €/m² inklusive Neuverfugung, mit Nano-Imprägnierung rund 8 €/m². Eine 40 m² große Fläche kostet damit 280 €, mit Imprägnierung 320 €.",
+          "antwort": "Der Profi lohnt sich, wenn Sie sich beim Material unsicher sind, große Flächen anstehen oder das Ergebnis dauerhaft halten soll. Als Richtwert kostet die professionelle Reinigung etwa 8 €/m² mit Flächenreiniger und Nass-Absaugung, das Komplettpaket mit Neuverfugung und Nano-Imprägnierung rund 10 €/m². Eine 40 m² große Fläche kostet damit 320 €, im Komplettpaket 400 €.",
           "body": [
-            "Wer sicher weiß, welcher Stein verlegt ist, und nur eine kleine, robuste Betonfläche reinigen will, kommt mit Soda, Bürste und einem geliehenen Hochdruckgerät gut zurecht. Schwieriger wird es bei Naturstein, gemischten Belägen oder großen Flächen — hier ist das Risiko, mit dem falschen Mittel Schaden anzurichten, real. Beim Profi entfällt das Rätselraten: Wir wählen den passenden Reiniger, reinigen mit rotierendem Flächenreiniger gleichmäßig und streifenfrei, saugen den gelösten Schmutz nass ab, verfugen mit GaLaBau-Fugensand neu und imprägnieren auf Wunsch mit Nano-Versiegelung.",
+            "Wer sicher weiß, welcher Stein verlegt ist, und nur eine kleine, robuste Betonfläche reinigen will, kommt mit Soda, Bürste und einem geliehenen Hochdruckgerät gut zurecht. Schwieriger wird es bei Naturstein, gemischten Belägen oder großen Flächen — hier ist das Risiko, mit dem falschen Mittel Schaden anzurichten, real. Beim Profi entfällt das Rätselraten: Wir wählen den passenden Reiniger, reinigen mit rotierendem Flächenreiniger gleichmäßig und streifenfrei und saugen den gelösten Schmutz nass ab; im Komplettpaket verfugen wir mit GaLaBau-Fugensand neu und imprägnieren mit Nano-Versiegelung.",
             "Bei Blankstein ist der Richtpreis ein unverbindlicher Rahmen, keinen festen Preis nennen wir vorab online, weil Zustand, Material und Größe den Aufwand bestimmen. Das verbindliche Angebot entsteht nach Fotos und Maßen oder bei einer kostenlosen, unverbindlichen Besichtigung. Es gibt keinen Mindestauftragswert und im Servicegebiet keine Fahrtkosten."
           ],
           "table": {
@@ -2031,7 +2031,7 @@
         },
         {
           "q": "Brauche ich nach der Reinigung immer eine Imprägnierung?",
-          "a": "Nötig ist sie nicht, sinnvoll oft schon. Eine Nano-Imprägnierung lässt Wasser und Schmutz schlechter eindringen, sodass die Fläche länger sauber bleibt und sich die nächste Reinigung leichter macht. Besonders bei saugfähigem Sandstein oder schattigen, feuchten Flächen verlängert sie den Abstand zwischen zwei Reinigungen spürbar. Bei Blankstein kostet sie 1 €/m² Aufpreis."
+          "a": "Nötig ist sie nicht, sinnvoll oft schon. Eine Nano-Imprägnierung lässt Wasser und Schmutz schlechter eindringen, sodass die Fläche länger sauber bleibt und sich die nächste Reinigung leichter macht. Besonders bei saugfähigem Sandstein oder schattigen, feuchten Flächen verlängert sie den Abstand zwischen zwei Reinigungen spürbar. Bei Blankstein steckt sie im Komplettpaket, das zusammen mit der Neuverfugung 2 €/m² Aufpreis kostet."
         },
         {
           "q": "Was mache ich, wenn ich den falschen Reiniger erwischt habe?",
@@ -2039,7 +2039,7 @@
         }
       ],
       "cta_title": "Unsicher beim Material? Lieber gleich vom Profi reinigen lassen",
-      "cta_text": "Wir erkennen Ihren Stein, wählen den passenden Reiniger und reinigen mit Flächenreiniger, saugen ab und verfugen neu — auf Wunsch mit Nano-Imprägnierung. Richtpreis ab 7 €/m², Angebot per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr.",
+      "cta_text": "Wir erkennen Ihren Stein, wählen den passenden Reiniger, reinigen mit Flächenreiniger und saugen ab — im Komplettpaket verfugen wir neu und imprägnieren. Richtpreis ab 8 €/m², Angebot per Foto über WhatsApp. Antwort < 2 h — werktags 8–18 Uhr.",
       "related": [
         {
           "label": "Steinreinigung vom Profi — alle Flächen im Überblick",
