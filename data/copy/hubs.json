@@ -290,7 +290,7 @@
       "faqs": [
         {
           "q": "Was kostet die Pflasterreinigung einer Einfahrt?",
-          "a": "Exakt Fläche mal Satz: Eine 40-m²-Einfahrt kostet 40 × 7 € = 280 €, mit Nano-Imprägnierung 320 €. Im Preis stecken Reinigung, Absaugung und die Neuverfugung mit GaLaBau-Sand. Verbindlich wird der Richtpreis nach Foto-Prüfung oder kostenloser Besichtigung — danach gilt die Endpreis-Zusage."
+          "a": "Exakt Fläche mal Satz: Eine 40-m²-Einfahrt kostet 40 × 8 € = 320 €, im Komplettpaket 400 €. Im Basispreis stecken Reinigung und Absaugung; das Komplettpaket ergänzt Neuverfugung mit GaLaBau-Sand und Nano-Imprägnierung. Verbindlich wird der Richtpreis nach Foto-Prüfung oder kostenloser Besichtigung — danach gilt die Endpreis-Zusage."
         },
         {
           "q": "Bekommt ihr Öl- und Reifenspuren aus dem Pflaster?",
@@ -298,11 +298,11 @@
         },
         {
           "q": "Wächst das Unkraut in den Fugen gleich wieder nach?",
-          "a": "In offenen Fugen: ja, und zwar schnell. Deshalb füllen wir die Fugen nach der Reinigung mit frischem Sand — das nimmt Samen und Schmutz den Halt. Die Nano-Imprägnierung für 1 €/m² mehr verzögert den Neubewuchs zusätzlich, besonders an schattigen Stellen."
+          "a": "In offenen Fugen: ja, und zwar schnell. Deshalb füllen wir im Komplettpaket die Fugen nach der Reinigung mit frischem Sand — das nimmt Samen und Schmutz den Halt. Die Nano-Imprägnierung, im Komplettpaket enthalten, verzögert den Neubewuchs zusätzlich, besonders an schattigen Stellen."
         },
         {
           "q": "Kann die Reinigung mein Pflaster beschädigen?",
-          "a": "Nicht mit unserer Methode. Schäden entstehen durch Punkt-Lanzen, die Fugen auswaschen und Steine lockern. Der rotierende Flächenreiniger verteilt den Druck gleichmäßig, und die Neuverfugung stellt den Verbund danach wieder her. Bei Natursteinpflaster passen wir den Druck zusätzlich an."
+          "a": "Nicht mit unserer Methode. Schäden entstehen durch Punkt-Lanzen, die Fugen auswaschen und Steine lockern. Der rotierende Flächenreiniger verteilt den Druck gleichmäßig statt punktuell; im Komplettpaket stellt die Neuverfugung den Verbund zusätzlich wieder her. Bei Natursteinpflaster passen wir den Druck zusätzlich an."
         },
         {
           "q": "Wie schnell bekomme ich ein Angebot für mein Pflaster?",
@@ -318,10 +318,10 @@
     {
       "slug": "steinversiegelung",
       "title": "Steinversiegelung im Havelland | Blankstein",
-      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach Reinigung und Neuverfugung — Wasser perlt ab, die Fläche bleibt länger sauber. 8 €/m² komplett.",
+      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach Reinigung und Neuverfugung — Wasser perlt ab, die Fläche bleibt länger sauber. 10 €/m² komplett.",
       "eyebrow": "Leistung · Steinversiegelung",
       "h1": "Steinversiegelung — <em>erst sauber, dann geschützt</em>.",
-      "lede": "Die Nano-Imprägnierung ist bei uns der letzte Schritt nach Reinigung und Neuverfugung: 8 €/m² statt 7 €/m², alles inklusive. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt deutlich länger sauber.",
+      "lede": "Die Nano-Imprägnierung ist bei uns der letzte Schritt nach Reinigung und Neuverfugung: das Komplettpaket für 10 €/m² statt 8 €/m² für die reine Reinigung — alles inklusive. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt deutlich länger sauber.",
       "wa_text": "Hallo Blankstein, ich interessiere mich für die Steinversiegelung. Foto und ungefähre Maße meiner Fläche schicke ich gleich mit.",
       "wa_label": "Fläche zur Prüfung senden",
       "hero_media": {
@@ -392,7 +392,7 @@
       "faqs": [
         {
           "q": "Was kostet die Steinversiegelung?",
-          "a": "1 €/m² mehr als die reine Reinigung: 8 statt 7 €/m², inklusive Reinigung, Absaugung und Neuverfugung. Eine 30-m²-Terrasse: 30 × 8 € = 240 €. Es gibt keine getrennte Versiegelungs-Rechnung: Der eine Satz deckt den kompletten Ablauf ab, und der bestätigte Richtpreis ist der Rechnungsbetrag."
+          "a": "2 €/m² mehr als die reine Reinigung: das Komplettpaket für 10 statt 8 €/m², inklusive Reinigung, Absaugung, Neuverfugung und Nano-Imprägnierung. Eine 30-m²-Terrasse: 30 × 10 € = 300 €. Es gibt keine getrennte Versiegelungs-Rechnung: Der eine Satz deckt den kompletten Ablauf ab, und der bestätigte Richtpreis ist der Rechnungsbetrag."
         },
         {
           "q": "Was bringt die Nano-Imprägnierung konkret?",
