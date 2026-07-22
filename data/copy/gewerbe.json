@@ -1,20 +1,20 @@
 {
-  "_meta": "Gewerbe-Strecke (B2B) — Design 2026-07-22-gewerbe-strecke-design.md. Preise IMMER 'auf Anfrage', NIE eine Zahl im Gewerbe-Kontext. Kein Rabatt-/Aktionston. 'Festangebot' erst NACH Besichtigung. Hausverwaltung: Verkehrssicherungspflicht nur als Problem-Aufhänger, KEINE haftungsrechtliche Bewertungs-Zusage. Referenzen = ehrlicher Empty-State bis zum ersten dokumentierten B2B-Auftrag. Copy: seriös-nüchtern, PROTOKOLL-DNA.",
+  "_meta": "Gewerbe-Strecke (B2B) — VERMITTLUNGS-MODELL (Owner-Entscheidung Maurice 2026-07-22): ALLE Gewerbeaufträge werden an einen geprüften Partner-Fachbetrieb mit professioneller Großflächen-Technik weitervermittelt (Tippgeber-Modell). Blankstein koordiniert Besichtigung, Termin und Ablauf — ein Ansprechpartner. KEINE Eigenleistungs-Versprechen (kein 'wir reinigen', kein 'unser Flächenreiniger/Nass-Absaugung'), KEINE Endpreis-Zusage/Nacharbeit-Garantie von uns (das erstellt der ausführende Fachbetrieb), KEINE Provisions-/Vermittlungsgebühren-Erwähnung. Angebot: 'schriftliches Festangebot nach kostenloser Besichtigung' (durch den Fachbetrieb). Preise IMMER 'auf Anfrage', NIE eine Zahl im Gewerbe-Kontext. Wartungsintervall bleibt prominent: '1–2 feste Termine im Jahr — wir organisieren das Intervall'. Hausverwaltung: Verkehrssicherungspflicht nur als Problem-Aufhänger, KEIN 'Nachweis zur Verkehrssicherungspflicht', KEINE haftungsrechtliche Bewertungs-Zusage. Referenzen = ehrlicher Empty-State bis zum ersten dokumentierten B2B-Auftrag. Copy: seriös-nüchtern, PROTOKOLL-DNA. Privatkunden-Geschäft (Homepage, Money-Hubs, Orts-Hubs, /preise/-Privatblock) bleibt Eigenleistung — dort NICHTS ändern.",
 
   "hub": {
     "eyebrow": "Für Gewerbe · Havelland & westlicher Berliner Rand",
     "h1": "Steinreinigung für <em>Gewerbeobjekte</em>.",
-    "lede": "Gehwege, Innenhöfe, Zufahrten, Kundenparkplätze und Außengastronomie: verschmutzte Steinflächen sind bei gewerblichen Objekten kein Schönheitsthema, sondern eine Frage von Sicherheit und Außenwirkung. Wir reinigen sie planbar, abschnittsweise und ohne den laufenden Betrieb zu stören — nach kostenloser Besichtigung mit schriftlichem Festangebot ohne Nachforderung.",
+    "lede": "Gehwege, Innenhöfe, Zufahrten, Kundenparkplätze und Außengastronomie: verschmutzte Steinflächen sind bei gewerblichen Objekten kein Schönheitsthema, sondern eine Frage von Sicherheit und Außenwirkung. Die Ausführung übernimmt ein geprüfter Partner-Fachbetrieb mit professioneller Großflächen-Technik — planbar, abschnittsweise und ohne den laufenden Betrieb zu stören. Wir koordinieren Besichtigung, Termin und Ablauf: ein Ansprechpartner für alles, schriftliches Festangebot nach kostenloser Besichtigung.",
     "title": "Steinreinigung für Gewerbe im Havelland | Blankstein",
-    "meta": "Blankstein reinigt gewerbliche Steinflächen im Havelland und am westlichen Berliner Rand: Gehwege, Innenhöfe, Zufahrten, Parkplätze und Außengastronomie — planbar, abschnittsweise und ohne Betriebsstörung, mit schriftlichem Festangebot nach kostenloser Besichtigung.",
+    "meta": "Gewerbliche Steinreinigung im Havelland: Blankstein koordiniert Höfe, Zufahrten, Parkplätze und Gastronomie — Ausführung durch geprüften Partner-Fachbetrieb, ein Ansprechpartner.",
     "segmente_label": "Segmente",
-    "segmente_h2": "Wofür wir für Gewerbe arbeiten.",
-    "segmente_intro": "Drei Objektarten fragen unsere gewerbliche Steinreinigung am häufigsten an. Wählen Sie Ihr Segment für die passenden Details — oder fragen Sie direkt eine Besichtigung an.",
+    "segmente_h2": "Für welche Gewerbeobjekte wir das organisieren.",
+    "segmente_intro": "Drei Objektarten fragen Gewerbe-Steinreinigungen bei uns am häufigsten an. Wählen Sie Ihr Segment für die passenden Details — oder fragen Sie direkt eine Besichtigung an.",
     "faqs": [
-      { "q": "Ist die Besichtigung für Gewerbeobjekte kostenlos?", "a": "Ja. Wir sehen uns die Flächen kostenlos und unverbindlich an, messen nach und klären den Zustand. Erst danach erhalten Sie ein schriftliches Festangebot je Objekt — ohne Nachforderung." },
-      { "q": "Können Sie im laufenden Betrieb reinigen?", "a": "Ja. Wir arbeiten abschnittsweise und stimmen die Reihenfolge mit Ihnen ab, sodass Kundenverkehr, Anlieferung oder Gastbetrieb weiterlaufen. Auf Wunsch reinigen wir außerhalb der Öffnungszeiten." },
-      { "q": "Was kostet die gewerbliche Steinreinigung?", "a": "Für Gewerbeflächen nennen wir online keinen Quadratmeterpreis, weil Objektart, Belag, Zustand und Größe zu stark schwanken. Nach der kostenlosen Besichtigung erhalten Sie ein verbindliches, schriftliches Festangebot ohne versteckte Kosten." },
-      { "q": "Bieten Sie feste Wartungsintervalle an?", "a": "Ja. Für wiederkehrend saubere Flächen vereinbaren wir ein Wartungsintervall mit ein bis zwei festen Terminen pro Jahr zum Vertragspreis — planbare Kosten und Vorrang bei der Terminvergabe in der Saison." },
+      { "q": "Ist die Besichtigung für Gewerbeobjekte kostenlos?", "a": "Ja. Der ausführende Partner-Fachbetrieb sieht sich die Flächen kostenlos und unverbindlich an, misst nach und klärt den Zustand — den Termin dafür koordinieren wir. Erst danach erhalten Sie ein schriftliches Festangebot je Objekt." },
+      { "q": "Kann im laufenden Betrieb gereinigt werden?", "a": "Ja. Der Fachbetrieb arbeitet abschnittsweise und stimmt die Reihenfolge mit Ihnen ab, sodass Kundenverkehr, Anlieferung oder Gastbetrieb weiterlaufen. Auf Wunsch wird außerhalb der Öffnungszeiten gereinigt. Die Abstimmung läuft über uns." },
+      { "q": "Was kostet die gewerbliche Steinreinigung?", "a": "Für Gewerbeflächen nennen wir online keinen Quadratmeterpreis, weil Objektart, Belag, Zustand und Größe zu stark schwanken. Nach der kostenlosen Besichtigung erhalten Sie vom ausführenden Fachbetrieb ein verbindliches, schriftliches Festangebot." },
+      { "q": "Gibt es feste Wartungsintervalle?", "a": "Ja. Für wiederkehrend saubere Flächen organisieren wir ein Wartungsintervall mit ein bis zwei festen Terminen pro Jahr — planbare Kosten und Vorrang bei der Terminvergabe in der Saison. Um das Intervall kümmern wir uns." },
       { "q": "In welchem Gebiet arbeiten Sie für Gewerbe?", "a": "Im Havelland und am westlichen Berliner Rand — unter anderem Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Für Objekte im Umfeld fragen Sie einfach an." }
     ]
   },
@@ -24,20 +24,20 @@
       "slug": "hausverwaltungen",
       "nav_name": "Hausverwaltungen",
       "card_titel": "Hausverwaltungen & WEG",
-      "card_text": "Gehwege, Innenhöfe und Zufahrten mit Grünbelag — planbar gereinigt, ein Ansprechpartner, ein schriftliches Festangebot je Objekt.",
+      "card_text": "Gehwege, Innenhöfe und Zufahrten mit Grünbelag — planbar organisiert, ein Ansprechpartner, ein schriftliches Festangebot je Objekt.",
       "eyebrow": "Für Hausverwaltungen & WEG · Havelland & Berliner Rand",
       "h1": "Steinreinigung für <em>Hausverwaltungen</em>.",
-      "lede": "Rutschiger Grünbelag auf Gehwegen, Innenhöfen und Zufahrten ist bei verwalteten Objekten ein wiederkehrendes Thema — im Herbst und Winter besonders. Wir reinigen die Außenflächen Ihrer Objekte planbar, mit einem festen Ansprechpartner und einem schriftlichen Festangebot je Objekt.",
+      "lede": "Rutschiger Grünbelag auf Gehwegen, Innenhöfen und Zufahrten ist bei verwalteten Objekten ein wiederkehrendes Thema — im Herbst und Winter besonders. Die Reinigung übernimmt ein geprüfter Partner-Fachbetrieb mit professioneller Technik; wir koordinieren Besichtigung, Termin und Ablauf. Ein fester Ansprechpartner, ein schriftliches Festangebot je Objekt.",
       "title": "Steinreinigung für Hausverwaltungen | Blankstein",
-      "meta": "Blankstein reinigt Gehwege, Innenhöfe und Zufahrten für Hausverwaltungen und WEG im Havelland — planbar und mit festem Ansprechpartner und schriftlichem Festangebot je Objekt nach kostenloser Besichtigung.",
+      "meta": "Steinreinigung für Hausverwaltungen und WEG im Havelland: Gehwege, Höfe, Zufahrten. Ausführung durch Partner-Fachbetrieb, ein Ansprechpartner, Festangebot je Objekt.",
       "problem_label": "Warum es zählt",
       "problem_h2": "Grünbelag auf Gemeinschaftsflächen ist mehr als Optik.",
       "problem_body": [
         "Auf Gehwegen, Hauszugängen und Zufahrten bildet sich mit der Zeit ein Film aus Algen und Moos. Bei Nässe wird er glatt — genau dort, wo Bewohner, Besucher und Dienstleister täglich laufen. Die Verkehrssicherungspflicht für diese Flächen liegt bei Eigentümer und Verwaltung.",
-        "Eine gründliche Reinigung entfernt den Belag und macht die Fläche wieder griffig. Die rechtliche Bewertung, ob und wann gehandelt werden muss, nehmen wir dabei ausdrücklich nicht vor — das ist Sache von Eigentümer und Verwaltung. Wir liefern die Reinigung und auf Wunsch eine neutrale Foto-Zustandsdokumentation der Außenflächen vor und nach dem Termin.",
+        "Eine gründliche Reinigung entfernt den Belag und macht die Fläche wieder griffig. Die rechtliche Bewertung, ob und wann gehandelt werden muss, nehmen wir dabei ausdrücklich nicht vor — das ist Sache von Eigentümer und Verwaltung. Für die Ausführung sorgt der Partner-Fachbetrieb; auf Wunsch gehört eine neutrale Foto-Zustandsdokumentation der Außenflächen vor und nach dem Termin dazu.",
         "Für die Verwaltung zählt vor allem Planbarkeit: ein Ansprechpartner, ein abgestimmter Termin, ein fester Preis je Objekt — und keine Rückfragen von Beiräten, weil der Hof wieder sauber ist."
       ],
-      "flaechen_h2": "Welche Flächen wir übernehmen.",
+      "flaechen_h2": "Welche Flächen dazugehören.",
       "flaechen_intro": "Typische Außenflächen verwalteter Wohn- und Gewerbeobjekte.",
       "flaechen": [
         ["Gehwege & Hauszugänge", "Die Laufwege zu Eingängen und Briefkästen — der Bereich mit dem höchsten Rutsch-Thema bei Nässe."],
@@ -46,10 +46,10 @@
         ["Müllplatz-Umfeld & Stellplätze", "Der Bereich um Tonnen und Container sowie befestigte Pkw-Stellplätze."]
       ],
       "faqs": [
-        { "q": "Reinigen Sie mehrere Objekte einer Verwaltung gemeinsam?", "a": "Ja. Auf Wunsch fassen wir mehrere Objekte einer Verwaltung in einer Begehung und einem Angebot zusammen — mit einem Ansprechpartner und abgestimmten Terminen. Größere Gesamtflächen wirken sich günstig auf den Quadratmetersatz aus; die konkrete Zahl nennen wir nach der Besichtigung." },
-        { "q": "Stellen Sie einen Nachweis zur Verkehrssicherungspflicht aus?", "a": "Nein. Als Reinigungsbetrieb geben wir keine haftungsrechtliche Bewertung ab. Wir dokumentieren auf Wunsch neutral den Zustand der Außenflächen mit Fotos vor und nach der Reinigung — die Einordnung dieser Dokumentation bleibt bei Eigentümer und Verwaltung." },
-        { "q": "Können wir feste Termine über das Jahr vereinbaren?", "a": "Ja. Viele Verwaltungen buchen ein Wartungsintervall mit ein bis zwei festen Terminen pro Jahr. Das hält die Flächen dauerhaft in Ordnung, macht die Kosten planbar und sichert Ihrem Objekt in der Saison einen bevorzugten Termin." },
-        { "q": "Wie läuft die Beauftragung ab?", "a": "Wir besichtigen die Flächen kostenlos, dann erhalten Sie ein schriftliches Festangebot je Objekt ohne Nachforderung. Erst danach entscheiden Sie. Für die Freigabe innerhalb der Verwaltung bekommen Sie alle Angaben schriftlich und nachvollziehbar." }
+        { "q": "Können mehrere Objekte einer Verwaltung gemeinsam beauftragt werden?", "a": "Ja. Auf Wunsch werden mehrere Objekte einer Verwaltung in einer Begehung und einem Angebot zusammengefasst — mit einem Ansprechpartner und abgestimmten Terminen, koordiniert über uns. Größere Gesamtflächen wirken sich günstig auf den Quadratmetersatz aus; die konkrete Zahl nennt der Fachbetrieb nach der Besichtigung." },
+        { "q": "Wer führt die Reinigung aus?", "a": "Ein geprüfter Partner-Fachbetrieb mit professioneller Großflächen-Technik. Wir koordinieren Besichtigung, Termin und Ablauf — Sie haben einen Ansprechpartner für alles. Auf Wunsch wird der Zustand der Außenflächen neutral mit Fotos vor und nach der Reinigung dokumentiert." },
+        { "q": "Können wir feste Termine über das Jahr vereinbaren?", "a": "Ja. Viele Verwaltungen buchen ein Wartungsintervall mit ein bis zwei festen Terminen pro Jahr. Das hält die Flächen dauerhaft in Ordnung, macht die Kosten planbar und sichert Ihrem Objekt in der Saison einen bevorzugten Termin. Um das Intervall kümmern wir uns." },
+        { "q": "Wie läuft die Beauftragung ab?", "a": "Der Partner-Fachbetrieb besichtigt die Flächen kostenlos, dann erhalten Sie ein schriftliches Festangebot je Objekt. Erst danach entscheiden Sie. Termin und Abstimmung koordinieren wir; für die Freigabe innerhalb der Verwaltung bekommen Sie alle Angaben schriftlich und nachvollziehbar." }
       ],
       "sister": {
         "label": "Schwester-Service",
@@ -63,20 +63,20 @@
       "slug": "parkplaetze",
       "nav_name": "Parkplätze",
       "card_titel": "Parkplätze & Betriebshöfe",
-      "card_text": "Kundenparkplätze, Autohaus-Vorplätze und Betriebshöfe — abschnittsweise gereinigt, ohne den Kundenverkehr zu unterbrechen.",
+      "card_text": "Kundenparkplätze, Autohaus-Vorplätze und Betriebshöfe — abschnittsweise organisiert, ohne den Kundenverkehr zu unterbrechen.",
       "eyebrow": "Für Einzelhandel, Autohäuser & Büroobjekte",
       "h1": "Reinigung von <em>Parkplätzen</em> im laufenden Betrieb.",
-      "lede": "Ein verschmutzter Kundenparkplatz ist das Erste, was Ihre Besucher sehen — und eine Fläche, die selten stillsteht. Wir reinigen Parkplätze, Vorplätze und Betriebshöfe abschnittsweise, sodass immer ein Teil befahrbar bleibt und der Kundenverkehr weiterläuft.",
+      "lede": "Ein verschmutzter Kundenparkplatz ist das Erste, was Ihre Besucher sehen — und eine Fläche, die selten stillsteht. Ein geprüfter Partner-Fachbetrieb reinigt Parkplätze, Vorplätze und Betriebshöfe mit professioneller Großflächen-Technik abschnittsweise, sodass immer ein Teil befahrbar bleibt und der Kundenverkehr weiterläuft. Wir koordinieren Besichtigung, Termin und Ablauf.",
       "title": "Parkplatzreinigung im Havelland | Blankstein",
-      "meta": "Blankstein reinigt Kundenparkplätze, Autohaus-Vorplätze und Betriebshöfe im Havelland und am westlichen Berliner Rand — abschnittsweise im laufenden Betrieb, ohne den Kundenverkehr zu unterbrechen, mit schriftlichem Festangebot nach kostenloser Besichtigung.",
+      "meta": "Reinigung von Kundenparkplätzen, Autohaus-Vorplätzen und Betriebshöfen im Havelland — abschnittsweise im laufenden Betrieb, Ausführung durch geprüften Partner-Fachbetrieb.",
       "problem_label": "Reinigung ohne Stillstand",
       "problem_h2": "Sauber werden, ohne zu schließen.",
       "problem_body": [
-        "Der Reflex bei einem großen Parkplatz ist die Sorge, dass die Fläche für die Reinigung tagelang gesperrt werden muss. Muss sie nicht. Wir arbeiten abschnittsweise und stimmen die Reihenfolge mit Ihnen ab — Kundenzonen zuerst oder zuletzt, Randbereiche in den Nebenzeiten.",
-        "Auf Wunsch reinigen wir außerhalb Ihrer Öffnungszeiten, am frühen Morgen oder am Wochenende, sodass Ihre Kunden von der Arbeit kaum etwas merken. Der gelöste Schmutz wird abgesaugt statt in die Entwässerung gespült.",
+        "Der Reflex bei einem großen Parkplatz ist die Sorge, dass die Fläche für die Reinigung tagelang gesperrt werden muss. Muss sie nicht. Der Partner-Fachbetrieb arbeitet abschnittsweise und stimmt die Reihenfolge mit Ihnen ab — Kundenzonen zuerst oder zuletzt, Randbereiche in den Nebenzeiten.",
+        "Auf Wunsch wird außerhalb Ihrer Öffnungszeiten gereinigt, am frühen Morgen oder am Wochenende, sodass Ihre Kunden von der Arbeit kaum etwas merken. Gelöster Schmutz wird aufgenommen statt flächig in die Entwässerung gespült.",
         "Das Ergebnis: helle, einheitliche Beläge ohne Grünstreifen in den Fugen und ohne dunkle Abrieb-Bahnen — ein Vorplatz, der zum Betrieb dahinter passt."
       ],
-      "flaechen_h2": "Welche Flächen wir übernehmen.",
+      "flaechen_h2": "Welche Flächen dazugehören.",
       "flaechen_intro": "Befestigte Außenflächen im Einzelhandel, bei Autohäusern und Büroobjekten.",
       "flaechen": [
         ["Kundenparkplätze", "Stellflächen und Fahrgassen aus Pflaster oder Verbundstein, an denen sich Abrieb und Grünbelag sammeln."],
@@ -85,30 +85,30 @@
         ["Gehweg- & Randzonen", "Fußwege, Übergänge und Grünstreifen-Kanten rund um die Stellflächen."]
       ],
       "faqs": [
-        { "q": "Müssen wir den Parkplatz für die Reinigung sperren?", "a": "Nein. Wir reinigen abschnittsweise, sodass immer ein Teil der Fläche befahrbar bleibt. Die Reihenfolge stimmen wir vorab mit Ihnen ab, damit der Kundenverkehr weiterläuft." },
-        { "q": "Können Sie außerhalb der Öffnungszeiten arbeiten?", "a": "Ja. Auf Wunsch reinigen wir am frühen Morgen, am Abend oder am Wochenende. So ist die Fläche fertig, bevor Ihre Kunden kommen. Das klären wir bei der Besichtigung und halten es im Angebot fest." },
-        { "q": "Wohin kommt das Schmutzwasser?", "a": "Der gelöste Schmutz wird mit einem Nasssauger aufgenommen, statt ihn flächig in die Entwässerung zu spülen. Die Fläche ist nach dem Termin wieder befahrbar und das Umfeld bleibt sauber." },
-        { "q": "Wie oft sollte ein Parkplatz gereinigt werden?", "a": "Das hängt von Lage, Baumbestand und Frequenz ab. Viele Betriebe fahren mit ein bis zwei festen Terminen pro Jahr gut. Wir schätzen den passenden Rhythmus bei der Besichtigung ein und halten ihn optional als Wartungsintervall fest." }
+        { "q": "Müssen wir den Parkplatz für die Reinigung sperren?", "a": "Nein. Der Partner-Fachbetrieb arbeitet abschnittsweise, sodass immer ein Teil der Fläche befahrbar bleibt. Die Reihenfolge wird vorab mit Ihnen abgestimmt, damit der Kundenverkehr weiterläuft — koordiniert über uns." },
+        { "q": "Kann außerhalb der Öffnungszeiten gearbeitet werden?", "a": "Ja. Auf Wunsch wird am frühen Morgen, am Abend oder am Wochenende gearbeitet. So ist die Fläche fertig, bevor Ihre Kunden kommen. Das wird bei der Besichtigung geklärt und im Angebot festgehalten." },
+        { "q": "Wohin kommt das Schmutzwasser?", "a": "Der gelöste Schmutz wird aufgenommen, statt ihn flächig in die Entwässerung zu spülen. Die Fläche ist nach dem Termin wieder befahrbar und das Umfeld bleibt sauber." },
+        { "q": "Wie oft sollte ein Parkplatz gereinigt werden?", "a": "Das hängt von Lage, Baumbestand und Frequenz ab. Viele Betriebe fahren mit ein bis zwei festen Terminen pro Jahr gut. Der passende Rhythmus wird bei der Besichtigung eingeschätzt; auf Wunsch organisieren wir ihn als festes Wartungsintervall." }
       ]
     },
     {
       "slug": "gastronomie",
       "nav_name": "Gastronomie",
       "card_titel": "Gastronomie & Hotels",
-      "card_text": "Terrasse, Eingang und Hofausschank als Visitenkarte — gereinigt vor der Saison, abgestimmt auf Ruhetage und Öffnungszeiten.",
+      "card_text": "Terrasse, Eingang und Hofausschank als Visitenkarte — organisiert vor der Saison, abgestimmt auf Ruhetage und Öffnungszeiten.",
       "eyebrow": "Für Gastronomie & Hotellerie",
       "h1": "Der <em>Außenbereich</em> ist Ihre Visitenkarte.",
-      "lede": "Terrasse, Eingang und Hofausschank entscheiden über den ersten Eindruck, bevor der erste Gast am Tisch sitzt. Wir reinigen die Steinflächen Ihres Außenbereichs vor der Saison und halten sie auf Wunsch im Intervall — abgestimmt auf Ruhetage und Öffnungszeiten.",
+      "lede": "Terrasse, Eingang und Hofausschank entscheiden über den ersten Eindruck, bevor der erste Gast am Tisch sitzt. Ein geprüfter Partner-Fachbetrieb reinigt die Steinflächen Ihres Außenbereichs mit professioneller Technik vor der Saison — auf Wunsch im festen Intervall, das wir organisieren, abgestimmt auf Ruhetage und Öffnungszeiten. Wir koordinieren Besichtigung, Termin und Ablauf.",
       "title": "Außenflächen-Reinigung für Gastronomie | Blankstein",
-      "meta": "Blankstein reinigt Terrassen, Eingänge und Hofflächen von Gastronomie und Hotellerie im Havelland und am westlichen Berliner Rand — abgestimmt auf Ruhetage und Öffnungszeiten, mit schriftlichem Festangebot nach kostenloser Besichtigung, auf Wunsch im Saison-Intervall.",
+      "meta": "Reinigung von Terrassen, Eingängen und Hofflächen für Gastronomie und Hotellerie im Havelland — abgestimmt auf Ihre Ruhetage, Ausführung durch geprüften Partner-Fachbetrieb.",
       "problem_label": "Erster Eindruck",
       "problem_h2": "Der Gast entscheidet an der Tür.",
       "problem_body": [
         "Bevor Karte, Küche und Service überzeugen, sieht der Gast den Weg zum Tisch: den Eingang, die Terrasse, den Hof. Graue Beläge, vermooste Fugen und dunkle Ränder senden ein Signal — auch wenn drinnen alles stimmt.",
-        "Wir reinigen die Steinflächen Ihres Außenbereichs so, dass Terrasse und Zugang wieder einladend wirken. Den Termin legen wir auf Ruhetage oder in die Vorsaison, damit der Betrieb nicht darunter leidet.",
-        "Wer die Terrasse jedes Frühjahr saisonfertig braucht, bucht das Ganze als festes Intervall — einmal abgestimmt, dann jährlich rechtzeitig vor der ersten warmen Woche."
+        "Der Partner-Fachbetrieb reinigt die Steinflächen Ihres Außenbereichs so, dass Terrasse und Zugang wieder einladend wirken. Den Termin legen wir auf Ruhetage oder in die Vorsaison, damit der Betrieb nicht darunter leidet.",
+        "Wer die Terrasse jedes Frühjahr saisonfertig braucht, bucht das Ganze als festes Intervall — einmal abgestimmt, dann jährlich rechtzeitig vor der ersten warmen Woche. Um das Intervall kümmern wir uns."
       ],
-      "flaechen_h2": "Welche Flächen wir übernehmen.",
+      "flaechen_h2": "Welche Flächen dazugehören.",
       "flaechen_intro": "Steinflächen im gastronomischen Außenbereich.",
       "flaechen": [
         ["Terrasse & Gastgarten", "Die Bewirtungsfläche aus Platten, Pflaster oder Naturstein — der Ort, an dem Ihre Gäste sitzen."],
@@ -117,10 +117,10 @@
         ["Hotelvorfahrt & Wege", "Vorfahrt, Parkzugang und Verbindungswege auf dem Grundstück."]
       ],
       "faqs": [
-        { "q": "Können Sie an unserem Ruhetag reinigen?", "a": "Ja. Wir legen den Termin bevorzugt auf Ruhetage oder in die Vorsaison, damit der Betrieb nicht unterbrochen wird. Den passenden Slot stimmen wir bei der Besichtigung ab." },
-        { "q": "Bekommen wir die Terrasse rechtzeitig vor der Saison sauber?", "a": "Genau dafür ist das Wartungsintervall gedacht: einmal abgestimmt, reinigen wir jedes Frühjahr rechtzeitig vor der ersten warmen Woche — Ihr Objekt hat in der Saison Vorrang bei der Terminvergabe." },
-        { "q": "Reinigen Sie auch Naturstein und Feinsteinzeug im Gastrobereich?", "a": "Ja. Wir stimmen das Verfahren auf den Belag ab — Naturstein, Betonplatten, Keramik oder Verbundpflaster verlangen jeweils einen anderen Umgang. Welcher Belag bei Ihnen liegt, klären wir bei der Besichtigung." },
-        { "q": "Stört die Reinigung die Nachbarschaft?", "a": "Wir arbeiten mit Flächenreiniger und Absaugung statt mit weit spritzendem Punktstrahl. Das hält Lärm, Wasser und Schmutz im Rahmen. Den Zeitpunkt legen wir so, dass Gäste und Nachbarn möglichst wenig merken." }
+        { "q": "Kann an unserem Ruhetag gereinigt werden?", "a": "Ja. Der Termin wird bevorzugt auf Ruhetage oder in die Vorsaison gelegt, damit der Betrieb nicht unterbrochen wird — das koordinieren wir. Den passenden Slot stimmen wir bei der Besichtigung ab." },
+        { "q": "Bekommen wir die Terrasse rechtzeitig vor der Saison sauber?", "a": "Genau dafür ist das Wartungsintervall gedacht, das wir für Sie organisieren: einmal abgestimmt, wird jedes Frühjahr rechtzeitig vor der ersten warmen Woche gereinigt — Ihr Objekt hat in der Saison Vorrang bei der Terminvergabe." },
+        { "q": "Wird auch Naturstein und Feinsteinzeug im Gastrobereich gereinigt?", "a": "Ja. Das Verfahren wird auf den Belag abgestimmt — Naturstein, Betonplatten, Keramik oder Verbundpflaster verlangen jeweils einen anderen Umgang. Welcher Belag bei Ihnen liegt, klärt der Fachbetrieb bei der Besichtigung." },
+        { "q": "Stört die Reinigung die Nachbarschaft?", "a": "Gearbeitet wird mit professioneller Flächentechnik statt mit weit spritzendem Punktstrahl. Das hält Lärm, Wasser und Schmutz im Rahmen. Den Zeitpunkt legen wir so, dass Gäste und Nachbarn möglichst wenig merken." }
       ]
     }
   ],
@@ -128,23 +128,23 @@
   "wartung": {
     "label": "Wartungsvertrag",
     "h2": "Planbar statt jedes Jahr neu verhandeln.",
-    "intro": "Der wirtschaftlich sinnvollste Weg für gewerbliche Flächen ist selten der Einzelauftrag, sondern das feste Intervall. Einmal abgestimmt, kümmern wir uns wiederkehrend — Sie haben eine Position weniger auf dem Zettel.",
+    "intro": "Der wirtschaftlich sinnvollste Weg für gewerbliche Flächen ist selten der Einzelauftrag, sondern das feste Intervall. Einmal abgestimmt, organisieren wir die wiederkehrenden Termine — Sie haben eine Position weniger auf dem Zettel.",
     "cards": [
       ["Rhythmus", "Ein bis zwei feste Termine pro Jahr", "Wir stimmen den Rhythmus auf Objekt und Belastung ab — meist einmal im Frühjahr, bei Bedarf ein zweites Mal im Herbst. Sie müssen nicht jedes Mal neu anfragen."],
-      ["Budget", "Planbare Kosten", "Der Preis je Termin steht im Vertrag. Keine Überraschung im Wirtschaftsplan, keine Nachforderung — Sie kalkulieren mit einer festen Zahl."],
+      ["Budget", "Planbare Kosten", "Der Preis je Termin steht im Angebot des ausführenden Fachbetriebs. Keine Überraschung im Wirtschaftsplan — Sie kalkulieren mit einer festen Zahl."],
       ["Termin", "Priorität in der Saison", "Objekte im Wartungsintervall haben Vorrang bei der Terminvergabe. Gerade vor der Saison, wenn alle gleichzeitig anfragen, ist das der entscheidende Vorteil."]
     ],
-    "cta_text": "Wartungsintervall unverbindlich besprechen — wir schauen uns die Flächen zuerst kostenlos an."
+    "cta_text": "Wartungsintervall unverbindlich besprechen — zuerst besichtigt der Fachbetrieb die Flächen kostenlos."
   },
 
   "ablauf": {
     "label": "Ablauf",
     "h2": "Vier Schritte bis zum Festangebot.",
     "steps": [
-      ["01", "Kostenlose Besichtigung", "Wir kommen vorbei, sehen uns die Flächen an, messen nach und klären Belag, Zustand und Ihre Anforderungen an den Betrieb vor Ort."],
-      ["02", "Schriftliches Festangebot", "Sie erhalten ein schriftliches Festangebot je Objekt — ohne Nachforderung. Der genannte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als erwartet."],
-      ["03", "Ausführung im abgestimmten Fenster", "Wir reinigen zum vereinbarten Termin, abschnittsweise und betriebsschonend. Auf Wunsch mit neutraler Foto-Zustandsdokumentation vor und nach der Arbeit."],
-      ["04", "Optional: festes Intervall", "Wenn die Fläche wiederkehrend sauber bleiben soll, halten wir ein Wartungsintervall zum Vertragspreis fest — ein bis zwei Termine im Jahr, planbar."]
+      ["01", "Kostenlose Besichtigung", "Der Partner-Fachbetrieb kommt vorbei, sieht sich die Flächen an, misst nach und klärt Belag, Zustand und Ihre Anforderungen an den Betrieb vor Ort. Den Termin dafür koordinieren wir."],
+      ["02", "Schriftliches Festangebot", "Sie erhalten vom ausführenden Fachbetrieb ein schriftliches Festangebot je Objekt. Ein Ansprechpartner für alles — die Abstimmung läuft über uns."],
+      ["03", "Ausführung im abgestimmten Fenster", "Der Fachbetrieb reinigt zum vereinbarten Termin, abschnittsweise und betriebsschonend, mit professioneller Großflächen-Technik. Auf Wunsch mit neutraler Foto-Zustandsdokumentation vor und nach der Arbeit."],
+      ["04", "Optional: festes Intervall", "Wenn die Fläche wiederkehrend sauber bleiben soll, organisieren wir ein Wartungsintervall — ein bis zwei feste Termine im Jahr, planbar."]
     ]
   },
 
@@ -153,15 +153,15 @@
     "h2": "Gewerbepreise auf Anfrage — bewusst ohne Zahl aus der Ferne.",
     "body": [
       "Für Gewerbeflächen nennen wir online keinen Quadratmeterpreis. Objektart, Belag, Zustand, Zugänglichkeit und die Anforderungen an den laufenden Betrieb unterscheiden sich zu stark, als dass eine Zahl aus der Ferne seriös wäre.",
-      "Stattdessen besichtigen wir kostenlos und erstellen ein schriftliches Festangebot ohne Nachforderung. Was wir nennen, ist der Endpreis — ohne versteckte Kosten. Im Wartungsintervall vereinbaren wir den Preis je Termin fest."
+      "Stattdessen besichtigt der Partner-Fachbetrieb kostenlos und erstellt ein schriftliches Festangebot — den Termin dafür koordinieren wir. Im Wartungsintervall wird der Preis je Termin fest vereinbart."
     ],
     "staffel_h3": "Wie sich der Preis bildet",
     "staffel": [
       "Größere zusammenhängende Flächen sind je Quadratmeter günstiger als kleine Einzelaufträge — ab einer gewissen Größe rechnet sich der Aufwand pro Anfahrt anders.",
       "Mehrere Objekte einer Verwaltung, gemeinsam beauftragt, wirken in dieselbe Richtung.",
-      "Ein festes Intervall statt Einzelbeauftragung senkt den Aufwand auf beiden Seiten und schlägt sich im Vertragspreis nieder."
+      "Ein festes Intervall statt Einzelbeauftragung senkt den Aufwand auf beiden Seiten und schlägt sich im Preis nieder."
     ],
-    "staffel_note": "Konkrete Zahlen nennen wir nach der Besichtigung — verbindlich und schriftlich, nicht als Schätzung ins Blaue."
+    "staffel_note": "Konkrete Zahlen nennt der Fachbetrieb nach der Besichtigung — verbindlich und schriftlich, nicht als Schätzung ins Blaue."
   },
 
   "referenzen": {
@@ -169,7 +169,7 @@
     "h2": "Was wir hier noch nicht zeigen.",
     "body": [
       "Wir zeigen an dieser Stelle keine Gewerbe-Referenzen, weil wir keine erfinden. Was auf unseren Seiten steht, ist echt und belegt — und für den gewerblichen Bereich dokumentieren wir gerade die ersten Objekte.",
-      "Im privaten Bereich reinigen wir Stein- und Terrassenflächen im Havelland seit Längerem und zeigen dort ausschließlich echtes Material aus Kundenaufträgen. Wenn Sie sehen wollen, wie wir arbeiten, schauen Sie sich diese dokumentierten Aufträge an — oder lassen Sie uns bei der Besichtigung eine Probefläche auf Ihrem eigenen Stein reinigen."
+      "Im privaten Bereich reinigt Blankstein Stein- und Terrassenflächen im Havelland seit Längerem und zeigt dort ausschließlich echtes Material aus Kundenaufträgen. Wenn Sie sehen wollen, wie sauber solche Flächen werden, schauen Sie sich diese dokumentierten Aufträge an — oder der Partner-Fachbetrieb reinigt bei der Besichtigung eine Probefläche auf Ihrem eigenen Stein."
     ],
     "link_text": "Dokumentierte Aufträge ansehen",
     "link_url": "/#protokolle"
@@ -185,7 +185,7 @@
   "signal": {
     "label": "Auch für Gewerbe",
     "h2": "Gewerbeobjekt mit Steinflächen?",
-    "body": "Hausverwaltungen, Parkplätze, Betriebshöfe und Außengastronomie reinigen wir planbar und betriebsschonend — mit schriftlichem Festangebot nach kostenloser Besichtigung, auf Wunsch im Wartungsintervall.",
+    "body": "Für Hausverwaltungen, Parkplätze, Betriebshöfe und Außengastronomie organisieren wir die Steinreinigung planbar und betriebsschonend — mit schriftlichem Festangebot nach kostenloser Besichtigung, auf Wunsch im Wartungsintervall.",
     "cta": "Zur Gewerbe-Strecke"
   },
 
@@ -194,8 +194,8 @@
     "h2": "Gewerbepreise: auf Anfrage.",
     "lead": "Für gewerbliche Objekte gibt es online bewusst keinen Quadratmeterpreis.",
     "body": [
-      "Hausverwaltungen, Parkplätze, Betriebshöfe und Gastronomie-Außenflächen unterscheiden sich in Belag, Zustand, Größe und den Anforderungen an den laufenden Betrieb zu stark für eine feste Zahl aus der Ferne. Statt eines Online-Preises besichtigen wir kostenlos und erstellen ein schriftliches Festangebot ohne Nachforderung — der genannte Preis ist der Endpreis.",
-      "Größere zusammenhängende Flächen, mehrere gemeinsam beauftragte Objekte und feste Wartungsintervalle wirken sich günstig auf den Quadratmetersatz aus. Die konkrete Zahl nennen wir verbindlich nach der Besichtigung."
+      "Hausverwaltungen, Parkplätze, Betriebshöfe und Gastronomie-Außenflächen unterscheiden sich in Belag, Zustand, Größe und den Anforderungen an den laufenden Betrieb zu stark für eine feste Zahl aus der Ferne. Statt eines Online-Preises besichtigt ein geprüfter Partner-Fachbetrieb kostenlos und erstellt ein schriftliches Festangebot — die Besichtigung koordinieren wir.",
+      "Größere zusammenhängende Flächen, mehrere gemeinsam beauftragte Objekte und feste Wartungsintervalle wirken sich günstig auf den Quadratmetersatz aus. Die konkrete Zahl nennt der Fachbetrieb verbindlich nach der Besichtigung."
     ],
     "cta_text": "Zur Gewerbe-Strecke mit allen Segmenten und dem Ablauf"
   }

@@ -181,19 +181,12 @@ function head(title, desc, canonical, schemaGraph, opts = {}) {
 // ---------- Chrome: Microbar + Header + Local-Trust-Footer + Sticky-Bar (Spec §2.1/§2.13/§3.2) ----------
 const mainWrap = m => `<main id="main">${m}</main>`; // <main>-Landmark + Skip-Link-Ziel (Spec §4 MUSS)
 const AMPEL_SPAN = cls => `<span class="status${cls ? ` ${cls}` : ''}" data-ampel><span class="status-tx">Mo–Fr 8–18 · Sa 9–14</span></span>`;
-// Microbar (Maurice 2026-07-07): links nur die klickbare Telefonnummer, rechts Erreichbarkeits-Ampel
-// + 5,0-Google-Ranking als Dauer-Trust. Keine Adresse (steht im Footer + Kontakt). reviewsData direkt
-// nutzen (REV_COUNT/fmtRating sind erst weiter unten definiert → TDZ).
-const microbar = `<div class="microbar"><div class="container microbar-in">
-<a class="mb-tel" href="tel:${tel}">${ICON.phone}<span class="mono">${esc(nap.phone_display)}</span></a>
-<span class="mb-right">${AMPEL_SPAN('')}${reviewsData.count ? `<a class="mb-rate" href="${reviewsData.profile_url || GBP_REVIEWS_URL}" target="_blank" rel="noopener"><span class="mb-star" aria-hidden="true">★</span> <span class="mono">${Number(reviewsData.rating || 5).toFixed(1).replace('.', ',')}</span> · ${reviewsData.count} auf Google</a>` : ''}</span>
-</div></div>`;
+// Microbar ENTFERNT (Maurice 2026-07-22): Telefon/Ampel/Rating sind in Nav-CTA, Hero und Footer abgedeckt.
 const NAV = [['Leistungen', '/#leistungen'], ['Preise', '/preise/'], ['Für Gewerbe', '/gewerbe/'], ['Bewertungen', '/bewertungen/'], ['Über uns', '/ueber-uns/'], ['Servicegebiet', '/servicegebiet/'], ['Ratgeber', '/ratgeber/'], ['Kontakt', '/kontakt/']];
-const header = `${microbar}<header class="site-header" id="header"><div class="container nav-row">
+const header = `<header class="site-header" id="header"><div class="container nav-row">
 <a class="logo" href="/" aria-label="Blankstein — zur Startseite">${logoImg('logo', 'header-logo', 34)}</a>
 <nav aria-label="Hauptnavigation"><ul class="nav-links" id="nav-list">${NAV.map(([t, h]) => `<li><a href="${h}">${t}</a></li>`).join('')}<li class="nav-li-phone"><a class="nav-phone" href="tel:${tel}">${esc(nap.phone_display)}</a></li></ul></nav>
-<div class="nav-right"><a class="nav-phone" href="tel:${tel}">${esc(nap.phone_display)}</a>
-<a class="btn-wa nav-cta" href="${waHref(WA_DEFAULT)}" target="_blank" rel="noopener">${ICON.wa} Richtpreis anfragen</a>
+<div class="nav-right"><a class="btn-wa nav-cta" href="${waHref(WA_DEFAULT)}" target="_blank" rel="noopener">${ICON.wa} Richtpreis anfragen</a>
 <button class="menu-toggle" id="menu-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button></div>
 </div></header>`;
 // Mobile Sticky-Bar: 3 Kanäle + Live-Preis-Slot (data-live-price — wird in Etappe B vom Konfigurator befüllt)
@@ -1505,6 +1498,19 @@ ${formSection}
 // ====================================================================
 const SEG_OG = { hausverwaltungen: 'proof-ergebnis-1', parkplaetze: 'hub-pflaster-vn', gastronomie: 'proof-arbeit-2' };
 
+// KI-Hero-Illustration je Segment — KONDITIONAL: rendert nur, wenn der Manifest-Slug existiert (Muster wie rg-herofig
+// beim Ratgeber-Hero, l. 937). Bewusst NICHT im bw-hero (= Beweis-Slot laut gates.mjs PROOF_SLOT_RE), sondern in eigener
+// .rg-herofig-Section darunter, damit KI-Bilder (source:"ki") NICHT als Beweis zählen. KI-Provenance via honest-alt (pic()).
+const GW_SEG_HERO = {
+  hausverwaltungen: ['gewerbe-hausverwaltung-hero', 'Flächenreinigung mit professionellem Flächenreiniger im Innenhof einer Wohnanlage'],
+  parkplaetze: ['gewerbe-parkplatz-hero', 'Professionelle Großflächenreinigung eines Parkplatzes mit Aufsitz-Reinigungsmaschine'],
+  gastronomie: ['gewerbe-gastro-hero', 'Frisch gereinigte Natursteinterrasse eines Restaurants am Morgen']
+};
+function gwHeroIllu(slug) {
+  const e = GW_SEG_HERO[slug]; if (!e || !IMG[e[0]]) return '';
+  return `<div class="container rg-herofig-wrap"><figure class="rg-herofig">${pic(e[0], { alt: e[1], sizes: '(max-width:1180px) 92vw, 1100px', lcp: true })}</figure></div>`;
+}
+
 // Schema je Gewerbe-Seite: Service + areaServed (7 Orte + Havelland) + FAQPage + BreadcrumbList — OHNE Offer (auf Anfrage).
 function gewerbeSchema(url, svcName, desc, faqs, crumbName) {
   const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
@@ -1699,6 +1705,8 @@ ${gbadge()}
 </div>
 <p class="bw-sla">${SLA_HTML} ${AMPEL_SPAN('status-light')}</p>
 </div></section>
+
+${gwHeroIllu(seg.slug)}
 
 <section class="lokal-sec"><div class="container">
 <p class="doc-label">${esc(seg.problem_label)}</p>
