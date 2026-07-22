@@ -80,10 +80,14 @@ async function main() {
   const account = (acc.accounts || [])[0];
   if (!account) throw new Error('Kein GBP-Account für diesen Token sichtbar');
 
-  // 2) Location (Business Information v1 — v4-Location-Listing ist abgeschaltet)
+  // 2) Location (Business Information v1 — v4-Location-Listing ist abgeschaltet).
+  // Der Account trägt MEHRERE Locations (Blankstein + Havelland) — hart auf Blankstein pinnen,
+  // sonst hängt der Sync an der API-Reihenfolge und könnte Fremd-Reviews schreiben.
+  const BLANKSTEIN_LOC = 'locations/976705348428968470';
   const locs = await api(`https://mybusinessbusinessinformation.googleapis.com/v1/${account.name}/locations?readMask=name,title`);
-  const location = (locs.locations || [])[0];
-  if (!location) throw new Error(`Keine Location unter ${account.name}`);
+  const location = (locs.locations || []).find(l => l.name === BLANKSTEIN_LOC)
+    || (locs.locations || []).find(l => /blankstein/i.test(l.title || ''));
+  if (!location) throw new Error(`Blankstein-Location nicht unter ${account.name} gefunden`);
   const locId = location.name.split('/').pop();          // locations/{id} -> {id}
   const accId = account.name.split('/').pop();           // accounts/{id} -> {id}
 

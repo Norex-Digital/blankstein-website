@@ -1,0 +1,47 @@
+# Täglicher Review-Sync: zieht echte GBP-Reviews (Aggregat + Kacheln, Blocklist-gefiltert)
+# via scripts/sync-gbp-reviews.mjs, rendert neu und pusht NUR wenn alle Gates grün sind.
+# Token kommt als Secret GBP_TOKEN_JSON (Inhalt von ~/.norex-ct/sessions/gbp-token.json).
+name: review-sync
+on:
+  schedule:
+    - cron: '45 4 * * *'   # täglich 04:45 UTC (06:45 DE-Sommerzeit)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - name: GBP-Token aus Secret bereitstellen
+        env:
+          GBP_TOKEN_JSON: ${{ secrets.GBP_TOKEN_JSON }}
+        run: printf '%s' "$GBP_TOKEN_JSON" > "$RUNNER_TEMP/gbp-token.json"
+      - name: Reviews vom GBP syncen
+        env:
+          GBP_TOKEN_PATH: ${{ runner.temp }}/gbp-token.json
+        run: node scripts/sync-gbp-reviews.mjs
+      - name: Bei Änderung rendern, Gates fahren, pushen
+        run: |
+          if git diff --quiet data/reviews.json; then
+            echo "Keine Änderung — fertig."
+            exit 0
+          fi
+          node scripts/validate-data.mjs
+          node scripts/generate.mjs
+          python scripts/build-og-images.py
+          node scripts/gates.mjs
+          git config user.name "review-sync-bot"
+          git config user.email "noreply@blankstein-havelland.de"
+          git add -A
+          git commit -m "chore: GBP-Review-Sync (Aggregat + Kacheln, gates grün)"
+          git push
