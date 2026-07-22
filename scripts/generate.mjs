@@ -1540,6 +1540,7 @@ function gwAblauf(g) {
 <p class="doc-label">${esc(a.label)}</p>
 <h2 class="sec-h2">${esc(a.h2)}</h2>
 <div class="svcz">${(a.steps || []).map(([n, t, d]) => `<div class="svc-row svc-row-2col"><span class="svc-num mono">${esc(n)}</span><div><h3>${esc(t)}</h3><p>${esc(d)}</p></div></div>`).join('')}</div>
+<p class="svcz-links">Arbeitsqualität ansehen: <a href="/#protokolle">dokumentierte Aufträge aus dem Privatbereich →</a></p>
 </div></section>`;
 }
 
