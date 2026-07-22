@@ -164,17 +164,6 @@
     "staffel_note": "Konkrete Zahlen nennt der Fachbetrieb nach der Besichtigung — verbindlich und schriftlich, nicht als Schätzung ins Blaue."
   },
 
-  "referenzen": {
-    "label": "Referenzen",
-    "h2": "Was wir hier noch nicht zeigen.",
-    "body": [
-      "Wir zeigen an dieser Stelle keine Gewerbe-Referenzen, weil wir keine erfinden. Was auf unseren Seiten steht, ist echt und belegt — und für den gewerblichen Bereich dokumentieren wir gerade die ersten Objekte.",
-      "Im privaten Bereich reinigt Blankstein Stein- und Terrassenflächen im Havelland seit Längerem und zeigt dort ausschließlich echtes Material aus Kundenaufträgen. Wenn Sie sehen wollen, wie sauber solche Flächen werden, schauen Sie sich diese dokumentierten Aufträge an — oder der Partner-Fachbetrieb reinigt bei der Besichtigung eine Probefläche auf Ihrem eigenen Stein."
-    ],
-    "link_text": "Dokumentierte Aufträge ansehen",
-    "link_url": "/#protokolle"
-  },
-
   "anfrage": {
     "label": "Anfrage",
     "h2": "Objekt schildern, Besichtigung anfragen.",
