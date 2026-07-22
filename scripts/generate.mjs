@@ -183,7 +183,7 @@ const microbar = `<div class="microbar"><div class="container microbar-in">
 <a class="mb-tel" href="tel:${tel}">${ICON.phone}<span class="mono">${esc(nap.phone_display)}</span></a>
 <span class="mb-right">${AMPEL_SPAN('')}${reviewsData.count ? `<a class="mb-rate" href="${reviewsData.profile_url || GBP_REVIEWS_URL}" target="_blank" rel="noopener"><span class="mb-star" aria-hidden="true">★</span> <span class="mono">${Number(reviewsData.rating || 5).toFixed(1).replace('.', ',')}</span> · ${reviewsData.count} auf Google</a>` : ''}</span>
 </div></div>`;
-const NAV = [['Leistungen', '/#leistungen'], ['Preise', '/preise/'], ['Bewertungen', '/bewertungen/'], ['Über uns', '/ueber-uns/'], ['Servicegebiet', '/servicegebiet/'], ['Ratgeber', '/ratgeber/'], ['Kontakt', '/kontakt/']];
+const NAV = [['Leistungen', '/#leistungen'], ['Preise', '/preise/'], ['Für Gewerbe', '/gewerbe/'], ['Bewertungen', '/bewertungen/'], ['Über uns', '/ueber-uns/'], ['Servicegebiet', '/servicegebiet/'], ['Ratgeber', '/ratgeber/'], ['Kontakt', '/kontakt/']];
 const header = `${microbar}<header class="site-header" id="header"><div class="container nav-row">
 <a class="logo" href="/" aria-label="Blankstein — zur Startseite">${logoImg('logo', 'header-logo', 34)}</a>
 <nav aria-label="Hauptnavigation"><ul class="nav-links" id="nav-list">${NAV.map(([t, h]) => `<li><a href="${h}">${t}</a></li>`).join('')}<li class="nav-li-phone"><a class="nav-phone" href="tel:${tel}">${esc(nap.phone_display)}</a></li></ul></nav>
@@ -216,6 +216,11 @@ ${AMPEL_SPAN('foot-status')}
 <p class="foot-h">Nachweise</p>
 <ul><li><a href="${GBP_REVIEWS_URL}" target="_blank" rel="noopener">Google-Bewertungen${footRev} ↗</a></li><li><a href="/bewertungen/">Bewertungen im Überblick</a></li></ul>
 <figure class="foot-map">${pic('servicegebiet-karte', { alt: 'Karte des Blankstein-Servicegebiets im Havelland und am westlichen Berliner Rand', sizes: '300px' })}<figcaption>© OpenStreetMap-Mitwirkende</figcaption></figure>
+</div>
+<div>
+<p class="foot-h">Für Gewerbe</p>
+<ul><li><a href="/gewerbe/">Für Gewerbe — Überblick</a></li>${(gewerbeCopy && gewerbeCopy.segmente ? gewerbeCopy.segmente : []).map(sg => `<li><a href="/gewerbe/${sg.slug}/">${esc(sg.nav_name)}</a></li>`).join('')}</ul>
+<p class="foot-sla">Objektreinigung planbar &amp; betriebsschonend.</p>
 </div>
 </div>
 <div class="foot-legal"><span>© 2026 Blankstein · ${esc(nap.rechtstraeger)}</span></div>
@@ -265,6 +270,7 @@ const fallCopy = fs.existsSync('data/copy/fallstudien.json') ? JSON.parse(fs.rea
 const ueberCopy = fs.existsSync('data/copy/ueber.json') ? JSON.parse(fs.readFileSync('data/copy/ueber.json', 'utf8')) : null;
 const gebietCopy = fs.existsSync('data/copy/servicegebiet.json') ? JSON.parse(fs.readFileSync('data/copy/servicegebiet.json', 'utf8')) : null;
 const startCopy = fs.existsSync('data/copy/start.json') ? JSON.parse(fs.readFileSync('data/copy/start.json', 'utf8')) : null;
+const gewerbeCopy = fs.existsSync('data/copy/gewerbe.json') ? JSON.parse(fs.readFileSync('data/copy/gewerbe.json', 'utf8')) : null;
 const reelsData = fs.existsSync('data/reels.json') ? JSON.parse(fs.readFileSync('data/reels.json', 'utf8')) : { aktiv: false, reels: [] };
 const written = [];
 
