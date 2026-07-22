@@ -1,93 +1,93 @@
 {
-  "_meta": "Echte Google-Reviews vom GBP. source=manual (Fallback-Datenstand SERP-verifiziert 06.07.2026, Quelle previews/ASSET-LISTE.md) ODER gbp-api (automatisch via scripts/sync-gbp-reviews.mjs, folgt in Etappe C — Token liegt nur auf dem Mac). Bei leerem reviews[] => Empty-State, NICHTS wird gerendert (kein Fake-Stern). UWG/Google-Policy: nur ECHTE Reviews, Anzeige-Zahlen exakt wie auf Google. BLOCKLIST: 'Christian Brehm' NIE rendern (Verwandtschaft — Generator filtert zusätzlich). Nur die 4 inventarisierten Zitate; 5 weitere noch nicht inventarisiert.",
-  "_eintrag_format": {
-    "author": "Vorname N.",
-    "objekt": "Einfahrt",
-    "rating": 5,
-    "text": "Bewertungstext …",
-    "date": "2026-06-22",
-    "relative": "vor 2 Tagen"
-  },
-  "source": "gbp-api",
-  "place_id": "ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
-  "cid": "14142805656851355288",
-  "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
+ "_meta": "Echte Google-Reviews vom GBP. source=manual (Fallback-Datenstand SERP-verifiziert 06.07.2026, Quelle previews/ASSET-LISTE.md) ODER gbp-api (automatisch via scripts/sync-gbp-reviews.mjs, folgt in Etappe C — Token liegt nur auf dem Mac). Bei leerem reviews[] => Empty-State, NICHTS wird gerendert (kein Fake-Stern). UWG/Google-Policy: nur ECHTE Reviews, Anzeige-Zahlen exakt wie auf Google. BLOCKLIST: 'Christian Brehm' NIE rendern (Verwandtschaft — Generator filtert zusätzlich). Nur die 4 inventarisierten Zitate; 5 weitere noch nicht inventarisiert.",
+ "_eintrag_format": {
+  "author": "Vorname N.",
+  "objekt": "Einfahrt",
   "rating": 5,
-  "count": 11,
-  "verified": "gbp-api 2026-07-07",
-  "blocklist": [
-    "Christian Brehm"
-  ],
-  "reviews": [
-    {
-      "author": "Tobi Schmerle",
-      "rating": 5,
-      "text": "Einfahrt war komplett fleckig und dreckig, hat mich ehrlich schon länger gestört. Hab Blankstein beauftragt und die haben das richtig hingekriegt. Danach wieder sauber und hell, fast vergessen wie’s mal ausgesehen hat. Super Jungs 👍",
-      "date": "2026-07-06",
-      "review_id": "AbFvOqn0YeeMhsT1YKAHvKihoFyzvTwQLl7V4SlcapM6gA2g2sGlq1O2D8zOe3LMMAfd6OVw1cvj4w"
-    },
-    {
-      "author": "amar durovic",
-      "rating": 5,
-      "text": "Die Terrasse sah echt nicht mehr schön aus, alles schon grün. Hab’s viel zu lange aufgeschoben. Jetzt endlich machen lassen – ging super schnell und sieht wieder richtig top aus. Absolute Empfehlung!",
-      "date": "2026-07-02",
-      "review_id": "AbFvOqlm0a9dO2DyNk3av55mJzto5TwUnlcFnGtSod2KroNgERk1StTgloxsbZj4xokfSBJHZqaU"
-    },
-    {
-      "author": "Jürgen Wunderlich",
-      "rating": 5,
-      "text": "Einfahrt war seit Jahren nicht mehr richtig sauber, überall Moos und Dreck. Hab Blankstein beauftragt und war positiv überrascht. Schnell, unkompliziert, gutes Ergebnis. Kommt auf jeden Fall wieder.",
-      "date": "2026-07-02",
-      "review_id": "AbFvOqnfRdz9XS2lbVoAHIUuvgKU9XOZBQcmzonALZHcamIPtseMB5H9IdzoZYbnCKsp4sDcpdNkKg"
-    },
-    {
-      "author": "SanityTobii",
-      "rating": 5,
-      "text": "Haben unseren Weg reinigen lassen, war stark vermoost. Ergebnis hat mich ehrlich überrascht, sieht aus wie neu. Waren pünktlich, haben sauber gearbeitet, Preis war fair. Gerne wieder.",
-      "date": "2026-06-27",
-      "review_id": "AbFvOqmAvxZn9rU6lHVvi53PMGjhHRmHWg95WzKuWuTwCSMk7sOX1oaP-53WSnkT6vGe_7eAh6mTug"
-    },
-    {
-      "author": "Vincent Roller",
-      "rating": 5,
-      "text": "Wir sind sehr zufrieden mit dem Ergebnis. Sehr guter Service. Unsere Terrasse sieht endlich wieder gepflegt aus.👍",
-      "date": "2026-06-26",
-      "review_id": "AbFvOqmcW3h4ALvpV3WRzryxj7235eIPjpb6na4qGzLvgVs7tzYJHSGREq8AiiQUmPs4tdYaomOp"
-    },
-    {
-      "author": "Viktor Brähler",
-      "rating": 5,
-      "text": "Einen sehr guten Job haben die jungs bei mir gemacht",
-      "date": "2026-06-26",
-      "review_id": "AbFvOqmy67Z4OO2qrPePkB7nl0QcxkeKFSMR8s7U9Zc6VMlPOW-dJiXWH6TYxm_s8uIuoujAfO21"
-    },
-    {
-      "author": "Chenoa Riethmann",
-      "rating": 5,
-      "text": "Wow einfach toll! Unsere Einfahrt wurde wieder einwandfrei sauber gemacht! Ich habe direkt einen Termin für die Besichtigung am nächsten Tag bekommen:) gerne wieder !!",
-      "date": "2026-06-25",
-      "review_id": "AbFvOqnXqAH5b6jCfrupW0MqHZ_k_CLCQAq7G3ZMFxrlGgks_wBi-vLNkZHixGO5_pwtUSYElYilJg"
-    },
-    {
-      "author": "louis",
-      "rating": 5,
-      "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen.",
-      "date": "2026-06-22",
-      "review_id": "AbFvOqnWzTpOLP6RoiQ9Qe_FyVi7Y5OeSZj_O-Z6Ok71fevoipD9zO2uAgU9kDPVCrHcdKWIo-RegQ"
-    },
-    {
-      "author": "Emir Hadzibeganovic",
-      "rating": 5,
-      "text": "Meine Terrasse wurde letztens gründlich und sauber gereinigt. Das Ergebnis ist super geworden, und ich bin super zufrieden mit der Arbeit. Freundlicher Service und klare Empfehlung!",
-      "date": "2026-06-22",
-      "review_id": "AbFvOqmRQuT_wbXnoVwGMw9GdEPM8X11jRuc9I2WJiY4vFmzTG4SeXWC6qMdnoZq1r-_kVOex1DH"
-    },
-    {
-      "author": "Mattis Burzlaff",
-      "rating": 5,
-      "text": "Ich bin super zufrieden mit dem Ergebniss und der Arbeit, meine Einfahrt sieht endlich wieder Sauber und gepflegt aus.\nPerfekt für den Sommer, kann ich nur empfehlen 👍",
-      "date": "2026-06-22",
-      "review_id": "AbFvOqkX_WiuGjrmcQQYYNswx8dqUaM6x8R5yxu_s-ijf6frNDcoBBMYqIxWEYcqYeLVSbQq07ooUA"
-    }
-  ]
+  "text": "Bewertungstext …",
+  "date": "2026-06-22",
+  "relative": "vor 2 Tagen"
+ },
+ "source": "gbp-api",
+ "place_id": "ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
+ "cid": "14142805656851355288",
+ "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
+ "rating": 5,
+ "count": 14,
+ "verified": "Inhaber-Angabe Maurice 2026-07-22 (14 auf Google, Rating 5,0)",
+ "blocklist": [
+  "Christian Brehm"
+ ],
+ "reviews": [
+  {
+   "author": "Tobi Schmerle",
+   "rating": 5,
+   "text": "Einfahrt war komplett fleckig und dreckig, hat mich ehrlich schon länger gestört. Hab Blankstein beauftragt und die haben das richtig hingekriegt. Danach wieder sauber und hell, fast vergessen wie’s mal ausgesehen hat. Super Jungs 👍",
+   "date": "2026-07-06",
+   "review_id": "AbFvOqn0YeeMhsT1YKAHvKihoFyzvTwQLl7V4SlcapM6gA2g2sGlq1O2D8zOe3LMMAfd6OVw1cvj4w"
+  },
+  {
+   "author": "amar durovic",
+   "rating": 5,
+   "text": "Die Terrasse sah echt nicht mehr schön aus, alles schon grün. Hab’s viel zu lange aufgeschoben. Jetzt endlich machen lassen – ging super schnell und sieht wieder richtig top aus. Absolute Empfehlung!",
+   "date": "2026-07-02",
+   "review_id": "AbFvOqlm0a9dO2DyNk3av55mJzto5TwUnlcFnGtSod2KroNgERk1StTgloxsbZj4xokfSBJHZqaU"
+  },
+  {
+   "author": "Jürgen Wunderlich",
+   "rating": 5,
+   "text": "Einfahrt war seit Jahren nicht mehr richtig sauber, überall Moos und Dreck. Hab Blankstein beauftragt und war positiv überrascht. Schnell, unkompliziert, gutes Ergebnis. Kommt auf jeden Fall wieder.",
+   "date": "2026-07-02",
+   "review_id": "AbFvOqnfRdz9XS2lbVoAHIUuvgKU9XOZBQcmzonALZHcamIPtseMB5H9IdzoZYbnCKsp4sDcpdNkKg"
+  },
+  {
+   "author": "SanityTobii",
+   "rating": 5,
+   "text": "Haben unseren Weg reinigen lassen, war stark vermoost. Ergebnis hat mich ehrlich überrascht, sieht aus wie neu. Waren pünktlich, haben sauber gearbeitet, Preis war fair. Gerne wieder.",
+   "date": "2026-06-27",
+   "review_id": "AbFvOqmAvxZn9rU6lHVvi53PMGjhHRmHWg95WzKuWuTwCSMk7sOX1oaP-53WSnkT6vGe_7eAh6mTug"
+  },
+  {
+   "author": "Vincent Roller",
+   "rating": 5,
+   "text": "Wir sind sehr zufrieden mit dem Ergebnis. Sehr guter Service. Unsere Terrasse sieht endlich wieder gepflegt aus.👍",
+   "date": "2026-06-26",
+   "review_id": "AbFvOqmcW3h4ALvpV3WRzryxj7235eIPjpb6na4qGzLvgVs7tzYJHSGREq8AiiQUmPs4tdYaomOp"
+  },
+  {
+   "author": "Viktor Brähler",
+   "rating": 5,
+   "text": "Einen sehr guten Job haben die jungs bei mir gemacht",
+   "date": "2026-06-26",
+   "review_id": "AbFvOqmy67Z4OO2qrPePkB7nl0QcxkeKFSMR8s7U9Zc6VMlPOW-dJiXWH6TYxm_s8uIuoujAfO21"
+  },
+  {
+   "author": "Chenoa Riethmann",
+   "rating": 5,
+   "text": "Wow einfach toll! Unsere Einfahrt wurde wieder einwandfrei sauber gemacht! Ich habe direkt einen Termin für die Besichtigung am nächsten Tag bekommen:) gerne wieder !!",
+   "date": "2026-06-25",
+   "review_id": "AbFvOqnXqAH5b6jCfrupW0MqHZ_k_CLCQAq7G3ZMFxrlGgks_wBi-vLNkZHixGO5_pwtUSYElYilJg"
+  },
+  {
+   "author": "louis",
+   "rating": 5,
+   "text": "Super sympathische und kompetente Jungs! Alleine hätte ich meine Einfahrt nicht so sauber bekommen. Sehr guter Job! Kann ich nur empfehlen.",
+   "date": "2026-06-22",
+   "review_id": "AbFvOqnWzTpOLP6RoiQ9Qe_FyVi7Y5OeSZj_O-Z6Ok71fevoipD9zO2uAgU9kDPVCrHcdKWIo-RegQ"
+  },
+  {
+   "author": "Emir Hadzibeganovic",
+   "rating": 5,
+   "text": "Meine Terrasse wurde letztens gründlich und sauber gereinigt. Das Ergebnis ist super geworden, und ich bin super zufrieden mit der Arbeit. Freundlicher Service und klare Empfehlung!",
+   "date": "2026-06-22",
+   "review_id": "AbFvOqmRQuT_wbXnoVwGMw9GdEPM8X11jRuc9I2WJiY4vFmzTG4SeXWC6qMdnoZq1r-_kVOex1DH"
+  },
+  {
+   "author": "Mattis Burzlaff",
+   "rating": 5,
+   "text": "Ich bin super zufrieden mit dem Ergebniss und der Arbeit, meine Einfahrt sieht endlich wieder Sauber und gepflegt aus.\nPerfekt für den Sommer, kann ich nur empfehlen 👍",
+   "date": "2026-06-22",
+   "review_id": "AbFvOqkX_WiuGjrmcQQYYNswx8dqUaM6x8R5yxu_s-ijf6frNDcoBBMYqIxWEYcqYeLVSbQq07ooUA"
+  }
+ ]
 }
