@@ -954,5 +954,18 @@
   "fb_ext": "jpg",
   "fb_w": 600,
   "source": "ki"
+ },
+ "favicon": {
+  "w": 192,
+  "h": 192,
+  "widths": [
+   48,
+   96,
+   192
+  ],
+  "avif": false,
+  "fb_ext": "png",
+  "fb_w": 192,
+  "source": "neutral"
  }
 }

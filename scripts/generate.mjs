@@ -167,7 +167,10 @@ function head(title, desc, canonical, schemaGraph, opts = {}) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">${opts.noindex ? '\n<meta name="robots" content="noindex, follow">' : ''}${canonTags}
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">${ogUrlTag}<meta property="og:type" content="website"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Blankstein">${ogImg}
-<link rel="icon" type="image/png" href="/assets/img/logo.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css?v=${CSS_VER}">
@@ -1780,6 +1783,7 @@ sitemaps();
 // og-Jobs für scripts/build-og-images.py (liest assets/img/og-jobs.json, schreibt assets/img/og/ + website/assets/img/og/)
 fs.writeFileSync('assets/img/og-jobs.json', JSON.stringify({ _meta: 'Generiert von generate.mjs — Input für scripts/build-og-images.py (og:image 1200×630 je Seite, Spec §4). Nicht von Hand editieren.', jobs: OG_JOBS }, null, 1));
 fs.cpSync('assets', 'website/assets', { recursive: true });
+fs.copyFileSync('assets/img/favicon.ico', 'website/favicon.ico'); // Root-Fallback für Google-SERP-Favicon
 // Asset-Budget (Spec §4 MUSS): unreferenzierte Dateien fliegen aus website/assets wieder raus.
 // Referenz-Quellen: aller HTML-Output, site.css (Fonts), og-Jobs (Dateien entstehen erst im build-og-Schritt).
 {
