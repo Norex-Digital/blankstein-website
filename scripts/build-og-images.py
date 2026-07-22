@@ -136,9 +136,10 @@ def render(job):
     for ln in lines:
         d.text((72, y), ln, font=f_title, fill=FG)
         y += round(f_title.size * 1.22)
-    # Fusszeile (Montserrat Medium)
+    # Fusszeile (Montserrat Medium) — Gewerbe-Karten OHNE Preis-Zahl (auf-Anfrage-Prinzip, kein € im Gewerbe-Kontext)
     f_sub = find_font(bold=False, size=26)
-    d.text((72, H - 92), "blankstein-havelland.de · Richtpreis 8 €/m²", font=f_sub, fill=FG_MUTED)
+    foot = "blankstein-havelland.de · Für Gewerbe" if str(job.get("slug", "")).startswith("gewerbe") else "blankstein-havelland.de · Richtpreis 8 €/m²"
+    d.text((72, H - 92), foot, font=f_sub, fill=FG_MUTED)
     return img
 
 

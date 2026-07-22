@@ -24,6 +24,8 @@ const orteCopy = orteCopyRaw.orte || {};
 // Ratgeber-Copy (data/copy/ratgeber.json) — optional; Artikel-Template (AEO), bridged zu Money-Hubs
 const ratCopyRaw = fs.existsSync('data/copy/ratgeber.json') ? JSON.parse(fs.readFileSync('data/copy/ratgeber.json', 'utf8')) : { ratgeber: [] };
 const ratList = Array.isArray(ratCopyRaw) ? ratCopyRaw : (ratCopyRaw.ratgeber || []);
+// Gewerbe-Copy früh laden (footer referenziert gewerbeCopy eager — muss vor der footer-Const initialisiert sein).
+const gewerbeCopy = fs.existsSync('data/copy/gewerbe.json') ? JSON.parse(fs.readFileSync('data/copy/gewerbe.json', 'utf8')) : null;
 
 // ---------- Analytics-Gerüst (GA4/GTM + Consent Mode v2) — rendert NUR bei echter GTM-ID ----------
 const isReal = v => v && !/\b(TBD|XXXX|G-XXXX|GTM-X|null)\b/i.test(String(v));
@@ -270,7 +272,6 @@ const fallCopy = fs.existsSync('data/copy/fallstudien.json') ? JSON.parse(fs.rea
 const ueberCopy = fs.existsSync('data/copy/ueber.json') ? JSON.parse(fs.readFileSync('data/copy/ueber.json', 'utf8')) : null;
 const gebietCopy = fs.existsSync('data/copy/servicegebiet.json') ? JSON.parse(fs.readFileSync('data/copy/servicegebiet.json', 'utf8')) : null;
 const startCopy = fs.existsSync('data/copy/start.json') ? JSON.parse(fs.readFileSync('data/copy/start.json', 'utf8')) : null;
-const gewerbeCopy = fs.existsSync('data/copy/gewerbe.json') ? JSON.parse(fs.readFileSync('data/copy/gewerbe.json', 'utf8')) : null;
 const reelsData = fs.existsSync('data/reels.json') ? JSON.parse(fs.readFileSync('data/reels.json', 'utf8')) : { aktiv: false, reels: [] };
 const written = [];
 
@@ -485,9 +486,13 @@ function weiterSection(s, c) {
   const rgs = (c.ratgeber || []).map(slug => ratList.find(r => r.slug === slug)).filter(Boolean)
     .map(r => `<a href="/ratgeber/${r.slug}/">${esc(r.h1)} →</a>`).join('');
   if (!sisters && !rgs) return '';
-  return `<section class="weiter-sec"><div class="container weiter-grid">
+  // Dezenter Gewerbe-Hinweis auf allen 4 Money-Hubs (weiterSection wird ausschließlich von hub() aufgerufen).
+  return `<section class="weiter-sec"><div class="container">
+<div class="weiter-grid">
 <div><p class="doc-label">Weitere Leistungen</p><div class="weiter-links">${sisters}</div></div>
 <div><p class="doc-label">Aus dem Ratgeber</p><div class="weiter-links">${rgs || `<a href="/ratgeber/">Alle Ratgeber ansehen →</a>`}</div></div>
+</div>
+<p class="door-alt" style="margin-top:1.4rem">Gewerbefläche statt Privatgrundstück? Für Parkplätze, Innenhöfe und Betriebshöfe gibt es die <a href="/gewerbe/">Gewerbe-Strecke →</a>.</p>
 </div></section>`;
 }
 
@@ -734,6 +739,8 @@ ${leistungsZeilen()}
 ${zweiTueren()}
 
 ${inhaberBlock()}
+
+${gewerbeSignal(gewerbeCopy)}
 
 ${reviewWall({ excludeAuthors: (fallCopy ? (fallCopy.protokolle || []).filter(p => p.home !== false && p.review && p.review.text).map(p => p.review.author) : []) })}
 
@@ -1073,7 +1080,7 @@ ${v.footer ? `<p class="vergleich-footer reveal">${esc(v.footer)}</p>` : ''}
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Preise</div>
 <section class="bw-hero o-hero"><div class="container bw-grid">
 <div class="bw-copy">
-<p class="doc-label">Preisliste · Stand ${esc(config.content_stand)}</p>
+<p class="doc-label">Preise · Für Privatkunden · Stand ${esc(config.content_stand)}</p>
 <h1 class="bw-h1">${esc(p.h1)}</h1>
 <p class="bw-lede">${esc(p.lead)}</p>
 ${PREIS_BOX}
@@ -1110,6 +1117,7 @@ ${vergleichHtml}
 <div class="gar-row">${GARANTIE_TRIO.map(([tt, h, d]) => `<article class="gar-item"><span class="mono-tag mono">${tt}</span><h3>${h}</h3><p>${d}</p></article>`).join('')}</div>
 <p class="door-alt">Persönlich klären? <a href="/kontakt/">Zur Kontaktseite</a> — oder <a href="/ratgeber/was-kostet-steinreinigung/">zum Kosten-Ratgeber</a>.</p>
 </div></section>
+${gwPreiseGewerbe()}
 ${faqBlock(p.faqs, { title: 'Preisfragen, kurz beantwortet' })}`;
   const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
   const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"Steinreinigung und Terrassenreinigung","serviceType":"Steinreinigung","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"${P.satz_basis}","description":"Richtpreis pro Quadratmeter für die Steinreinigung, Endpreis ohne versteckte Kosten."}}`;
@@ -1395,9 +1403,10 @@ function sitemaps() {
   // Sitemap-Split (Wellen-Indexierung): URLs nach Typ in Teil-Sitemaps, ein Index verweist darauf.
   const svcSet = new Set(services.map(s => `/${s.slug}/`));
   const ortSet = new Set([...orte.map(o => `/${o.slug}/`), '/servicegebiet/']);
-  const groups = { services: [], standorte: [], ratgeber: [], core: [] };
+  const groups = { services: [], standorte: [], gewerbe: [], ratgeber: [], core: [] };
   for (const u of urls) {
     if (u.startsWith('/ratgeber')) groups.ratgeber.push(u);
+    else if (u.startsWith('/gewerbe')) groups.gewerbe.push(u);
     else if (svcSet.has(u)) groups.services.push(u);
     else if (ortSet.has(u)) groups.standorte.push(u);
     else groups.core.push(u);
@@ -1487,6 +1496,263 @@ ${formSection}
 }
 
 // ====================================================================
+// GEWERBE-STRECKE (B2B) — Hub + 3 Segmente (Design 2026-07-22). Preise IMMER "auf Anfrage",
+// KEINE Zahl im Gewerbe-Kontext (kein Konfigurator), WhatsApp tritt zurück (Telefon + B2B-Formular),
+// Referenzen = ehrlicher Empty-State. Copy aus data/copy/gewerbe.json.
+// ====================================================================
+const SEG_OG = { hausverwaltungen: 'proof-ergebnis-1', parkplaetze: 'hub-pflaster-vn', gastronomie: 'proof-arbeit-2' };
+
+// Schema je Gewerbe-Seite: Service + areaServed (7 Orte + Havelland) + FAQPage + BreadcrumbList — OHNE Offer (auf Anfrage).
+function gewerbeSchema(url, svcName, desc, faqs, crumbName) {
+  const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
+  const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"${sj(svcName)}","serviceType":"${sj(svcName)}","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"description":"${sj(desc)}"}`;
+  const crumbs = crumbName
+    ? [{ name: 'Start', url: '/' }, { name: 'Für Gewerbe', url: '/gewerbe/' }, { name: crumbName, url }]
+    : [{ name: 'Start', url: '/' }, { name: 'Für Gewerbe', url }];
+  return `${orgSchema()},${svcSchema},${breadcrumb(crumbs)}${faqSchema(url, faqs)}`;
+}
+
+// Wartungsvertrag prominent (Entscheidung Maurice): 1–2 feste Termine/Jahr, planbare Kosten, Priorität in der Saison.
+function gwWartung(g) {
+  const w = g.wartung; if (!w) return '';
+  return `<section class="doors-sec" id="wartungsvertrag"><div class="container">
+<p class="doc-label">${esc(w.label)}</p>
+<h2 class="sec-h2">${esc(w.h2)}</h2>
+<p class="sec-sub">${esc(w.intro)}</p>
+<div class="gar-row">${(w.cards || []).map(([tag, h, d]) => `<article class="gar-item"><span class="mono-tag mono">${esc(tag)}</span><h3>${esc(h)}</h3><p>${esc(d)}</p></article>`).join('')}</div>
+<div class="proto-bridge"><p><strong>${esc(w.cta_text)}</strong></p><a class="btn btn-navy2" href="tel:${tel}"><span class="mono">${esc(nap.phone_display)}</span>&nbsp;— Termin abstimmen</a></div>
+</div></section>`;
+}
+
+// Ablauf: kostenlose Besichtigung → schriftliches Festangebot ohne Nachforderung → Ausführung → optional Intervall.
+function gwAblauf(g) {
+  const a = g.ablauf; if (!a) return '';
+  return `<section class="svcz-sec"><div class="container">
+<p class="doc-label">${esc(a.label)}</p>
+<h2 class="sec-h2">${esc(a.h2)}</h2>
+<div class="svcz">${(a.steps || []).map(([n, t, d]) => `<div class="svc-row svc-row-2col"><span class="svc-num mono">${esc(n)}</span><div><h3>${esc(t)}</h3><p>${esc(d)}</p></div></div>`).join('')}</div>
+</div></section>`;
+}
+
+// Preis-Baustein "auf Anfrage" OHNE Zahl — Staffel-Logik qualitativ (größere Fläche = günstiger je m²), keine Zahlen.
+function gwPreis(g) {
+  const p = g.preis; if (!p) return '';
+  return `<section class="lokal-sec"><div class="container">
+<p class="doc-label">${esc(p.label)}</p>
+<h2 class="sec-h2">${esc(p.h2)}</h2>
+<div class="lokal-body">${(p.body || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>
+${(p.staffel && p.staffel.length) ? `<div class="preis-faktoren"><p class="rg-list-title">${esc(p.staffel_h3 || 'Wie sich der Preis bildet')}</p><ul>${p.staffel.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+${p.staffel_note ? `<p class="belag-note">${esc(p.staffel_note)}</p>` : ''}
+</div></section>`;
+}
+
+// Referenzen: ehrlicher Empty-State (kein Fake, keine KI-Referenz) bis zum ersten dokumentierten B2B-Auftrag.
+function gwReferenzen(g) {
+  const r = g.referenzen; if (!r) return '';
+  return `<section class="lokal-sec" style="padding-top:0"><div class="container">
+<p class="doc-label">${esc(r.label)}</p>
+<h2 class="sec-h2">${esc(r.h2)}</h2>
+<div class="lokal-body">${(r.body || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>
+${r.link_text ? `<p class="door-alt"><a href="${esc(r.link_url || '/#protokolle')}">${esc(r.link_text)} →</a></p>` : ''}
+</div></section>`;
+}
+
+// Typische Flächen des Segments (2-Spalten-Belagtabelle, AEO-zitierbar).
+function gwFlaechen(seg) {
+  const rows = seg.flaechen || []; if (!rows.length) return '';
+  return `<section class="belag-sec"><div class="container">
+<p class="doc-label">Flächen</p>
+<h2 class="sec-h2">${esc(seg.flaechen_h2)}</h2>
+${seg.flaechen_intro ? `<p class="sec-sub">${esc(seg.flaechen_intro)}</p>` : ''}
+<div class="tbl-shell"><div class="tbl-wrap"><table class="mtbl">
+<caption class="sr-only">${esc(seg.flaechen_h2)} — typische Flächen und Zustand.</caption>
+<thead><tr><th scope="col">Fläche</th><th scope="col">Typischer Zustand</th></tr></thead>
+<tbody>${rows.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${esc(r[1])}</td></tr>`).join('')}</tbody>
+</table></div></div>
+</div></section>`;
+}
+
+// B2B-Anfrageformular (Web3Forms): Firma, Ansprechpartner, Telefon, E-Mail, Objektart, ca. m², Ort, Nachricht
+// + verstecktes Segment-Feld. id="anfrage" → utmJS hängt die Brief-Herkunft (utm_*) an (Outbound-Tracking §5).
+// Ohne echten Key: ehrlicher Hinweis + Telefon/E-Mail (kein stiller WhatsApp-Redirect). WhatsApp tritt zurück.
+function gewerbeAnfrage(seg, g) {
+  const a = g.anfrage || {};
+  const segName = seg ? seg.card_titel : 'Gewerbe (allgemein)';
+  const objPlaceholder = seg
+    ? (seg.slug === 'hausverwaltungen' ? 'z. B. WEG, Mehrfamilienhaus, Verwaltungsobjekt'
+      : seg.slug === 'parkplaetze' ? 'z. B. Kundenparkplatz, Autohaus, Betriebshof'
+        : 'z. B. Restaurant, Hotel, Café-Terrasse')
+    : 'z. B. Hausverwaltung, Parkplatz, Gastronomie';
+  const subject = `Gewerbe-Anfrage (${segName}) über blankstein-havelland.de`;
+  const form = FORM_OK
+    ? `<form id="anfrage" class="kf2" action="https://api.web3forms.com/submit" method="POST" novalidate>
+<input type="hidden" name="access_key" value="${esc(config.web3forms_key)}"><input type="hidden" name="subject" value="${esc(subject)}"><input type="hidden" name="from_name" value="Blankstein Gewerbe"><input type="hidden" name="segment" value="${esc(segName)}"><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+<div class="kf2-row"><label>Firma / Verwaltung<input name="firma" autocomplete="organization" required></label><label>Ansprechpartner<input name="name" autocomplete="name" required></label></div>
+<div class="kf2-row"><label>Telefon<input name="tel" type="tel" autocomplete="tel" required></label><label>E-Mail (optional)<input name="email" type="email" autocomplete="email"></label></div>
+<div class="kf2-row"><label>Objektart<input name="objektart" placeholder="${esc(objPlaceholder)}"></label><label>Fläche in m² (ungefähr)<input name="qm" inputmode="numeric" placeholder="z. B. 800"></label></div>
+<label>Ort / PLZ<input name="ort" autocomplete="address-level2" placeholder="z. B. Falkensee"></label>
+<label>Kurz zum Objekt<textarea name="anliegen" rows="4" placeholder="z. B. Innenhof und Zufahrt, Betonpflaster, Grünbelag; Reinigung im laufenden Betrieb gewünscht" required></textarea></label>
+<label class="chk2"><input type="checkbox" name="dsgvo" value="einverstanden" required><span>Ich bin damit einverstanden, dass die Angaben zur Bearbeitung der Anfrage verarbeitet werden. Details in der <a href="/datenschutz/">Datenschutzerklärung</a>.</span></label>
+<button class="btn-wa kf2-submit" type="submit">${ICON.mail} Besichtigung anfragen</button>
+<p class="kf-alt mono">${SLA_HTML}</p>
+</form>`
+    : `<div class="kf2 kf-off">
+<p class="kf-off-note"><strong>${esc(a.ehrlich_note || 'Das Anfrageformular schalten wir gerade frei.')}</strong> Für Gewerbeanfragen erreichen Sie uns direkt:</p>
+<div class="kf-off-ways">
+<a class="btn btn-hline" href="tel:${tel}">${ICON.phone} <span class="mono">${esc(nap.phone_display)}</span></a>
+<a class="btn btn-hline" href="mailto:${esc(nap.email)}">${ICON.mail} ${esc(nap.email)}</a>
+</div>
+</div>`;
+  const side = `<aside class="kt-side">
+<div class="kt-card">
+<p class="doc-label">Direkt erreichen</p>
+${protoTable([['Firma', nap.gbp_name], ['Telefon', nap.phone_display], ['E-Mail', nap.email], ['Besichtigung', 'kostenlos & unverbindlich'], ['Rückmeldung', SLA]])}
+</div>
+<div class="kt-card">
+<p class="doc-label">Öffnungszeiten</p>
+<table class="hours hours-light"><tr><th scope="row">Montag–Freitag</th><td>8–18 Uhr</td></tr><tr><th scope="row">Samstag</th><td>9–14 Uhr</td></tr><tr><th scope="row">Sonntag</th><td>geschlossen</td></tr></table>
+<p class="kt-note">Am direktesten geht es telefonisch — WhatsApp ist möglich, aber für Objekte ist der Anruf schneller.</p>
+</div>
+</aside>`;
+  return `<section class="kt-sec" id="anfrage-sec"><div class="container">
+<div class="section-head"><p class="doc-label">${esc(a.label || 'Anfrage')}</p><h2 class="sec-h2">${esc(a.h2 || 'Objekt schildern, Besichtigung anfragen.')}</h2>${a.intro ? `<p class="sec-sub">${esc(a.intro)}</p>` : ''}</div>
+<div class="kt-grid${FORM_OK ? '' : ' kt-grid-1'}">
+<div class="kt-form">${form}</div>
+${side}
+</div>
+</div></section>`;
+}
+// Submit-Handler (nur bei echtem Web3Forms-Key): fetch → /danke/, generate_lead nur bei Erfolg. KEIN WhatsApp-Redirect.
+const gewerbeFormJS = FORM_OK ? `<script>(function(){var f=document.getElementById('anfrage');if(!f||f.tagName!=='FORM')return;f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var b=f.querySelector('button[type=submit]'),o=b.innerHTML;b.disabled=true;b.textContent='Wird gesendet…';fetch('https://api.web3forms.com/submit',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){return r.json()}).then(function(j){if(j&&j.success){if(window.dataLayer)dataLayer.push({event:'generate_lead',via:'form_gewerbe'});location.href='/danke/'}else{b.disabled=false;b.innerHTML=o;alert('Das Senden hat nicht geklappt. Bitte versuchen Sie es noch einmal — oder rufen Sie uns kurz an: ${nap.phone_display}.')}}).catch(function(){b.disabled=false;b.innerHTML=o;alert('Das Senden hat nicht geklappt. Bitte versuchen Sie es noch einmal — oder rufen Sie uns kurz an: ${nap.phone_display}.')})})})();</script>` : '';
+
+// Gewerbe-Hub /gewerbe/ — Überblick, 3 Segment-Karten, Wartungsvertrag, Ablauf, Preis auf Anfrage, Referenzen, B2B-Formular, FAQ.
+function gewerbeHub(g) {
+  const url = '/gewerbe/';
+  const h = g.hub;
+  const waMsg = 'Hallo Blankstein, wir haben ein Gewerbeobjekt und möchten eine Besichtigung für die Steinreinigung anfragen.';
+  const segCards = (g.segmente || []).map((sg, i) => `<div class="svc-row">
+<span class="svc-num mono">0${i + 1}</span>
+<div><h3><a href="/gewerbe/${sg.slug}/">${esc(sg.card_titel)}</a></h3><p>${esc(sg.card_text)}</p></div>
+<div class="svc-meta mono"><a href="/gewerbe/${sg.slug}/">Zum Segment →</a></div>
+</div>`).join('');
+  const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Für Gewerbe</div>
+<section class="bw-hero o-hero"><div class="container">
+<p class="doc-label">${esc(h.eyebrow)}</p>
+<h1 class="bw-h1">${h.h1}</h1>
+<p class="bw-lede">${esc(h.lede)}</p>
+${gbadge()}
+<div class="bw-ctas">
+<a class="btn btn-hline" href="tel:${tel}">${ICON.phone} Anrufen: <span class="mono">${esc(nap.phone_display)}</span></a>
+<a class="btn btn-navy2" href="#anfrage-sec">Besichtigung anfragen</a>
+</div>
+<p class="bw-sla">${SLA_HTML} ${AMPEL_SPAN('status-light')}</p>
+</div></section>
+
+<section class="svcz-sec"><div class="container">
+<p class="doc-label">${esc(h.segmente_label)}</p>
+<h2 class="sec-h2">${esc(h.segmente_h2)}</h2>
+<p class="sec-sub">${esc(h.segmente_intro)}</p>
+<div class="svcz">${segCards}</div>
+</div></section>
+
+${gwWartung(g)}
+
+${gwAblauf(g)}
+
+${gwPreis(g)}
+
+${gwReferenzen(g)}
+
+${gewerbeAnfrage(null, g)}
+
+${faqBlock(h.faqs, { title: 'Fragen von Gewerbekunden', label: 'Häufige Fragen' })}
+
+${ortsLeiste()}`;
+  const schema = gewerbeSchema(url, 'Steinreinigung für Gewerbe', h.meta, h.faqs, null);
+  write(url, head(clampTitle(h.title), mkMeta(h.meta), url, schema, { pagetype: 'gewerbe', og: { slug: 'gewerbe', motif: 'hub-steinreinigung-einfahrt' } }) + header + mainWrap(main) + footer + sctaBar(waMsg) + gewerbeFormJS + FOOT_JS + '</body></html>');
+  written.push(url);
+}
+
+// Segment-Seite /gewerbe/<slug>/ — Segment-Hero + Problem-Aufhänger, Flächen, Ablauf, Wartung, Preis, Referenzen,
+// (Hausverwaltungen: Schwestermarken-Brücke zu Havelland), B2B-Formular, segment-eigene FAQ.
+function gewerbeSegment(seg, g) {
+  const url = `/gewerbe/${seg.slug}/`;
+  const waMsg = `Hallo Blankstein, wir haben ein Gewerbeobjekt (${seg.card_titel}) und möchten eine Besichtigung anfragen.`;
+  const sister = seg.sister ? `<section class="lokal-sec" style="padding-top:0"><div class="container">
+<p class="doc-label">${esc(seg.sister.label)}</p>
+<h2 class="sec-h2">${esc(seg.sister.h2)}</h2>
+<div class="lokal-body"><p>${esc(seg.sister.body)}</p></div>
+<p class="door-alt"><a href="${esc(seg.sister.link_url)}" target="_blank" rel="noopener">${esc(seg.sister.link_text)} ↗</a></p>
+</div></section>` : '';
+  const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span><a href="/gewerbe/">Für Gewerbe</a><span class="sep">›</span>${esc(seg.nav_name)}</div>
+<section class="bw-hero o-hero"><div class="container">
+<p class="doc-label">${esc(seg.eyebrow)}</p>
+<h1 class="bw-h1">${seg.h1}</h1>
+<p class="bw-lede">${esc(seg.lede)}</p>
+${gbadge()}
+<div class="bw-ctas">
+<a class="btn btn-hline" href="tel:${tel}">${ICON.phone} Anrufen: <span class="mono">${esc(nap.phone_display)}</span></a>
+<a class="btn btn-navy2" href="#anfrage-sec">Besichtigung anfragen</a>
+</div>
+<p class="bw-sla">${SLA_HTML} ${AMPEL_SPAN('status-light')}</p>
+</div></section>
+
+<section class="lokal-sec"><div class="container">
+<p class="doc-label">${esc(seg.problem_label)}</p>
+<h2 class="sec-h2">${esc(seg.problem_h2)}</h2>
+<div class="lokal-body">${(seg.problem_body || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>
+</div></section>
+
+${gwFlaechen(seg)}
+
+${gwAblauf(g)}
+
+${gwWartung(g)}
+
+${gwPreis(g)}
+
+${gwReferenzen(g)}
+
+${sister}
+
+${gewerbeAnfrage(seg, g)}
+
+${faqBlock(seg.faqs, { title: `Fragen aus dem Bereich ${seg.nav_name}`, label: 'Häufige Fragen' })}
+
+${ortsLeiste()}`;
+  const schema = gewerbeSchema(url, `${seg.card_titel} — Steinreinigung`, seg.meta, seg.faqs, seg.nav_name);
+  write(url, head(clampTitle(seg.title), mkMeta(seg.meta), url, schema, { pagetype: 'gewerbe-segment', og: { slug: `gewerbe-${seg.slug}`, motif: SEG_OG[seg.slug] || 'hub-steinreinigung-einfahrt' } }) + header + mainWrap(main) + footer + sctaBar(waMsg) + gewerbeFormJS + FOOT_JS + '</body></html>');
+  written.push(url);
+}
+
+// Homepage-Signal (kompakt): "Auch für Gewerbe" → /gewerbe/. Zwei-Türen-Sektion bleibt unberührt.
+function gewerbeSignal(g) {
+  if (!g || !g.signal) return '';
+  const s = g.signal;
+  const segs = (g.segmente || []).map(sg => `<a href="/gewerbe/${sg.slug}/">${esc(sg.nav_name)}</a>`).join(' · ');
+  return `<section class="doors-sec" style="padding-block:clamp(2rem,4.5vw,3.2rem)"><div class="container">
+<p class="doc-label">${esc(s.label)}</p>
+<div class="proto-bridge"><p><strong>${esc(s.h2)}</strong> ${esc(s.body)}</p><a class="btn btn-navy2" href="/gewerbe/">${esc(s.cta)} →</a></div>
+${segs ? `<p class="door-alt">Segmente: ${segs} · <a href="/gewerbe/">alle für Gewerbe</a></p>` : ''}
+</div></section>`;
+}
+
+// Gewerbe-Block für /preise/ (auf Anfrage, ohne Zahl) — wird in preise() vor der FAQ eingehängt.
+function gwPreiseGewerbe() {
+  const pg = gewerbeCopy && gewerbeCopy.preise_gewerbe; if (!pg) return '';
+  return `<section class="lokal-sec" style="border-top:1px solid var(--line)"><div class="container">
+<p class="doc-label">${esc(pg.label)}</p>
+<h2 class="sec-h2">${esc(pg.h2)}</h2>
+${pg.lead ? `<p class="sec-sub">${esc(pg.lead)}</p>` : ''}
+<div class="lokal-body">${(pg.body || []).map(x => `<p>${esc(x)}</p>`).join('')}</div>
+<div class="bw-ctas" style="margin-top:1.4rem">
+<a class="btn btn-hline" href="tel:${tel}">${ICON.phone} Anrufen: <span class="mono">${esc(nap.phone_display)}</span></a>
+<a class="btn btn-navy2" href="/gewerbe/">${esc(pg.cta_text || 'Zur Gewerbe-Strecke')} →</a>
+</div>
+</div></section>`;
+}
+
+// ====================================================================
 // RUN
 // ====================================================================
 if (fs.existsSync('website')) for (const e of fs.readdirSync('website')) { try { fs.rmSync(`website/${e}`, { recursive: true, force: true, maxRetries: 5, retryDelay: 120 }); } catch (err) { console.warn(`WARN wipe ${e}: ${err.code}`); } }
@@ -1501,6 +1767,8 @@ for (const r of ratList) ratgeber(r);
 if (ratList.length) ratgeberIndex();
 if (preiseCopy) preise(preiseCopy);
 if (ueberCopy) ueberUns(ueberCopy);
+// Gewerbe-Strecke: Hub + 3 Segmente (Design 2026-07-22)
+if (gewerbeCopy) { gewerbeHub(gewerbeCopy); for (const seg of (gewerbeCopy.segmente || [])) gewerbeSegment(seg, gewerbeCopy); }
 bewertungen();
 if (startCopy) start(startCopy);
 kontakt();

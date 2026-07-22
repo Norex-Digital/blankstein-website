@@ -9,7 +9,14 @@
     "meta": "Blankstein reinigt gewerbliche Steinflächen im Havelland und am westlichen Berliner Rand: Gehwege, Innenhöfe, Zufahrten, Parkplätze und Außengastronomie — planbar, abschnittsweise und ohne Betriebsstörung, mit schriftlichem Festangebot nach kostenloser Besichtigung.",
     "segmente_label": "Segmente",
     "segmente_h2": "Wofür wir für Gewerbe arbeiten.",
-    "segmente_intro": "Drei Objektarten fragen unsere gewerbliche Steinreinigung am häufigsten an. Wählen Sie Ihr Segment für die passenden Details — oder fragen Sie direkt eine Besichtigung an."
+    "segmente_intro": "Drei Objektarten fragen unsere gewerbliche Steinreinigung am häufigsten an. Wählen Sie Ihr Segment für die passenden Details — oder fragen Sie direkt eine Besichtigung an.",
+    "faqs": [
+      { "q": "Ist die Besichtigung für Gewerbeobjekte kostenlos?", "a": "Ja. Wir sehen uns die Flächen kostenlos und unverbindlich an, messen nach und klären den Zustand. Erst danach erhalten Sie ein schriftliches Festangebot je Objekt — ohne Nachforderung." },
+      { "q": "Können Sie im laufenden Betrieb reinigen?", "a": "Ja. Wir arbeiten abschnittsweise und stimmen die Reihenfolge mit Ihnen ab, sodass Kundenverkehr, Anlieferung oder Gastbetrieb weiterlaufen. Auf Wunsch reinigen wir außerhalb der Öffnungszeiten." },
+      { "q": "Was kostet die gewerbliche Steinreinigung?", "a": "Für Gewerbeflächen nennen wir online keinen Quadratmeterpreis, weil Objektart, Belag, Zustand und Größe zu stark schwanken. Nach der kostenlosen Besichtigung erhalten Sie ein verbindliches, schriftliches Festangebot ohne versteckte Kosten." },
+      { "q": "Bieten Sie feste Wartungsintervalle an?", "a": "Ja. Für wiederkehrend saubere Flächen vereinbaren wir ein Wartungsintervall mit ein bis zwei festen Terminen pro Jahr zum Vertragspreis — planbare Kosten und Vorrang bei der Terminvergabe in der Saison." },
+      { "q": "In welchem Gebiet arbeiten Sie für Gewerbe?", "a": "Im Havelland und am westlichen Berliner Rand — unter anderem Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Für Objekte im Umfeld fragen Sie einfach an." }
+    ]
   },
 
   "segmente": [
@@ -22,13 +29,13 @@
       "h1": "Steinreinigung für <em>Hausverwaltungen</em>.",
       "lede": "Rutschiger Grünbelag auf Gehwegen, Innenhöfen und Zufahrten ist bei verwalteten Objekten ein wiederkehrendes Thema — im Herbst und Winter besonders. Wir reinigen die Außenflächen Ihrer Objekte planbar, mit einem festen Ansprechpartner und einem schriftlichen Festangebot je Objekt.",
       "title": "Steinreinigung für Hausverwaltungen | Blankstein",
-      "meta": "Blankstein reinigt Gehwege, Innenhöfe, Zufahrten und das Umfeld von Müllplätzen für Hausverwaltungen und WEG im Havelland — planbar, mit festem Ansprechpartner und schriftlichem Festangebot je Objekt nach kostenloser Besichtigung, auf Wunsch im Wartungsintervall.",
+      "meta": "Blankstein reinigt Gehwege, Innenhöfe und Zufahrten für Hausverwaltungen und WEG im Havelland — planbar und mit festem Ansprechpartner und schriftlichem Festangebot je Objekt nach kostenloser Besichtigung.",
       "problem_label": "Warum es zählt",
       "problem_h2": "Grünbelag auf Gemeinschaftsflächen ist mehr als Optik.",
       "problem_body": [
         "Auf Gehwegen, Hauszugängen und Zufahrten bildet sich mit der Zeit ein Film aus Algen und Moos. Bei Nässe wird er glatt — genau dort, wo Bewohner, Besucher und Dienstleister täglich laufen. Die Verkehrssicherungspflicht für diese Flächen liegt bei Eigentümer und Verwaltung.",
         "Eine gründliche Reinigung entfernt den Belag und macht die Fläche wieder griffig. Die rechtliche Bewertung, ob und wann gehandelt werden muss, nehmen wir dabei ausdrücklich nicht vor — das ist Sache von Eigentümer und Verwaltung. Wir liefern die Reinigung und auf Wunsch eine neutrale Foto-Zustandsdokumentation der Außenflächen vor und nach dem Termin.",
-        "Für die Verwaltung zählt vor allem Planbarkeit: ein Ansprechpartner, ein abgestimmter Termin, ein Festpreis je Objekt — und keine Rückfragen von Beiräten, weil der Hof wieder sauber ist."
+        "Für die Verwaltung zählt vor allem Planbarkeit: ein Ansprechpartner, ein abgestimmter Termin, ein fester Preis je Objekt — und keine Rückfragen von Beiräten, weil der Hof wieder sauber ist."
       ],
       "flaechen_h2": "Welche Flächen wir übernehmen.",
       "flaechen_intro": "Typische Außenflächen verwalteter Wohn- und Gewerbeobjekte.",
@@ -132,7 +139,7 @@
 
   "ablauf": {
     "label": "Ablauf",
-    "h2": "Vier Schritte bis zum Festpreis.",
+    "h2": "Vier Schritte bis zum Festangebot.",
     "steps": [
       ["01", "Kostenlose Besichtigung", "Wir kommen vorbei, sehen uns die Flächen an, messen nach und klären Belag, Zustand und Ihre Anforderungen an den Betrieb vor Ort."],
       ["02", "Schriftliches Festangebot", "Sie erhalten ein schriftliches Festangebot je Objekt — ohne Nachforderung. Der genannte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als erwartet."],
