@@ -1504,7 +1504,8 @@ const SEG_OG = { hausverwaltungen: 'proof-ergebnis-1', parkplaetze: 'hub-pflaste
 const GW_SEG_HERO = {
   hausverwaltungen: ['gewerbe-hausverwaltung-hero', 'Flächenreinigung mit professionellem Flächenreiniger im Innenhof einer Wohnanlage'],
   parkplaetze: ['gewerbe-parkplatz-hero', 'Professionelle Großflächenreinigung eines Parkplatzes mit Aufsitz-Reinigungsmaschine'],
-  gastronomie: ['gewerbe-gastro-hero', 'Frisch gereinigte Natursteinterrasse eines Restaurants am Morgen']
+  // gastronomie: Slug -hero2 = Cache-Buster (Motiv-Tausch 2026-07-22 unter gleichem Namen wurde von Browser/CDN weggecacht)
+  gastronomie: ['gewerbe-gastro-hero2', 'Reinigung einer Gastro-Terrasse mit Flächenreiniger — halb gereinigte Steinplatten vor der Öffnung']
 };
 function gwHeroIllu(slug) {
   const e = GW_SEG_HERO[slug]; if (!e || !IMG[e[0]]) return '';
