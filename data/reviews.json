@@ -13,12 +13,40 @@
   "cid": "14142805656851355288",
   "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
   "rating": 5,
-  "count": 14,
-  "verified": "gbp-api 2026-10-25",
+  "count": 18,
+  "verified": "gbp-api 2026-10-26",
   "blocklist": [
     "Christian Brehm"
   ],
   "reviews": [
+    {
+      "author": "Phillip Hans",
+      "rating": 5,
+      "text": "Von der Absprache bis zur Umsetzung hat alles einwandfrei funktioniert. Es wurde sehr gewissenhaft gearbeitet und das Ergebnis spricht für sich. Besonders positiv fand ich, dass auf alles geachtet wurde und man sich wirklich Zeit für die Arbeit genommen hat. Bin rundum zufrieden! Vielen Dank.",
+      "date": "2026-10-26",
+      "review_id": "AbFvOqmvGNwC4UW19lHAHXklh0gPKJj39C9JD6y9H85OzTCQPrWp1SOEl6eqMpFPKkPDFGNCvqBGFQ"
+    },
+    {
+      "author": "45",
+      "rating": 5,
+      "text": "Die Steinreinigung hat mich wirklich überzeugt. Alles wurde sorgfältig und professionell gemacht, die Steine glänzen jetzt wieder richtig schön. Der Umgang war angenehm, Termine wurden eingehalten und das Gesamtergebnis ist top. Klare Empfehlung von mir",
+      "date": "2026-10-25",
+      "review_id": "AbFvOqnC9BrTeLHnHBmXPJ3AXlDuWEWNrBkZhaQZk3W1QqYPVzSE5WxMwrlNDan6cWAb2DrjYo6OFQ"
+    },
+    {
+      "author": "Lienne",
+      "rating": 5,
+      "text": "Bin wirklich sehr zufrieden mit dem Ergebnis. Die Arbeit wurde ordentlich und gründlich gemacht und alles lief problemlos. Dazu noch sehr freundlich und zuverlässig. Würde ich auf jeden Fall weiterempfehlen ⭐️",
+      "date": "2026-10-25",
+      "review_id": "AbFvOqnIznZGVG-6cnQWf3nVKlY5-xSOr4Qr2OWLUDLLhUOr-Hdt_G4NZu-dQep3VBT24lin0J2T7Q"
+    },
+    {
+      "author": "Lorenor Lila",
+      "rating": 5,
+      "text": "Einen Termin habe ich relativ schnell erhalten. Anfang war ich relativ skeptisch wegen der jungen Männer aber sie waren wirklich sehr fleißig und auf die Bitte hin auf meine Vasen im Vorgarten aufzupassen wurde super geachtet. Ich bin jedenfalls mit dem Ergebnis wirklich zufrieden und würde sie gern weiterempfehlen",
+      "date": "2026-10-25",
+      "review_id": "AbFvOqlc4YY8Yo3zJsfYgXOctM778uMwLiBkqU53Y34rOzI8SzoYd5L25eh1dcg6mQ14P8pDbc6w"
+    },
     {
       "author": "Lukas Schröder",
       "rating": 5,
