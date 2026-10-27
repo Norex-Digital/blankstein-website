@@ -13,12 +13,19 @@
   "cid": "14142805656851355288",
   "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
   "rating": 5,
-  "count": 18,
-  "verified": "gbp-api 2026-10-26",
+  "count": 19,
+  "verified": "gbp-api 2026-10-27",
   "blocklist": [
     "Christian Brehm"
   ],
   "reviews": [
+    {
+      "author": "Amélie Natho",
+      "rating": 5,
+      "text": "Ich hab die Jungs für unseren Balkon, die Terrasse und den Vorhof angestellt und sie haben wirklich super Arbeit geleistet. Alle drei Orte sehen im Grunde wieder genauso aus wie neu. Sogar die Stellen mit Gras in den Fugen haben sie gesäubert! Ich werde sie definitiv wieder beauftragen!",
+      "date": "2026-10-26",
+      "review_id": "AbFvOql_RqcDZbrNqKTk-cacbg50as_QOGHSlOZEasH7wzj2ZukxNlcxLPHhnAmQyvs8OZNA6gvhog"
+    },
     {
       "author": "Phillip Hans",
       "rating": 5,
