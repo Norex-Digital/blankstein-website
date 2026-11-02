@@ -14,7 +14,7 @@
   "profile_url": "https://search.google.com/local/reviews?placeid=ChIJFS1vkVJTuWkRmJYCKNBWRcQ",
   "rating": 5,
   "count": 19,
-  "verified": "gbp-api 2026-11-01",
+  "verified": "gbp-api 2026-11-02",
   "blocklist": [
     "Christian Brehm"
   ],
@@ -97,7 +97,7 @@
       "review_id": "AbFvOqnfRdz9XS2lbVoAHIUuvgKU9XOZBQcmzonALZHcamIPtseMB5H9IdzoZYbnCKsp4sDcpdNkKg"
     },
     {
-      "author": "Thomas Perne",
+      "author": "Tobias Panke",
       "rating": 5,
       "text": "Haben unseren Weg reinigen lassen, war stark vermoost. Ergebnis hat mich ehrlich überrascht, sieht aus wie neu. Waren pünktlich, haben sauber gearbeitet, Preis war fair. Gerne wieder.",
       "date": "2026-06-27",
