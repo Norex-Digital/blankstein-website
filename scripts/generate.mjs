@@ -75,7 +75,8 @@ function mkMeta(s) {
   s = (s || '').replace(/\s+/g, ' ').trim();
   let t = rlen(s) < 150 ? s + META_TAIL : s;
   while (rlen(t) > 158) { const sp = t.lastIndexOf(' '); if (sp < 110) break; t = t.slice(0, sp); }
-  const cl = Math.max(t.lastIndexOf(', '), t.lastIndexOf('. '));
+  const tt = t.replace(/inkl\. /g, 'inkl_ '); // „inkl. MwSt." ist kein Satzende
+  const cl = Math.max(tt.lastIndexOf(', '), tt.lastIndexOf('. '));
   if (cl >= 150) t = t.slice(0, cl);
   t = t.replace(/[ ,;:.–-]+$/, '');
   while (DANGLE.test(t)) t = t.replace(DANGLE, '').replace(/[ ,;:.–-]+$/, '');
@@ -750,8 +751,8 @@ ${ortsLeiste()}
 ${faqBlock(faqs, { title: 'Was Eigenheimbesitzer uns oft fragen' })}`;
 
   const schema = `${orgSchema()},${websiteSchema()},${breadcrumb([{ name: 'Start', url: '/' }])}${faqSchema('/', faqs)}`;
-  const title = clampTitle(`Steinreinigung Havelland — ab ${P.b} €/m² inkl. MwSt. | Blankstein`);
-  const meta = mkMeta(`Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos. Richtpreis ab ${P.b} €/m² inkl. MwSt., Komplettpaket ${P.k} €/m² inkl. MwSt. — Foto genügt.`);
+  const title = clampTitle(`Steinreinigung Havelland ab ${P.b} €/m² inkl. MwSt.`);
+  const meta = mkMeta(`Steinreinigung im Havelland, mit echten Fotos und Videos belegt. Richtpreis ab ${P.b} €/m² inkl. MwSt., Komplettpaket ${P.k} €/m² inkl. MwSt. Foto genügt.`);
   write('/', head(title, meta, '/', schema, { pagetype: 'home', og: { slug: 'home', motif: 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + SCTA + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push('/');
 }
@@ -1081,7 +1082,7 @@ ${v.footer ? `<p class="vergleich-footer reveal">${esc(v.footer)}</p>` : ''}
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Preise</div>
 <section class="bw-hero o-hero"><div class="container bw-grid">
 <div class="bw-copy">
-<p class="doc-label">Preise · Für Privatkunden · Stand ${esc(config.content_stand)}</p>
+<p class="doc-label">Preise · Für Privatkunden · Stand ${esc((config.lastmod_override || {})['/preise/'] || config.content_stand)}</p>
 <h1 class="bw-h1">${esc(p.h1)}</h1>
 <p class="bw-lede">${esc(p.lead)}</p>
 ${PREIS_BOX}

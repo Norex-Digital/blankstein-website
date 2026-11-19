@@ -1,10 +1,10 @@
 {
-  "_meta": "Copy-Layer der 4 Money-Hubs (Etappe C, PROTOKOLL-Voice Spec §5). Verknuepfung mit services.json ueber 'slug'. Gerendert von hub() — alle Felder Klartext (esc), AUSSER h1 (traegt <em>). Schema: eyebrow/h1/lede/wa_text/wa_label + hero_media{typ,slug|vorher/nachher|file/poster}+hero_tabelle (Beweis-Hero) + edu{label,h2,body[],img?,img_alt?,caption?} (Schadens-Edukation, frageorientierte H2) + protokoll_id(+protokoll_hinweis) → fallstudien.json + belag{h2,intro,rows[[belag,flaeche,einschaetzung]],note} (AEO-Tabelle) + review_author (Snippet-Zuordnung) + faq_title/faqs (Direktantworten 40–60 Woerter) + ratgeber[] (Slug-Whitelist aus copy/ratgeber.json). Regeln (gelockt): IMMER 'Richtpreis' (nie Festpreis), KEIN Heisswasser, KEIN 'kein Hochdruck', Preise EXAKT m²×8/10 (keine Spannen, kein 'rund X bis Y'; 8=Reinigung ohne Neuverfugung, 10=Komplettpaket mit Neuverfugung+Nano), Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck), SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', Geraete generisch, echte Umlaute. Hero-Medien: NUR echtes Material (ASSET-LISTE) — KI nur in edu, gelabelt.",
+  "_meta": "Copy-Layer der 4 Money-Hubs (Etappe C, PROTOKOLL-Voice Spec §5). Verknuepfung mit services.json ueber 'slug'. Gerendert von hub() — alle Felder Klartext (esc), AUSSER h1 (traegt <em>). Schema: eyebrow/h1/lede/wa_text/wa_label + hero_media{typ,slug|vorher/nachher|file/poster}+hero_tabelle (Beweis-Hero) + edu{label,h2,body[],img?,img_alt?,caption?} (Schadens-Edukation, frageorientierte H2) + protokoll_id(+protokoll_hinweis) → fallstudien.json + belag{h2,intro,rows[[belag,flaeche,einschaetzung]],note} (AEO-Tabelle) + review_author (Snippet-Zuordnung) + faq_title/faqs (Direktantworten 40–60 Woerter) + ratgeber[] (Slug-Whitelist aus copy/ratgeber.json). Regeln (gelockt): IMMER 'Richtpreis' (nie Festpreis), KEIN Heisswasser, KEIN 'kein Hochdruck', Preise EXAKT m²×14,28/17,85 (Brutto, immer 'inkl. MwSt.') (keine Spannen, kein 'rund X bis Y'; 14,28=Reinigung ohne Neuverfugung, 17,85=Komplettpaket mit Neuverfugung+Nano), Endpreis-Zusage + kostenlose Nacharbeit (kein Geld-zurueck), SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', Geraete generisch, echte Umlaute. Hero-Medien: NUR echtes Material (ASSET-LISTE) — KI nur in edu, gelabelt.",
   "hubs": [
     {
       "slug": "steinreinigung",
       "title": "Steinreinigung im Havelland | Blankstein",
-      "meta": "Steinreinigung im Havelland: Flächenreiniger und Nass-Absaugung — belegt mit echten Fotos. Richtpreis 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. — ein Foto genügt.",
+      "meta": "Steinreinigung im Havelland: Flächenreiniger und Nass-Absaugung, mit echten Fotos. Richtpreis ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.",
       "eyebrow": "Leistung · Steinreinigung",
       "h1": "Steinreinigung im Havelland — <em>belegt statt behauptet</em>.",
       "lede": "Einfahrt, Weg, Hof oder Treppe: Wir reinigen Steinflächen mit dem rotierenden Flächenreiniger und saugen das Schmutzwasser ab — im Komplettpaket verfugen wir zusätzlich neu mit GaLaBau-Sand und imprägnieren. Das Arbeitsfoto auf dieser Seite ist echt — eine Fläche, beide Zustände.",
@@ -82,7 +82,7 @@
       "faqs": [
         {
           "q": "Was kostet die Steinreinigung pro Quadratmeter?",
-          "a": "14,28 €/m² inkl. MwSt. für Reinigung mit Flächenreiniger und Nass-Absaugung — im Komplettpaket mit Neuverfugung (GaLaBau-Sand) und Nano-Imprägnierung 17,85 €/m² inkl. MwSt.. Gerechnet wird exakt Fläche mal Satz: 40 m² kosten 571,20 €, im Komplettpaket 714,00 €. Verbindlich wird der Richtpreis nach Foto-Prüfung oder Besichtigung, danach gilt die Endpreis-Zusage."
+          "a": "14,28 €/m² inkl. MwSt. für Reinigung mit Flächenreiniger und Nass-Absaugung — im Komplettpaket mit Neuverfugung (GaLaBau-Sand) und Nano-Imprägnierung 17,85 €/m² inkl. MwSt. Gerechnet wird exakt Fläche mal Satz: 40 m² kosten 571,20 €, im Komplettpaket 714,00 € inkl. MwSt. Verbindlich wird der Richtpreis nach Foto-Prüfung oder Besichtigung, danach gilt die Endpreis-Zusage."
         },
         {
           "q": "Beschädigt Hochdruck mein Pflaster oder meinen Naturstein?",
@@ -94,7 +94,7 @@
         },
         {
           "q": "Entfernt ihr auch Grünbelag, Algen und Moos?",
-          "a": "Ja — Grünbelag entfernen ist der häufigste Auftrag bei uns. Der rotierende Flächenreiniger löst Grünbelag, Algen und Moos samt Sporen aus der Oberfläche. Im Komplettpaket für 3,57 €/m² mehr nimmt die Neuverfugung dem Bewuchs den Halt in den Fugen, und die Nano-Imprägnierung hält den Grünbelag danach spürbar länger fern."
+          "a": "Ja — Grünbelag entfernen ist der häufigste Auftrag bei uns. Der rotierende Flächenreiniger löst Grünbelag, Algen und Moos samt Sporen aus der Oberfläche. Im Komplettpaket für 3,57 €/m² inkl. MwSt. mehr nimmt die Neuverfugung dem Bewuchs den Halt in den Fugen, und die Nano-Imprägnierung hält den Grünbelag danach spürbar länger fern."
         },
         {
           "q": "Wie läuft die Anfrage ab?",
@@ -114,7 +114,7 @@
     {
       "slug": "terrassenreinigung",
       "title": "Terrassenreinigung im Havelland | Blankstein",
-      "meta": "Terrassenreinigung im Havelland: Naturstein, Betonplatten und Keramik streifenfrei gereinigt — mit echtem Einsatzvideo. Richtpreis 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt..",
+      "meta": "Terrassenreinigung im Havelland: Naturstein, Beton und Keramik streifenfrei sauber. Richtpreis ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.",
       "eyebrow": "Leistung · Terrassenreinigung",
       "h1": "Terrassenreinigung — <em>streifenfrei, nicht schöngefilmt</em>.",
       "lede": "Naturstein, Betonplatten, Keramik oder Feinsteinzeug: Wir stellen Druck und Reinigungsmittel auf den Belag ein und reinigen mit dem Flächenreiniger — im Komplettpaket verfugen wir neu und imprägnieren. Foto und Video auf dieser Seite stammen aus laufenden Einsätzen — ungestellt.",
@@ -184,7 +184,7 @@
       "faqs": [
         {
           "q": "Was kostet die Terrassenreinigung?",
-          "a": "14,28 €/m² inkl. MwSt. für Reinigung und Nass-Absaugung, 17,85 €/m² inkl. MwSt. im Komplettpaket mit Neuverfugung und Nano-Imprägnierung — der Satz ist derselbe wie bei jeder Steinfläche. Eine 30-m²-Terrasse: 30 × 14,28 € = 428,40 €, im Komplettpaket 535,50 €. Verbindlich wird der Richtpreis nach Foto oder Besichtigung — danach gilt er, ohne Nachkalkulation."
+          "a": "14,28 €/m² inkl. MwSt. für Reinigung und Nass-Absaugung, 17,85 €/m² inkl. MwSt. im Komplettpaket mit Neuverfugung und Nano-Imprägnierung — der Satz ist derselbe wie bei jeder Steinfläche. Eine 30-m²-Terrasse: 30 × 14,28 € = 428,40 €, im Komplettpaket 535,50 € inkl. MwSt. Verbindlich wird der Richtpreis nach Foto oder Besichtigung — danach gilt er, ohne Nachkalkulation."
         },
         {
           "q": "Verträgt Feinsteinzeug oder Keramik die Reinigung?",
@@ -196,7 +196,7 @@
         },
         {
           "q": "Wie lange bleibt die Terrasse nach der Reinigung sauber?",
-          "a": "Das hängt an der Lage: Schattige, feuchte Terrassen setzen schneller wieder Grünbelag an. Wer länger Ruhe will, nimmt das Komplettpaket für 3,57 €/m² mehr: Die Neuverfugung nimmt dem Bewuchs den Halt, die Nano-Imprägnierung lässt den Stein weniger Feuchtigkeit aufnehmen — Grünbelag braucht deutlich länger, um zurückzukommen."
+          "a": "Das hängt an der Lage: Schattige, feuchte Terrassen setzen schneller wieder Grünbelag an. Wer länger Ruhe will, nimmt das Komplettpaket für 3,57 €/m² inkl. MwSt. mehr: Die Neuverfugung nimmt dem Bewuchs den Halt, die Nano-Imprägnierung lässt den Stein weniger Feuchtigkeit aufnehmen — Grünbelag braucht deutlich länger, um zurückzukommen."
         },
         {
           "q": "Bleibt nach dem Termin Schmutzwasser im Garten zurück?",
@@ -212,7 +212,7 @@
     {
       "slug": "pflasterreinigung",
       "title": "Pflasterreinigung im Havelland | Blankstein",
-      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege mit dem Flächenreiniger gereinigt und abgesaugt. Richtpreis 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. — ein Foto genügt.",
+      "meta": "Pflasterreinigung im Havelland: Einfahrt, Hof und Wege gereinigt und abgesaugt. Richtpreis ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.",
       "eyebrow": "Leistung · Pflasterreinigung",
       "h1": "Pflasterreinigung im Havelland — <em>gereinigt, nicht ausgewaschen</em>.",
       "lede": "Einfahrten, Hofflächen und Gehwege aus Pflaster: Wir reinigen mit dem rotierenden Flächenreiniger und saugen das Schmutzwasser ab — im Komplettpaket verfugen wir mit frischem GaLaBau-Sand neu und imprägnieren. Das Arbeitsfoto dazu ist echt — halb gereinigt, halb im Ausgangszustand.",
@@ -290,7 +290,7 @@
       "faqs": [
         {
           "q": "Was kostet die Pflasterreinigung einer Einfahrt?",
-          "a": "Exakt Fläche mal Satz: Eine 40-m²-Einfahrt kostet 40 × 14,28 € = 571,20 €, im Komplettpaket 714,00 €. Im Basispreis stecken Reinigung und Absaugung; das Komplettpaket ergänzt Neuverfugung mit GaLaBau-Sand und Nano-Imprägnierung. Verbindlich wird der Richtpreis nach Foto-Prüfung oder kostenloser Besichtigung — danach gilt die Endpreis-Zusage."
+          "a": "Exakt Fläche mal Satz: Eine 40-m²-Einfahrt kostet 40 × 14,28 € = 571,20 €, im Komplettpaket 714,00 € inkl. MwSt. Im Basispreis stecken Reinigung und Absaugung; das Komplettpaket ergänzt Neuverfugung mit GaLaBau-Sand und Nano-Imprägnierung. Verbindlich wird der Richtpreis nach Foto-Prüfung oder kostenloser Besichtigung — danach gilt die Endpreis-Zusage."
         },
         {
           "q": "Bekommt ihr Öl- und Reifenspuren aus dem Pflaster?",
@@ -318,7 +318,7 @@
     {
       "slug": "steinversiegelung",
       "title": "Steinversiegelung im Havelland | Blankstein",
-      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach Reinigung und Neuverfugung — Wasser perlt ab, die Fläche bleibt länger sauber. 17,85 €/m² inkl. MwSt. komplett.",
+      "meta": "Steinversiegelung im Havelland: Nano-Imprägnierung nach Reinigung und Neuverfugung, Wasser perlt ab. Komplettpaket 17,85 €/m² inkl. MwSt., Foto genügt.",
       "eyebrow": "Leistung · Steinversiegelung",
       "h1": "Steinversiegelung — <em>erst sauber, dann geschützt</em>.",
       "lede": "Die Nano-Imprägnierung ist bei uns der letzte Schritt nach Reinigung und Neuverfugung: das Komplettpaket für 17,85 €/m² statt 14,28 €/m² (jeweils inkl. MwSt.) für die reine Reinigung — alles inklusive. Wasser perlt ab, Moos und Schmutz finden weniger Halt — die Fläche bleibt deutlich länger sauber.",
@@ -392,7 +392,7 @@
       "faqs": [
         {
           "q": "Was kostet die Steinversiegelung?",
-          "a": "3,57 €/m² mehr als die reine Reinigung: das Komplettpaket für 17,85 statt 14,28 €/m² (jeweils inkl. MwSt.), inklusive Reinigung, Absaugung, Neuverfugung und Nano-Imprägnierung. Eine 30-m²-Terrasse: 30 × 17,85 € = 535,50 €. Es gibt keine getrennte Versiegelungs-Rechnung: Der eine Satz deckt den kompletten Ablauf ab, und der bestätigte Richtpreis ist der Rechnungsbetrag."
+          "a": "3,57 €/m² inkl. MwSt. mehr als die reine Reinigung: das Komplettpaket für 17,85 statt 14,28 €/m² (jeweils inkl. MwSt.), inklusive Reinigung, Absaugung, Neuverfugung und Nano-Imprägnierung. Eine 30-m²-Terrasse: 30 × 17,85 € = 535,50 €. Es gibt keine getrennte Versiegelungs-Rechnung: Der eine Satz deckt den kompletten Ablauf ab, und der bestätigte Richtpreis ist der Rechnungsbetrag."
         },
         {
           "q": "Was bringt die Nano-Imprägnierung konkret?",

@@ -23,7 +23,7 @@ Lokal prüfen: `python -m http.server 8099 --directory website` → http://local
 ## Design-/Copy-Regeln (verbindlich, aus bau-fakten.md + Architektur §)
 - Online **immer Richtpreis**, **nie „Festpreis"** (verbindliches Angebot per Foto+Maße oder Besichtigung).
 - USP-Kacheln: Flächenreiniger · Neuverfugung mit Sand · Nano-Imprägnierung · saubere Absaugung. **Kein** Heißwasser/0 ppm (war JR, erst Skalierung), **kein** „kein Hochdruck" (wir nutzen ihn kontrolliert mit Flächenreiniger).
-- Preise = Endpreise (§19 Kleinunternehmer). Richtpreis 7 €/m² (Basis) · 8 €/m² (mit Imprägnierung).
+- Preise = Bruttopreise inkl. 19 % MwSt. (Regelbesteuerung seit 01.09.2026). Richtpreis ab 14,28 €/m² (Steinreinigung) · 17,85 €/m² (Komplettpaket mit Neuverfugung + Nano-Imprägnierung); verbindlicher Endpreis nach Foto oder Besichtigung.
 - Empty-State-Trust: **keine erfundenen Sterne/Reviews** (proof.json count=0 → ehrliche Empty-States, UWG).
 - FAQPage-JSON-LD **gesetzt** (AEO-Hebel, Architektur §5 — Abweichung von Havelland).
 - WhatsApp echte Nummer aus `nap.phone_e164` (kein Platzhalter).

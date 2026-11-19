@@ -138,8 +138,11 @@ def render(job):
         y += round(f_title.size * 1.22)
     # Fusszeile (Montserrat Medium) — Gewerbe-Karten OHNE Preis-Zahl (auf-Anfrage-Prinzip, kein € im Gewerbe-Kontext)
     f_sub = find_font(bold=False, size=26)
-    foot = "blankstein-havelland.de · Für Gewerbe" if str(job.get("slug", "")).startswith("gewerbe") else "blankstein-havelland.de · Richtpreis 8 €/m²"
-    d.text((72, H - 92), foot, font=f_sub, fill=FG_MUTED)
+    # Zwei Zeilen: mit „inkl. MwSt.“ (PAngV) passt Domain + Preis nicht mehr in eine Zeile des Navy-Panels (19.11.2026)
+    zeilen = (["blankstein-havelland.de · Für Gewerbe"] if str(job.get("slug", "")).startswith("gewerbe")
+              else ["blankstein-havelland.de", "ab 14,28 €/m² inkl. MwSt."])
+    for i, z in enumerate(zeilen):
+        d.text((72, H - 92 - 36 * (len(zeilen) - 1 - i)), z, font=f_sub, fill=FG_MUTED)
     return img
 
 

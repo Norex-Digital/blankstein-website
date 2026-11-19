@@ -1,5 +1,5 @@
 {
-  "_meta": "Copy /ueber-uns/ (Etappe D, PROTOKOLL-Voice Spec §5). Gerendert von ueberUns() — Aufbau Spec §4: Inhaberblock groß · Verfahren · Geräte-Ledger · Garantie. Regeln (gelockt): Geräte GENERISCH benennen (kein Kränzle/K7/Stihl-Namedropping — Klärung offen, Kickoff-Guardrail), Preise EXAKT m²×8/10 (kein 'rund'), Richtpreis nie Festpreis, kein Heißwasser, kein 'kein Hochdruck', SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', KEINE 'Hunderte Male'-Claims oder erfundene Auftragszahlen (UWG), echte Umlaute. h1 darf <em> tragen.",
+  "_meta": "Copy /ueber-uns/ (Etappe D, PROTOKOLL-Voice Spec §5). Gerendert von ueberUns() — Aufbau Spec §4: Inhaberblock groß · Verfahren · Geräte-Ledger · Garantie. Regeln (gelockt): Geräte GENERISCH benennen (kein Kränzle/K7/Stihl-Namedropping — Klärung offen, Kickoff-Guardrail), Preise EXAKT m²×14,28/17,85 (Brutto, immer 'inkl. MwSt.') (kein 'rund'), Richtpreis nie Festpreis, kein Heißwasser, kein 'kein Hochdruck', SLA-Wortlaut exakt 'Antwort < 2 h — werktags 8–18 Uhr', KEINE 'Hunderte Male'-Claims oder erfundene Auftragszahlen (UWG), echte Umlaute. h1 darf <em> tragen.",
   "title": "Über uns — die zwei Inhaber hinter Blankstein",
   "meta": "Blankstein sind Noah Telo und Maurice Brehm aus Falkensee: Steinreinigung im Havelland als Inhaber-Betrieb. Verfahren, Geräte und Garantie — hier erklärt.",
   "h1": "Zwei Inhaber. Ein Gewerk. <em>Keine Subunternehmer.</em>",
@@ -43,7 +43,7 @@
   "seriositaet": {
     "title": "Preise, nachrechenbar",
     "body": [
-      "Gerechnet wird exakt m² mal Satz: 14,28 €/m² inkl. MwSt. für die Steinreinigung mit Flächenreiniger und Nass-Absaugung — 17,85 €/m² inkl. MwSt. für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet damit exakt 571,20 €, im Komplettpaket 714,00 €. Endpreise, kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
+      "Gerechnet wird exakt m² mal Satz: 14,28 €/m² inkl. MwSt. für die Steinreinigung mit Flächenreiniger und Nass-Absaugung — 17,85 €/m² inkl. MwSt. für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet rechnerisch 571,20 €, im Komplettpaket 714,00 € inkl. MwSt. Richtpreise inkl. MwSt., kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
       "Der so errechnete Wert ist ein Richtpreis. Verbindlich wird er nach Foto-Prüfung oder Besichtigung — und dann gilt die Endpreis-Zusage: Der bestätigte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als gedacht."
     ]
   },

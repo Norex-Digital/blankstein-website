@@ -1,10 +1,10 @@
 {
-  "_meta": "Copy-Layer der lokalen Orts-Hubs (Etappe C, NearDup-Design Spec §4). Verknüpfung mit locations.json über Slug-Key, URL = /{slug}/. Gerendert von ort() — Pflicht-Unique-Slots: intro + lokal_title/lokal_body (echte Lokalfakten, NICHTS erfinden) + stein_text/terrasse_text + orts-eigene FAQ-VARIANTEN (nicht wortgleich zwischen Orten!) + gebiet_h2/gebiet_text/nachbar_prefix + konf_sub + faq_title. Geteilt sind NUR Konfigurator, Zwei-Türen-Kurzform, Chrome. hero_img: ECHTES Foto aus dem Auftrags-Pool (ASSET-LISTE) — hero_alt darf KEINEN Orts-Bezug behaupten (Foto ist aus dem Havelland, nicht zwingend aus dem Ort). Regeln: Richtpreis (nie Festpreis), kein Heißwasser, kein 'kein Hochdruck', Preise EXAKT m²×8/10 (8 = Steinreinigung ohne Neuverfugung, 10 = Komplettpaket mit Neuverfugung + Nano; keine Spannen!), SLA-Wortlaut exakt, kein Luxus-Vokabular (Maurice 2026-06-18), echte Umlaute. Sichttext-Ähnlichkeit der Schwestern < 40 % — vor Änderungen scripts/check-neardup-sichttext.py laufen lassen.",
+  "_meta": "Copy-Layer der lokalen Orts-Hubs (Etappe C, NearDup-Design Spec §4). Verknüpfung mit locations.json über Slug-Key, URL = /{slug}/. Gerendert von ort() — Pflicht-Unique-Slots: intro + lokal_title/lokal_body (echte Lokalfakten, NICHTS erfinden) + stein_text/terrasse_text + orts-eigene FAQ-VARIANTEN (nicht wortgleich zwischen Orten!) + gebiet_h2/gebiet_text/nachbar_prefix + konf_sub + faq_title. Geteilt sind NUR Konfigurator, Zwei-Türen-Kurzform, Chrome. hero_img: ECHTES Foto aus dem Auftrags-Pool (ASSET-LISTE) — hero_alt darf KEINEN Orts-Bezug behaupten (Foto ist aus dem Havelland, nicht zwingend aus dem Ort). Regeln: Richtpreis (nie Festpreis), kein Heißwasser, kein 'kein Hochdruck', Preise EXAKT m²×14,28/17,85 (Brutto, immer 'inkl. MwSt.') (14,28 = Steinreinigung ohne Neuverfugung, 17,85 = Komplettpaket mit Neuverfugung + Nano; keine Spannen!), SLA-Wortlaut exakt, kein Luxus-Vokabular (Maurice 2026-06-18), echte Umlaute. Sichttext-Ähnlichkeit der Schwestern < 40 % — vor Änderungen scripts/check-neardup-sichttext.py laufen lassen.",
   "orte": {
     "falkensee": {
       "archetyp": "heimat",
       "title": "Stein- & Terrassenreinigung Falkensee | Blankstein",
-      "meta": "Stein- und Terrassenreinigung in Falkensee vom Betrieb vor Ort: ab 14,28 €/m² inkl. MwSt., Komplettpaket mit Neuverfugung 17,85 €/m² inkl. MwSt.. Fotos senden und Richtpreis erhalten.",
+      "meta": "Stein- und Terrassenreinigung in Falkensee vom Betrieb vor Ort: ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. Foto senden, Preis erhalten.",
       "eyebrow": "Servicegebiet · Unser Sitz",
       "h1": "Stein- & Terrassenreinigung in Falkensee",
       "h1_em": "direkt vor Ort",
@@ -31,7 +31,7 @@
         },
         {
           "q": "Was kostet die Stein- oder Terrassenreinigung in Falkensee?",
-          "a": "Die Steinreinigung liegt bei 14,28 €/m² inkl. MwSt., das Komplettpaket mit Neuverfugung und Nano-Imprägnierung bei 17,85 €/m² inkl. MwSt.. Für eine 40-m²-Einfahrt heißt das: 571,20 € inkl. MwSt., als Komplettpaket 714,00 € inkl. MwSt.. Verbindlich wird der Betrag nach Foto oder kostenloser Besichtigung — danach gilt er als Endpreis."
+          "a": "Die Steinreinigung liegt bei 14,28 €/m² inkl. MwSt., das Komplettpaket mit Neuverfugung und Nano-Imprägnierung bei 17,85 €/m² inkl. MwSt. Für eine 40-m²-Einfahrt heißt das: 571,20 € inkl. MwSt., als Komplettpaket 714,00 € inkl. MwSt. Verbindlich wird der Betrag nach Foto oder kostenloser Besichtigung — danach gilt er als Endpreis."
         },
         {
           "q": "Wie schnell könnt ihr in Falkensee da sein?",
@@ -46,7 +46,7 @@
     "dallgow-doeberitz": {
       "archetyp": "standard",
       "title": "Steinreinigung Dallgow-Döberitz | Blankstein",
-      "meta": "Steinreinigung Dallgow-Döberitz: Pflaster, Einfahrt und Terrasse gründlich sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket mit Neuverfugung 17,85 €/m² inkl. MwSt.. Richtpreis anfragen.",
+      "meta": "Steinreinigung Dallgow-Döberitz: Pflaster, Einfahrt und Terrasse gründlich sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. Anfragen.",
       "eyebrow": "Servicegebiet · Dallgow-Döberitz",
       "h1": "Stein- & Terrassenreinigung in Dallgow-Döberitz",
       "h1_em": "wieder sauber",
@@ -60,7 +60,7 @@
       ],
       "stein_text": "Grün in den Fugen, Grauschleier auf dem Pflaster: Beides trägt der Flächenreiniger in gleichmäßigen Bahnen ab. Im Komplettpaket kommt danach frischer Sand in die Fugen — das stabilisiert die Steine und verzögert den nächsten Bewuchs.",
       "terrasse_text": "Naturstein wie Feinsteinzeug reinigen wir materialschonend, ohne ausgewaschene Fugen oder Schleier. Mit der Nano-Imprägnierung aus dem Komplettpaket perlt Wasser danach ab und Schmutz haftet schlechter.",
-      "konf_sub": "Der Rechner nimmt Ihre Quadratmeter mal 8 oder 10 € — mehr Rechnung steckt nicht dahinter.",
+      "konf_sub": "Der Rechner nimmt Ihre Quadratmeter mal 14,28 oder 17,85 € (inkl. MwSt.) — mehr Rechnung steckt nicht dahinter.",
       "gebiet_h2": "Vom Kernort bis Seeburg und Rohrbeck",
       "gebiet_text": "Dallgow-Döberitz decken wir komplett ab: den Kernort ebenso wie Seeburg, Rohrbeck und Döberitz. Eine Anfahrtspauschale berechnen wir nicht; wer die Fläche vorab zeigen möchte, bekommt eine kostenlose, unverbindliche Besichtigung.",
       "nachbar_prefix": "Ebenfalls auf kurzem Weg:",
@@ -77,14 +77,14 @@
         },
         {
           "q": "Was kostet die Reinigung in Dallgow-Döberitz?",
-          "a": "50 m² Einfahrt mal 14,28 € sind 714,00 € inkl. MwSt.; wer das Komplettpaket mit Neuverfugung und Nano-Imprägnierung nimmt, rechnet 50 × 17,85 € = 892,50 € inkl. MwSt.. Mehr Formel gibt es nicht — keine Anfahrtspauschale, kein Mindestwert. Nach Foto-Prüfung oder Besichtigung bestätigen wir den Betrag als Endpreis."
+          "a": "50 m² Einfahrt mal 14,28 € sind 714,00 € inkl. MwSt.; wer das Komplettpaket mit Neuverfugung und Nano-Imprägnierung nimmt, rechnet 50 × 17,85 € = 892,50 € inkl. MwSt. Mehr Formel gibt es nicht — keine Anfahrtspauschale, kein Mindestwert. Nach Foto-Prüfung oder Besichtigung bestätigen wir den Betrag als Endpreis."
         }
       ]
     },
     "brieselang": {
       "archetyp": "standard",
       "title": "Stein- & Terrassenreinigung Brieselang | Blankstein",
-      "meta": "Steinreinigung in Brieselang: vermooste Pflaster und Terrassen am Waldrand gründlich sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.. Jetzt Foto-Angebot anfragen.",
+      "meta": "Steinreinigung in Brieselang: vermooste Pflaster und Terrassen am Waldrand sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. Anfragen.",
       "eyebrow": "Servicegebiet · Brieselang",
       "h1": "Stein- & Terrassenreinigung in Brieselang",
       "h1_em": "trotz Schatten",
@@ -111,7 +111,7 @@
         },
         {
           "q": "Bringt die Imprägnierung bei meiner schattigen Fläche etwas?",
-          "a": "Ja, gerade dort. Die Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein, Wasser perlt ab und Schmutz findet weniger Halt. An den feuchten, schattigen Lagen rund um den Bredower Forst lohnt sie sich besonders — im Komplettpaket zusammen mit der Neuverfugung, für 3,57 €/m² mehr als die reine Reinigung."
+          "a": "Ja, gerade dort. Die Imprägnierung legt einen unsichtbaren Schutzfilm auf den Stein, Wasser perlt ab und Schmutz findet weniger Halt. An den feuchten, schattigen Lagen rund um den Bredower Forst lohnt sie sich besonders — im Komplettpaket zusammen mit der Neuverfugung, für 3,57 €/m² inkl. MwSt. mehr als die reine Reinigung."
         },
         {
           "q": "Was kostet die Reinigung in Brieselang?",
@@ -126,7 +126,7 @@
     "schoenwalde-glien": {
       "archetyp": "standard",
       "title": "Steinreinigung Schönwalde-Glien | Blankstein",
-      "meta": "Steinreinigung Schönwalde-Glien: große Höfe und Terrassen streifenfrei sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket mit Neuverfugung 17,85 €/m² inkl. MwSt.. Richtpreis vorab selbst kalkulieren.",
+      "meta": "Steinreinigung Schönwalde-Glien: große Höfe und Terrassen streifenfrei sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. Foto genügt.",
       "eyebrow": "Servicegebiet · Schönwalde-Glien",
       "h1": "Stein- & Terrassenreinigung in Schönwalde-Glien",
       "h1_em": "Hof für Hof",
@@ -140,7 +140,7 @@
       ],
       "stein_text": "Weitläufige Hofeinfahrten reinigen wir gleichmäßig und streifenfrei, entfernen Moos und Grünbelag bis in die Fugen — im Komplettpaket verfugen wir mit frischem Sand neu, für ein durchgehend sauberes Bild über die ganze Fläche.",
       "terrasse_text": "Terrassen am Haupthaus wie am Gartenhaus reinigen wir materialschonend, die Fugen bleiben intakt. Im Komplettpaket imprägnieren wir die Fläche zusätzlich, damit sie auch bei wenig Pflege sauber bleibt — praktisch bei großen Grundstücken, wo nicht jede Ecke ständig im Blick ist.",
-      "konf_sub": "Große Höfe, gleiche Formel: Quadratmeter mal 8 oder 10 € — auch bei 200 m².",
+      "konf_sub": "Große Höfe, gleiche Formel: Quadratmeter mal 14,28 oder 17,85 € (inkl. MwSt.) — auch bei 200 m².",
       "gebiet_h2": "Alle sieben Ortsteile der Gemeinde",
       "gebiet_text": "Wir reinigen in allen Ortsteilen von Schönwalde-Glien — von Schönwalde-Dorf und der Siedlung über Glien und Paaren bis Pausin, Perwenitz und Wansdorf. Anfahrt berechnen wir keine, angeschaut wird vorab kostenlos.",
       "nachbar_prefix": "Gleich nebenan sind wir auch:",
@@ -157,14 +157,14 @@
         },
         {
           "q": "Was kostet die Reinigung großer Flächen?",
-          "a": "Auch große Höfe rechnen wir schlicht über den Quadratmeter: 80 m² × 14,28 € = 1.142,40 € inkl. MwSt., als Komplettpaket mit Neuverfugung und Nano-Imprägnierung 1.428,00 € inkl. MwSt.. Einen Großflächen-Zuschlag gibt es nicht — zusammenhängende Flächen arbeitet der Flächenreiniger effizient in Bahnen ab. Alle Beträge sind Endpreise."
+          "a": "Auch große Höfe rechnen wir schlicht über den Quadratmeter: 80 m² × 14,28 € = 1.142,40 € inkl. MwSt., als Komplettpaket mit Neuverfugung und Nano-Imprägnierung 1.428,00 € inkl. MwSt. Einen Großflächen-Zuschlag gibt es nicht — zusammenhängende Flächen arbeitet der Flächenreiniger effizient in Bahnen ab. Alle Beträge sind Richtpreise inkl. MwSt."
         }
       ]
     },
     "wustermark": {
       "archetyp": "standard",
       "title": "Stein- & Terrassenreinigung Wustermark | Blankstein",
-      "meta": "Steinreinigung in Wustermark und Elstal: Verbundpflaster und Feinsteinzeug streifenfrei sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.. Jetzt Richtpreis anfragen.",
+      "meta": "Steinreinigung in Wustermark und Elstal: Verbundpflaster und Feinsteinzeug sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt. Anfragen.",
       "eyebrow": "Servicegebiet · Wustermark",
       "h1": "Stein- & Terrassenreinigung in Wustermark",
       "h1_em": "gleichmäßig sauber",
@@ -195,14 +195,14 @@
         },
         {
           "q": "Was kostet die Reinigung in Wustermark?",
-          "a": "Für eine 35-m²-Terrasse: 499,80 € inkl. MwSt. (35 × 14,28 €), als Komplettpaket mit Neuverfugung und Imprägnierung 624,75 € inkl. MwSt.. Der Satz gilt für alle Beläge gleich — Feinsteinzeug kostet nicht mehr als Betonpflaster. Verbindlich wird der Betrag nach Foto oder kostenloser Besichtigung, danach greift die Endpreis-Zusage."
+          "a": "Für eine 35-m²-Terrasse: 499,80 € inkl. MwSt. (35 × 14,28 €), als Komplettpaket mit Neuverfugung und Imprägnierung 624,75 € inkl. MwSt. Der Satz gilt für alle Beläge gleich — Feinsteinzeug kostet nicht mehr als Betonpflaster. Verbindlich wird der Betrag nach Foto oder kostenloser Besichtigung, danach greift die Endpreis-Zusage."
         }
       ]
     },
     "gross-glienicke": {
       "archetyp": "standard",
       "title": "Stein- & Terrassenreinigung Groß Glienicke | Blankstein",
-      "meta": "Steinreinigung in Groß Glienicke: Naturstein-Terrassen und Einfahrten am See schonend reinigen ab 14,28 €/m² inkl. MwSt., Komplettpaket mit Neuverfugung 17,85 €/m² inkl. MwSt.. Jetzt Fotos per WhatsApp senden.",
+      "meta": "Steinreinigung in Groß Glienicke: Naturstein-Terrassen und Einfahrten am See schonend sauber — ab 14,28 €/m² inkl. MwSt., Komplettpaket 17,85 €/m² inkl. MwSt.",
       "eyebrow": "Servicegebiet · Groß Glienicke",
       "h1": "Stein- & Terrassenreinigung in Groß Glienicke",
       "h1_em": "am See",
@@ -229,11 +229,11 @@
         },
         {
           "q": "Lohnt sich eine Imprägnierung auf Naturstein?",
-          "a": "Im Komplettpaket — 3,57 €/m² Aufpreis, zusammen mit der Neuverfugung — frischt die Nano-Imprägnierung die Farbe auf, lässt Wasser abperlen und schützt vor Auswaschung und schneller Wiederverschmutzung. An schattigen Stellen macht sich das besonders bemerkbar."
+          "a": "Im Komplettpaket — 3,57 €/m² inkl. MwSt. Aufpreis, zusammen mit der Neuverfugung — frischt die Nano-Imprägnierung die Farbe auf, lässt Wasser abperlen und schützt vor Auswaschung und schneller Wiederverschmutzung. An schattigen Stellen macht sich das besonders bemerkbar."
         },
         {
           "q": "Was kostet die Reinigung in Groß Glienicke?",
-          "a": "Naturstein kostet bei uns keinen Aufschlag: 45 m² Terrasse × 14,28 € = 642,60 € inkl. MwSt., als Komplettpaket mit Neuverfugung und Imprägnierung 803,25 € inkl. MwSt.. Der Mehraufwand fürs Material ist unser Thema, nicht Ihres. Nach Foto oder kostenloser Besichtigung bestätigen wir den Betrag verbindlich."
+          "a": "Naturstein kostet bei uns keinen Aufschlag: 45 m² Terrasse × 14,28 € = 642,60 € inkl. MwSt., als Komplettpaket mit Neuverfugung und Imprägnierung 803,25 € inkl. MwSt. Der Mehraufwand fürs Material ist unser Thema, nicht Ihres. Nach Foto oder kostenloser Besichtigung bestätigen wir den Betrag verbindlich."
         },
         {
           "q": "Was passiert mit dem Schmutzwasser auf Grundstücken am See?",
@@ -244,7 +244,7 @@
     "kladow": {
       "archetyp": "standard",
       "title": "Stein- & Terrassenreinigung Kladow | Blankstein",
-      "meta": "Stein- und Terrassenreinigung in Berlin-Kladow: Klinker, Platten und Terrassen an der Havel materialschonend sauber — ab 14,28 €/m² inkl. MwSt.. Jetzt Angebot anfordern.",
+      "meta": "Stein- und Terrassenreinigung in Berlin-Kladow: Klinker, Platten und Terrassen an der Havel schonend sauber — ab 14,28 €/m² inkl. MwSt. Angebot anfordern.",
       "eyebrow": "Servicegebiet · Berlin-Kladow",
       "h1": "Stein- & Terrassenreinigung in Kladow",
       "h1_em": "an der Havel",

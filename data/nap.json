@@ -12,7 +12,7 @@
   "phone_display": "01575 6963736",
   "email": "blankstein.havelland@gmail.com",
   "domain": "https://blankstein-havelland.de",
-  "kleinunternehmer_19": true,
+  "kleinunternehmer_19": false,
   "openingHours": [
     { "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
     { "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "14:00" }
