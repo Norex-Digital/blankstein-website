@@ -25,7 +25,7 @@
       { "titel": "Schmutzwasser absaugen", "text": "Der gelöste Schmutz wird mit dem Nasssauger aufgenommen statt in Beet und Rasen gespült. Die Fläche ist nach dem Termin begehbar, das Grundstück bleibt sauber." },
       { "titel": "Trocknen und neu verfugen (Komplettpaket)", "text": "Im Komplettpaket kommt nach dem Abtrocknen GaLaBau-Fugensand auf die Fläche und wird vollständig in die Fugen eingekehrt. Die Neuverfugung stabilisiert den Belag und verzögert neuen Bewuchs." },
       { "titel": "Sandfilm abblasen (Komplettpaket)", "text": "Nach der Neuverfugung wird der restliche Sandfilm mit dem Bläser von den Steinen geholt — der Sand in den Fugen bleibt liegen. Danach ist die Oberfläche sauber und übergabefertig." },
-      { "titel": "Nano-Imprägnierung (Komplettpaket)", "text": "Als Abschluss tragen wir eine Nano-Imprägnierung auf. Wasser perlt ab, Schmutz und Moos finden weniger Halt — die Fläche setzt sich sichtbar langsamer wieder zu. Im Komplettpaket für 10 €/m² enthalten." }
+      { "titel": "Nano-Imprägnierung (Komplettpaket)", "text": "Als Abschluss tragen wir eine Nano-Imprägnierung auf. Wasser perlt ab, Schmutz und Moos finden weniger Halt — die Fläche setzt sich sichtbar langsamer wieder zu. Im Komplettpaket für 17,85 €/m² inkl. MwSt. enthalten." }
     ]
   },
   "equipment": {
@@ -43,7 +43,7 @@
   "seriositaet": {
     "title": "Preise, nachrechenbar",
     "body": [
-      "Gerechnet wird exakt m² mal Satz: 8 €/m² für die Steinreinigung mit Flächenreiniger und Nass-Absaugung — 10 €/m² für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet damit exakt 320 €, im Komplettpaket 400 €. Endpreise, kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
+      "Gerechnet wird exakt m² mal Satz: 14,28 €/m² inkl. MwSt. für die Steinreinigung mit Flächenreiniger und Nass-Absaugung — 17,85 €/m² inkl. MwSt. für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 40-m²-Einfahrt kostet damit exakt 571,20 €, im Komplettpaket 714,00 €. Endpreise, kein Mindestauftragswert, keine Anfahrtskosten im Servicegebiet.",
       "Der so errechnete Wert ist ein Richtpreis. Verbindlich wird er nach Foto-Prüfung oder Besichtigung — und dann gilt die Endpreis-Zusage: Der bestätigte Preis ist der Rechnungsbetrag, auch wenn die Fläche hartnäckiger ist als gedacht."
     ]
   },
@@ -52,7 +52,7 @@
   "faqs": [
     { "q": "Wer führt die Arbeiten bei mir aus?", "a": "Immer einer von uns beiden Inhabern — Noah Telo oder Maurice Brehm. Wir vergeben keine Aufträge an Subunternehmer weiter. Wer die Anfrage beantwortet, steht später auch auf dem Grundstück." },
     { "q": "Beschädigt der Hochdruck meine Pflastersteine?", "a": "Nicht bei unserem Verfahren. Wir arbeiten mit einem rotierenden Flächenreiniger statt mit einer Punktstrahl-Lanze — der Druck verteilt sich gleichmäßig über die Fläche. Was die Reinigung an Fugensand mitnimmt, füllen wir im Komplettpaket mit GaLaBau-Sand wieder auf." },
-    { "q": "Was kostet die Reinigung genau?", "a": "8 €/m² für die Steinreinigung mit Flächenreiniger und Nass-Absaugung, 10 €/m² für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung — gerechnet exakt Fläche mal Satz. 20 m² kosten also 160 € beziehungsweise 200 €, 60 m² kosten 480 € beziehungsweise 600 €. Das sind Richtpreise; verbindlich wird der Preis nach Foto oder Besichtigung, dann mit Endpreis-Zusage." },
+    { "q": "Was kostet die Reinigung genau?", "a": "14,28 €/m² inkl. MwSt. für die Steinreinigung mit Flächenreiniger und Nass-Absaugung, 17,85 €/m² inkl. MwSt. für das Komplettpaket mit Neuverfugung und Nano-Imprägnierung — gerechnet exakt Fläche mal Satz. 20 m² kosten also 285,60 € beziehungsweise 357,00 €, 60 m² kosten 856,80 € beziehungsweise 1.071,00 €. Das sind Richtpreise; verbindlich wird der Preis nach Foto oder Besichtigung, dann mit Endpreis-Zusage." },
     { "q": "Warum macht ihr nur Steinflächen?", "a": "Weil Routine das Ergebnis bestimmt. Wer sich auf ein Gewerk festlegt, kennt jeden Belagstyp, jede Fugensituation und die passende Druckeinstellung. Andere Gewerke überlassen wir Betrieben, die dort genauso zu Hause sind wie wir auf dem Stein." },
     { "q": "In welchem Gebiet seid ihr unterwegs?", "a": "Im Havelland und am westlichen Berliner Rand: Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Innerhalb dieses Gebiets fallen keine Anfahrtskosten an, die Besichtigung ist kostenlos." }
   ]

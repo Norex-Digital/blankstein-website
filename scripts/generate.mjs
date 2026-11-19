@@ -14,6 +14,11 @@ const nap = J('nap.json'); const config = J('config.json'); const proof = J('pro
 const reviewsData = fs.existsSync('data/reviews.json') ? J('reviews.json') : { count: 0, rating: null, reviews: [] };
 const DOMAIN = config.domain.replace(/\/$/, '');
 const P = config.preise;
+// Preise: satz_* = Bruttopreise inkl. 19 % MwSt. (Regelbesteuerung seit 01.09.2026, § 3 PAngV). P.b/P.k = deutsche Schreibweise.
+const deFmt = n => new Intl.NumberFormat('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
+const rd2 = n => Math.round(n * 100) / 100;
+P.b = deFmt(P.satz_basis); P.k = deFmt(P.satz_impraegnierung);
+const unitPriceSpec = price => `{"@type":"UnitPriceSpecification","price":"${price.toFixed(2)}","priceCurrency":"EUR","unitCode":"MTK","unitText":"m²","valueAddedTaxIncluded":true}`;
 // Money-Hub-Copy (data/copy/hubs.json) — optional; nur Services mit Eintrag werden als Hub gerendert (Muster-Hub-Phase)
 const hubCopyRaw = fs.existsSync('data/copy/hubs.json') ? JSON.parse(fs.readFileSync('data/copy/hubs.json', 'utf8')) : { hubs: [] };
 const hubList = Array.isArray(hubCopyRaw) ? hubCopyRaw : (hubCopyRaw.hubs || []);
@@ -64,7 +69,7 @@ const GBP_REVIEWS_URL = `https://search.google.com/local/reviews?placeid=${GBP_P
 // ---------- Title ≤60 / Meta 150–158 (escape-aware) ----------
 const rlen = s => (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').length;
 function clampTitle(s) { s = (s || '').replace(/\s+/g, ' ').trim(); while (rlen(s) > 60) { const sp = s.lastIndexOf(' '); if (sp < 30) { s = s.slice(0, s.length - 1); continue; } s = s.slice(0, sp); } return s.replace(/[ ,;:–-]+$/, ''); }
-const META_TAIL = ` Blankstein reinigt Stein- und Terrassenflächen im Havelland — Richtpreis ab ${P.satz_basis} €/m², Antwort werktags < 2 h.`;
+const META_TAIL = ` Blankstein reinigt Stein- und Terrassenflächen im Havelland — Richtpreis ab ${P.b} €/m² inkl. MwSt., Antwort werktags < 2 h.`;
 const DANGLE = /\s+(per|und|mit|nach|für|im|in|zu|von|der|die|das|ein|eine|einen|am|an|auf|bei|als|wie|oder|aus|über|unter|vor|jetzt|noch|so|dem|den)$/i;
 function mkMeta(s) {
   s = (s || '').replace(/\s+/g, ' ').trim();
@@ -287,8 +292,8 @@ const KONF_TILES = [
   ['Wege und Treppen', 'hub-steinreinigung-wegetreppen', 'Wege &amp; Treppen'],
   ['Hoffläche', 'proof-arbeit-1']
 ];
-function konfigSection({ typ = 'Einfahrt', rate = P.satz_basis, ort = '', kontext = '', title = 'Was kostet Ihre Fläche? Rechnen Sie nach.', sub = `Exakt m² mal ${P.satz_basis} oder ${P.satz_impraegnierung} Euro — mehr Formel gibt es nicht. Ohne Kontaktdaten, ohne Verpflichtung.`, kurz = false } = {}) {
-  const qm0 = 60, p0 = qm0 * rate;
+function konfigSection({ typ = 'Einfahrt', rate = P.satz_basis, ort = '', kontext = '', title = 'Was kostet Ihre Fläche? Rechnen Sie nach.', sub = `Exakt m² mal ${P.b} oder ${P.k} Euro inkl. MwSt. — mehr Formel gibt es nicht. Ohne Kontaktdaten, ohne Verpflichtung.`, kurz = false } = {}) {
+  const qm0 = 60, p0 = deFmt(rd2(qm0 * rate));
   // kurz=true (Konfigurator-Kurzform, /start): Text-Kacheln statt Foto-Kacheln, kein Ort-Feld, keine Zusagen-Chips
   const tiles = KONF_TILES.map(([label, slug, html]) => `<button type="button" class="k-tile${kurz ? ' k-tile-txt' : ''}" data-type="${esc(label)}" aria-pressed="${label === typ}">${kurz ? '' : pic(slug, { decorative: true, sizes: '150px' })}<span>${html || esc(label)}</span></button>`).join('');
   return `<section class="konf-band on-dark" id="preise"><div class="container">
@@ -298,16 +303,16 @@ function konfigSection({ typ = 'Einfahrt', rate = P.satz_basis, ort = '', kontex
 <fieldset class="k-step"><legend><b>1</b> Welche Fläche?</legend><div class="k-tiles" role="group" aria-label="Flächentyp wählen">${tiles}</div></fieldset>
 <fieldset class="k-step"><legend><b>2</b> Wie groß, ungefähr?</legend><div class="k-qmrow"><input type="range" id="k-range" min="5" max="300" step="5" value="${qm0}" aria-label="Fläche in Quadratmetern"><span class="k-qmval mono"><input type="number" id="k-num" min="1" max="2000" value="${qm0}" inputmode="numeric" aria-label="Quadratmeter eingeben"> m²</span></div></fieldset>
 <fieldset class="k-step"><legend><b>3</b> Welche Leistung?</legend><div class="k-paks" role="group" aria-label="Paket wählen">
-<button type="button" class="k-pak" data-rate="${P.satz_basis}" aria-pressed="${rate === P.satz_basis}"><strong class="mono">${P.satz_basis}&nbsp;€<small>/m²</small></strong><span>Steinreinigung mit Flächenreiniger — ohne Neuverfugung</span></button>
-<button type="button" class="k-pak" data-rate="${P.satz_impraegnierung}" aria-pressed="${rate === P.satz_impraegnierung}"><strong class="mono">${P.satz_impraegnierung}&nbsp;€<small>/m²</small></strong><span>Komplett: mit Neuverfugung + Nano-Imprägnierung</span></button>
+<button type="button" class="k-pak" data-rate="${P.satz_basis}" aria-pressed="${rate === P.satz_basis}"><strong class="mono">${P.b}&nbsp;€<small>/m² inkl. MwSt.</small></strong><span>Steinreinigung mit Flächenreiniger — ohne Neuverfugung</span></button>
+<button type="button" class="k-pak" data-rate="${P.satz_impraegnierung}" aria-pressed="${rate === P.satz_impraegnierung}"><strong class="mono">${P.k}&nbsp;€<small>/m² inkl. MwSt.</small></strong><span>Komplett: mit Neuverfugung + Nano-Imprägnierung</span></button>
 </div></fieldset>
 ${kurz ? '' : `<div class="k-ort"><label for="k-ort">Ihr Ort (optional)</label><input type="text" id="k-ort" value="${esc(ort)}" placeholder="z. B. Falkensee" autocomplete="address-level2"></div>`}
 </div>
 <div class="k-out">
-<p class="k-ol mono">${kurz ? 'Dein Richtpreis' : 'Ihr Richtpreis'}</p>
+<p class="k-ol mono">${kurz ? 'Dein Richtpreis inkl. MwSt.' : 'Ihr Richtpreis inkl. MwSt.'}</p>
 <p class="k-sum mono" aria-live="polite"><span id="k-price">${p0}</span>&nbsp;€</p>
-<p class="k-formula mono">gerechnet: <b id="k-meta">${qm0} m² × ${rate} €</b></p>
-<p class="k-note">Richtpreis — verbindlich nach Foto-Prüfung, dann Endpreis-Zusage.</p>
+<p class="k-formula mono">gerechnet: <b id="k-meta">${qm0} m² × ${deFmt(rate)} €</b></p>
+<p class="k-note">Richtpreis inkl. MwSt. — verbindlicher Endpreis nach Foto oder Besichtigung.</p>
 <a class="btn-wa k-wa" id="k-wa" href="${waHref(WA_DEFAULT)}" target="_blank" rel="noopener">${ICON.wa} Richtpreis per WhatsApp senden</a>
 <p class="k-alt">Lieber anders? <a href="tel:${tel}" class="mono">${esc(nap.phone_display)}</a> · ${FORM_OK ? '<a href="/kontakt/#anfrage">Formular mit Foto-Upload</a>' : '<a href="/kontakt/">alle Kontaktwege</a>'}</p>
 </div>
@@ -317,18 +322,18 @@ ${kurz ? '' : `<ul class="k-chips" aria-label="Unsere Zusagen"><li>Endpreis-Zusa
 }
 // Konfigurator-JS: Zustand → Preis (exakt m²×Satz), WhatsApp-Handoff, Sticky-Live-Preis (Spec §3.2).
 // [data-live-price] in der .scta wird erst nach der ersten Interaktion sichtbar; scta-WA-Link wandert mit.
-const konfigJS = `<script>(function(){var box=document.getElementById('konf');if(!box)return;var fmt=new Intl.NumberFormat('de-DE');var ctx=box.getAttribute('data-kontext')||'';
+const konfigJS = `<script>(function(){var box=document.getElementById('konf');if(!box)return;var fmt=new Intl.NumberFormat('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});var ctx=box.getAttribute('data-kontext')||'';
 var t0=box.querySelector('.k-tile[aria-pressed="true"]'),pk0=box.querySelector('.k-pak[aria-pressed="true"]'),oi=document.getElementById('k-ort');
 var state={type:t0?t0.getAttribute('data-type'):'Einfahrt',qm:60,rate:pk0?+pk0.getAttribute('data-rate'):${P.satz_basis},ort:oi?oi.value.trim():''};
 var touched=false,tracked=false;
-function paket(){return state.rate===${P.satz_impraegnierung}?'Reinigung + Neuverfugung + Nano-Imprägnierung (${P.satz_impraegnierung} €/m²)':'Steinreinigung ohne Neuverfugung (${P.satz_basis} €/m²)'}
-function price(){return state.qm*state.rate}
-function waText(){return 'Hallo Blankstein, ich möchte einen Richtpreis für meine '+state.type+' (ca. '+state.qm+' m²'+(state.ort?(', '+state.ort):'')+') — '+paket()+'. Euer Rechner zeigt '+fmt.format(price())+' €. Ein Foto schicke ich gleich mit.'}
+function paket(){return state.rate===${P.satz_impraegnierung}?'Reinigung + Neuverfugung + Nano-Imprägnierung (${P.k} €/m² inkl. MwSt.)':'Steinreinigung ohne Neuverfugung (${P.b} €/m² inkl. MwSt.)'}
+function price(){return Math.round(state.qm*state.rate*100)/100}
+function waText(){return 'Hallo Blankstein, ich möchte einen Richtpreis für meine '+state.type+' (ca. '+state.qm+' m²'+(state.ort?(', '+state.ort):'')+') — '+paket()+'. Euer Rechner zeigt '+fmt.format(price())+' € inkl. MwSt. Ein Foto schicke ich gleich mit.'}
 function render(){var p=fmt.format(price());var el=document.getElementById('k-price');if(el)el.textContent=p;
-el=document.getElementById('k-meta');if(el)el.textContent=state.qm+' m² × '+state.rate+' €';
+el=document.getElementById('k-meta');if(el)el.textContent=state.qm+' m² × '+fmt.format(state.rate)+' €';
 var url='https://wa.me/${waNum}?text='+encodeURIComponent(waText());
 var wa=document.getElementById('k-wa');if(wa)wa.href=url;
-if(touched){try{sessionStorage.setItem('bs_konf',JSON.stringify(state))}catch(e){}var lp=document.querySelector('[data-live-price]');if(lp){lp.textContent=p+' € Richtpreis · '+state.qm+' m² × '+state.rate+' €';lp.hidden=false}var sw=document.querySelector('.scta .s-wa');if(sw)sw.href=url;
+if(touched){try{sessionStorage.setItem('bs_konf',JSON.stringify(state))}catch(e){}var lp=document.querySelector('[data-live-price]');if(lp){lp.textContent=p+' € Richtpreis inkl. MwSt. · '+state.qm+' m² × '+fmt.format(state.rate)+' €';lp.hidden=false}var sw=document.querySelector('.scta .s-wa');if(sw)sw.href=url;
 if(!tracked){tracked=true;if(window.dataLayer)dataLayer.push({event:'calc_used',flaeche:state.type,qm:state.qm,rate:state.rate})}}
 var r=document.getElementById('k-range');if(r){var pc=(Math.min(Math.max(state.qm,+r.min),+r.max)-r.min)/(r.max-r.min)*100;r.style.background='linear-gradient(to right,#6E9BF2 0%,#6E9BF2 '+pc+'%,var(--navy-line) '+pc+'%,var(--navy-line) 100%)'}}
 function touch(){touched=true}
@@ -346,7 +351,7 @@ render()})();</script>`;
 // ====================================================================
 // Pflicht-Bausteine als Single Source (Spec §5): Preis-Versprechen + Garantie-Trio.
 // Preiszeile in Mono (Zahlen/Label), Erklärsatz in Inter (QA R1: Mono nur für Zahlen/Labels, nicht für Fließtext)
-const PREIS_BOX = `<p class="price-box"><span class="mono">${P.satz_basis}&nbsp;€/m² Steinreinigung&nbsp;·&nbsp;${P.satz_impraegnierung}&nbsp;€/m² mit Neuverfugung + Nano-Imprägnierung.</span><br><span class="pb-note">Richtpreis, gerechnet exakt m² × Satz — verbindlich nach Foto oder Besichtigung, dann Endpreis-Zusage.</span></p>`;
+const PREIS_BOX = `<p class="price-box"><span class="mono">Richtpreis ab ${P.b}&nbsp;€/m² inkl. MwSt. (Komplettpaket ${P.k}&nbsp;€/m² inkl. MwSt.)</span><br><span class="pb-note">Verbindlicher Endpreis nach Foto oder Besichtigung — gerechnet exakt m² × Satz.</span></p>`;
 const GARANTIE_TRIO = [
   ['Zusage 1', 'Endpreis-Zusage', 'Der bestätigte Preis ist der Rechnungsbetrag. Kein Aufpreis, wenn die Fläche hartnäckiger ist als gedacht — das ist unser Risiko, nicht Ihres.'],
   ['Zusage 2', 'Kostenlose Nacharbeit', 'Bleibt nach der Abnahme sichtbarer Moos- oder Algenbelag zurück, kommen wir noch einmal — ohne Diskussion, ohne Rechnung.'],
@@ -510,8 +515,8 @@ function leistungsZeilen() {
   const rows = [
     ['01', 'Steinreinigung mit dem Flächenreiniger', 'Rotierende Reinigung unter einer Haube: gleichmäßig, kontrolliert, ohne Spritzfahnen an Fassade und Fenstern. Für Einfahrten, Terrassen, Wege und Treppen.', 'im m²-Preis', 'enthalten', '/steinreinigung/'],
     ['02', 'Schmutz-Absaugung mit dem Nasssauger', 'Gelöster Schmutz und Schmutzwasser werden aufgenommen statt in Beet und Rasen gespült. Die Fläche ist nach dem Termin begehbar, das Grundstück bleibt sauber.', 'im m²-Preis', 'enthalten', null],
-    ['03', 'Neuverfugung mit GaLaBau-Sand', 'Ausgespülte Fugen werden mit Fugensand neu verfüllt. Das stabilisiert den Belag und verzögert neuen Bewuchs in den Fugen.', 'im Komplettpaket', `${P.satz_impraegnierung} €/m²`, null],
-    ['04', 'Nano-Imprägnierung', 'Im Komplettpaket versiegeln wir die gereinigte Fläche. Wasser perlt ab, Schmutz haftet schlechter, das Ergebnis hält sichtbar länger.', 'im Komplettpaket', `${P.satz_impraegnierung} €/m²`, '/steinversiegelung/']
+    ['03', 'Neuverfugung mit GaLaBau-Sand', 'Ausgespülte Fugen werden mit Fugensand neu verfüllt. Das stabilisiert den Belag und verzögert neuen Bewuchs in den Fugen.', 'im Komplettpaket', `${P.k} €/m² inkl. MwSt.`, null],
+    ['04', 'Nano-Imprägnierung', 'Im Komplettpaket versiegeln wir die gereinigte Fläche. Wasser perlt ab, Schmutz haftet schlechter, das Ergebnis hält sichtbar länger.', 'im Komplettpaket', `${P.k} €/m² inkl. MwSt.`, '/steinversiegelung/']
   ];
   const hubLinks = services.filter(s => hubCopy[s.slug]).map(s => `<a href="/${s.slug}/">${esc(s.name)}</a>`).join(' · ');
   return `<section class="svcz-sec" id="leistungen"><div class="container">
@@ -704,12 +709,12 @@ ${ortsLeiste()}`;
 // ====================================================================
 function home() {
   const faqs = [
-    { q: 'Was kostet die Steinreinigung pro Quadratmeter?', a: 'Unser Richtpreis liegt bei 8 €/m² für die Steinreinigung mit Flächenreiniger und Nass-Absaugung, oder 10 €/m² im Komplettpaket mit Neuverfugung und Nano-Imprägnierung. Eine 30 m² große Terrasse liegt damit bei exakt 240 € — im Komplettpaket bei 300 €. Das ist ein unverbindlicher Richtwert — das verbindliche Angebot erstellen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung. Alle Preise sind Endpreise ohne versteckte Kosten.' },
+    { q: 'Was kostet die Steinreinigung pro Quadratmeter?', a: 'Unser Richtpreis liegt ab 14,28 €/m² inkl. MwSt. für die Steinreinigung mit Flächenreiniger und Nass-Absaugung, das Komplettpaket mit Neuverfugung und Nano-Imprägnierung bei 17,85 €/m² inkl. MwSt. Eine 30 m² große Terrasse liegt damit bei 428,40 € inkl. MwSt., im Komplettpaket bei 535,50 € inkl. MwSt. Das ist ein unverbindlicher Richtwert — den verbindlichen Endpreis nennen wir nach Fotos und Maßen oder bei einer kostenlosen Besichtigung.' },
     { q: 'Beschädigt der Hochdruck mein Pflaster oder meine Terrasse?', a: 'Falsch eingesetzter Hochdruck — eine Punkt-Lanze zu nah am Stein — kann Fugen auswaschen und Oberflächen aufrauen. Deshalb arbeiten wir mit rotierenden Flächenreinigern, die den Druck gleichmäßig über die Fläche verteilen; im Komplettpaket verfugen wir die Fläche anschließend neu. So wird sie gründlich sauber, ohne dass das Material Schaden nimmt.' },
     { q: 'Wie schnell bekomme ich ein Angebot?', a: 'Schicken Sie uns ein, zwei Fotos und die ungefähren Maße Ihrer Fläche per WhatsApp. Antwort < 2 h — werktags 8–18 Uhr. Lässt sich die Fläche aus der Ferne nicht sicher einschätzen, vereinbaren wir eine kostenlose Besichtigung vor Ort — beides unverbindlich.' },
     { q: 'Kann ich das Ergebnis sehen, bevor ich beauftrage?', a: 'Ja. Auf Wunsch reinigen wir bei der kostenlosen Besichtigung 1 m² Probefläche. Sie sehen das Ergebnis direkt auf Ihrem eigenen Stein und entscheiden danach in Ruhe. Auf der Website zeigen wir außerdem nur gekennzeichnetes, echtes Material aus Kundenaufträgen.' },
     { q: 'In welchem Gebiet seid ihr tätig?', a: 'Wir reinigen Stein- und Terrassenflächen im Havelland und am westlichen Berliner Rand — unter anderem in Falkensee, Dallgow-Döberitz, Brieselang, Schönwalde-Glien, Wustermark, Groß Glienicke und Kladow. Falkensee ist unser Sitz, von dort sind die Wege zu Ihnen kurz und die Termine planbar.' },
-    { q: 'Was bringt die Nano-Imprägnierung?', a: 'Die Nano-Imprägnierung ist Teil des Komplettpakets für 10 €/m² und legt einen unsichtbaren Schutzfilm auf den Stein. Wasser perlt ab, Moos und Schmutz finden weniger Halt, die Fläche bleibt nach der Reinigung länger sauber. Sie lohnt sich vor allem bei schattigen oder stark bewachsenen Flächen, die sonst schnell wieder vergrünen.' },
+    { q: 'Was bringt die Nano-Imprägnierung?', a: 'Die Nano-Imprägnierung ist Teil des Komplettpakets für 17,85 €/m² inkl. MwSt. und legt einen unsichtbaren Schutzfilm auf den Stein. Wasser perlt ab, Moos und Schmutz finden weniger Halt, die Fläche bleibt nach der Reinigung länger sauber. Sie lohnt sich vor allem bei schattigen oder stark bewachsenen Flächen, die sonst schnell wieder vergrünen.' },
     { q: 'Kommen Anfahrts- oder Besichtigungskosten dazu?', a: 'Nein. Innerhalb unseres Servicegebiets im Havelland und am westlichen Berliner Rand ist die Vor-Ort-Besichtigung kostenlos und unverbindlich, und es fallen keine Anfahrtskosten an. Sie zahlen ausschließlich die vereinbarte Leistung zum genannten Endpreis.' },
     { q: 'Was ist, wenn ich mit dem Ergebnis nicht zufrieden bin?', a: 'Bleibt nach unserer Reinigung sichtbarer Moos- oder Algenbelag zurück, kommen wir kostenlos nach. Und der Preis, den wir Ihnen vorab nennen, ist der Endpreis — ohne Aufpreis und ohne Nachkalkulation. So wissen Sie schon vor dem Termin genau, woran Sie sind.' }
   ];
@@ -745,8 +750,8 @@ ${ortsLeiste()}
 ${faqBlock(faqs, { title: 'Was Eigenheimbesitzer uns oft fragen' })}`;
 
   const schema = `${orgSchema()},${websiteSchema()},${breadcrumb([{ name: 'Start', url: '/' }])}${faqSchema('/', faqs)}`;
-  const title = clampTitle(`Steinreinigung Havelland — Richtpreis ${P.satz_basis} €/m² | Blankstein`);
-  const meta = mkMeta(`Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos. Richtpreis ${P.satz_basis} €/m², Komplettpaket mit Neuverfugung und Nano ${P.satz_impraegnierung} €/m² — Foto genügt.`);
+  const title = clampTitle(`Steinreinigung Havelland — ab ${P.b} €/m² inkl. MwSt. | Blankstein`);
+  const meta = mkMeta(`Steinreinigung im Havelland, dokumentiert mit echten Fotos und Videos. Richtpreis ab ${P.b} €/m² inkl. MwSt., Komplettpaket ${P.k} €/m² inkl. MwSt. — Foto genügt.`);
   write('/', head(title, meta, '/', schema, { pagetype: 'home', og: { slug: 'home', motif: 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + SCTA + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push('/');
 }
@@ -810,7 +815,7 @@ ${weiterSection(s, c)}
 ${ortsLeiste()}`;
 
   const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
-  const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"${sj(s.name)}","serviceType":"${sj(s.name)}","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"description":"${sj(c.meta)}","offers":{"@type":"Offer","priceCurrency":"EUR","price":"${s.slug === 'steinversiegelung' ? P.satz_impraegnierung : P.satz_basis}","description":"${s.slug === 'steinversiegelung' ? 'Richtpreis pro Quadratmeter inkl. Reinigung, Neuverfugung und Nano-Imprägnierung, Endpreis ohne versteckte Kosten.' : 'Richtpreis pro Quadratmeter für die Steinreinigung, Endpreis ohne versteckte Kosten.'}"}}`;
+  const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"${sj(s.name)}","serviceType":"${sj(s.name)}","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"description":"${sj(c.meta)}","offers":{"@type":"Offer","priceCurrency":"EUR","price":"${(s.slug === 'steinversiegelung' ? P.satz_impraegnierung : P.satz_basis).toFixed(2)}","priceSpecification":${unitPriceSpec(s.slug === 'steinversiegelung' ? P.satz_impraegnierung : P.satz_basis)},"description":"${s.slug === 'steinversiegelung' ? 'Richtpreis pro Quadratmeter inkl. MwSt. für Reinigung, Neuverfugung und Nano-Imprägnierung; verbindlicher Endpreis nach Foto oder Besichtigung.' : 'Richtpreis pro Quadratmeter inkl. MwSt. für die Steinreinigung; verbindlicher Endpreis nach Foto oder Besichtigung.'}"}}`;
   const schema = `${orgSchema()},${svcSchema},${breadcrumb([{ name: 'Start', url: '/' }, { name: s.name, url }])}${faqSchema(url, c.faqs)}`;
   write(url, head(clampTitle(c.title), mkMeta(c.meta), url, schema, { pagetype: 'hub', og: { slug: s.slug, motif: HUB_OG[s.slug] || 'proof-vn-nachher' } }) + header + mainWrap(main) + footer + sctaBar(waMsg) + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push(url);
@@ -932,7 +937,7 @@ ${tableHtml(s.table)}
 <p class="doc-label">Ratgeber</p>
 <h1>${esc(r.h1)}</h1>
 <p class="lead">${esc(r.lead)}</p>
-<p class="rg-meta mono">${ICON.calendar} Aktualisiert am ${esc(fmtDate(r.updated || config.content_stand))} · ${lesezeit} Min Lesezeit · von ${esc(nap.name)} Steinreinigung</p>
+<p class="rg-meta mono">${ICON.calendar} Aktualisiert am ${esc(fmtDate(r.modified || r.updated || config.content_stand))} · ${lesezeit} Min Lesezeit · von ${esc(nap.name)} Steinreinigung</p>
 </div></div></section>
 ${r.hero_img && IMG[r.hero_img] ? `<div class="container rg-herofig-wrap"><figure class="rg-herofig"${r.hero_pos ? ` style="--hpos:${esc(r.hero_pos)}"` : ''}>${pic(r.hero_img, { badge: true, alt: r.hero_alt || r.h1, sizes: '(max-width:1180px) 92vw, 1100px', lcp: true })}</figure></div>` : ''}
 <section class="rg-body"><div class="container"><div class="rg-layout${toc ? ' has-toc' : ''}">
@@ -944,7 +949,7 @@ ${sektionenHtml}
 <div class="rg-protip-body">
 <span class="rg-protip-label mono">Profi-Tipp</span>
 <h2>${esc(r.cta_title || 'Lieber gleich vom Profi machen lassen?')}</h2>
-<p>${esc(r.cta_text || `Wir reinigen Ihre Fläche materialschonend, auf Wunsch mit Neuverfugung und Imprägnierung — Richtpreis ab ${P.satz_basis} €/m². ${SLA}.`)}</p>
+<p>${esc(r.cta_text || `Wir reinigen Ihre Fläche materialschonend, auf Wunsch mit Neuverfugung und Imprägnierung — Richtpreis ab ${P.b} €/m² inkl. MwSt. ${SLA}.`)}</p>
 <div class="rg-protip-actions"><a href="${waHref(waMsg)}" class="btn-wa" target="_blank" rel="noopener">${ICON.camera} Angebot per Foto</a><a href="${ctaHubUrl}" class="rg-protip-link">${svc ? esc(svc.name) + ' ansehen' : 'Mehr erfahren'} →</a></div>
 </div>
 </aside>
@@ -952,7 +957,7 @@ ${relatedHtml}
 </div></div></div></section>
 ${faqBlock(r.faqs)}`;
 
-  const artSchema = `{"@type":"Article","@id":"${DOMAIN}${url}#article","headline":"${sj(r.h1)}","description":"${sj(r.meta)}","image":"${imgAbs(r.hero_img) || imgAbs('og-default')}","datePublished":"${r.updated || config.content_stand}","dateModified":"${r.updated || config.content_stand}","inLanguage":"de-DE","author":{"@id":"${DOMAIN}/#organization"},"publisher":{"@id":"${DOMAIN}/#organization"},"mainEntityOfPage":"${DOMAIN}${url}"}`;
+  const artSchema = `{"@type":"Article","@id":"${DOMAIN}${url}#article","headline":"${sj(r.h1)}","description":"${sj(r.meta)}","image":"${imgAbs(r.hero_img) || imgAbs('og-default')}","datePublished":"${r.updated || config.content_stand}","dateModified":"${r.modified || r.updated || config.content_stand}","inLanguage":"de-DE","author":{"@id":"${DOMAIN}/#organization"},"publisher":{"@id":"${DOMAIN}/#organization"},"mainEntityOfPage":"${DOMAIN}${url}"}`;
   const schema = `${orgSchema()},${artSchema},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Ratgeber', url: '/ratgeber/' }, { name: r.h1, url }])}${faqSchema(url, r.faqs)}`;
   // og:image: Ratgeber-Motive rotieren durch den ECHT-Foto-Pool (kein KI-Motiv in Social-Previews)
   const OG_POOL = ['proof-arbeit-1', 'proof-arbeit-2', 'proof-ergebnis-1', 'proof-ergebnis-2', 'hub-steinreinigung-wegetreppen', 'hub-pflaster-gal2', 'hub-steinreinigung-gal5', 'hub-pflaster-gal5'];
@@ -996,7 +1001,7 @@ function ratgeberIndex() {
 <div class="rgx-grid">${cards}</div>
 </div></section>
 <section class="doors-sec" style="padding-top:0"><div class="container">
-<div class="proto-bridge"><p><strong>Lieber machen lassen?</strong> Foto und ungefähre Maße genügen — Richtpreis exakt m² × ${P.satz_basis} €, ${SLA_HTML}.</p><a href="${waHref(WA_DEFAULT)}" class="btn-wa" target="_blank" rel="noopener">${ICON.wa} Angebot per WhatsApp</a></div>
+<div class="proto-bridge"><p><strong>Lieber machen lassen?</strong> Foto und ungefähre Maße genügen — Richtpreis exakt m² × ${P.b} € inkl. MwSt., ${SLA_HTML}.</p><a href="${waHref(WA_DEFAULT)}" class="btn-wa" target="_blank" rel="noopener">${ICON.wa} Angebot per WhatsApp</a></div>
 </div></section>`;
   const schema = `${orgSchema()},{"@type":"CollectionPage","@id":"${DOMAIN}${url}#page","name":"Ratgeber","isPartOf":{"@id":"${DOMAIN}/#organization"}},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Ratgeber', url }])}`;
   write(url, head('Ratgeber: Stein & Terrasse reinigen | Blankstein', mkMeta('Ratgeber von Blankstein: Pflaster, Einfahrt und Terrasse richtig reinigen, Grünbelag entfernen, Fugen sanieren und imprägnieren — praktische Anleitungen aus dem Havelland.'), url, schema, { pagetype: 'ratgeber-index', og: { slug: 'ratgeber', motif: 'hub-pflaster-gal3' } }) + header + mainWrap(main) + footer + SCTA + FOOT_JS + '</body></html>');
@@ -1038,7 +1043,7 @@ function servicegebiet() {
 <ul class="gebiet-list">${hubLinks}</ul>
 </div></div></section>
 <section class="doors-sec" style="padding-top:0" id="kontakt"><div class="container">
-<div class="proto-bridge"><p><strong>Ihr Ort ist dabei?</strong> Foto und ungefähre Maße genügen — Richtpreis exakt m² × ${P.satz_basis} €, ${SLA_HTML}.</p><a href="${waHref(WA_DEFAULT)}" class="btn-wa" target="_blank" rel="noopener">${ICON.wa} Angebot per WhatsApp</a></div>
+<div class="proto-bridge"><p><strong>Ihr Ort ist dabei?</strong> Foto und ungefähre Maße genügen — Richtpreis exakt m² × ${P.b} € inkl. MwSt., ${SLA_HTML}.</p><a href="${waHref(WA_DEFAULT)}" class="btn-wa" target="_blank" rel="noopener">${ICON.wa} Angebot per WhatsApp</a></div>
 </div></section>`;
   const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
   const schema = `${orgSchema()},{"@type":"CollectionPage","@id":"${DOMAIN}${url}#page","name":"Servicegebiet","isPartOf":{"@id":"${DOMAIN}/#organization"},"about":{"@type":"Service","name":"Stein- und Terrassenreinigung","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed}}},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Servicegebiet', url }])}`;
@@ -1100,7 +1105,7 @@ ${tableHtml}
 <h2 class="sec-h2">${esc(kf.title || 'Was hinter dem Quadratmeterpreis steckt')}</h2>
 ${kfHtml}
 </div></section>
-${konfigSection({ kontext: 'Preise', title: 'Rechnen Sie Ihren Richtpreis aus', sub: `Fläche, Größe, Leistung — gerechnet wird exakt m² × ${P.satz_basis} € oder ${P.satz_impraegnierung} €. Verbindlich nach Foto-Prüfung, dann Endpreis-Zusage.` })}
+${konfigSection({ kontext: 'Preise', title: 'Rechnen Sie Ihren Richtpreis aus', sub: `Fläche, Größe, Leistung — gerechnet wird exakt m² × ${P.b} € oder ${P.k} € (jeweils inkl. MwSt.). Verbindlicher Endpreis nach Foto oder Besichtigung.` })}
 <section class="lokal-sec"><div class="container">
 <p class="doc-label">Preislogik</p>
 <h2 class="sec-h2">${esc(re.title || 'Warum Richtpreis statt fester Preis aus der Ferne')}</h2>
@@ -1116,7 +1121,7 @@ ${vergleichHtml}
 ${gwPreiseGewerbe()}
 ${faqBlock(p.faqs, { title: 'Preisfragen, kurz beantwortet' })}`;
   const areaServed = `[${orte.map(o => `{"@type":"City","name":"${sj(o.name)}"${o.plz ? `,"postalCode":"${sj(o.plz)}"` : ''}}`).join(',')},{"@type":"AdministrativeArea","name":"Havelland"}]`;
-  const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"Steinreinigung und Terrassenreinigung","serviceType":"Steinreinigung","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"${P.satz_basis}","description":"Richtpreis pro Quadratmeter für die Steinreinigung, Endpreis ohne versteckte Kosten."}}`;
+  const svcSchema = `{"@type":"Service","@id":"${DOMAIN}${url}#service","name":"Steinreinigung und Terrassenreinigung","serviceType":"Steinreinigung","provider":{"@id":"${DOMAIN}/#organization"},"areaServed":${areaServed},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"${P.satz_basis.toFixed(2)}","priceSpecification":${unitPriceSpec(P.satz_basis)},"description":"Richtpreis pro Quadratmeter inkl. MwSt. für die Steinreinigung; verbindlicher Endpreis nach Foto oder Besichtigung."}}`;
   const schema = `${orgSchema()},${svcSchema},${breadcrumb([{ name: 'Start', url: '/' }, { name: 'Preise', url }])}${faqSchema(url, p.faqs)}`;
   write(url, head(clampTitle(p.title), mkMeta(p.meta), url, schema, { pagetype: 'preise', og: { slug: 'preise', motif: 'proof-ergebnis-2' } }) + header + mainWrap(main) + footer + sctaBar(waMsg) + sliderJS + konfigJS + FOOT_JS + '</body></html>');
   written.push(url);
@@ -1134,7 +1139,7 @@ function ueberUns(u) {
   const schritteHtml = (vf.schritte || []).map((s, i) => `<div class="svc-row">
 <span class="svc-num mono">0${i + 1}</span>
 <div><h3>${esc(s.titel)}</h3><p>${esc(s.text)}</p></div>
-<div class="svc-meta mono">${/verfug|imprägn|komplettpaket/i.test(s.titel) ? `im Komplettpaket<br><strong>${P.satz_impraegnierung} €/m²</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
+<div class="svc-meta mono">${/verfug|imprägn|komplettpaket/i.test(s.titel) ? `im Komplettpaket<br><strong>${P.k} €/m² inkl. MwSt.</strong>` : `im m²-Preis<br><strong>enthalten</strong>`}</div>
 </div>`).join('');
   const gearHtml = (eq.items || []).map(([t, d]) => `<li><strong>${esc(t)}</strong><span>${esc(d)}</span></li>`).join('');
   const main = `<div class="container breadcrumb"><a href="/">Start</a><span class="sep">›</span>Über uns</div>
@@ -1292,8 +1297,6 @@ function impressum() {
 <p>Vertreten durch die Gesellschafter: ${esc(gesell)}.</p>
 <h2>Kontakt</h2>
 <p>Telefon: <a href="tel:${tel}">${esc(nap.phone_display)}</a><br>E-Mail: <a href="mailto:${esc(nap.email)}">${esc(nap.email)}</a></p>
-<h2>Umsatzsteuer</h2>
-<p>Als Kleinunternehmer im Sinne von § 19 UStG erheben wir keine Umsatzsteuer und weisen diese daher auch nicht aus. Alle genannten Preise sind Endpreise.</p>
 <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
 <p>${esc(nap.inhaber)}, Anschrift wie oben.</p>
 <h2>EU-Streitschlichtung</h2>
@@ -1353,7 +1356,7 @@ function danke() {
   const waFotos = 'Hallo Blankstein, hier kommen noch Fotos zu meiner Anfrage von eben.';
   const steps = [
     ['01', 'Wir lesen Ihre Anfrage', `Ein Inhaber prüft Belag, Zustand und Maße. ${SLA}.`],
-    ['02', 'Sie bekommen den Richtpreis', `Gerechnet exakt m² × ${P.satz_basis} € oder ${P.satz_impraegnierung} € — verbindlich nach Foto-Prüfung, dann mit Endpreis-Zusage.`],
+    ['02', 'Sie bekommen den Richtpreis', `Gerechnet exakt m² × ${P.b} € oder ${P.k} € (jeweils inkl. MwSt.) — verbindlicher Endpreis nach Foto oder Besichtigung.`],
     ['03', 'Termin nach Ihrem Kalender', 'Passt das Angebot, stimmen wir den Termin ab. Besichtigung vorab jederzeit möglich — kostenlos, auf Wunsch mit 1 m² Probefläche.']
   ];
   const main = `<section class="bw-hero o-hero"><div class="container">
@@ -1395,7 +1398,11 @@ function notFound() {
 // ====================================================================
 function sitemaps() {
   const urls = written.filter(u => u !== '/danke/');
-  const lm = (config.content_stand && /^\d{4}-\d{2}-\d{2}$/.test(config.content_stand)) ? `<lastmod>${config.content_stand}</lastmod>` : '';
+  const lmBase = (config.content_stand && /^\d{4}-\d{2}-\d{2}$/.test(config.content_stand)) ? config.content_stand : '';
+  // Seiten mit inhaltlicher Änderung (Preisumstellung 19.11.2026): config.lastmod_override = { '/url/': 'YYYY-MM-DD' }
+  const lmOv = config.lastmod_override || {};
+  const lmFor = u => { const d = lmOv[u] || lmBase; return d ? `<lastmod>${d}</lastmod>` : ''; };
+  const lm = lmBase ? `<lastmod>${[lmBase, ...Object.values(lmOv)].sort().pop()}</lastmod>` : '';
   // Sitemap-Split (Wellen-Indexierung): URLs nach Typ in Teil-Sitemaps, ein Index verweist darauf.
   const svcSet = new Set(services.map(s => `/${s.slug}/`));
   const ortSet = new Set([...orte.map(o => `/${o.slug}/`), '/servicegebiet/']);
@@ -1407,7 +1414,7 @@ function sitemaps() {
     else if (ortSet.has(u)) groups.standorte.push(u);
     else groups.core.push(u);
   }
-  const urlset = us => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${us.map(u => `<url><loc>${DOMAIN}${u}</loc>${lm}</url>`).join('\n')}\n</urlset>\n`;
+  const urlset = us => `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${us.map(u => `<url><loc>${DOMAIN}${u}</loc>${lmFor(u)}</url>`).join('\n')}\n</urlset>\n`;
   const parts = [];
   for (const [name, us] of Object.entries(groups)) {
     if (!us.length) continue; // leere Gruppe (Teilbuild) -> keine Datei, kein Index-Eintrag
@@ -1421,14 +1428,14 @@ function sitemaps() {
   const svcLinks = services.filter(s => hubCopy[s.slug]).map(s => `- [${s.name}](${DOMAIN}/${s.slug}/): ${hubCopy[s.slug].meta || ''}`).join('\n');
   const ortLinks = orte.map(o => orteCopy[o.slug] ? `- [${o.name} (${o.plz})](${DOMAIN}/${o.slug}/)` : `- ${o.name} (${o.plz})`).join('\n');
   const coreLinks = [
-    ['Preise', '/preise/', `Richtpreis ${P.satz_basis} €/m² Steinreinigung, ${P.satz_impraegnierung} €/m² mit Neuverfugung + Nano-Imprägnierung — Beispielrechnungen und Richtpreis-Rechner.`],
+    ['Preise', '/preise/', `Richtpreis ab ${P.b} €/m² inkl. MwSt. (Steinreinigung), ${P.k} €/m² inkl. MwSt. mit Neuverfugung + Nano-Imprägnierung — Beispielrechnungen und Richtpreis-Rechner.`],
     ['Bewertungen', '/bewertungen/', 'Google-Bewertungen im Überblick, jedes Zitat zum öffentlichen Google-Profil verlinkt.'],
     ['Über uns', '/ueber-uns/', 'Die Inhaber, das Verfahren und die Geräte hinter Blankstein.'],
     ['Servicegebiet', '/servicegebiet/', 'Alle bedienten Orte im Havelland und am westlichen Berliner Rand.'],
     ['Kontakt', '/kontakt/', 'Anfrage per WhatsApp, Telefon oder E-Mail — Antwort < 2 h — werktags 8–18 Uhr.']
   ].map(([n, u, d]) => `- [${n}](${DOMAIN}${u}): ${d}`).join('\n');
   const rgLinks = ratList.map(r => `- [${r.h1}](${DOMAIN}/ratgeber/${r.slug}/): ${r.meta || ''}`).join('\n');
-  const llms = `# Blankstein\n\n> Steinreinigung, Terrassenreinigung, Pflasterreinigung und Steinversiegelung im Havelland und am westlichen Berliner Rand. Verfahren: rotierende Flächenreiniger (kontrollierter Hochdruck), Neuverfugung mit Fugensand, Nano-Imprägnierung, saubere Nass-Absaugung. Richtpreis ${P.satz_basis} €/m² (Komplettpaket mit Neuverfugung + Nano-Imprägnierung ${P.satz_impraegnierung} €/m²), Endpreise ohne versteckte Kosten. Anfrage per Foto + Maße über WhatsApp (Antwort < 2 h — werktags 8–18 Uhr) oder kostenlose Vor-Ort-Besichtigung. Sitz: ${nap.city}.\n\n## Leistungen\n${svcLinks}\n\n## Weitere Seiten\n${coreLinks}\n\n## Servicegebiet\n${ortLinks}\n\n## Ratgeber\n${rgLinks}\n\n## Kontakt\n- Telefon: ${nap.phone_display}\n- WhatsApp: ${waHref('Hallo Blankstein')}\n- Ort: ${nap.street}, ${nap.zip} ${nap.city}\n`;
+  const llms = `# Blankstein\n\n> Steinreinigung, Terrassenreinigung, Pflasterreinigung und Steinversiegelung im Havelland und am westlichen Berliner Rand. Verfahren: rotierende Flächenreiniger (kontrollierter Hochdruck), Neuverfugung mit Fugensand, Nano-Imprägnierung, saubere Nass-Absaugung. Richtpreis ab ${P.b} €/m² inkl. MwSt. (Komplettpaket mit Neuverfugung + Nano-Imprägnierung ${P.k} €/m² inkl. MwSt.), verbindlicher Endpreis nach Foto oder Besichtigung. Anfrage per Foto + Maße über WhatsApp (Antwort < 2 h — werktags 8–18 Uhr) oder kostenlose Vor-Ort-Besichtigung. Sitz: ${nap.city}.\n\n## Leistungen\n${svcLinks}\n\n## Weitere Seiten\n${coreLinks}\n\n## Servicegebiet\n${ortLinks}\n\n## Ratgeber\n${rgLinks}\n\n## Kontakt\n- Telefon: ${nap.phone_display}\n- WhatsApp: ${waHref('Hallo Blankstein')}\n- Ort: ${nap.street}, ${nap.zip} ${nap.city}\n`;
   fs.writeFileSync('website/llms.txt', llms);
   // IndexNow-Verifikationsdatei (nur bei echtem Key) — Pipeline-Output laut Methodik §1; Platzhalter => übersprungen
   if (isReal(config.indexnow_key)) fs.writeFileSync(`website/${config.indexnow_key}.txt`, config.indexnow_key);
@@ -1476,7 +1483,7 @@ ${pick}
 </div>
 ${heroImg}
 </div></div></section>
-${konfigSection({ kurz: true, kontext: 'Reel-Landing /start', title: 'Rechne deinen Richtpreis aus.', sub: `Fläche, Größe, Leistung — gerechnet wird exakt m² × ${P.satz_basis} € oder ${P.satz_impraegnierung} €. Ohne Kontaktdaten, ohne Verpflichtung.` })}
+${konfigSection({ kurz: true, kontext: 'Reel-Landing /start', title: 'Rechne deinen Richtpreis aus.', sub: `Fläche, Größe, Leistung — gerechnet wird exakt m² × ${P.b} € oder ${P.k} € (jeweils inkl. MwSt.). Ohne Kontaktdaten, ohne Verpflichtung.` })}
 <section class="start-steps"><div class="container"><div class="section-head center"><h2 class="sec-h2" style="margin-inline:auto;text-align:center">${esc(c.steps_title || 'So einfach gehts')}</h2></div><div class="start-steps-grid">${steps}</div></div></section>
 ${reelStrip()}
 <section class="start-trust"><div class="container"><div class="section-head center"><h2 class="sec-h2" style="margin-inline:auto;text-align:center">${esc(c.trust_title || 'Warum Blankstein')}</h2></div><div class="start-trust-grid">${trust}</div></div></section>
